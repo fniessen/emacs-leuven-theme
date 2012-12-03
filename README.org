@@ -1,6 +1,6 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2012-12-03 Mon 21:37>
+#+Time-stamp: <2012-12-03 Mon 21:45>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en_US
@@ -17,7 +17,7 @@ Dired+ and EDiff. Make it yours!
 
 Fontified source code blocks:
 
-[[file:./fontified-src-code-blocks.png]]
+[[./fontified-src-code-blocks.png]]
 
 ** Download
 
@@ -30,7 +30,7 @@ git clone git://github.com/fniessen/emacs-leuven-theme.git
 
 ** Installation
 
-- Download and install [[https://github.com/fniessen/color-theme-leuven][color-theme-leuven]]:
+- Download and install [[https://github.com/fniessen/emacs-leuven-theme][emacs-leuven-theme]]:
 
   #+BEGIN_SRC emacs-lisp
   (add-to-list 'custom-theme-load-path "/path/to/emacs-leuven-theme")
