@@ -1,0 +1,22 @@
+#+TITLE:     Emacs Leuven Theme Tasks
+#+AUTHOR:    Fabrice Niessen
+#+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
+#+Time-stamp: <2012-12-03 Mon 21:37>
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+
+* Tasks
+
+** NEW Color theme
+
+Voir des couleurs pour fontification de code sur
+http://www.queness.com/post/274/jquery-sliding-tab-menu-for-sidebar-tutorial
+
+** NEW Make nice page about my color-theme
+
+See solarized.
+
+** TODO Have a look at http://websitetips.com/colortools/sitepro/
+
+** TODO See [[http://www.codestyle.org/css/font-family/sampler-CombinedResults.shtml][The most common fonts]]

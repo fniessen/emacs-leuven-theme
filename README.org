@@ -1,0 +1,44 @@
+#+AUTHOR:    Fabrice Niessen
+#+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
+#+Time-stamp: <2012-12-03 Mon 21:37>
+#+DESCRIPTION: Emacs custom color theme for light background
+#+KEYWORDS:  emacs, custom theme, color theme, faces
+#+LANGUAGE:  en_US
+
+* Custom leuven-theme
+
+Looking for an awesome Emacs color theme?  Here's the place to find one!
+
+Welcome to the custom Leuven theme, an elegant color theme for light
+backgrounds, with built-in style for many components such as Org-mode, Gnus,
+Dired+ and EDiff. Make it yours!
+
+** Screenshots
+
+Fontified source code blocks:
+
+[[file:./fontified-src-code-blocks.png]]
+
+** Download
+
+Get the full Git repository at https://github.com/fniessen/emacs-leuven-theme
+using the following command:
+
+#+BEGIN_SRC sh
+git clone git://github.com/fniessen/emacs-leuven-theme.git
+#+END_SRC
+
+** Installation
+
+- Download and install [[https://github.com/fniessen/color-theme-leuven][color-theme-leuven]]:
+
+  #+BEGIN_SRC emacs-lisp
+  (add-to-list 'custom-theme-load-path "/path/to/emacs-leuven-theme")
+  (load-theme 'leuven t)
+  #+END_SRC
+
+- Restart Emacs.
+
+** License
+
+Copyright (C) 2003-2012 Fabrice Niessen
