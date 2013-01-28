@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Fabrice Niessen
-;; Time-stamp: <2013-01-28 Mon 10:41>
+;; Time-stamp: <2013-01-28 Mon 11:20>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -163,7 +163,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diff-file2-hunk-header ((,class (:foreground "#2B7E2A" :background "#EAF2F5"))))
    `(diff-header ((,class (:foreground "#999999" :background "#EAF2F5"))))
    `(diff-hunk-header ((,class ,diff-hunk-header)))
-   `(diff-index ((,class (:family "Sans Serif" :height 1.1 :weight bold :foreground "#4183C4" :background "#EAF2F5")))) ;; my foreground is NOT applied!?
+   `(diff-index ((,class (:foreground "#4183C4" :background "#EAF2F5")))) ;; my foreground is NOT applied!?
    `(diff-indicator-added ((,class (:background "#AAFFAA"))))
    `(diff-indicator-changed ((,class (:background "#AAAAFF"))))
    `(diff-indicator-removed ((,class (:background "#FFAAAA"))))
@@ -590,7 +590,6 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 
 ;; Local Variables:
 ;; no-byte-compile: t
-;; eval: (when (locate-library "rainbow-mode") (require 'rainbow-mode) (rainbow-mode))
 ;; End:
 
 ;;; leuven-theme.el ends here
