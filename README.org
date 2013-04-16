@@ -1,6 +1,6 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2012-12-03 Mon 21:45>
+#+Time-stamp: <2013-04-16 Tue 10:13>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en_US
@@ -41,4 +41,4 @@ git clone git://github.com/fniessen/emacs-leuven-theme.git
 
 ** License
 
-Copyright (C) 2003-2012 Fabrice Niessen
+Copyright (C) 2003-2013 Fabrice Niessen
