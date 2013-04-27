@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-04-02 Tue 10:51>
+;; Time-stamp: <2013-04-24 Wed 16:05>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -438,7 +438,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
    `(org-checkbox ((,class (:weight bold :foreground "white" :background "#777777" :box (:line-width 1 :style pressed-button)))))
    `(org-clock-overlay ((,class (:foreground "white" :background "SkyBlue4"))))
-   `(org-code ((,class (:foreground "#0066CC"))))
+   `(org-code ((,class (:foreground "#006600"))))
    `(org-column ((,class ,column)))
    `(org-column-title ((,class ,column)))
    `(org-date ((,class (:underline t :foreground "#00459E"))))
@@ -480,7 +480,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
    `(org-table ((,class (:foreground "dark green" :background "#EAFFEA"))))
    `(org-tag ((,class (:weight normal :slant italic :foreground "#3E6D8E" :background "#E0EAF1"))))
-   `(org-target ((,class (:underline t))))
+   `(org-target ((,class ,link)))
    `(org-time-grid ((,class (:foreground "#CFCFCF"))))
    `(org-todo ((,class (:weight bold :box (:line-width 1 :color "#D8ABA7") :foreground "#D8ABA7" :background "#FFE6E4"))))
    `(org-upcoming-deadline ((,class (:foreground "#FF5555"))))
