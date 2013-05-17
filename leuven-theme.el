@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-05-17 Fri 11:53>
+;; Time-stamp: <2013-05-17 Fri 13:48>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -436,7 +436,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
    `(org-checkbox ((,class (:weight bold :foreground "white" :background "#777777" :box (:line-width 1 :style pressed-button)))))
    `(org-clock-overlay ((,class (:foreground "white" :background "SkyBlue4"))))
-   `(org-code ((,class (:foreground "#006600"))))
+   `(org-code ((,class (:foreground "#007300" :background "#EBF5EB"))))
    `(org-column ((,class ,column)))
    `(org-column-title ((,class ,column)))
    `(org-date ((,class (:underline t :foreground "#00459E"))))
