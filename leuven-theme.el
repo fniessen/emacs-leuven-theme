@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-04-24 Wed 16:05>
+;; Time-stamp: <2013-05-17 Fri 10:52>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -39,11 +39,11 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:background "#C6DBAD"))
+      (highlight-line '(:background "#CCDEED"))
       (link '(:underline t :foreground "#006DAF"))
       (mail-header-name '(:weight bold :foreground "black"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
-      (match '(:background "#FFFF99"))
+      (match '(:background "#FBE448"))
       (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
       (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
       (ol3 '(:height 1.0 :weight bold :overline "#005522" :foreground "#005522" :background "#EFFFEF"))
@@ -52,12 +52,12 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC"))
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
-      (region '(:background "#D2D9E0"))
+      (region '(:background "#CCDEED"))
       (shadow '(:foreground "#7F7F7F"))
-      (string '(:foreground "#008000"))
+      (string '(:foreground "#FF5500")) ;; D0372D
       (subject '(:weight bold :foreground "#CF5D60"))
       (symlink '(:foreground "deep sky blue"))
-      (volatile-highlight '(:background "#FFFF00"))
+      (volatile-highlight '(:background "#FBE448"))
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA")))
 
   (custom-theme-set-faces
@@ -69,7 +69,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(underline ((,class (:underline t))))
    `(cursor ((,class (:background "#15FF00"))))
    ;; Highlighting faces
-   `(fringe ((,class (:foreground "#808080" :background "#DDEEFF"))))
+   `(fringe ((,class (:foreground "#56B556" :background "#E2F9E2"))))
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ;; used by Org-mode for highlighting matched entries and keywords
@@ -96,21 +96,21 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(warning ((,class (:foreground "orange"))))
    `(success ((,class (:foreground "green"))))
    ;; Font lock faces
-   `(font-lock-builtin-face ((,class (:foreground "#FF5803"))))
-   `(font-lock-comment-delimiter-face ((,class (:foreground "#EE0000"))))
-   `(font-lock-comment-face ((,class (:slant italic :foreground "#EE0000"))))
-   `(font-lock-constant-face ((,class (:foreground "#009944"))))
-   `(font-lock-doc-face ((,class (:foreground "#BA2121"))))
-   `(font-lock-doc-string-face ((,class (:foreground "#63639C"))))
-   `(font-lock-function-name-face ((,class (:foreground "#1A50B8"))))
-   `(font-lock-keyword-face ((,class (:bold t :foreground "#A535AE"))))
+   `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
+   `(font-lock-comment-delimiter-face ((,class (:foreground "#008200"))))
+   `(font-lock-comment-face ((,class (:slant italic :foreground "#008200"))))
+   `(font-lock-constant-face ((,class (:foreground "#CE0000"))))
+   `(font-lock-doc-face ((,class (:foreground "#008000"))))
+   `(font-lock-doc-string-face ((,class (:foreground "#008000"))))
+   `(font-lock-function-name-face ((,class (:foreground "#002D7A"))))
+   `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ;; #3654DC
    `(font-lock-preprocessor-face ((,class (:bold t :foreground "#A3A3A3"))))
    `(font-lock-reference-face ((,class (:foreground "dark cyan"))))
    `(font-lock-regexp-grouping-backslash ((,class (:bold t :weight bold))))
    `(font-lock-regexp-grouping-construct ((,class (:bold t :weight bold))))
    `(font-lock-string-face ((,class ,string)))
-   `(font-lock-type-face ((,class (:foreground "#1B781F"))))
-   `(font-lock-variable-name-face ((,class (:foreground "#2E91AF"))))
+   `(font-lock-type-face ((,class (:foreground "#808080")))) ;; XXX
+   `(font-lock-variable-name-face ((,class (:foreground "#BA36A5")))) ;; 800080
    `(font-lock-warning-face ((,class (:weight bold :foreground "red"))))
    ;; Button and link faces
    `(link ((,class (:foreground "#8ac6f2" :underline t))))
@@ -359,7 +359,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(helm-match ((,class ,match)))
    `(helm-selection ((,class ,highlight-line)))
    `(helm-selection-line ((,class ,volatile-highlight)))
-   `(helm-source-header ((,class (:family "Sans Serif" :height 1.3 :weight bold :foreground "white" :background "#666699"))))
+   `(helm-source-header ((,class (:family "Sans Serif" :height 1.3 :weight bold :foreground "white" :background "#2F69BF"))))
    `(helm-visible-mark ((,class ,marked-line)))
    `(helm-w3m-bookmarks-face ((,class (:underline t :foreground "cyan1"))))
    `(highlight-symbol-face ((,class (:background "#FFFFA0"))))
@@ -381,7 +381,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(info-xref ((,class (:weight bold :underline t :foreground "blue")))) ;; unvisited cross-references
    `(info-xref-visited ((,class (:weight bold :foreground "magenta4")))) ;; previously visited cross-references
    `(light-symbol-face ((,class (:background "#FFFFA0"))))
-   `(linum ((,class (:foreground "#AFB7BA" :background "#DDEEFF"))))
+   `(linum ((,class (:foreground "#AFAFAF" :background "white"))))
    `(log-view-file ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
    `(lui-button-face ((,class ,link)))
    `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ;; my nickname
@@ -503,7 +503,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(paren-face-no-match ((,class (:weight bold :foreground "white" :background "purple"))))
    `(pp^L-highlight ((,class (:strike-through t))))
    `(recover-this-file ((,class (:background "white" :background "#FF3F3F"))))
-   `(sh-heredoc ((,class (:foreground "blue" :background "#FBF9EA"))))
+   `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
    `(shadow ((,class ,shadow)))
    `(shell-option-face ((,class (:foreground "forest green"))))
    `(shell-output-2-face ((,class (:foreground "blue"))))
