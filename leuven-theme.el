@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-05-17 Fri 13:48>
+;; Time-stamp: <2013-05-17 Fri 16:22>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -99,7 +99,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
    `(font-lock-comment-delimiter-face ((,class (:foreground "#008200"))))
    `(font-lock-comment-face ((,class (:slant italic :foreground "#008200"))))
-   `(font-lock-constant-face ((,class (:foreground "#7136AC"))))
+   `(font-lock-constant-face ((,class (:foreground "#6434A3"))))
    `(font-lock-doc-face ((,class (:foreground "#008000"))))
    `(font-lock-doc-string-face ((,class (:foreground "#008000"))))
    `(font-lock-function-name-face ((,class (:foreground "#006699"))))
@@ -502,6 +502,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(pp^L-highlight ((,class (:strike-through t))))
    `(recover-this-file ((,class (:background "white" :background "#FF3F3F"))))
    `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
+   `(sh-quoted-exec ((,class (:foreground "#FF1493"))))
    `(shadow ((,class ,shadow)))
    `(shell-option-face ((,class (:foreground "forest green"))))
    `(shell-output-2-face ((,class (:foreground "blue"))))
