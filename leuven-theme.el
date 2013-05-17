@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-05-17 Fri 10:52>
+;; Time-stamp: <2013-05-17 Fri 11:25>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -99,15 +99,12 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
    `(font-lock-comment-delimiter-face ((,class (:foreground "#008200"))))
    `(font-lock-comment-face ((,class (:slant italic :foreground "#008200"))))
-   `(font-lock-constant-face ((,class (:foreground "#CE0000"))))
+   `(font-lock-constant-face ((,class (:foreground "#7136AC"))))
    `(font-lock-doc-face ((,class (:foreground "#008000"))))
    `(font-lock-doc-string-face ((,class (:foreground "#008000"))))
    `(font-lock-function-name-face ((,class (:foreground "#002D7A"))))
    `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ;; #3654DC
-   `(font-lock-preprocessor-face ((,class (:bold t :foreground "#A3A3A3"))))
-   `(font-lock-reference-face ((,class (:foreground "dark cyan"))))
-   `(font-lock-regexp-grouping-backslash ((,class (:bold t :weight bold))))
-   `(font-lock-regexp-grouping-construct ((,class (:bold t :weight bold))))
+   `(font-lock-preprocessor-face ((,class (:foreground "#808080"))))
    `(font-lock-string-face ((,class ,string)))
    `(font-lock-type-face ((,class (:foreground "#808080")))) ;; XXX
    `(font-lock-variable-name-face ((,class (:foreground "#BA36A5")))) ;; 800080
@@ -259,6 +256,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(custom-themed ((,class (:background "blue1" :foreground "white"))))
    `(custom-variable-button ((,class (:weight bold :underline t))))
    `(custom-variable-tag ((,class (:bold t :family "Sans Serif" :foreground "blue1" :weight bold :height 1.2))))
+   `(custom-visibility ((,class ,link)))
    `(diary-face ((,class (:foreground "#87C9FC"))))
    `(dircolors-face-asm ((,class (:foreground "black"))))
    `(dircolors-face-backup ((,class (:foreground "black"))))
