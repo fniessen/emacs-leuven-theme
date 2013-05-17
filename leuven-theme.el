@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-05-17 Fri 11:25>
+;; Time-stamp: <2013-05-17 Fri 11:53>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -102,7 +102,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-lock-constant-face ((,class (:foreground "#7136AC"))))
    `(font-lock-doc-face ((,class (:foreground "#008000"))))
    `(font-lock-doc-string-face ((,class (:foreground "#008000"))))
-   `(font-lock-function-name-face ((,class (:foreground "#002D7A"))))
+   `(font-lock-function-name-face ((,class (:foreground "#006699"))))
    `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ;; #3654DC
    `(font-lock-preprocessor-face ((,class (:foreground "#808080"))))
    `(font-lock-string-face ((,class ,string)))
