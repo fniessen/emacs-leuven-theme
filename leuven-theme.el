@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-05-17 Fri 16:22>
+;; Time-stamp: <2013-05-21 Tue 10:25>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -161,9 +161,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diff-header ((,class (:foreground "#999999" :background "#EAF2F5"))))
    `(diff-hunk-header ((,class ,diff-hunk-header)))
    `(diff-index ((,class (:foreground "#4183C4" :background "#EAF2F5")))) ;; my foreground is NOT applied!?
-   `(diff-indicator-added ((,class (:background "#AAFFAA"))))
-   `(diff-indicator-changed ((,class (:background "#AAAAFF"))))
-   `(diff-indicator-removed ((,class (:background "#FFAAAA"))))
+   `(diff-indicator-added ((,class (:foreground "#008000" :background "#AAFFAA"))))
+   `(diff-indicator-changed ((,class (:foreground "black" :background "#AAAAFF"))))
+   `(diff-indicator-removed ((,class (:foreground "#A60000" :background "#FFAAAA"))))
    `(diff-refine-change ((,class (:background "#DDDDFF"))))
    `(diff-removed ((,class ,diff-removed)))
    ;; SMerge
@@ -298,16 +298,17 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diredp-read-priv ((,class (:background "#0A99FF"))))
    `(diredp-write-priv ((,class (:foreground "white" :background "#FF4040"))))
    `(file-name-shadow ((,class ,shadow)))
-   `(font-latex-bold-face ((,class (:weight bold :foreground "medium sea green"))))
+   `(font-latex-bold-face ((,class (:weight bold :foreground "black"))))
+   `(font-latex-italic-face ((,class (:slant italic :foreground "#1A1A1A"))))
    `(font-latex-math-face ((,class (:foreground "blue"))))
    `(font-latex-sectioning-1-face ((,class (:family "Sans Serif" :height 2.7 :weight bold :foreground "cornflower blue"))))
    `(font-latex-sectioning-2-face ((,class ,ol1)))
    `(font-latex-sectioning-3-face ((,class ,ol2)))
    `(font-latex-sectioning-4-face ((,class ,ol3)))
    `(font-latex-sectioning-5-face ((,class ,ol4)))
-   `(font-latex-sedate-face ((,class (:foreground "#FF5803"))))
+   `(font-latex-sedate-face ((,class (:foreground "#FF5500"))))
    `(font-latex-string-face ((,class (:bold t :foreground "#0066FF"))))
-   `(font-latex-verbatim-face ((,class (:foreground "tan1"))))
+   `(font-latex-verbatim-face ((,class (:foreground "#000088" :background "#FFFFE0" :inherit nil))))
    `(gnus-cite-attribution-face ((,class (:foreground "#5050B0"))))
    `(gnus-cite-face-1 ((,class (:foreground "#5050B0"))))
    `(gnus-cite-face-10 ((,class (:foreground "#990000"))))
