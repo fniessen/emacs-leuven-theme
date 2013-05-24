@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-05-24 Fri 10:13>
+;; Time-stamp: <2013-05-24 Fri 10:33>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -135,7 +135,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-group-mail-3 ((,class (:weight bold :foreground "black"))))
    `(gnus-group-mail-low-empty ((,class ,cancel)))
    `(gnus-group-mail-low ((,class ,cancel)))
-   `(gnus-header-content ((,class (:family "Sans Serif" :foreground "#5A5A5A"))))
+   `(gnus-header-content ((,class (:family "Sans Serif" :foreground "#3399CC"))))
    `(gnus-header-from ((,class (:family "Sans Serif" :foreground "blue"))))
    `(gnus-header-subject ((,class ,subject)))
    `(gnus-header-name ((,class ,mail-header-name)))
@@ -149,7 +149,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(message-cited-text ((,class (:foreground "#5050B0"))))
    `(message-separator ((,class (:family "Sans Serif" :weight bold :foreground "red"))))
    `(message-header-newsgroups ((,class (:family "Sans Serif" :foreground "#3399CC"))))
-   `(message-header-xheader ((,class (:foreground "red"))))
+   `(message-header-xheader ((,class (:family "Sans Serif" :foreground "#3399CC"))))
    `(message-mml ((,class (:foreground "forest green"))))
    ;; Diff
    `(diff-added ((,class ,diff-added)))
