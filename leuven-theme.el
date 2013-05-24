@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-05-21 Tue 10:25>
+;; Time-stamp: <2013-05-24 Fri 10:13>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -106,7 +106,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ;; #3654DC
    `(font-lock-preprocessor-face ((,class (:foreground "#808080"))))
    `(font-lock-string-face ((,class ,string)))
-   `(font-lock-type-face ((,class (:foreground "#808080")))) ;; XXX
+   `(font-lock-type-face ((,class (:foreground "#6D6D6D"))))
    `(font-lock-variable-name-face ((,class (:foreground "#BA36A5")))) ;; 800080
    `(font-lock-warning-face ((,class (:weight bold :foreground "red"))))
    ;; Button and link faces
@@ -135,7 +135,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-group-mail-3 ((,class (:weight bold :foreground "black"))))
    `(gnus-group-mail-low-empty ((,class ,cancel)))
    `(gnus-group-mail-low ((,class ,cancel)))
-   `(gnus-header-content ((,class (:family "Sans Serif" :foreground "#786FB4"))))
+   `(gnus-header-content ((,class (:family "Sans Serif" :foreground "#5A5A5A"))))
    `(gnus-header-from ((,class (:family "Sans Serif" :foreground "blue"))))
    `(gnus-header-subject ((,class ,subject)))
    `(gnus-header-name ((,class ,mail-header-name)))
@@ -497,9 +497,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(pabbrev-debug-display-label-face ((,class (:background "chartreuse"))))
    `(pabbrev-suggestions-face ((,class (:weight bold :foreground "white" :background "red"))))
    `(pabbrev-suggestions-label-face ((,class (:weight bold :foreground "white" :background "purple"))))
-   `(paren-face-match ((,class (:foreground "white" :background "#FF3F3F"))))
-   `(paren-face-mismatch ((,class (:weight bold :foreground "white" :background "purple"))))
-   `(paren-face-no-match ((,class (:weight bold :foreground "white" :background "purple"))))
+   `(paren-face-match ((,class (:foreground "#E2464C" :background "#FFE182"))))
+   `(paren-face-mismatch ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
+   `(paren-face-no-match ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
    `(pp^L-highlight ((,class (:strike-through t))))
    `(recover-this-file ((,class (:background "white" :background "#FF3F3F"))))
    `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
@@ -510,8 +510,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(shell-output-3-face ((,class (:foreground "purple"))))
    `(shell-output-face ((,class (:foreground "black"))))
    `(shell-prompt-face ((,class (:weight bold :foreground "yellow"))))
-   `(show-paren-match ((,class (:foreground "white" :background "#FF3F3F"))))
-   `(show-paren-mismatch ((,class (:weight bold :foreground "white" :background "purple"))))
+   `(show-paren-match ((,class (:foreground "#E2464C" :background "#FFE182"))))
+   `(show-paren-mismatch ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
    `(speedbar-button-face ((,class (:foreground "green4"))))
    `(speedbar-directory-face ((,class (:foreground "blue4"))))
    `(speedbar-file-face ((,class (:foreground "cyan4"))))
