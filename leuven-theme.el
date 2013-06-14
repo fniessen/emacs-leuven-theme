@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-05-24 Fri 10:33>
+;; Time-stamp: <2013-06-10 Mon 09:30>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -31,7 +31,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       ;; Leuven generic colors
       (cancel '(:slant italic :strike-through t :foreground "gray55"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
-      (code-block '(:foreground "#000088" :background "#FBF9EA"))
+      (code-block '(:foreground "#000088" :background "#FFFFE0"))
       (code-inline '(:box (:line-width 1 :color "#DDDDDD") :foreground "#000088" :background "#FFFFE0"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (diff-added '(:foreground "#008000" :background "#DDFFDD"))
@@ -54,7 +54,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
       (region '(:background "#CCDEED"))
       (shadow '(:foreground "#7F7F7F"))
-      (string '(:foreground "#FF5500")) ;; D0372D
+      (string '(:foreground "#FF4700")) ;; #D0372D
       (subject '(:weight bold :foreground "#CF5D60"))
       (symlink '(:foreground "deep sky blue"))
       (volatile-highlight '(:background "#FBE448"))
@@ -106,12 +106,12 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ;; #3654DC
    `(font-lock-preprocessor-face ((,class (:foreground "#808080"))))
    `(font-lock-string-face ((,class ,string)))
-   `(font-lock-type-face ((,class (:foreground "#6D6D6D"))))
-   `(font-lock-variable-name-face ((,class (:foreground "#BA36A5")))) ;; 800080
+   `(font-lock-type-face ((,class (:foreground "#666666"))))
+   `(font-lock-variable-name-face ((,class (:foreground "#BA36A5")))) ;; #800080
    `(font-lock-warning-face ((,class (:weight bold :foreground "red"))))
    ;; Button and link faces
-   `(link ((,class (:foreground "#8ac6f2" :underline t))))
-   `(link-visited ((,class (:foreground "#e5786d" :underline t))))
+   `(link ((,class (:foreground "#8AC6F2" :underline t))))
+   `(link-visited ((,class (:foreground "#E5786D" :underline t))))
    `(button ((,class (:underline t :foreground "#006DAF"))))
    `(header-line ((,class (:weight bold :underline "black" :overline "black" :foreground "black" :background "#FFFF88"))))
    ;; Gnus faces
@@ -502,6 +502,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(paren-face-no-match ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
    `(pp^L-highlight ((,class (:strike-through t))))
    `(recover-this-file ((,class (:background "white" :background "#FF3F3F"))))
+   `(rng-error ((,class (:weight bold :foreground "red" :background "#FBE3E4"))))
    `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
    `(sh-quoted-exec ((,class (:foreground "#FF1493"))))
    `(shadow ((,class ,shadow)))

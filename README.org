@@ -1,9 +1,11 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2013-04-16 Tue 10:13>
+#+Time-stamp: <2013-06-10 Mon 09:41>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en_US
+
+# https://github.com/juba/color-theme-tangotango/blob/master/README.org
 
 * Custom leuven-theme
 
