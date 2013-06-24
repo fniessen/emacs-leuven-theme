@@ -1,7 +1,7 @@
 ;;; leuven-theme.el --- Emacs custom theme
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-06-10 Mon 09:30>
+;; Time-stamp: <2013-06-24 Mon 23:28>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 
@@ -368,6 +368,11 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(html-helper-italic-face ((,class (:slant italic :foreground "black"))))
    `(html-helper-underline-face ((,class (:underline t :foreground "black"))))
    `(html-tag-face ((,class (:foreground "blue"))))
+   `(ilog-non-change-face ((,class (:height 2 :foreground "purple1"))))
+   `(ilog-change-face ((,class (:height 2 :foreground "#008200"))))
+   `(ilog-echo-face ((,class (:height 2 :foreground "red"))))
+   `(ilog-load-face ((,class (:foreground "gold"))))
+   `(ilog-message-face ((,class (:foreground "gray"))))
    `(info-file ((,class (:family "Sans Serif" :height 1.8 :weight bold :box (:line-width 1 :color "#0000CC") :foreground "cornflower blue" :background "LightSteelBlue1"))))
    `(info-header-node ((,class (:underline t :foreground "orange")))) ;; nodes in header
    `(info-header-xref ((,class (:underline t :foreground "dodger blue")))) ;; cross references in header
@@ -455,7 +460,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-headline-done ((,class (:height 1.0 :weight bold :strike-through "#BEBEBE" :foreground "#C5C5C5"))))
    `(org-hide ((,class (:foreground "#E2E2E2"))))
    `(org-inlinetask ((,class (:box (:line-width 1 :color "#EBEBEB") :foreground "#777777" :background "#FFFFD6"))))
-   `(org-latex-and-export-specials ((,class (:foreground "blue"))))
+   `(org-latex-and-related ((,class ,code-block)))
    `(org-level-1 ((,class ,ol1)))
    `(org-level-2 ((,class ,ol2)))
    `(org-level-3 ((,class ,ol3)))
