@@ -1,9 +1,11 @@
-;;; leuven-theme.el --- Emacs custom theme
+;;; leuven-theme.el --- Awesome Emacs 24 color theme on white background
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
-;; Time-stamp: <2013-06-25 Tue 11:57>
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
+;; URL: https://github.com/fniessen/emacs-leuven-theme
+;; Version: 20130628.0
+;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
 
@@ -20,6 +22,11 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
 
+;;; Commentary:
+
+;; This Org-enhancing color-theme "leuven" ROCKS!
+;; ...and not just for Org mode.
+
 ;;; Code:
 
 (deftheme leuven
@@ -35,7 +42,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (code-inline '(:box (:line-width 1 :color "#DDDDDD") :foreground "#000088" :background "#FFFFE0"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (diff-added '(:foreground "#008000" :background "#DDFFDD"))
-      (diff-hunk-header '(:box (:line-width 1 :color "#FFE0FF") :foreground "#990099" :background "#FFEEFF"))
+      (diff-hunk-header '(:foreground "#990099" :background "#FFEEFF"))
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
@@ -595,6 +602,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 (provide-theme 'leuven)
 
 ;; Local Variables:
+;; time-stamp-format: "%:y%02m%02d"
+;; time-stamp-start: "Version: "
+;; time-stamp-end: "\\.0"
 ;; no-byte-compile: t
 ;; End:
 
