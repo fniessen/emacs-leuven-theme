@@ -1,10 +1,10 @@
-;;; leuven-theme.el --- Awesome Emacs 24 color theme on white background
+;;; leuven-theme.el --- Awesome Emacs color theme on white background
 
 ;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20130701.1137
+;; Version: 20130703.1115
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -24,8 +24,14 @@
 
 ;;; Commentary:
 
-;; This Org-enhancing color-theme "leuven" ROCKS!
-;; ...and not just for Org mode.
+;; This Org-enhancing color theme "leuven" ROCKS!
+;; ... and not just for Org mode.
+;;
+;; To use it, put the following in your Emacs configuration file:
+;;
+;;   (load-theme 'leuven t)
+;;
+;; Requirements: Emacs 24.
 
 ;;; Code:
 
