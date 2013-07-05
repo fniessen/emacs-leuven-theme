@@ -1,6 +1,6 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2013-06-10 Mon 09:41>
+#+Time-stamp: <2013-07-05 Fri 10:29>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en_US
@@ -15,13 +15,16 @@ Welcome to the custom Leuven theme, an elegant color theme for light
 backgrounds, with built-in style for many components such as Org-mode, Gnus,
 Dired+ and EDiff. Make it yours!
 
+Tough Leuven-theme has been added *in 24.4*, you can get a fresh version of it,
+at any time, from MELPA or from Git.
+
 ** Screenshots
 
 Fontified source code blocks:
 
 [[./fontified-src-code-blocks.png]]
 
-** Download
+** Install the Git version
 
 Get the full Git repository at https://github.com/fniessen/emacs-leuven-theme
 using the following command:
@@ -30,16 +33,26 @@ using the following command:
 git clone git://github.com/fniessen/emacs-leuven-theme.git
 #+END_SRC
 
-** Installation
+Add the following in your =.emacs= file:
 
-- Download and install [[https://github.com/fniessen/emacs-leuven-theme][emacs-leuven-theme]]:
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'custom-theme-load-path "/path/to/emacs-leuven-theme")
+(load-theme 'leuven t)
+#+END_SRC
 
-  #+BEGIN_SRC emacs-lisp
-  (add-to-list 'custom-theme-load-path "/path/to/emacs-leuven-theme")
-  (load-theme 'leuven t)
-  #+END_SRC
+Restart Emacs.
 
-- Restart Emacs.
+** Install the ELPA package
+
+In Emacs 24.x, =M-x list-packages= is the /recommended way/ to list and install
+packages.
+
+MELPA keeps stable releases of Leuven theme. See
+http://melpa.milkbox.net/#installing for more information on how to install
+=leuven-theme=:
+
+- Just add MELPA to =package-archives=, and
+- Call =list-packages=.
 
 ** License
 
