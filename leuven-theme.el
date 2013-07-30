@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20130703.1115
+;; Version: 20130730.1458
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -175,7 +175,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-header-subject ((,class ,subject)))
    `(gnus-picon ((,class (:foreground "yellow" :background "white"))))
    `(gnus-picon-xbm ((,class (:foreground "yellow" :background "white"))))
-   `(gnus-signature ((,class (:foreground "#7F7F7F"))))
+   `(gnus-server-closed ((,class (:slant italic :foreground "blue" :background "white"))))
+   `(gnus-server-denied ((,class (:weight bold :foreground "red" :background "white"))))
+   `(gnus-server-opened ((,class (:foreground "white" :background "#83B869"))))
+   `(gnus-signature ((,class (:slant italic :foreground "#7F7F7F"))))
    `(gnus-splash ((,class (:foreground "#FF8C00"))))
    `(gnus-summary-cancelled ((,class ,cancel)))
    `(gnus-summary-high-ancient ((,class (:weight normal :foreground "#808080" :background "#FFFFE6"))))
@@ -435,6 +438,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(mm-uu-extract ((,class ,code-block)))
    `(moccur-current-line-face ((,class (:foreground "black" :background "#FFFFCC"))))
    `(moccur-face ((,class (:foreground "black" :background "#FFFF99"))))
+   `(next-error ((,class ,volatile-highlight)))
    `(nobreak-space ((,class (:background "#CCE8F6"))))
    `(nxml-attribute-local-name-face ((,class (:foreground "magenta"))))
    `(nxml-attribute-value-delimiter-face ((,class (:foreground "green4"))))
@@ -532,8 +536,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(paren-face-match ((,class (:foreground "#E2464C" :background "#FFE182"))))
    `(paren-face-mismatch ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
    `(paren-face-no-match ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
-   `(pp^L-highlight ((,class (:strike-through t))))
-   `(recover-this-file ((,class (:background "white" :background "#FF3F3F"))))
+   `(recover-this-file ((,class (:weight bold :background "#FBE3E4"))))
    `(rng-error ((,class (:weight bold :foreground "red" :background "#FBE3E4"))))
    `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
    `(sh-quoted-exec ((,class (:foreground "#FF1493"))))
