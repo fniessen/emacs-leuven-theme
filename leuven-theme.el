@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20130730.1458
+;; Version: 20130805.1630
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -68,7 +68,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
       (region '(:background "#CCDEED"))
       (shadow '(:foreground "#7F7F7F"))
-      (string '(:foreground "#FF4700")) ;; #D0372D
+      (string '(:foreground "#FF4700")) ;; #D0372D or #23238E
       (subject '(:weight bold :foreground "#CF5D60"))
       (symlink '(:foreground "deep sky blue"))
       (volatile-highlight '(:background "#FBE448"))
@@ -115,8 +115,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 
    ;; Font lock faces
    `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
-   `(font-lock-comment-delimiter-face ((,class (:foreground "#008200"))))
-   `(font-lock-comment-face ((,class (:slant italic :foreground "#008200"))))
+   `(font-lock-comment-delimiter-face ((,class (:foreground "#008200")))) ;; #696969
+   `(font-lock-comment-face ((,class (:slant italic :foreground "#008200")))) ;; #696969
    `(font-lock-constant-face ((,class (:foreground "#6434A3"))))
    `(font-lock-doc-face ((,class (:foreground "#008000"))))
    `(font-lock-doc-string-face ((,class (:foreground "#008000"))))
@@ -356,7 +356,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diredp-file-name ((,class (:foreground "black"))))
    `(diredp-file-suffix ((,class (:foreground "#008000"))))
    `(diredp-flag-mark-line ((,class ,marked-line)))
-   `(diredp-ignored-file-name ((,class (:strike-through t :foreground "red"))))
+   `(diredp-ignored-file-name ((,class ,shadow)))
    `(diredp-read-priv ((,class (:background "#0A99FF"))))
    `(diredp-write-priv ((,class (:foreground "white" :background "#FF4040"))))
    `(file-name-shadow ((,class ,shadow)))
@@ -536,7 +536,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(paren-face-match ((,class (:foreground "#E2464C" :background "#FFE182"))))
    `(paren-face-mismatch ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
    `(paren-face-no-match ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
-   `(recover-this-file ((,class (:weight bold :background "#FBE3E4"))))
+   `(recover-this-file ((,class (:weight bold :background "#FF3F3F"))))
    `(rng-error ((,class (:weight bold :foreground "red" :background "#FBE3E4"))))
    `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
    `(sh-quoted-exec ((,class (:foreground "#FF1493"))))
@@ -588,7 +588,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(w3m-anchor ((,class ,link)))
    `(w3m-arrived-anchor ((,class (:foreground "purple1"))))
    `(w3m-bitmap-image-face ((,class (:foreground "gray4" :background "green"))))
-   `(w3m-bold ((,class (:weight bold :foreground "medium sea green"))))
+   `(w3m-bold ((,class (:weight bold :foreground "black"))))
    `(w3m-current-anchor ((,class (:weight bold :underline t :foreground "blue"))))
    `(w3m-form ((,class (:underline t :foreground "tan1"))))
    `(w3m-form-button-face ((,class (:weight bold :underline t :foreground "gray4" :background "light grey"))))
