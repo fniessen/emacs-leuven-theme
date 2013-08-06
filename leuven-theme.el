@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20130805.1630
+;; Version: 20130806.2208
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -53,7 +53,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:background "#CCDEED"))
+      (highlight-line '(:background "#E7EDF2")) ;; #F5F5F5 or #CCDEED
       (link '(:underline t :foreground "#006DAF"))
       (mail-header-name '(:weight bold :foreground "black"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
@@ -66,7 +66,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC"))
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
-      (region '(:background "#CCDEED"))
+      (region '(:background "#CCCCCC"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#FF4700")) ;; #D0372D or #23238E
       (subject '(:weight bold :foreground "#CF5D60"))
@@ -546,7 +546,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(shell-output-3-face ((,class (:foreground "purple"))))
    `(shell-output-face ((,class (:foreground "black"))))
    `(shell-prompt-face ((,class (:weight bold :foreground "yellow"))))
-   `(show-paren-match ((,class (:foreground "#E2464C" :background "#FFE182"))))
+   `(show-paren-match ((,class (:foreground "#E2464C" :background "#FFFF00"))))
    `(show-paren-mismatch ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
    `(speedbar-button-face ((,class (:foreground "green4"))))
    `(speedbar-directory-face ((,class (:foreground "blue4"))))
