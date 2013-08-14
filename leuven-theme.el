@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20130806.2219
+;; Version: 20130813.1542
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -66,7 +66,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC"))
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
-      (region '(:background "#CCCCCC"))
+      (region '(:background "#ADD6FF")) ;; #CCCCCC
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#FF4700")) ;; #D0372D or #23238E
       (subject '(:weight bold :foreground "#CF5D60"))
@@ -395,6 +395,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(helm-w3m-bookmarks-face ((,class (:underline t :foreground "cyan1"))))
    `(highlight-symbol-face ((,class (:background "#FFFFA0"))))
    `(hl-line ((,class ,highlight-line)))
+   `(hl-tags-face ((,class (:background "#FEF7C8"))))
    `(holiday-face ((,class (:foreground "#777777" :background "#E4EBFE"))))
    `(html-helper-bold-face ((,class (:weight bold :foreground "black"))))
    `(html-helper-italic-face ((,class (:slant italic :foreground "black"))))
