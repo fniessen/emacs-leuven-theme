@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20130918.1010
+;; Version: 20131001.1503
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -110,7 +110,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(minibuffer-noticeable-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(escape-glyph ((,class (:foreground "#008ED1"))))
    `(error ((,class (:foreground "red"))))
-   `(warning ((,class (:foreground "orange"))))
+   `(warning ((,class (:weight bold :foreground "orange"))))
    `(success ((,class (:foreground "green"))))
 
    ;; Font lock faces
@@ -377,6 +377,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(git-commit-comment-face ((,class (:slant italic :foreground "#696969"))))
    `(helm-action ((,class (:foreground "#335EA8"))))
    `(helm-bookmarks-su-face ((,class (:foreground "red"))))
+   `(helm-buffer-process ((,class (:foreground "#008200"))))
    `(helm-candidate-number ((,class (:foreground "black" :background "#FFFF66"))))
    `(helm-dir-heading ((,class (:foreground "blue" :background "pink"))))
    `(helm-dir-priv ((,class (:foreground "dark red" :background "light grey"))))
