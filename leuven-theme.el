@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20131001.1503
+;; Version: 20131108.1750
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -289,8 +289,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(circe-originator-face ((,class (:foreground "blue"))))
    `(circe-prompt-face ((,class (:foreground "red"))))
    `(circe-server-face ((,class (:foreground "#99CAE5"))))
-   `(comint-highlight-input ((,class ,code-block)))
-   `(comint-highlight-prompt ((,class (:foreground "#008ED1" :background "#EAEAFF"))))
+   `(comint-highlight-input ((,class (:weight bold))))
+   `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    `(compilation-error ((,class (:weight bold :foreground "red"))))
    `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ;; used for grep
