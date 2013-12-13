@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20131108.1750
+;; Version: 20131213.1019
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -53,7 +53,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:background "#FEFCAE")) ;; #F5F5F5 or #CCDEED
+      (highlight-line '(:background "#FEFCAE")) ; #F5F5F5 or #CCDEED
       (link '(:underline t :foreground "#006DAF"))
       (mail-header-name '(:weight bold :foreground "black"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
@@ -66,9 +66,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC"))
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
-      (region '(:background "#ADD6FF")) ;; #CCCCCC
+      (region '(:background "#ADD6FF")) ; #CCCCCC
       (shadow '(:foreground "#7F7F7F"))
-      (string '(:foreground "#FF4700")) ;; #D0372D or #23238E
+      (string '(:foreground "#036A07")) ; #D0372D or #23238E or #20590C
       (subject '(:weight bold :foreground "#CF5D60"))
       (symlink '(:foreground "deep sky blue"))
       (volatile-highlight '(:background "#FBE448"))
@@ -84,10 +84,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(cursor ((,class (:background "#15FF00"))))
 
    ;; Highlighting faces
-   `(fringe ((,class (:foreground "#56B556" :background "#E2F9E2"))))
+   `(fringe ((,class (:foreground "#F7A421" :background "#F5F5F5"))))
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
-   `(secondary-selection ((,class ,match))) ;; used by Org-mode for highlighting matched entries and keywords
+   `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
    `(isearch ((,class (:weight bold :foreground "#00AA00" :background "#99FF99"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:weight bold :foreground "#990099" :background "#FF66FF"))))
@@ -115,19 +115,19 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 
    ;; Font lock faces
    `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
-   `(font-lock-comment-delimiter-face ((,class (:foreground "#008200")))) ;; #696969
-   `(font-lock-comment-face ((,class (:slant italic :foreground "#008200")))) ;; #696969
-   `(font-lock-constant-face ((,class (:foreground "#6434A3"))))
+   `(font-lock-comment-delimiter-face ((,class (:foreground "#4C886B")))) ; #696969
+   `(font-lock-comment-face ((,class (:slant italic :foreground "#4C886B")))) ; #696969
+   `(font-lock-constant-face ((,class (:foreground "#D0372D"))))
    `(font-lock-doc-face ((,class (:foreground "#008000"))))
    `(font-lock-doc-string-face ((,class (:foreground "#008000"))))
-   `(font-lock-function-name-face ((,class (:foreground "#006699"))))
-   `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ;; #3654DC
+   `(font-lock-function-name-face ((,class (:weight normal :foreground "#006699"))))
+   `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ; #3654DC
    `(font-lock-preprocessor-face ((,class (:foreground "#808080"))))
    `(font-lock-regexp-grouping-backslash ((,class (:weight bold :inherit nil))))
    `(font-lock-regexp-grouping-construct ((,class (:weight bold :inherit nil))))
    `(font-lock-string-face ((,class ,string)))
-   `(font-lock-type-face ((,class (:foreground "#666666"))))
-   `(font-lock-variable-name-face ((,class (:foreground "#BA36A5")))) ;; #800080
+   `(font-lock-type-face ((,class (:weight normal :foreground "#6434A3"))))
+   `(font-lock-variable-name-face ((,class (:weight normal :foreground "#BA36A5")))) ; #800080
    `(font-lock-warning-face ((,class (:weight bold :foreground "red"))))
 
    ;; Button and link faces
@@ -219,7 +219,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diff-file2-hunk-header ((,class (:foreground "#2B7E2A" :background "#EAF2F5"))))
    `(diff-header ((,class (:foreground "#999999" :background "#EAF2F5"))))
    `(diff-hunk-header ((,class ,diff-hunk-header)))
-   `(diff-index ((,class (:foreground "#4183C4" :background "#EAF2F5")))) ;; my foreground is NOT applied!?
+   `(diff-index ((,class (:foreground "#4183C4" :background "#EAF2F5")))) ; my foreground is NOT applied!?
    `(diff-indicator-added ((,class (:foreground "#008000" :background "#AAFFAA"))))
    `(diff-indicator-changed ((,class (:foreground "black" :background "#AAAAFF"))))
    `(diff-indicator-removed ((,class (:foreground "#A60000" :background "#FFAAAA"))))
@@ -283,17 +283,17 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(cfw:face-toolbar-button-on ((,class (:foreground "#5E5E5E" :background "#F6F6F6"))))
    `(change-log-date-face ((,class (:foreground "purple"))))
    `(change-log-file ((,class (:weight bold :foreground "#4183C4"))))
-   `(circe-highlight-all-nicks-face ((,class (:foreground "blue" :background "#F0F0F0")))) ;; other nick names
-   `(circe-highlight-nick-face ((,class (:foreground "#009300" :background "#F0F0F0")))) ;; messages with my nick cited
+   `(circe-highlight-all-nicks-face ((,class (:foreground "blue" :background "#F0F0F0")))) ; other nick names
+   `(circe-highlight-nick-face ((,class (:foreground "#009300" :background "#F0F0F0")))) ; messages with my nick cited
    `(circe-my-message-face ((,class (:foreground "#8B8B8B" :background "#F0F0F0"))))
    `(circe-originator-face ((,class (:foreground "blue"))))
    `(circe-prompt-face ((,class (:foreground "red"))))
    `(circe-server-face ((,class (:foreground "#99CAE5"))))
-   `(comint-highlight-input ((,class (:weight bold))))
+   `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF"))))
    `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    `(compilation-error ((,class (:weight bold :foreground "red"))))
-   `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ;; used for grep
+   `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; used for grep
    `(compilation-line-number ((,class (:weight bold :foreground "#A535AE"))))
    `(compilation-warning ((,class (:weight bold :foreground "orange"))))
    `(css-property ((,class (:foreground "#00AA00"))))
@@ -410,21 +410,21 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(ilog-load-face ((,class (:foreground "#BA36A5"))))
    `(ilog-message-face ((,class (:foreground "#808080"))))
    `(info-file ((,class (:family "Sans Serif" :height 1.8 :weight bold :box (:line-width 1 :color "#0000CC") :foreground "cornflower blue" :background "LightSteelBlue1"))))
-   `(info-header-node ((,class (:foreground "orange" :underline t)))) ;; nodes in header
-   `(info-header-xref ((,class (:foreground "dodger blue" :underline t)))) ;; cross references in header
-   `(info-menu-header ((,class (:family "Sans Serif" :height 1.6 :weight bold :foreground "#00CC00" :underline t)))) ;; menu titles (headers) -- major topics
-   `(info-menu-star ((,class (:foreground "black")))) ;; every 3rd menu item
-   `(info-node ((,class (:foreground "blue" :underline t)))) ;; node names
+   `(info-header-node ((,class (:foreground "orange" :underline t)))) ; nodes in header
+   `(info-header-xref ((,class (:foreground "dodger blue" :underline t)))) ; cross references in header
+   `(info-menu-header ((,class ,ol2))) ; menu titles (headers) -- major topics
+   `(info-menu-star ((,class (:foreground "black")))) ; every 3rd menu item
+   `(info-node ((,class (:foreground "blue" :underline t)))) ; node names
    `(info-quoted-name ((,class ,code-inline)))
    `(info-string ((,class ,string)))
    `(info-title-1 ((,class ,ol1)))
-   `(info-xref ((,class (:weight bold :foreground "blue" :underline t)))) ;; unvisited cross-references
-   `(info-xref-visited ((,class (:weight bold :foreground "magenta4")))) ;; previously visited cross-references
+   `(info-xref ((,class (:foreground "#006DAF" :underline t)))) ; unvisited cross-references
+   `(info-xref-visited ((,class (:foreground "magenta4" :underline t)))) ; previously visited cross-references
    `(light-symbol-face ((,class (:background "#FFFFA0"))))
    `(linum ((,class (:foreground "#AFAFAF" :background "white"))))
    `(log-view-file ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
    `(lui-button-face ((,class ,link)))
-   `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ;; my nickname
+   `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ; my nickname
    `(lui-time-stamp-face ((,class (:foreground "purple"))))
    `(magit-branch ((,class ,vc-branch)))
    `(magit-diff-add ((,class ,diff-added)))
@@ -491,7 +491,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-document-title ((,class (:family "Sans Serif" :height 1.8 :weight bold :foreground "black"))))
    `(org-done ((,class (:weight bold :box (:line-width 1 :color "#BBBBBB") :foreground "#BBBBBB" :background "#F0F0F0"))))
    `(org-drawer ((,class (:foreground "light sky blue"))))
-   `(org-ellipsis ((,class (:box (:line-width 1 :color "#999999") :foreground "#999999" :background "#FFF8C0" :underline nil)))) ;; #FFEE62
+   `(org-ellipsis ((,class (:box (:line-width 1 :color "#999999") :foreground "#999999" :background "#FFF8C0" :underline nil)))) ; #FFEE62
    `(org-example ((,class (:foreground "blue" :background "#EAFFEA"))))
    `(org-footnote ((,class (:foreground "#008ED1" :underline t))))
    `(org-formula ((,class (:foreground "chocolate1"))))
@@ -555,6 +555,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(shell-prompt-face ((,class (:weight bold :foreground "yellow"))))
    `(show-paren-match ((,class (:foreground "#E2464C" :background "#FFFF00"))))
    `(show-paren-mismatch ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
+   `(sml-modeline-end-face ((,class (:background "#6BADF6")))) ; #335EA8
+   `(sml-modeline-vis-face ((,class (:background "#1979CA"))))
    `(speedbar-button-face ((,class (:foreground "green4"))))
    `(speedbar-directory-face ((,class (:foreground "blue4"))))
    `(speedbar-file-face ((,class (:foreground "cyan4"))))
@@ -605,7 +607,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(w3m-header-line-location-title-face ((,class (:foreground "#2C55B1" :background "#F7F7F7"))))
    `(w3m-history-current-url-face ((,class (:foreground "lemon chiffon"))))
    `(w3m-image-face ((,class (:weight bold :foreground "DarkSeaGreen2"))))
-   `(w3m-link-numbering ((,class (:foreground "#B4C7EB")))) ;; mouseless browsing
+   `(w3m-link-numbering ((,class (:foreground "#B4C7EB")))) ; mouseless browsing
    `(w3m-strike-through-face ((,class (:strike-through t))))
    `(w3m-underline-face ((,class (:underline t))))
    `(which-func ((,class (:weight bold :foreground "white"))))
