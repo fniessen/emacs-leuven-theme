@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20131213.1037
+;; Version: 20131217.1512
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -92,11 +92,11 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:weight bold :foreground "#990099" :background "#FF66FF"))))
    `(trailing-whitespace ((,class (:background "#F6EBFE"))))
+   `(whitespace-hspace ((,class (:foreground "#D2D2D2"))))
+   `(whitespace-indentation ((,class (:foreground "firebrick" :background "yellow"))))
    `(whitespace-line ((,class (:foreground "#CC0000" :background "#FFFF88"))))
    `(whitespace-tab ((,class (:foreground "lightgray" :background "beige"))))
-   `(whitespace-indentation ((,class (:foreground "firebrick" :background "yellow"))))
    `(whitespace-trailing ((,class (:weight bold :foreground "yellow" :background "red1"))))
-   `(whitespace-hspace ((,class (:background "#CCE8F6"))))
 
    ;; Mode line faces
    `(mode-line ((,class (:box (:line-width 1 :color "#1A2F54") :foreground "#85CEEB" :background "#335EA8"))))
@@ -611,11 +611,6 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(w3m-strike-through-face ((,class (:strike-through t))))
    `(w3m-underline-face ((,class (:underline t))))
    `(which-func ((,class (:weight bold :foreground "white"))))
-   `(whitespace-hspace ((,class (:background "#CCE8F6"))))
-   `(whitespace-indentation ((,class (:foreground "firebrick" :background "yellow"))))
-   `(whitespace-line ((,class (:foreground "#CC0000" :background "#FFFF88"))))
-   `(whitespace-tab ((,class (:foreground "lightgray" :background "beige"))))
-   `(whitespace-trailing ((,class (:weight bold :foreground "yellow" :background "red1"))))
    `(widget-button ((,class ,link)))
    `(widget-button-pressed ((,class (:foreground "red"))))
    `(widget-documentation ((,class (:foreground "green4"))))
