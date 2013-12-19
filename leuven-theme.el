@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20131218.1354
+;; Version: 20131219.2116
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -84,7 +84,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(cursor ((,class (:background "#15FF00"))))
 
    ;; Highlighting faces
-   `(fringe ((,class (:foreground "#F7A421" :background "#F5F5F5"))))
+   `(fringe ((,class (:foreground "#F7A421" :background "#F2F2F2"))))
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
@@ -375,7 +375,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-latex-verbatim-face ((,class (:foreground "#000088" :background "#FFFFE0" :inherit nil))))
    `(git-commit-summary-face ((,class (:foreground "#000000"))))
    `(git-commit-comment-face ((,class (:slant italic :foreground "#696969"))))
-   `(helm-action ((,class (:foreground "#335EA8"))))
+   `(helm-action ((,class (:foreground "black"))))
    `(helm-bookmarks-su-face ((,class (:foreground "red"))))
    `(helm-buffer-process ((,class (:foreground "#008200"))))
    `(helm-candidate-number ((,class (:foreground "black" :background "#FFFF66"))))
@@ -473,7 +473,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-agenda-filter-category ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-filter-tags ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-restriction-lock ((,class (:background "#E77D63"))))
-   `(org-agenda-structure ((,class (:height 1.6 :weight bold :box (:line-width 1 :color "#999999") :foreground "#666666" :background "#CCCCCC"))))
+   ;; `(org-agenda-structure ((,class (:height 1.6 :weight bold :box (:line-width 1 :color "#999999") :foreground "#666666" :background "#CCCCCC"))))
+   `(org-agenda-structure ((,class (:height 1.6 :bold nil :foreground "#999999"))))
    `(org-archived ((,class (:foreground "gray70"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
@@ -523,7 +524,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
    `(org-table ((,class (:foreground "dark green" :background "#EAFFEA"))))
-   `(org-tag ((,class (:weight normal :slant italic :foreground "#80A0BC"))))
+   `(org-tag ((,class (:weight normal :slant italic :foreground "#9A9FA4" :background "#F3F3F3"))))
    `(org-target ((,class ,link)))
    `(org-time-grid ((,class (:foreground "#CFCFCF"))))
    `(org-todo ((,class (:weight bold :box (:line-width 1 :color "#D8ABA7") :foreground "#D8ABA7" :background "#FFE6E4"))))
