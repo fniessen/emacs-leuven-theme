@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20131219.2116
+;; Version: 20131223.2015
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -46,7 +46,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (cancel '(:slant italic :strike-through t :foreground "gray55"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
       (code-block '(:foreground "#000088" :background "#FFFFE0"))
-      (code-inline '(:box (:line-width 1 :color "#DDDDDD") :foreground "#000088" :background "#FFFFE0"))
+      (code-inline '(:foreground "#007300" :background "#EBF5EB"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (diff-added '(:foreground "#008000" :background "#DDFFDD"))
       (diff-hunk-header '(:foreground "#990099" :background "#FFEEFF"))
@@ -483,7 +483,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
    `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "white" :background "#777777"))))
    `(org-clock-overlay ((,class (:foreground "white" :background "SkyBlue4"))))
-   `(org-code ((,class (:foreground "#007300" :background "#EBF5EB"))))
+   `(org-code ((,class ,code-inline)))
    `(org-column ((,class ,column)))
    `(org-column-title ((,class ,column)))
    `(org-date ((,class (:underline t :foreground "#00459E"))))
@@ -520,7 +520,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-quote ((,class (:slant italic :foreground "dim gray" :background "#FFFFE0"))))
    `(org-scheduled ((,class (:foreground "#333333"))))
    `(org-scheduled-previously ((,class (:weight bold :foreground "#373737"))))
-   `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFABE"))))
+   `(org-scheduled-today ((,class (:foreground "#4F4A3D" :background "#FFFABE"))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
    `(org-table ((,class (:foreground "dark green" :background "#EAFFEA"))))
