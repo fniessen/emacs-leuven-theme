@@ -1,10 +1,10 @@
 ;;; leuven-theme.el --- Awesome Emacs color theme on white background
 
-;; Copyright (C) 2003-2013 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2014 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20131223.2015
+;; Version: 20140108.1049
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -81,7 +81,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(bold-italic ((,class (:weight bold :slant italic :foreground "black"))))
    `(italic ((,class (:slant italic :foreground "#1A1A1A"))))
    `(underline ((,class (:underline t))))
-   `(cursor ((,class (:background "#15FF00"))))
+   `(cursor ((,class (:background "#0FB300"))))
 
    ;; Highlighting faces
    `(fringe ((,class (:foreground "#F7A421" :background "#F2F2F2"))))
