@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140108.1049
+;; Version: 20140109.1117
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -115,8 +115,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 
    ;; Font lock faces
    `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
-   `(font-lock-comment-delimiter-face ((,class (:foreground "#4C886B")))) ; #696969
-   `(font-lock-comment-face ((,class (:slant italic :foreground "#4C886B")))) ; #696969
+   `(font-lock-comment-delimiter-face ((,class (:foreground "#8D8D84")))) ; #696969
+   `(font-lock-comment-face ((,class (:slant italic :foreground "#8D8D84")))) ; #696969
    `(font-lock-constant-face ((,class (:foreground "#D0372D"))))
    `(font-lock-doc-face ((,class (:foreground "#008000"))))
    `(font-lock-doc-string-face ((,class (:foreground "#008000"))))
