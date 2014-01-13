@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140109.1117
+;; Version: 20140113.1205
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -257,6 +257,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(Info-title-2-face ((,class ,ol2)))
    `(Info-title-3-face ((,class ,ol3)))
    `(Info-title-4-face ((,class ,ol4)))
+   `(ace-jump-face-foreground ((,class (:foreground "black" :background "#FBE448"))))
    `(bbdb-company ((,class (:slant italic :foreground "steel blue"))))
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
    `(bbdb-field-value ((,class (:foreground "steel blue"))))
