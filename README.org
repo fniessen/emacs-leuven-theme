@@ -1,6 +1,6 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2014-01-14 Tue 13:48>
+#+Time-stamp: <2014-01-14 Tue 13:50>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en
@@ -76,4 +76,4 @@ Restart Emacs.
 
 ** License
 
-Copyright (C) 2003-2014 Fabrice Niessen
+Copyright (C) 2003-2014 Free Software Foundation, Inc.
