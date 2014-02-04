@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140113.1205
+;; Version: 20140204.1333
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -53,7 +53,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:background "#FEFCAE")) ; #F5F5F5 or #CCDEED
+      (highlight-line '(:background "#FFF876")) ; #F5F5F5 or #CCDEED
       (link '(:underline t :foreground "#006DAF"))
       (mail-header-name '(:weight bold :foreground "black"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
@@ -424,7 +424,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(info-xref ((,class (:underline t :foreground "#006DAF")))) ; unvisited cross-references
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
    `(light-symbol-face ((,class (:background "#FFFFA0"))))
-   `(linum ((,class (:foreground "#AFAFAF" :background "white"))))
+   `(linum ((,class (:foreground "#828282" :background "white"))))
    `(log-view-file ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
    `(lui-button-face ((,class ,link)))
    `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ; my nickname
