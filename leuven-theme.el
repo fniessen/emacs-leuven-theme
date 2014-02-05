@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140204.1333
+;; Version: 20140205.1409
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -214,10 +214,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diff-added ((,class ,diff-added)))
    `(diff-changed ((,class (:foreground "blue" :background "#DDDDFF"))))
    `(diff-context ((,class ,diff-none)))
-   `(diff-file-header ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
+   `(diff-file-header ((,class (:foreground "#A70006" :background "#FFFF80")))) ;; XXX
    `(diff-file1-hunk-header ((,class (:foreground "dark magenta" :background "#EAF2F5"))))
    `(diff-file2-hunk-header ((,class (:foreground "#2B7E2A" :background "#EAF2F5"))))
-   `(diff-header ((,class (:foreground "#999999" :background "#EAF2F5"))))
+   `(diff-header ((,class (:foreground "#A70006" :background "#FFFF80"))))
    `(diff-hunk-header ((,class ,diff-hunk-header)))
    `(diff-index ((,class (:foreground "#4183C4" :background "#EAF2F5")))) ; my foreground is NOT applied!?
    `(diff-indicator-added ((,class (:foreground "#008000" :background "#AAFFAA"))))
@@ -502,7 +502,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-headline-done ((,class (:height 1.0 :weight normal :foreground "#999999"))))
    `(org-hide ((,class (:foreground "#E2E2E2"))))
    `(org-inlinetask ((,class (:box (:line-width 1 :color "#EBEBEB") :foreground "#777777" :background "#FFFFD6"))))
-   `(org-latex-and-related ((,class ,code-block)))
+   `(org-latex-and-related ((,class (:foreground "#336699" :background "white"))))
    `(org-level-1 ((,class ,ol1)))
    `(org-level-2 ((,class ,ol2)))
    `(org-level-3 ((,class ,ol3)))
@@ -513,6 +513,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-level-8 ((,class ,ol8)))
    `(org-link ((,class ,link)))
    `(org-list-dt ((,class (:weight bold :foreground "#335EA8"))))
+   `(org-macro ((,class (:foreground "white" :background "#EDB802"))))
    `(org-meta-line ((,class (:slant normal :foreground "#008ED1" :background "#EAEAFF"))))
    `(org-mode-line-clock ((,class ,clock-line)))
    `(org-mode-line-clock-overrun ((,class (:weight bold :box (:line-width 1 :color "#335EA8") :foreground "white" :background "#FF4040"))))
