@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140205.1409
+;; Version: 20140206.1037
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -49,6 +49,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (code-inline '(:foreground "#007300" :background "#EBF5EB"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (diff-added '(:foreground "#008000" :background "#DDFFDD"))
+      (diff-header '(:foreground "#800000" :background "#FFFFAF"))
       (diff-hunk-header '(:foreground "#990099" :background "#FFEEFF"))
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
@@ -214,15 +215,16 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diff-added ((,class ,diff-added)))
    `(diff-changed ((,class (:foreground "blue" :background "#DDDDFF"))))
    `(diff-context ((,class ,diff-none)))
-   `(diff-file-header ((,class (:foreground "#A70006" :background "#FFFF80")))) ;; XXX
+   `(diff-file-header ((,class ,diff-header)))
    `(diff-file1-hunk-header ((,class (:foreground "dark magenta" :background "#EAF2F5"))))
    `(diff-file2-hunk-header ((,class (:foreground "#2B7E2A" :background "#EAF2F5"))))
-   `(diff-header ((,class (:foreground "#A70006" :background "#FFFF80"))))
+   `(diff-function ((,class (:foreground "gray"))))
+   `(diff-header ((,class ,diff-header)))
    `(diff-hunk-header ((,class ,diff-hunk-header)))
-   `(diff-index ((,class (:foreground "#4183C4" :background "#EAF2F5")))) ; my foreground is NOT applied!?
-   `(diff-indicator-added ((,class (:foreground "#008000" :background "#AAFFAA"))))
-   `(diff-indicator-changed ((,class (:foreground "black" :background "#AAAAFF"))))
-   `(diff-indicator-removed ((,class (:foreground "#A60000" :background "#FFAAAA"))))
+   `(diff-index ((,class ,diff-header)))
+   `(diff-indicator-added ((,class (:background "#AAFFAA"))))
+   `(diff-indicator-changed ((,class (:background "#8080FF"))))
+   `(diff-indicator-removed ((,class (:background "#FFBBBB"))))
    `(diff-refine-change ((,class (:background "#DDDDFF"))))
    `(diff-removed ((,class ,diff-removed)))
 
