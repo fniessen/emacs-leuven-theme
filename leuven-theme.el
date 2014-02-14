@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140206.1101
+;; Version: 20140215.0008
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -265,7 +265,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(bbdb-field-value ((,class (:foreground "steel blue"))))
    `(bbdb-name ((,class (:underline t :foreground "#FF6633"))))
    `(browse-kill-ring-separator-face ((,class (:weight bold :foreground "slate gray"))))
-   `(calendar-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFABE"))))
+   `(calendar-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(cfw:face-annotation ((,class (:foreground "green" :background "red"))))
    `(cfw:face-day-title ((,class (:foreground "#C9C9C9"))))
    `(cfw:face-default-content ((,class (:foreground "#2952A3"))))
@@ -279,8 +279,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(cfw:face-select ((,class (:foreground "#4A95EB" :background "#EDF1FA"))))
    `(cfw:face-sunday ((,class (:foreground "#4E4E4E" :background "white" :weight bold))))
    `(cfw:face-title ((,class (:height 2.0 :foreground "#676767" :weight bold :inherit variable-pitch))))
-   `(cfw:face-today ((,class (:foreground "#4F4A3D" :background "#FFFABE"))))
-   `(cfw:face-today-title ((,class (:foreground "#4A95EB" :background "#FFFABE"))))
+   `(cfw:face-today ((,class (:foreground "#4F4A3D" :background "#FFFFCC"))))
+   `(cfw:face-today-title ((,class (:foreground "#4A95EB" :background "#FFFFCC"))))
    `(cfw:face-toolbar ((,class (:background "white"))))
    `(cfw:face-toolbar-button-off ((,class (:foreground "#CFCFCF" :background "white"))))
    `(cfw:face-toolbar-button-on ((,class (:foreground "#5E5E5E" :background "#F6F6F6"))))
@@ -468,7 +468,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-agenda-column-dateline ((,class ,column)))
    `(org-agenda-current-time ((,class (:underline t :foreground "#1662AF"))))
    `(org-agenda-date ((,class (:height 1.6 :weight bold :foreground "#1662AF"))))
-   `(org-agenda-date-today ((,class (:height 1.6 :weight bold :foreground "#4F4A3D" :background "#FFFABE"))))
+   `(org-agenda-date-today ((,class (:height 1.6 :weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(org-agenda-date-weekend ((,class (:height 1.6 :weight bold :foreground "#4E4E4E"))))
    `(org-agenda-diary ((,class (:weight bold :foreground "green4" :background "light blue"))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground "gold2"))))
@@ -476,8 +476,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-agenda-filter-category ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-filter-tags ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-restriction-lock ((,class (:background "#E77D63"))))
-   ;; `(org-agenda-structure ((,class (:height 1.6 :weight bold :box (:line-width 1 :color "#999999") :foreground "#666666" :background "#CCCCCC"))))
-   `(org-agenda-structure ((,class (:height 1.6 :bold nil :foreground "#999999"))))
+   `(org-agenda-structure ((,class (:height 1.6 :weight bold :foreground "#1F8DD6"))))
    `(org-archived ((,class (:foreground "gray70"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
@@ -524,7 +523,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-quote ((,class (:slant italic :foreground "dim gray" :background "#FFFFE0"))))
    `(org-scheduled ((,class (:foreground "#333333"))))
    `(org-scheduled-previously ((,class (:weight bold :foreground "#373737"))))
-   `(org-scheduled-today ((,class (:foreground "#4F4A3D" :background "#FFFABE"))))
+   `(org-scheduled-today ((,class (:foreground "#4F4A3D" :background "#FFFFCC"))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
    `(org-table ((,class (:foreground "dark green" :background "#EAFFEA"))))
@@ -630,8 +629,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 
 (custom-theme-set-variables
  'leuven
- '(ansi-color-names-vector ["#242424" "#E5786D" "#95E454" "#CAE682"
-                            "#8AC6F2" "#333366" "#CCAA8F" "#F6F3E8"]))
+ '(ansi-color-names-vector ["black" "red3" "green3" "yellow3" "blue2" "magenta3" "cyan3" "gray90"]))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
