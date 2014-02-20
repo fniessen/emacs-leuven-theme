@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140219.2131
+;; Version: 20140220.1406
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -522,12 +522,12 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-property-value ((,class (:foreground "#00A000"))))
    `(org-quote ((,class (:slant italic :foreground "dim gray" :background "#FFFFE0"))))
    `(org-scheduled ((,class (:foreground "#333333"))))
-   `(org-scheduled-previously ((,class (:weight bold :foreground "#373737"))))
-   `(org-scheduled-today ((,class (:foreground "#4F4A3D" :background "#FFFFCC"))))
+   `(org-scheduled-previously ((,class (:foreground "#C15F4E"))))
+   `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
    `(org-table ((,class (:foreground "dark green" :background "#EAFFEA"))))
-   `(org-tag ((,class (:weight normal :slant italic :foreground "#9A9FA4" :background "#F3F3F3"))))
+   `(org-tag ((,class (:weight normal :slant italic :foreground "#9A9FA4" :background "white"))))
    `(org-target ((,class ,link)))
    `(org-time-grid ((,class (:foreground "#CFCFCF"))))
    `(org-todo ((,class (:weight bold :box (:line-width 1 :color "#D8ABA7") :foreground "#D8ABA7" :background "#FFE6E4"))))
