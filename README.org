@@ -1,6 +1,6 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2014-01-14 Tue 13:50>
+#+Time-stamp: <2014-02-24 Mon 14:57>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en
@@ -61,18 +61,32 @@ See http://melpa.milkbox.net/#installing for more information on how to install
 Get the full Git repository at https://github.com/fniessen/emacs-leuven-theme
 using the following command:
 
-#+BEGIN_SRC sh
+#+begin_src sh
 git clone git://github.com/fniessen/emacs-leuven-theme.git
-#+END_SRC
+#+end_src
 
 Add the following in your =.emacs= file:
 
-#+BEGIN_SRC emacs-lisp
+#+begin_src emacs-lisp
 (add-to-list 'custom-theme-load-path "/path/to/emacs-leuven-theme")
 (load-theme 'leuven t)                  ;; for Emacs 24+
-#+END_SRC
+#+end_src
 
 Restart Emacs.
+
+** Customize it
+
+You don't like my large Org level-1 headings (though I made them larger on
+purpose!)?
+
+You should be able to get my theme and a smaller face by using something such
+as:
+
+#+begin_src emacs-lisp
+(set-face-attribute 'org-level-1 nil :height 120)
+#+end_src
+
+That should change the font size without changing the colors.
 
 ** License
 
