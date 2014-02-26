@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140222.2057
+;; Version: 20140226.2032
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -89,9 +89,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
-   `(isearch ((,class (:weight bold :underline "#F3CC67" :background "#FEF7C1"))))
+   `(isearch ((,class (:weight bold :underline "#F3CC67" :background "#FFEDA4"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
-   `(lazy-highlight ((,class (:underline "#F3CC67" :background "#FEF7C1"))))
+   `(lazy-highlight ((,class (:underline "#F3CC67" :background "#FFEDA4"))))
    `(trailing-whitespace ((,class (:background "#F6EBFE"))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2"))))
    `(whitespace-indentation ((,class (:foreground "firebrick" :background "yellow"))))
@@ -264,6 +264,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
    `(bbdb-field-value ((,class (:foreground "steel blue"))))
    `(bbdb-name ((,class (:underline t :foreground "#FF6633"))))
+   `(bmkp-light-autonamed ((,class (:background "#C2DDFD"))))
+   `(bmkp-light-fringe-autonamed ((,class (:background "#90AFD5"))))
    `(browse-kill-ring-separator-face ((,class (:weight bold :foreground "slate gray"))))
    `(calendar-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(cfw:face-annotation ((,class (:foreground "green" :background "red"))))
