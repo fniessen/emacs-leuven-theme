@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140226.2032
+;; Version: 20140312.1532
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -266,6 +266,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(bbdb-name ((,class (:underline t :foreground "#FF6633"))))
    `(bmkp-light-autonamed ((,class (:background "#C2DDFD"))))
    `(bmkp-light-fringe-autonamed ((,class (:background "#90AFD5"))))
+   `(bmkp-light-fringe-non-autonamed ((,class (:background "#D5FFD5"))))
+   `(bmkp-light-non-autonamed ((,class (:background "#C4FFC4"))))
    `(browse-kill-ring-separator-face ((,class (:weight bold :foreground "slate gray"))))
    `(calendar-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(cfw:face-annotation ((,class (:foreground "green" :background "red"))))
@@ -444,7 +446,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(magit-item-mark ((,class ,marked-line)))
    `(magit-log-head-label ((,class (:box (:line-width 1 :color "blue" :style nil)))))
    `(magit-log-tag-label ((,class (:box (:line-width 1 :color "#00CC00" :style nil)))))
-   `(magit-section-title ((,class (:family "Sans Serif" :height 1.8 :weight bold :foreground "cornflower blue"))))
+   `(magit-section-title ((,class (:family "Sans Serif" :height 1.8 :weight bold :foreground "cornflower blue" :inherit nil))))
    `(makefile-space-face ((,class (:background "hot pink"))))
    `(makefile-targets ((,class (:weight bold :foreground "blue"))))
    `(match ((,class ,match)))
