@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140312.1532
+;; Version: 20140325.1208
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -89,7 +89,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
-   `(isearch ((,class (:weight bold :underline "#F3CC67" :background "#FFEDA4"))))
+   `(isearch ((,class (:weight bold :underline "#F3CC67" :background "#FFEDA4" :inherit nil))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:underline "#F3CC67" :background "#FFEDA4"))))
    `(trailing-whitespace ((,class (:background "#F6EBFE"))))
