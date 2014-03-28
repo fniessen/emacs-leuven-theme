@@ -1,6 +1,6 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2014-02-24 Mon 14:57>
+#+Time-stamp: <2014-03-28 Fri 09:37>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en
@@ -24,13 +24,13 @@ at any time, from [[http://melpa.milkbox.net/][MELPA]] or from [[https://github.
 
 Fontified source code blocks:
 
-[[./fontified-src-code-blocks.png]]
+[[./images/fontified-src-code-blocks.png]]
 
 *** Agenda
 
 Agenda with task list:
 
-[[./agenda-and-task-list.png]]
+[[./images/agenda-and-task-list.png]]
 
 ** Install the ELPA package
 
