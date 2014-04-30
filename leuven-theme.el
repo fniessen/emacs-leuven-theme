@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140328.0933
+;; Version: 20140430.1612
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -54,7 +54,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:background "#FFF876")) ; #F5F5F5 or #CCDEED
+      (highlight-line '(:underline nil :background "#FFFFCC")) ; #FFF876, #F5F5F5 or #CCDEED
       (link '(:underline t :foreground "#006DAF"))
       (mail-header-name '(:weight bold :foreground "black"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
@@ -70,7 +70,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (region '(:background "#ABDFFA"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#036A07")) ; #D0372D or #23238E or #20590C
-      (subject '(:weight bold :foreground "#CF5D60"))
+      (subject '(:weight bold :foreground "#FF8C00"))
       (symlink '(:foreground "deep sky blue"))
       (volatile-highlight '(:background "#FBE448"))
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA")))
@@ -89,7 +89,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
-   `(isearch ((,class (:weight bold :underline "#F3CC67" :background "#FFEDA4" :inherit nil))))
+   `(isearch ((,class (:weight bold :underline "#F3CC67" :foreground nil :background "#FFEDA4"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:underline "#F3CC67" :background "#FFEDA4"))))
    `(trailing-whitespace ((,class (:background "#F6EBFE"))))
@@ -196,7 +196,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-summary-normal-read ((,class (:foreground "#999999"))))
    `(gnus-summary-normal-ticked ((,class (:foreground "black" :background "#E7AEB0"))))
    `(gnus-summary-normal-unread ((,class (:foreground "black"))))
-   `(gnus-summary-selected ((,class (:underline t :foreground "black" :background "#FFD0D0"))))
+   `(gnus-summary-selected ((,class (:weight bold :underline t :foreground "black" :background "#9CB6D6"))))
    `(gnus-x-face ((,class (:foreground "black" :background "white"))))
 
    ;; Message faces
@@ -243,8 +243,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(ediff-odd-diff-B ((,class (:foreground "black" :background "light grey"))))
 
    ;; Flyspell
-   `(flyspell-duplicate ((,class (:underline "#008000" :inherit nil))))
-   `(flyspell-incorrect ((,class (:underline "red" :inherit nil))))
+   `(flyspell-duplicate ((,class (:underline (:style wave :color "#008000") :inherit nil))))
+   `(flyspell-incorrect ((,class (:underline (:style wave :color "red") :inherit nil))))
 
    ;; ;; Semantic faces
    ;; `(semantic-decoration-on-includes ((,class (:underline ,cham-4))))

@@ -1,6 +1,6 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2014-03-28 Fri 09:37>
+#+Time-stamp: <2014-04-23 Wed 10:49>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en
@@ -26,6 +26,14 @@ Fontified source code blocks:
 
 [[./images/fontified-src-code-blocks.png]]
 
+Note that, to get the whole heading lines fontified, you need to add the
+following line into your =.emacs= file:
+
+#+begin_src emacs-lisp
+;; fontify the whole line for headings (with a background color)
+(setq org-fontify-whole-heading-line t)
+#+end_src
+
 *** Agenda
 
 Agenda with task list:
@@ -34,15 +42,15 @@ Agenda with task list:
 
 ** Install the ELPA package
 
-In Emacs 24.x, =M-x list-packages= is the /recommended way/ to list and install
+In Emacs 24.x, ~M-x list-packages~ is the /recommended way/ to list and install
 packages.
 
 MELPA keeps stable releases of Leuven theme.
 
 See http://melpa.milkbox.net/#installing for more information on how to install
-=leuven-theme=:
+~leuven-theme~:
 
-1. Just add MELPA to =package-archives=,
+1. Just add MELPA to ~package-archives~,
 
    #+begin_src emacs-lisp
    ;; archives from which to fetch
@@ -51,10 +59,13 @@ See http://melpa.milkbox.net/#installing for more information on how to install
                  package-archives))
    #+end_src
 
-2. Call =list-packages=,
-3. Search for =leuven-theme=,
-4. Mark it for installation with =i=, and
-5. Execute the install action with =x=.
+2. Call ~list-packages~,
+
+3. Search for ~leuven-theme~,
+
+4. Mark it for installation with ~i~, and
+
+5. Execute the install action with ~x~.
 
 ** Install the Git version
 
