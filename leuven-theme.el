@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140430.1612
+;; Version: 20140512.1411
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -46,7 +46,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (cancel '(:slant italic :strike-through t :foreground "gray55"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
       (code-block '(:foreground "#000088" :background "#FFFFE0"))
-      (code-inline '(:foreground "#007300" :background "#EBF5EB"))
+      (code-inline '(:foreground "#006400"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (diff-added '(:foreground "#008000" :background "#DDFFDD"))
       (diff-header '(:foreground "#800000" :background "#FFFFAF"))
@@ -132,7 +132,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-lock-warning-face ((,class (:weight bold :foreground "red"))))
 
    ;; Button and link faces
-   `(link ((,class (:underline t :foreground "#8AC6F2"))))
+   `(link ((,class ,link)))
    `(link-visited ((,class (:underline t :foreground "#E5786D"))))
    `(button ((,class (:underline t :foreground "#006DAF"))))
    `(header-line ((,class (:weight bold :underline "black" :overline "black" :foreground "black" :background "#FFFF88"))))
@@ -476,7 +476,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-agenda-date-weekend ((,class (:height 1.6 :weight bold :foreground "#4E4E4E"))))
    `(org-agenda-diary ((,class (:weight bold :foreground "green4" :background "light blue"))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground "gold2"))))
-   `(org-agenda-done ((,class (:foreground "#555555" :background "#EEEEEE"))))
+   `(org-agenda-done ((,class (:foreground "#555555"))))
    `(org-agenda-filter-category ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-filter-tags ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-restriction-lock ((,class (:background "#E77D63"))))
