@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140512.1411
+;; Version: 20140515.0940
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -243,8 +243,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(ediff-odd-diff-B ((,class (:foreground "black" :background "light grey"))))
 
    ;; Flyspell
-   `(flyspell-duplicate ((,class (:underline (:style wave :color "#008000") :inherit nil))))
-   `(flyspell-incorrect ((,class (:underline (:style wave :color "red") :inherit nil))))
+   ;; `(flyspell-duplicate ((,class (:underline (:style wave :color "#008000") :inherit nil))))
+   `(flyspell-duplicate ((,class (:underline "#008000" :inherit nil))))
+   ;; `(flyspell-incorrect ((,class (:underline (:style wave :color "red") :inherit nil))))
+   `(flyspell-incorrect ((,class (:underline "red" :inherit nil))))
 
    ;; ;; Semantic faces
    ;; `(semantic-decoration-on-includes ((,class (:underline ,cham-4))))
