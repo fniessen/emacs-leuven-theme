@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140520.1137
+;; Version: 20140520.1442
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -71,7 +71,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (paren-unmatched '(:underline "red" :background "#FFDCDC"))
       (region '(:background "#ABDFFA"))
       (shadow '(:foreground "#7F7F7F"))
-      (string '(:foreground "#036A07")) ; #D0372D or #23238E or #20590C
+      (string '(:foreground "#008000")) ; or #D0372D
       (subject '(:weight bold :foreground "#FF8C00"))
       (symlink '(:foreground "deep sky blue"))
       (volatile-highlight '(:background "#FFFFD7"))
@@ -121,7 +121,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-lock-comment-delimiter-face ((,class (:foreground "#8D8D84")))) ; #696969
    `(font-lock-comment-face ((,class (:slant italic :foreground "#8D8D84")))) ; #696969
    `(font-lock-constant-face ((,class (:foreground "#D0372D"))))
-   `(font-lock-doc-face ((,class (:foreground "#008000"))))
+   `(font-lock-doc-face ((,class (:foreground "#036A07"))))
    `(font-lock-doc-string-face ((,class (:foreground "#008000"))))
    `(font-lock-function-name-face ((,class (:weight normal :foreground "#006699"))))
    `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ; #3654DC
