@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140515.0940
+;; Version: 20140520.1137
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -67,12 +67,14 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC"))
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
+      (paren-matched '(:background "#99CCFF"))
+      (paren-unmatched '(:underline "red" :background "#FFDCDC"))
       (region '(:background "#ABDFFA"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#036A07")) ; #D0372D or #23238E or #20590C
       (subject '(:weight bold :foreground "#FF8C00"))
       (symlink '(:foreground "deep sky blue"))
-      (volatile-highlight '(:background "#FBE448"))
+      (volatile-highlight '(:background "#FFFFD7"))
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA")))
 
   (custom-theme-set-faces
@@ -552,9 +554,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(pabbrev-debug-display-label-face ((,class (:background "chartreuse"))))
    `(pabbrev-suggestions-face ((,class (:weight bold :foreground "white" :background "red"))))
    `(pabbrev-suggestions-label-face ((,class (:weight bold :foreground "white" :background "purple"))))
-   `(paren-face-match ((,class (:foreground "#E2464C" :background "#FFE182"))))
-   `(paren-face-mismatch ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
-   `(paren-face-no-match ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
+   `(paren-face-match ((,class ,paren-matched)))
+   `(paren-face-mismatch ((,class ,paren-unmatched)))
+   `(paren-face-no-match ((,class ,paren-unmatched)))
    `(recover-this-file ((,class (:weight bold :background "#FF3F3F"))))
    `(rng-error ((,class (:weight bold :foreground "red" :background "#FBE3E4"))))
    `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
@@ -565,8 +567,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(shell-output-3-face ((,class (:foreground "purple"))))
    `(shell-output-face ((,class (:foreground "black"))))
    `(shell-prompt-face ((,class (:weight bold :foreground "yellow"))))
-   `(show-paren-match ((,class (:foreground "#E2464C" :background "#FFFF00"))))
-   `(show-paren-mismatch ((,class (:weight bold :foreground "white" :background "#FF3F3F"))))
+   `(show-paren-match ((,class ,paren-matched)))
+   `(show-paren-mismatch ((,class ,paren-unmatched)))
    `(sml-modeline-end-face ((,class (:background "#6BADF6")))) ; #335EA8
    `(sml-modeline-vis-face ((,class (:background "#1979CA"))))
    `(speedbar-button-face ((,class (:foreground "green4"))))
