@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140528.1223
+;; Version: 20140703.1208
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -24,7 +24,7 @@
 
 ;;; Commentary:
 
-;; This Org-enhancing color theme "leuven" ROCKS!
+;; This elegant Org-enhancing color theme "leuven" ROCKS!
 ;; ... and not just for Org mode.
 ;;
 ;; To use it, put the following in your Emacs configuration file:
@@ -68,7 +68,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
       (paren-matched '(:background "#99CCFF"))
-      (paren-unmatched '(:underline "red" :background "#FFDCDC"))
+      (paren-unmatched '(:underline "red" :foreground nil :background "#FFDCDC"))
       (region '(:background "#ABDFFA"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#008000")) ; or #D0372D
@@ -91,7 +91,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
-   `(isearch ((,class (:weight bold :underline "#F3CC67" :foreground nil :background "#FFEDA4"))))
+   `(isearch ((,class (:weight bold :underline "#FF961D" :foreground nil :background "#FDBD33"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:underline "#F3CC67" :background "#FFEDA4"))))
    `(trailing-whitespace ((,class (:background "#F6EBFE"))))
@@ -122,7 +122,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-lock-comment-face ((,class (:slant italic :foreground "#8D8D84")))) ; #696969
    `(font-lock-constant-face ((,class (:foreground "#D0372D"))))
    `(font-lock-doc-face ((,class (:foreground "#036A07"))))
-   `(font-lock-doc-string-face ((,class (:foreground "#008000"))))
+   ;; `(font-lock-doc-string-face ((,class (:foreground "#008000")))) ; XEmacs only, but is used for HTML exports from org2html (and not interactively)
    `(font-lock-function-name-face ((,class (:weight normal :foreground "#006699"))))
    `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ; #3654DC
    `(font-lock-preprocessor-face ((,class (:foreground "#808080"))))
@@ -497,7 +497,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(org-column ((,class ,column)))
    `(org-column-title ((,class ,column)))
    `(org-date ((,class (:underline t :foreground "#00459E"))))
-   `(org-default ((,class (:foreground "#333333"))))
+   `(org-default ((,class (:foreground "#333333" :background "#FFFFFF"))))
    `(org-dim ((,class (:foreground "#AAAAAA"))))
    `(org-document-info ((,class (:foreground "#484848"))))
    `(org-document-info-keyword ((,class (:foreground "#008ED1" :background "#EAEAFF"))))
