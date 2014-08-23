@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140804.0949
+;; Version: 20140823.2050
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -301,7 +301,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(circe-prompt-face ((,class (:foreground "red"))))
    `(circe-server-face ((,class (:foreground "#99CAE5"))))
    `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF"))))
-   `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
+   ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
+   `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF"))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    `(compilation-error ((,class (:weight bold :foreground "red"))))
    `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; used for grep
@@ -338,19 +339,19 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(dircolors-face-compress ((,class (:foreground "red"))))
    `(dircolors-face-dir ((,class ,directory)))
    `(dircolors-face-doc ((,class (:foreground "black"))))
-   `(dircolors-face-dos ((,class (:foreground "green3"))))
+   `(dircolors-face-dos ((,class (:foreground "ForestGreen"))))
    `(dircolors-face-emacs ((,class (:foreground "black"))))
-   `(dircolors-face-exec ((,class (:foreground "green3"))))
+   `(dircolors-face-exec ((,class (:foreground "ForestGreen"))))
    `(dircolors-face-html ((,class (:foreground "black"))))
-   `(dircolors-face-img ((,class (:foreground "black"))))
+   `(dircolors-face-img ((,class (:foreground "magenta3"))))
    `(dircolors-face-lang ((,class (:foreground "black"))))
    `(dircolors-face-lang-interface ((,class (:foreground "black"))))
    `(dircolors-face-make ((,class (:foreground "black"))))
    `(dircolors-face-objet ((,class (:foreground "black"))))
-   `(dircolors-face-package ((,class (:foreground "red"))))
+   `(dircolors-face-package ((,class (:foreground "black"))))
    `(dircolors-face-paddb ((,class (:foreground "black"))))
    `(dircolors-face-ps ((,class (:foreground "black"))))
-   `(dircolors-face-sound ((,class (:foreground "black"))))
+   `(dircolors-face-sound ((,class (:foreground "cyan4"))))
    `(dircolors-face-tar ((,class (:foreground "red"))))
    `(dircolors-face-text ((,class (:foreground "black"))))
    `(dircolors-face-yacc ((,class (:foreground "black"))))
@@ -636,9 +637,13 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(yas/field-highlight-face ((,class (:background "DarkSeaGreen1"))))
    ))
 
-(custom-theme-set-variables
- 'leuven
- '(ansi-color-names-vector ["black" "red3" "green3" "yellow3" "blue2" "magenta3" "cyan3" "gray90"]))
+(custom-theme-set-variables 'leuven
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "cyan4" "gray90"])
+                                        ; colors used in Shell mode
+ )
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
