@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140823.2050
+;; Version: 20140905.2113
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -263,6 +263,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(Info-title-2-face ((,class ,ol2)))
    `(Info-title-3-face ((,class ,ol3)))
    `(Info-title-4-face ((,class ,ol4)))
+   `(ac-completion-face ((,class (:foreground "darkgray"))))
    `(ace-jump-face-foreground ((,class (:foreground "black" :background "#FBE448"))))
    `(bbdb-company ((,class (:slant italic :foreground "steel blue"))))
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
@@ -300,9 +301,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(circe-originator-face ((,class (:foreground "blue"))))
    `(circe-prompt-face ((,class (:foreground "red"))))
    `(circe-server-face ((,class (:foreground "#99CAE5"))))
-   `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF"))))
+   `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF"))))
+   `(company-tooltip-annotation ((,class (:foreground "#999999" :background "cornsilk"))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    `(compilation-error ((,class (:weight bold :foreground "red"))))
    `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; used for grep
@@ -351,7 +353,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(dircolors-face-package ((,class (:foreground "black"))))
    `(dircolors-face-paddb ((,class (:foreground "black"))))
    `(dircolors-face-ps ((,class (:foreground "black"))))
-   `(dircolors-face-sound ((,class (:foreground "cyan4"))))
+   `(dircolors-face-sound ((,class (:foreground "DeepSkyBlue"))))
    `(dircolors-face-tar ((,class (:foreground "red"))))
    `(dircolors-face-text ((,class (:foreground "black"))))
    `(dircolors-face-yacc ((,class (:foreground "black"))))
@@ -366,9 +368,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diredp-dir-heading ((,class ,directory)))
    `(diredp-dir-priv ((,class ,directory)))
    `(diredp-exec-priv ((,class (:background "#03C03C"))))
-   `(diredp-executable-tag ((,class (:foreground "green3" :background "white"))))
+   `(diredp-executable-tag ((,class (:foreground "ForestGreen" :background "white"))))
    `(diredp-file-name ((,class (:foreground "black"))))
-   `(diredp-file-suffix ((,class (:foreground "#008000"))))
+   `(diredp-file-suffix ((,class (:foreground "gray50"))))
    `(diredp-flag-mark-line ((,class ,marked-line)))
    `(diredp-ignored-file-name ((,class ,shadow)))
    `(diredp-read-priv ((,class (:background "#0A99FF"))))
@@ -559,6 +561,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(paren-face-mismatch ((,class ,paren-unmatched)))
    `(paren-face-no-match ((,class ,paren-unmatched)))
    `(persp-selected-face ((,class (:weight bold :foreground "#EEF5FE"))))
+   `(powerline-active1 ((,class (:background "grey22" :inherit mode-line))))
+   `(powerline-active2 ((,class (:background "#4070B6" :inherit mode-line))))
+   `(powerline-inactive1 ((,class (:background "#686868" :inherit mode-line-inactive))))
+   `(powerline-inactive2 ((,class (:background "#A9A9A9" :inherit mode-line-inactive))))
    `(recover-this-file ((,class (:weight bold :background "#FF3F3F"))))
    `(rng-error ((,class (:weight bold :foreground "red" :background "#FBE3E4"))))
    `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
@@ -641,7 +647,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
-   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "cyan4" "gray90"])
+   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
                                         ; colors used in Shell mode
  )
 
