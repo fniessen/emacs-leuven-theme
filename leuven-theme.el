@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140905.2113
+;; Version: 20140910.1003
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -87,7 +87,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(cursor ((,class (:background "#0FB300"))))
 
    ;; Highlighting faces
-   `(fringe ((,class (:foreground "#F7A421" :background "#F2F2F2"))))
+   `(fringe ((,class (:foreground "#9B9B9B" :background "#EDEDED"))))
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
@@ -437,7 +437,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(info-xref ((,class (:underline t :foreground "#006DAF")))) ; unvisited cross-references
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
    `(light-symbol-face ((,class (:background "#FFFFA0"))))
-   `(linum ((,class (:foreground "#828282" :background "white"))))
+   `(linum ((,class (:foreground "#9A9A9A" :background "#EDEDED"))))
    `(log-view-file ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
    `(lui-button-face ((,class ,link)))
    `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ; my nickname
