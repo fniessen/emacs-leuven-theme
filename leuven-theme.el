@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140910.1003
+;; Version: 20140911.0923
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -263,7 +263,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(Info-title-2-face ((,class ,ol2)))
    `(Info-title-3-face ((,class ,ol3)))
    `(Info-title-4-face ((,class ,ol4)))
-   `(ac-completion-face ((,class (:foreground "darkgray"))))
+   `(ac-completion-face ((,class (:underline nil :foreground "#C0C0C0")))) ; like Google
    `(ace-jump-face-foreground ((,class (:foreground "black" :background "#FBE448"))))
    `(bbdb-company ((,class (:slant italic :foreground "steel blue"))))
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
@@ -303,7 +303,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(circe-server-face ((,class (:foreground "#99CAE5"))))
    `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
-   `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF"))))
+   `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
    `(company-tooltip-annotation ((,class (:foreground "#999999" :background "cornsilk"))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    `(compilation-error ((,class (:weight bold :foreground "red"))))
@@ -574,7 +574,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(shell-output-2-face ((,class (:foreground "blue"))))
    `(shell-output-3-face ((,class (:foreground "purple"))))
    `(shell-output-face ((,class (:foreground "black"))))
-   `(shell-prompt-face ((,class (:weight bold :foreground "yellow"))))
+   ;; `(shell-prompt-face ((,class (:weight bold :foreground "yellow"))))
    `(show-paren-match ((,class ,paren-matched)))
    `(show-paren-mismatch ((,class ,paren-unmatched)))
    `(sml-modeline-end-face ((,class (:background "#6BADF6")))) ; #335EA8
