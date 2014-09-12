@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140912.1348
+;; Version: 20140912.2125
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -55,8 +55,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
       (highlight-line '(:underline nil :background "#FFFFCC")) ; #FFF876, #F5F5F5 or #CCDEED
-      (link '(:underline t :foreground "#006DAF"))
-      (mail-header-name '(:weight bold :foreground "black"))
+      (link '(:weight normal :underline t :foreground "#006DAF"))
+      (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#AFACA9"))
+      (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
       (match '(:background "#FBE448"))
       (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
@@ -72,9 +73,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (region '(:background "#ABDFFA"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#008000")) ; or #D0372D
-      (subject '(:weight bold :foreground "#FF8C00"))
+      (subject '(:family "Sans Serif" :weight bold :foreground "black"))
       (symlink '(:foreground "deep sky blue"))
-      (volatile-highlight '(:background "#FFFFD7"))
+      (volatile-highlight '(:underline nil :background "#FFFFD7"))
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA")))
 
   (custom-theme-set-faces
@@ -140,6 +141,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(header-line ((,class (:weight bold :underline "black" :overline "black" :foreground "black" :background "#FFFF88"))))
 
    ;; Gnus faces
+   `(gnus-button ((,class (:weight normal))))
    `(gnus-cite-attribution-face ((,class (:foreground "#5050B0"))))
    `(gnus-cite-face-1 ((,class (:foreground "#5050B0"))))
    `(gnus-cite-face-10 ((,class (:foreground "#990000"))))
@@ -173,8 +175,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-group-news-5-empty ((,class (:foreground "#000099"))))
    `(gnus-group-news-6 ((,class (:weight bold :foreground "gray50"))))
    `(gnus-group-news-6-empty ((,class (:foreground "#808080"))))
-   `(gnus-header-content ((,class (:family "Sans Serif" :foreground "#3399CC"))))
-   `(gnus-header-from ((,class (:family "Sans Serif" :foreground "blue"))))
+   `(gnus-header-content ((,class ,mail-header-other)))
+   `(gnus-header-from ((,class (:family "Sans Serif" :foreground "black"))))
    `(gnus-header-name ((,class ,mail-header-name)))
    `(gnus-header-newsgroups ((,class (:family "Sans Serif" :foreground "#3399CC"))))
    `(gnus-header-subject ((,class ,subject)))
@@ -182,8 +184,8 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-picon-xbm ((,class (:foreground "yellow" :background "white"))))
    `(gnus-server-closed ((,class (:slant italic :foreground "blue" :background "white"))))
    `(gnus-server-denied ((,class (:weight bold :foreground "red" :background "white"))))
-   `(gnus-server-opened ((,class (:foreground "white" :background "#83B869"))))
-   `(gnus-signature ((,class (:slant italic :foreground "#7F7F7F"))))
+   `(gnus-server-opened ((,class (:family "Sans Serif" :foreground "white" :foreground "#466BD7"))))
+   `(gnus-signature ((,class (:slant italic :foreground "#8B8D8E"))))
    `(gnus-splash ((,class (:foreground "#FF8C00"))))
    `(gnus-summary-cancelled ((,class ,cancel)))
    `(gnus-summary-high-ancient ((,class (:weight normal :foreground "#808080" :background "#FFFFE6"))))
@@ -203,14 +205,14 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 
    ;; Message faces
    `(message-header-name ((,class ,mail-header-name)))
-   `(message-header-cc ((,class (:family "Sans Serif" :foreground "blue"))))
-   `(message-header-other ((,class (:family "Sans Serif" :foreground "#3399CC"))))
+   `(message-header-cc ((,class ,mail-header-other)))
+   `(message-header-other ((,class ,mail-header-other)))
    `(message-header-subject ((,class ,subject)))
-   `(message-header-to ((,class (:family "Sans Serif" :foreground "blue"))))
+   `(message-header-to ((,class (:family "Sans Serif" :underline nil :foreground "#006DAF"))))
    `(message-cited-text ((,class (:foreground "#5050B0"))))
-   `(message-separator ((,class (:family "Sans Serif" :weight bold :foreground "red"))))
+   `(message-separator ((,class (:family "Sans Serif" :weight normal :foreground "#BDC2C6"))))
    `(message-header-newsgroups ((,class (:family "Sans Serif" :foreground "#3399CC"))))
-   `(message-header-xheader ((,class (:family "Sans Serif" :foreground "#3399CC"))))
+   `(message-header-xheader ((,class ,mail-header-other)))
    `(message-mml ((,class (:foreground "forest green"))))
 
    ;; Diff
