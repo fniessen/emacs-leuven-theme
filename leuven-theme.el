@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140911.0923
+;; Version: 20140912.1348
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -370,7 +370,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diredp-exec-priv ((,class (:background "#03C03C"))))
    `(diredp-executable-tag ((,class (:foreground "ForestGreen" :background "white"))))
    `(diredp-file-name ((,class (:foreground "black"))))
-   `(diredp-file-suffix ((,class (:foreground "gray50"))))
+   `(diredp-file-suffix ((,class (:foreground "#C0C0C0"))))
    `(diredp-flag-mark-line ((,class ,marked-line)))
    `(diredp-ignored-file-name ((,class ,shadow)))
    `(diredp-read-priv ((,class (:background "#0A99FF"))))
