@@ -1,6 +1,6 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2014-09-10 Wed 17:30>
+#+Time-stamp: <2014-09-12 Fri 13:34>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en
@@ -21,6 +21,22 @@ Dired+ and EDiff. Make it yours!
 <script src="http://platform.twitter.com/widgets.js"></script>
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="f_niessen">Tweet</a>
 #+end_html
+
+** Quotations
+
+"Your Org-enhancing color-theme "leuven" ROCKS! ... and not just for Org." --
+Johan S.
+
+"Amazing theme. I've been switching themes like socks the past 3 years and
+finally found a theme that fits me exactly." -- zeltak
+
+"The Leuven theme has quickly become my favorite -- the colors are great and the
+visual details for Org mode are just wonderful." -- Steve B.
+
+"I'm using leuven theme also, which is a great theme for Org-mode." -- Joseph
+Vidal-Rosset
+
+"Leuven theme is awesome!" -- Joost Diepenmaat
 
 ** Screenshots
 
