@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140912.2125
+;; Version: 20140912.2204
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -160,7 +160,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-group-mail-2 ((,class (:weight bold :foreground "#FF0066"))))
    `(gnus-group-mail-2-empty ((,class (:foreground "#660066"))))
    `(gnus-group-mail-3 ((,class (:weight bold :foreground "black"))))
-   `(gnus-group-mail-3-empty ((,class (:foreground "#808080"))))
+   `(gnus-group-mail-3-empty ((,class (:weight bold :foreground "#B1B2B1"))))
    `(gnus-group-mail-low ((,class ,cancel)))
    `(gnus-group-mail-low-empty ((,class ,cancel)))
    `(gnus-group-news-1 ((,class (:weight bold :foreground "#FF50B0"))))
@@ -196,11 +196,11 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-summary-low-read ((,class (:slant italic :foreground "#999999" :background "#E0E0E0"))))
    `(gnus-summary-low-ticked ((,class (:slant italic :foreground "black" :background "#E7AEB0"))))
    `(gnus-summary-low-unread ((,class (:slant italic :foreground "black"))))
-   `(gnus-summary-normal-ancient ((,class (:foreground "#808080"))))
-   `(gnus-summary-normal-read ((,class (:foreground "#999999"))))
+   `(gnus-summary-normal-ancient ((,class (:weight bold :foreground "#B1B2B1"))))
+   `(gnus-summary-normal-read ((,class (:weight bold :foreground "#B1B2B1"))))
    `(gnus-summary-normal-ticked ((,class (:foreground "black" :background "#E7AEB0"))))
-   `(gnus-summary-normal-unread ((,class (:foreground "black"))))
-   `(gnus-summary-selected ((,class (:weight bold :underline t :foreground "black" :background "#9CB6D6"))))
+   `(gnus-summary-normal-unread ((,class (:weight bold :foreground "black"))))
+   `(gnus-summary-selected ((,class (:foreground "white" :background "#008CD7"))))
    `(gnus-x-face ((,class (:foreground "black" :background "white"))))
 
    ;; Message faces
