@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140917.0940
+;; Version: 20140917.2100
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -54,13 +54,13 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:underline nil :background "#FFFFCC")) ; #FFF876, #F5F5F5 or #CCDEED
+      (highlight-line '(:underline nil :background "#F5F5F5")) ; #FFF876, #F5F5F5 or #CCDEED
       (link '(:weight normal :underline t :foreground "#006DAF"))
-      (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#AFACA9"))
+      (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
       (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
       (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
-      (match '(:background "#FBE448"))
+      (match '(:background "#FBE448")) ; occur patterns
       (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
       (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
       (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF"))
@@ -93,9 +93,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
-   `(isearch ((,class (:weight bold :underline "#FF961D" :foreground nil :background "#FDBD33"))))
+   `(isearch ((,class (:weight bold :underline "#FF9632" :foreground nil :background "#FDBD33"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
-   `(lazy-highlight ((,class (:underline "#F3CC67" :background "#FFEDA4"))))
+   `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
    `(trailing-whitespace ((,class (:background "#F6EBFE"))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2"))))
    `(whitespace-indentation ((,class (:foreground "firebrick" :background "yellow"))))
@@ -307,7 +307,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
+   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#F5F5F5")))) ; same background as highlight-line
    `(company-tooltip-annotation ((,class (:foreground "#999999" :background "cornsilk"))))
+   `(company-tooltip-common ((,class (:weight bold :inherit company-tooltip))))
+   `(company-tooltip-common-selection ((,class (:weight bold :inherit company-tooltip-selection))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    `(compilation-error ((,class (:weight bold :foreground "red"))))
    `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; used for grep
