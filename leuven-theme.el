@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140917.2100
+;; Version: 20140917.2258
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -98,9 +98,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
    `(trailing-whitespace ((,class (:background "#F6EBFE"))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2"))))
-   `(whitespace-indentation ((,class (:foreground "firebrick" :background "yellow"))))
+   `(whitespace-indentation ((,class (:foreground "#A1A1A1" :background "white"))))
    `(whitespace-line ((,class (:foreground "#CC0000" :background "#FFFF88"))))
-   `(whitespace-tab ((,class (:foreground "lightgray" :background "beige"))))
+   `(whitespace-tab ((,class (:foreground "#A1A1A1" :background "white"))))
    `(whitespace-trailing ((,class (:weight bold :foreground "yellow" :background "red1"))))
 
    ;; Mode line faces
