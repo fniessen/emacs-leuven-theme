@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140912.2204
+;; Version: 20140917.0940
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -58,6 +58,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#AFACA9"))
       (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
+      (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
       (match '(:background "#FBE448"))
       (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
@@ -205,10 +206,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 
    ;; Message faces
    `(message-header-name ((,class ,mail-header-name)))
-   `(message-header-cc ((,class ,mail-header-other)))
+   `(message-header-cc ((,class ,mail-to)))
    `(message-header-other ((,class ,mail-header-other)))
    `(message-header-subject ((,class ,subject)))
-   `(message-header-to ((,class (:family "Sans Serif" :underline nil :foreground "#006DAF"))))
+   `(message-header-to ((,class ,mail-to)))
    `(message-cited-text ((,class (:foreground "#5050B0"))))
    `(message-separator ((,class (:family "Sans Serif" :weight normal :foreground "#BDC2C6"))))
    `(message-header-newsgroups ((,class (:family "Sans Serif" :foreground "#3399CC"))))
