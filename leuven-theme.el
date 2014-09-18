@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140918.0910
+;; Version: 20140918.1219
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -54,7 +54,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:underline nil :background "#FFFFE1")) ; #FFF876, #F5F5F5 or #CCDEED
+      (highlight-line '(:background "#FFFFD7")) ; #FFF876 or #F5F5F5
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
       (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
@@ -76,7 +76,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (string '(:foreground "#008000")) ; or #D0372D
       (subject '(:family "Sans Serif" :weight bold :foreground "black"))
       (symlink '(:foreground "deep sky blue"))
-      (volatile-highlight '(:underline nil :background "#FFFFD7"))
+      (volatile-highlight '(:underline nil :background "#FFF876"))
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA")))
 
   (custom-theme-set-faces
@@ -96,12 +96,12 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(isearch ((,class (:weight bold :underline "#FF9632" :foreground nil :background "#FDBD33"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
-   `(trailing-whitespace ((,class (:background "#F6EBFE"))))
+   `(trailing-whitespace ((,class (:background "#FFFF57"))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2"))))
    `(whitespace-indentation ((,class (:foreground "#A1A1A1" :background "white"))))
    `(whitespace-line ((,class (:foreground "#CC0000" :background "#FFFF88"))))
    `(whitespace-tab ((,class (:foreground "#A1A1A1" :background "white"))))
-   `(whitespace-trailing ((,class (:weight bold :foreground "yellow" :background "red1"))))
+   `(whitespace-trailing ((,class (:foreground "#B3B3B3" :background "#FFFF57"))))
 
    ;; Mode line faces
    `(mode-line ((,class (:box (:line-width 1 :color "#1A2F54") :foreground "#85CEEB" :background "#335EA8"))))
@@ -248,10 +248,11 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(ediff-odd-diff-B ((,class (:foreground "black" :background "light grey"))))
 
    ;; Flyspell
-   ;; `(flyspell-duplicate ((,class (:underline (:style wave :color "#008000") :inherit nil))))
+;; (when (version< emacs-version "24.XXX")
    `(flyspell-duplicate ((,class (:underline "#008000" :inherit nil))))
-   ;; `(flyspell-incorrect ((,class (:underline (:style wave :color "red") :inherit nil))))
    `(flyspell-incorrect ((,class (:underline "red" :inherit nil))))
+;; `(flyspell-duplicate ((,class (:underline (:style wave :color "#008000") :inherit nil))))
+;; `(flyspell-incorrect ((,class (:underline (:style wave :color "red") :inherit nil))))
 
    ;; ;; Semantic faces
    ;; `(semantic-decoration-on-includes ((,class (:underline ,cham-4))))
@@ -268,6 +269,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(Info-title-4-face ((,class ,ol4)))
    `(ac-completion-face ((,class (:underline nil :foreground "#C0C0C0")))) ; like Google
    `(ace-jump-face-foreground ((,class (:foreground "black" :background "#FBE448"))))
+   `(auto-dim-other-buffers-face ((,class (:background "#F7F7F7"))))
    `(bbdb-company ((,class (:slant italic :foreground "steel blue"))))
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
    `(bbdb-field-value ((,class (:foreground "steel blue"))))
@@ -307,7 +309,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
-   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#FFFFE1")))) ; same background as highlight-line
+   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#FFFFD7")))) ; same background as highlight-line
    `(company-tooltip-annotation ((,class (:foreground "#999999" :background "cornsilk"))))
    `(company-tooltip-common ((,class (:weight bold :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight bold :inherit company-tooltip-selection))))
