@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140917.2258
+;; Version: 20140918.0910
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -54,7 +54,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:underline nil :background "#F5F5F5")) ; #FFF876, #F5F5F5 or #CCDEED
+      (highlight-line '(:underline nil :background "#FFFFE1")) ; #FFF876, #F5F5F5 or #CCDEED
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
       (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
@@ -307,7 +307,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
-   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#F5F5F5")))) ; same background as highlight-line
+   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#FFFFE1")))) ; same background as highlight-line
    `(company-tooltip-annotation ((,class (:foreground "#999999" :background "cornsilk"))))
    `(company-tooltip-common ((,class (:weight bold :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight bold :inherit company-tooltip-selection))))
