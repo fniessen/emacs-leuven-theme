@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140918.1219
+;; Version: 20140924.1057
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -49,6 +49,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (code-inline '(:foreground "#006400" :background "#FDFFF7"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (diff-added '(:foreground "#008000" :background "#DDFFDD"))
+      (diff-changed '(:foreground "#0000FF" :background "#DDDDFF"))
       (diff-header '(:foreground "#800000" :background "#FFFFAF"))
       (diff-hunk-header '(:foreground "#990099" :background "#FFEEFF"))
       (diff-none '(:foreground "gray33"))
@@ -218,7 +219,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 
    ;; Diff
    `(diff-added ((,class ,diff-added)))
-   `(diff-changed ((,class (:foreground "blue" :background "#DDDDFF"))))
+   `(diff-changed ((,class ,diff-changed)))
    `(diff-context ((,class ,diff-none)))
    `(diff-file-header ((,class ,diff-header)))
    `(diff-file1-hunk-header ((,class (:foreground "dark magenta" :background "#EAF2F5"))))
@@ -343,6 +344,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(custom-variable-button ((,class (:weight bold :underline t))))
    `(custom-variable-tag ((,class (:family "Sans Serif" :height 1.2 :weight bold :foreground "blue1"))))
    `(custom-visibility ((,class ,link)))
+   `(diff-hl-insert ((,class (:foreground "green4" :inherit diff-added))))
+   `(diff-hl-delete ((,class (:foreground "red3" :inherit diff-removed))))
+   `(diff-hl-change ((,class (:foreground "blue3" :inherit diff-changed))))
+   `(diff-hl-unknown ((,class (:foreground "white" :background "#3F3BB4"))))
    `(diary-face ((,class (:foreground "#87C9FC"))))
    `(dircolors-face-asm ((,class (:foreground "black"))))
    `(dircolors-face-backup ((,class (:foreground "black"))))
