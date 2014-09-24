@@ -1,6 +1,6 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+Time-stamp: <2014-09-12 Fri 13:34>
+#+Time-stamp: <2014-09-21 Sun 18:33>
 #+DESCRIPTION: Emacs custom color theme for light background
 #+KEYWORDS:  emacs, custom theme, color theme, faces
 #+LANGUAGE:  en
@@ -121,7 +121,7 @@ You should be able to get my theme and a smaller face by using something such
 as:
 
 #+begin_src emacs-lisp
-(set-face-attribute 'org-level-1 nil :height 120)
+(set-face-attribute 'org-level-1 nil :height 90) ; 9 pt font
 #+end_src
 
 That should change the font size without changing the colors.
