@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140924.1057
+;; Version: 20140926.1034
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -55,13 +55,13 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:background "#FFFFD7")) ; #FFF876 or #F5F5F5
+      (highlight-line '(:background "#FFFFD7")) ; #F5F5F5
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
       (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
       (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
-      (match '(:background "#FBE448")) ; occur patterns
+      (match '(:weight bold :background "#FBE448")) ; occur patterns
       (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
       (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
       (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF"))
@@ -420,9 +420,12 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(helm-isearch-match ((,class (:background "#CCFFCC"))))
    `(helm-match ((,class ,match)))
    `(helm-moccur-buffer ((,class (:foreground "#0066CC"))))
-   `(helm-selection ((,class ,highlight-line)))
+   `(helm-selection ((,class ,volatile-highlight)))
    `(helm-selection-line ((,class ,volatile-highlight)))
    `(helm-source-header ((,class (:family "Sans Serif" :height 1.3 :weight bold :foreground "white" :background "#2F69BF"))))
+   `(helm-swoop-target-line-face ((,class ,volatile-highlight)))
+   `(helm-swoop-target-line-block-face ((,class (:background "#CCCC00" :foreground "#222222"))))
+   `(helm-swoop-target-word-face ((,class (:weight bold :foreground nil :background "#FDBD33"))))
    `(helm-visible-mark ((,class ,marked-line)))
    `(helm-w3m-bookmarks-face ((,class (:underline t :foreground "cyan1"))))
    `(highlight-symbol-face ((,class (:background "#FFFFA0"))))
