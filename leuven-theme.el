@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140926.1053
+;; Version: 20140927.1009
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -56,10 +56,14 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
       (highlight-line '(:background "#FFFFD7")) ; #F5F5F5
+      (highlight-line-gnus '(:background "#DAEAFC")) ; defined in `gnus-leuven.el'
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
       (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
+      (mail-read '(:weight normal :foreground "#86878B"))
+      (mail-ticked '(:foreground "black" :background "#E7AEB0"))
       (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
+      (mail-unread '(:weight bold :foreground "black"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
       (match '(:weight bold :background "#FBE448")) ; occur patterns
       (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
@@ -162,7 +166,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-group-mail-2 ((,class (:weight bold :foreground "#FF0066"))))
    `(gnus-group-mail-2-empty ((,class (:foreground "#660066"))))
    `(gnus-group-mail-3 ((,class (:weight bold :foreground "black"))))
-   `(gnus-group-mail-3-empty ((,class (:weight bold :foreground "#B1B2B1"))))
+   `(gnus-group-mail-3-empty ((,class ,mail-read)))
    `(gnus-group-mail-low ((,class ,cancel)))
    `(gnus-group-mail-low-empty ((,class ,cancel)))
    `(gnus-group-news-1 ((,class (:weight bold :foreground "#FF50B0"))))
@@ -198,10 +202,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-summary-low-read ((,class (:slant italic :foreground "#999999" :background "#E0E0E0"))))
    `(gnus-summary-low-ticked ((,class (:slant italic :foreground "black" :background "#E7AEB0"))))
    `(gnus-summary-low-unread ((,class (:slant italic :foreground "black"))))
-   `(gnus-summary-normal-ancient ((,class (:weight bold :foreground "#B1B2B1"))))
-   `(gnus-summary-normal-read ((,class (:weight bold :foreground "#B1B2B1"))))
-   `(gnus-summary-normal-ticked ((,class (:foreground "black" :background "#E7AEB0"))))
-   `(gnus-summary-normal-unread ((,class (:weight bold :foreground "black"))))
+   `(gnus-summary-normal-ancient ((,class ,mail-read)))
+   `(gnus-summary-normal-read ((,class ,mail-read)))
+   `(gnus-summary-normal-ticked ((,class ,mail-ticked)))
+   `(gnus-summary-normal-unread ((,class ,mail-unread)))
    `(gnus-summary-selected ((,class (:foreground "white" :background "#008CD7"))))
    `(gnus-x-face ((,class (:foreground "black" :background "white"))))
 
