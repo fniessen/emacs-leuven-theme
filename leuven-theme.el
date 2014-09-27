@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140927.1009
+;; Version: 20140927.1037
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -61,7 +61,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
       (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
       (mail-read '(:weight normal :foreground "#86878B"))
-      (mail-ticked '(:foreground "black" :background "#E7AEB0"))
+      (mail-ticked '(:weight bold :background "#FBE6EF"))
       (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
       (mail-unread '(:weight bold :foreground "black"))
       (marked-line '(:weight bold :foreground "white" :background "red"))
@@ -196,11 +196,11 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(gnus-summary-cancelled ((,class ,cancel)))
    `(gnus-summary-high-ancient ((,class (:weight normal :foreground "#808080" :background "#FFFFE6"))))
    `(gnus-summary-high-read ((,class (:weight normal :foreground "#999999" :background "#FFFFE6"))))
-   `(gnus-summary-high-ticked ((,class (:weight normal :foreground "black" :background "#E7AEB0"))))
-   `(gnus-summary-high-unread ((,class (:weight normal :foreground "black" :background "#FFFFCC"))))
+   `(gnus-summary-high-ticked ((,class ,mail-ticked)))
+   `(gnus-summary-high-unread ((,class (:weight bold :foreground "black" :background "#FFFFCC"))))
    `(gnus-summary-low-ancient ((,class (:slant italic :foreground "gray55"))))
    `(gnus-summary-low-read ((,class (:slant italic :foreground "#999999" :background "#E0E0E0"))))
-   `(gnus-summary-low-ticked ((,class (:slant italic :foreground "black" :background "#E7AEB0"))))
+   `(gnus-summary-low-ticked ((,class ,mail-ticked)))
    `(gnus-summary-low-unread ((,class (:slant italic :foreground "black"))))
    `(gnus-summary-normal-ancient ((,class ,mail-read)))
    `(gnus-summary-normal-read ((,class ,mail-read)))
