@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140929.1232
+;; Version: 20140929.2334
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -102,7 +102,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
    `(trailing-whitespace ((,class (:background "#FFFF57"))))
-   `(whitespace-hspace ((,class (:foreground "#D2D2D2"))))
+   `(whitespace-hspace ((,class (:foreground "#D2D2D2")))) ; see also `nobreak-space'
    `(whitespace-indentation ((,class (:foreground "#A1A1A1" :background "white"))))
    `(whitespace-line ((,class (:foreground "#CC0000" :background "#FFFF88"))))
    `(whitespace-tab ((,class (:foreground "#A1A1A1" :background "white"))))
@@ -429,6 +429,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(helm-moccur-buffer ((,class (:foreground "#0066CC"))))
    `(helm-selection ((,class ,volatile-highlight)))
    `(helm-selection-line ((,class ,volatile-highlight)))
+   `(helm-lisp-show-completion ((,class ,volatile-highlight))) ; see `helm-dabbrev'
    `(helm-source-header ((,class (:family "Sans Serif" :height 1.3 :weight bold :foreground "white" :background "#2F69BF"))))
    `(helm-swoop-target-line-face ((,class ,volatile-highlight)))
    `(helm-swoop-target-line-block-face ((,class (:background "#CCCC00" :foreground "#222222"))))
