@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140929.0909
+;; Version: 20140929.1232
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -588,6 +588,17 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(powerline-active2 ((,class (:background "#4070B6" :inherit mode-line))))
    `(powerline-inactive1 ((,class (:background "#686868" :inherit mode-line-inactive))))
    `(powerline-inactive2 ((,class (:background "#A9A9A9" :inherit mode-line-inactive))))
+   `(rainbow-delimiters-depth-1-face ((,class (:foreground "#707183"))))
+   `(rainbow-delimiters-depth-2-face ((,class (:foreground "#7388D6"))))
+   `(rainbow-delimiters-depth-3-face ((,class (:foreground "#909183"))))
+   `(rainbow-delimiters-depth-4-face ((,class (:foreground "#709870"))))
+   `(rainbow-delimiters-depth-5-face ((,class (:foreground "#907373"))))
+   `(rainbow-delimiters-depth-6-face ((,class (:foreground "#6276BA"))))
+   `(rainbow-delimiters-depth-7-face ((,class (:foreground "#858580"))))
+   `(rainbow-delimiters-depth-8-face ((,class (:foreground "#80A880"))))
+   `(rainbow-delimiters-depth-9-face ((,class (:foreground "#887070"))))
+   `(rainbow-delimiters-mismatched-face ((,class ,paren-unmatched)))
+   `(rainbow-delimiters-unmatched-face ((,class ,paren-unmatched)))
    `(recover-this-file ((,class (:weight bold :background "#FF3F3F"))))
    `(rng-error ((,class (:weight bold :foreground "red" :background "#FBE3E4"))))
    `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
