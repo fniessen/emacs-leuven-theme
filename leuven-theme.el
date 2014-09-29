@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20140927.1037
+;; Version: 20140929.0909
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -348,9 +348,11 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(custom-variable-button ((,class (:weight bold :underline t))))
    `(custom-variable-tag ((,class (:family "Sans Serif" :height 1.2 :weight bold :foreground "blue1"))))
    `(custom-visibility ((,class ,link)))
-   `(diff-hl-insert ((,class (:foreground "green4" :inherit diff-added))))
-   `(diff-hl-delete ((,class (:foreground "red3" :inherit diff-removed))))
    `(diff-hl-change ((,class (:foreground "blue3" :inherit diff-changed))))
+   `(diff-hl-delete ((,class (:foreground "red3" :inherit diff-removed))))
+   `(diff-hl-dired-change ((,class (:background "#FFA335" :foreground "black" :weight bold))))
+   `(diff-hl-dired-unknown ((,class (:foreground "white" :background "#3F3BB4"))))
+   `(diff-hl-insert ((,class (:foreground "green4" :inherit diff-added))))
    `(diff-hl-unknown ((,class (:foreground "white" :background "#3F3BB4"))))
    `(diary-face ((,class (:foreground "#87C9FC"))))
    `(dircolors-face-asm ((,class (:foreground "black"))))
