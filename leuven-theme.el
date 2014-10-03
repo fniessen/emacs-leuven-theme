@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20141003.1113
+;; Version: 20141003.1340
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -356,7 +356,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(diff-hl-delete ((,class (:foreground "red3" :inherit diff-removed))))
    `(diff-hl-dired-change ((,class (:weight bold :foreground "black" :background "#FFA335"))))
    `(diff-hl-dired-delete ((,class (:weight bold :foreground "#D73915"))))
-   `(diff-hl-dired-ignored ((,class (:weight bold :foreground "#C0BBAB"))))
+   `(diff-hl-dired-ignored ((,class (:weight bold :foreground "white" :background "#C0BBAB"))))
    `(diff-hl-dired-insert ((,class (:weight bold :foreground "#B9B9BA"))))
    `(diff-hl-dired-unknown ((,class (:foreground "white" :background "#3F3BB4"))))
    `(diff-hl-insert ((,class (:foreground "green4" :inherit diff-added))))
@@ -415,6 +415,12 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(font-latex-verbatim-face ((,class (:foreground "#000088" :background "#FFFFE0" :inherit nil))))
    `(git-commit-summary-face ((,class (:foreground "#000000"))))
    `(git-commit-comment-face ((,class (:slant italic :foreground "#696969"))))
+   `(google-translate-text-face ((t (:foreground "#777777" :background "#F5F5F5"))))
+   `(google-translate-phonetic-face ((t (:inherit shadow))))
+   `(google-translate-translation-face ((t (:weight normal :foreground "#3079ED" :background "#E3EAF2"))))
+   `(google-translate-suggestion-label-face ((t (:foreground "red"))))
+   `(google-translate-suggestion-face ((t (:slant italic :underline t))))
+   `(google-translate-listen-button-face ((t (:height 0.8))))
    `(helm-action ((,class (:foreground "black"))))
    `(helm-bookmarks-su-face ((,class (:foreground "red"))))
    `(helm-buffer-process ((,class (:foreground "#008200"))))
