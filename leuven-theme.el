@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20141001.2307
+;; Version: 20141003.1113
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -81,6 +81,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
       (string '(:foreground "#008000")) ; or #D0372D
       (subject '(:family "Sans Serif" :weight bold :foreground "black"))
       (symlink '(:foreground "deep sky blue"))
+      (tab '(:foreground "#D0D0D0" :background "white"))
       (volatile-highlight '(:underline nil :background "#FFF876"))
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA")))
 
@@ -103,9 +104,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
    `(trailing-whitespace ((,class (:background "#FFFF57"))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2")))) ; see also `nobreak-space'
-   `(whitespace-indentation ((,class (:foreground "#A1A1A1" :background "white"))))
+   `(whitespace-indentation ((,class ,tab)))
    `(whitespace-line ((,class (:foreground "#CC0000" :background "#FFFF88"))))
-   `(whitespace-tab ((,class (:foreground "#A1A1A1" :background "white"))))
+   `(whitespace-tab ((,class ,tab)))
    `(whitespace-trailing ((,class (:foreground "#B3B3B3" :background "#FFFF57"))))
 
    ;; Mode line faces
@@ -353,9 +354,11 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(custom-visibility ((,class ,link)))
    `(diff-hl-change ((,class (:foreground "blue3" :inherit diff-changed))))
    `(diff-hl-delete ((,class (:foreground "red3" :inherit diff-removed))))
-   `(diff-hl-dired-change ((,class (:background "#FFA335" :foreground "black" :weight bold))))
+   `(diff-hl-dired-change ((,class (:weight bold :foreground "black" :background "#FFA335"))))
+   `(diff-hl-dired-delete ((,class (:weight bold :foreground "#D73915"))))
+   `(diff-hl-dired-ignored ((,class (:weight bold :foreground "#C0BBAB"))))
+   `(diff-hl-dired-insert ((,class (:weight bold :foreground "#B9B9BA"))))
    `(diff-hl-dired-unknown ((,class (:foreground "white" :background "#3F3BB4"))))
-   `(diff-hl-dired-ignored ((,class (:foreground "#B9B9BA" :weight bold))))
    `(diff-hl-insert ((,class (:foreground "green4" :inherit diff-added))))
    `(diff-hl-unknown ((,class (:foreground "white" :background "#3F3BB4"))))
    `(diary-face ((,class (:foreground "#87C9FC"))))
