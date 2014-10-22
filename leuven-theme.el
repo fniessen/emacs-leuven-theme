@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20141022.1103
+;; Version: 20141022.1213
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -255,11 +255,12 @@ more...")
    `(ediff-odd-diff-B ((,class (:foreground "black" :background "light grey"))))
 
    ;; Flyspell
-;; (when (version< emacs-version "24.XXX")
-   `(flyspell-duplicate ((,class (:underline "#008000" :inherit nil))))
-   `(flyspell-incorrect ((,class (:underline "red" :inherit nil))))
-;; `(flyspell-duplicate ((,class (:underline (:style wave :color "#008000") :inherit nil))))
-;; `(flyspell-incorrect ((,class (:underline (:style wave :color "red") :inherit nil))))
+   (if (version< emacs-version "24.4")
+       `(flyspell-duplicate ((,class (:underline "#008000" :inherit nil))))
+     `(flyspell-duplicate ((,class (:underline (:style wave :color "#008000") :inherit nil)))))
+   (if (version< emacs-version "24.4")
+       `(flyspell-incorrect ((,class (:underline "red" :inherit nil))))
+     `(flyspell-incorrect ((,class (:underline (:style wave :color "red") :inherit nil)))))
 
    ;; ;; Semantic faces
    ;; `(semantic-decoration-on-includes ((,class (:underline ,cham-4))))
@@ -469,6 +470,7 @@ more...")
    `(info-file ((,class (:family "Sans Serif" :height 1.8 :weight bold :box (:line-width 1 :color "#0000CC") :foreground "cornflower blue" :background "LightSteelBlue1"))))
    `(info-header-node ((,class (:underline t :foreground "orange")))) ; nodes in header
    `(info-header-xref ((,class (:underline t :foreground "dodger blue")))) ; cross references in header
+   `(info-index-match ((,class (:weight bold :foreground nil :background "#FDBD33")))) ; when using `i'
    `(info-menu-header ((,class ,ol2))) ; menu titles (headers) -- major topics
    `(info-menu-star ((,class (:foreground "black")))) ; every 3rd menu item
    `(info-node ((,class (:underline t :foreground "blue")))) ; node names
