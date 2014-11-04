@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20141022.1213
+;; Version: 20141024.1358
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -65,7 +65,7 @@ more...")
       (mail-ticked '(:weight bold :foreground "#FF0000"))
       (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
       (mail-unread '(:weight bold :foreground "black"))
-      (marked-line '(:weight bold :foreground "white" :background "red"))
+      (marked-line '(:weight bold :foreground "red" :background "pink"))
       (match '(:weight bold :background "#FBE448")) ; occur patterns
       (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
       (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
@@ -582,7 +582,7 @@ more...")
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
    `(org-table ((,class (:foreground "dark green" :background "#EAFFEA"))))
    `(org-tag ((,class (:weight normal :slant italic :foreground "#9A9FA4" :background "white"))))
-   `(org-target ((,class ,link)))
+   `(org-target ((,class (:foreground "red"))))
    `(org-time-grid ((,class (:foreground "#CFCFCF"))))
    `(org-todo ((,class (:weight bold :box (:line-width 1 :color "#D8ABA7") :foreground "#D8ABA7" :background "#FFE6E4"))))
    `(org-upcoming-deadline ((,class (:foreground "#FF5555"))))
