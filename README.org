@@ -8,7 +8,9 @@
 
 #+PROPERTY:  eval no
 
+#+ATTR_HTML: :style float:right;
 [[http://opensource.org/licenses/GPL-3.0][http://img.shields.io/:license-gpl-blue.svg]]
+#+ATTR_HTML: :style float:right;
 [[https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=VCVAS6KPDQ4JC&lc=BE&item_number=emacs%2dleuven%2dtheme&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted][https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif]]
 
 * Leuven-theme
@@ -70,8 +72,8 @@ Agenda with task list:
 
 ** Install it
 
-Though Leuven-theme has been added *in 24.4*, you can get a fresh version of it,
-at any time, from [[http://melpa.milkbox.net/][MELPA]] or from [[https://github.com/fniessen/emacs-leuven-theme/][GitHub]].
+Though Leuven-theme has been added in *Emacs 24.4* (October 2014), you can get
+a fresh version of it, at any time, from [[http://melpa.milkbox.net/][MELPA]] or from [[https://github.com/fniessen/emacs-leuven-theme/][GitHub]].
 
 *** Install the ELPA package
 
