@@ -32,22 +32,22 @@ Dired+ and EDiff. Make it yours!
 
 ** Quotations
 
-"Your Org-enhancing color-theme "leuven" ROCKS! ... and not just for Org." \\
+"/Your Org-enhancing color-theme "leuven" ROCKS! ... and not just for Org./" \\
 -- Johan S.
 
-"Amazing theme. I've been switching themes like socks the past 3 years and
-finally found a theme that fits me exactly." \\
+"/Amazing theme. I've been switching themes like socks the past 3 years and
+finally found a theme that fits me exactly./" \\
 -- zeltak
 
-"The Leuven theme has quickly become my favorite -- the colors are great and the
-visual details for Org mode are just wonderful." \\
+"/The Leuven theme has quickly become my favorite -- the colors are great and the
+visual details for Org mode are just wonderful./" \\
 -- Steve B.
 
-"I'm using leuven theme also, which is a great theme for Org-mode." \\
-"I cannot use another emacs-theme than your emacs-leuven-theme." \\
+"/I'm using leuven theme also, which is a great theme for Org-mode. [...]
+I cannot use another emacs-theme./" \\
 -- Joseph Vidal-Rosset
 
-"Leuven theme is awesome!" \\
+"/Leuven theme is awesome!/" \\
 -- Joost Diepenmaat
 
 ** Screenshots
