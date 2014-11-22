@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20141024.1358
+;; Version: 20141122.1107
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -485,6 +485,7 @@ more...")
    `(lui-button-face ((,class ,link)))
    `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ; my nickname
    `(lui-time-stamp-face ((,class (:foreground "purple"))))
+   `(magit-blame-header ((,class (:inherit magit-diff-file-header))))
    `(magit-branch ((,class ,vc-branch)))
    `(magit-diff-add ((,class ,diff-added)))
    `(magit-diff-del ((,class ,diff-removed)))
