@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20141122.1107
+;; Version: 20141124.1455
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -312,8 +312,10 @@ more...")
    `(cfw:face-toolbar ((,class (:background "white"))))
    `(cfw:face-toolbar-button-off ((,class (:foreground "#CFCFCF" :background "white"))))
    `(cfw:face-toolbar-button-on ((,class (:foreground "#5E5E5E" :background "#F6F6F6"))))
-   `(change-log-date-face ((,class (:foreground "purple"))))
+   `(change-log-date ((,class (:foreground "purple"))))
    `(change-log-file ((,class (:weight bold :foreground "#4183C4"))))
+   `(change-log-list ((,class (:foreground "cyan3"))))
+   `(change-log-name ((,class (:foreground "#008000"))))
    `(circe-highlight-all-nicks-face ((,class (:foreground "blue" :background "#F0F0F0")))) ; other nick names
    `(circe-highlight-nick-face ((,class (:foreground "#009300" :background "#F0F0F0")))) ; messages with my nick cited
    `(circe-my-message-face ((,class (:foreground "#8B8B8B" :background "#F0F0F0"))))
@@ -482,6 +484,7 @@ more...")
    `(light-symbol-face ((,class (:background "#FFFFA0"))))
    `(linum ((,class (:foreground "#9A9A9A" :background "#EDEDED"))))
    `(log-view-file ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
+   `(log-view-message ((,class (:foreground "yellow3"))))
    `(lui-button-face ((,class ,link)))
    `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ; my nickname
    `(lui-time-stamp-face ((,class (:foreground "purple"))))
