@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20141124.1455
+;; Version: 20141226.1216
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -43,7 +43,7 @@ more...")
 
 (let ((class '((class color) (min-colors 89)))
 
-      ;; Leuven generic colors
+      ;; Leuven generic colors.
       (cancel '(:slant italic :strike-through t :foreground "gray55"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
       (code-block '(:foreground "#000088" :background "#FFFFE0"))
@@ -95,7 +95,7 @@ more...")
    `(underline ((,class (:underline t))))
    `(cursor ((,class (:background "#0FB300"))))
 
-   ;; Highlighting faces
+   ;; Highlighting faces.
    `(fringe ((,class (:foreground "#9B9B9B" :background "#EDEDED"))))
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
@@ -110,14 +110,14 @@ more...")
    `(whitespace-tab ((,class ,tab)))
    `(whitespace-trailing ((,class (:foreground "#B3B3B3" :background "#FFFF57"))))
 
-   ;; Mode line faces
+   ;; Mode line faces.
    `(mode-line ((,class (:box (:line-width 1 :color "#1A2F54") :foreground "#85CEEB" :background "#335EA8"))))
    `(mode-line-inactive ((,class (:box (:line-width 1 :color "#4E4E4C") :foreground "#F0F0EF" :background "#9B9C97"))))
    `(mode-line-buffer-id ((,class (:weight bold :foreground "white"))))
    `(mode-line-emphasis ((,class (:weight bold :foreground "white"))))
    `(mode-line-highlight ((,class (:foreground "yellow"))))
 
-   ;; Escape and prompt faces
+   ;; Escape and prompt faces.
    `(minibuffer-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(minibuffer-noticeable-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(escape-glyph ((,class (:foreground "#008ED1"))))
@@ -125,7 +125,7 @@ more...")
    `(warning ((,class (:weight bold :foreground "orange"))))
    `(success ((,class (:foreground "green"))))
 
-   ;; Font lock faces
+   ;; Font lock faces.
    `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
    `(font-lock-comment-delimiter-face ((,class (:foreground "#8D8D84")))) ; #696969
    `(font-lock-comment-face ((,class (:slant italic :foreground "#8D8D84")))) ; #696969
@@ -142,13 +142,13 @@ more...")
    `(font-lock-variable-name-face ((,class (:weight normal :foreground "#BA36A5")))) ; #800080
    `(font-lock-warning-face ((,class (:weight bold :foreground "red"))))
 
-   ;; Button and link faces
+   ;; Button and link faces.
    `(link ((,class ,link)))
    `(link-visited ((,class (:underline t :foreground "#E5786D"))))
    `(button ((,class (:underline t :foreground "#006DAF"))))
    `(header-line ((,class (:weight bold :underline "black" :overline "black" :foreground "black" :background "#FFFF88"))))
 
-   ;; Gnus faces
+   ;; Gnus faces.
    `(gnus-button ((,class (:weight normal))))
    `(gnus-cite-attribution-face ((,class (:foreground "#5050B0"))))
    `(gnus-cite-face-1 ((,class (:foreground "#5050B0"))))
@@ -211,7 +211,7 @@ more...")
    `(gnus-summary-selected ((,class (:foreground "white" :background "#008CD7"))))
    `(gnus-x-face ((,class (:foreground "black" :background "white"))))
 
-   ;; Message faces
+   ;; Message faces.
    `(message-header-name ((,class ,mail-header-name)))
    `(message-header-cc ((,class ,mail-to)))
    `(message-header-other ((,class ,mail-header-other)))
@@ -223,7 +223,7 @@ more...")
    `(message-header-xheader ((,class ,mail-header-other)))
    `(message-mml ((,class (:foreground "forest green"))))
 
-   ;; Diff
+   ;; Diff.
    `(diff-added ((,class ,diff-added)))
    `(diff-changed ((,class ,diff-changed)))
    `(diff-context ((,class ,diff-none)))
@@ -240,10 +240,10 @@ more...")
    `(diff-refine-change ((,class (:background "#DDDDFF"))))
    `(diff-removed ((,class ,diff-removed)))
 
-   ;; SMerge
+   ;; SMerge.
    `(smerge-refined-change ((,class (:background "#AAAAFF"))))
 
-   ;; Ediff
+   ;; Ediff.
    `(ediff-current-diff-A ((,class (:foreground "gray33" :background "#FFDDDD"))))
    `(ediff-current-diff-B ((,class (:foreground "gray33" :background "#DDFFDD"))))
    `(ediff-current-diff-C ((,class (:foreground "black" :background "cyan"))))
@@ -254,7 +254,7 @@ more...")
    `(ediff-odd-diff-A ((,class (:foreground "black" :background "light grey"))))
    `(ediff-odd-diff-B ((,class (:foreground "black" :background "light grey"))))
 
-   ;; Flyspell
+   ;; Flyspell.
    (if (version< emacs-version "24.4")
        `(flyspell-duplicate ((,class (:underline "#008000" :inherit nil))))
      `(flyspell-duplicate ((,class (:underline (:style wave :color "#008000") :inherit nil)))))
@@ -262,7 +262,7 @@ more...")
        `(flyspell-incorrect ((,class (:underline "red" :inherit nil))))
      `(flyspell-incorrect ((,class (:underline (:style wave :color "red") :inherit nil)))))
 
-   ;; ;; Semantic faces
+   ;; ;; Semantic faces.
    ;; `(semantic-decoration-on-includes ((,class (:underline ,cham-4))))
    ;; `(semantic-decoration-on-private-members-face ((,class (:background ,alum-2))))
    ;; `(semantic-decoration-on-protected-members-face ((,class (:background ,alum-2))))
