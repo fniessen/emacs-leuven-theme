@@ -1,7 +1,7 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
 #+DESCRIPTION: Emacs custom color theme for light background
-#+KEYWORDS:  emacs, custom theme, color theme, faces
+#+KEYWORDS:  emacs, leuven, custom theme, color theme, faces, melpa
 #+LANGUAGE:  en
 
 #+SETUPFILE: ~/src/org-style/setup/bigblow-pirilampo.setup
