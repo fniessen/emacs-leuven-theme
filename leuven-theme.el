@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150114.1602
+;; Version: 20150116.1342
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -718,11 +718,12 @@ more...")
 
 (provide-theme 'leuven)
 
+;; This is for the sake of Emacs.
 ;; Local Variables:
+;; no-byte-compile: t
+;; time-stamp-end: "$"
 ;; time-stamp-format: "%:y%02m%02d.%02H%02M"
 ;; time-stamp-start: "Version: "
-;; time-stamp-end: "$"
-;; no-byte-compile: t
 ;; End:
 
 ;;; leuven-theme.el ends here
