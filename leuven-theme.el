@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150116.1342
+;; Version: 20150204.1439
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -330,8 +330,10 @@ more...")
    `(company-tooltip-common ((,class (:weight bold :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight bold :inherit company-tooltip-selection))))
    `(compare-windows ((,class (:background "#FFFF00"))))
+   ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
+   ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
    `(compilation-error ((,class (:weight bold :foreground "red"))))
-   `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; used for grep
+   `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; Used for grep.
    `(compilation-line-number ((,class (:weight bold :foreground "#A535AE"))))
    `(compilation-warning ((,class (:weight bold :foreground "orange"))))
    `(css-property ((,class (:foreground "#00AA00"))))
@@ -430,6 +432,7 @@ more...")
    `(google-translate-listen-button-face ((t (:height 0.8))))
    `(helm-action ((,class (:foreground "black"))))
    `(helm-bookmarks-su-face ((,class (:foreground "red"))))
+   `(helm-buffer-directory ((,class ,directory)))
    `(helm-buffer-process ((,class (:foreground "#008200"))))
    `(helm-candidate-number ((,class (:foreground "black" :background "#FFFF66"))))
    `(helm-dir-heading ((,class (:foreground "blue" :background "pink"))))
