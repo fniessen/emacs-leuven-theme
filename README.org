@@ -37,8 +37,8 @@ finally found a theme that fits me exactly." \\
 visual details for Org mode are just wonderful." \\
 -- /Steve B./
 
-"I'm using leuven theme also, which is a great theme for Org-mode. [...]
-I cannot use another emacs-theme." \\
+"I'm using leuven theme, which is a great theme for Org-mode. [...]  I cannot
+use another emacs-theme." \\
 -- /Joseph Vidal-Rosset/
 
 "Leuven theme is awesome!" \\
