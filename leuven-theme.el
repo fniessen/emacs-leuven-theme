@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150204.1439
+;; Version: 20150209.1427
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -332,10 +332,13 @@ more...")
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
    ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
-   `(compilation-error ((,class (:weight bold :foreground "red"))))
-   `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; Used for grep.
+   `(compilation-error ((,class (:weight bold :foreground "red")))) ; Used for grep error messages.
+   `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; Used for grep hits.
    `(compilation-line-number ((,class (:weight bold :foreground "#A535AE"))))
    `(compilation-warning ((,class (:weight bold :foreground "orange"))))
+   `(compilation-mode-line-exit ((,class (:weight bold :foreground "green")))) ; :exit[matched]
+   `(compilation-mode-line-fail ((,class (:weight bold :foreground "violet")))) ; :exit[no match]
+   `(compilation-mode-line-run ((,class (:weight bold :foreground "orange")))) ; :run
    `(css-property ((,class (:foreground "#00AA00"))))
    `(css-selector ((,class (:weight bold :foreground "blue"))))
    `(custom-button ((,class (:box (:line-width 2 :style released-button) :foreground "black" :background "lightgrey"))))
@@ -506,7 +509,7 @@ more...")
    `(magit-section-title ((,class (:family "Sans Serif" :height 1.8 :weight bold :foreground "cornflower blue" :inherit nil))))
    `(makefile-space-face ((,class (:background "hot pink"))))
    `(makefile-targets ((,class (:weight bold :foreground "blue"))))
-   `(match ((,class ,match)))
+   `(match ((,class ,match)))           ; Used for grep matches.
    `(mm-uu-extract ((,class ,code-block)))
    `(moccur-current-line-face ((,class (:foreground "black" :background "#FFFFCC"))))
    `(moccur-face ((,class (:foreground "black" :background "#FFFF99"))))
@@ -630,7 +633,7 @@ more...")
    `(rng-error ((,class (:weight bold :foreground "red" :background "#FBE3E4"))))
    `(sh-heredoc ((,class (:foreground "blue" :background "#EEF5FE"))))
    `(sh-quoted-exec ((,class (:foreground "#FF1493"))))
-   `(shadow ((,class ,shadow)))
+   `(shadow ((,class ,shadow)))         ; Used for grep context lines.
    `(shell-option-face ((,class (:foreground "forest green"))))
    `(shell-output-2-face ((,class (:foreground "blue"))))
    `(shell-output-3-face ((,class (:foreground "purple"))))
