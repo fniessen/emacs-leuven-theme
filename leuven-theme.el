@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150213.1232
+;; Version: 20150213.1421
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -333,13 +333,13 @@ more...")
    `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
    `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
    ;; `(company-template-field ((,class ())))
-   `(company-tooltip ((,class (:weight bold :foreground "black" :background "#F8F8FC"))))
-   `(company-tooltip-annotation ((,class (:weight normal :foreground "#999999" :background "#F8F8FC"))))
+   `(company-tooltip ((,class (:weight bold :foreground "black" :background "#F5F5F9"))))
+   `(company-tooltip-annotation ((,class (:weight normal :foreground "#999999" :background "#F5F5F9"))))
    `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
    ;; `(company-tooltip-mouse ((,class ())))
    ;; `(company-tooltip-search ((,class ())))
-   `(company-tooltip-selection ((,class (:weight bold :foreground "white" :background "#519EDC"))))
+   `(company-tooltip-selection ((,class (:weight bold :foreground "white" :background "#3C7FD4"))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
    ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
@@ -650,6 +650,8 @@ more...")
    `(shell-output-3-face ((,class (:foreground "purple"))))
    `(shell-output-face ((,class (:foreground "black"))))
    ;; `(shell-prompt-face ((,class (:weight bold :foreground "yellow"))))
+   `(shm-current-face ((,class (:background "#EEE8D5"))))
+   `(shm-quarantine-face ((,class (:background "lemonchiffon"))))
    `(show-paren-match ((,class ,paren-matched)))
    `(show-paren-mismatch ((,class ,paren-unmatched)))
    `(sml-modeline-end-face ((,class (:background "#6BADF6")))) ; #335EA8
