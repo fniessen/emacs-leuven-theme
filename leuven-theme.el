@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150209.1427
+;; Version: 20150213.1030
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -326,9 +326,11 @@ more...")
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
    `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#FFFFD7")))) ; same background as highlight-line
+   `(company-tooltip ((,class (:weight bold :foreground "black" :background "cornsilk"))))
    `(company-tooltip-annotation ((,class (:foreground "#999999" :background "cornsilk"))))
-   `(company-tooltip-common ((,class (:weight bold :inherit company-tooltip))))
-   `(company-tooltip-common-selection ((,class (:weight bold :inherit company-tooltip-selection))))
+   `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
+   `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
+   `(company-tooltip-selection ((,class (:weight bold :foreground "white" :background "#519EDC"))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
    ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
