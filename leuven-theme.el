@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150213.1030
+;; Version: 20150213.1232
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -325,11 +325,20 @@ more...")
    `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
+   ;; `(company-echo ((,class ())))
+   ;; `(company-echo-common ((,class ())))
+   ;; `(company-preview ((,class ())))
    `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#FFFFD7")))) ; same background as highlight-line
-   `(company-tooltip ((,class (:weight bold :foreground "black" :background "cornsilk"))))
-   `(company-tooltip-annotation ((,class (:foreground "#999999" :background "cornsilk"))))
+   ;; `(company-preview-search ((,class ())))
+   `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
+   `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
+   ;; `(company-template-field ((,class ())))
+   `(company-tooltip ((,class (:weight bold :foreground "black" :background "#F8F8FC"))))
+   `(company-tooltip-annotation ((,class (:weight normal :foreground "#999999" :background "#F8F8FC"))))
    `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
+   ;; `(company-tooltip-mouse ((,class ())))
+   ;; `(company-tooltip-search ((,class ())))
    `(company-tooltip-selection ((,class (:weight bold :foreground "white" :background "#519EDC"))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
