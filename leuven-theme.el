@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150218.1508
+;; Version: 20150224.0924
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -63,10 +63,10 @@ more...")
       (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
       (mail-read '(:foreground "#A9A9A9"))
       (mail-read-high '(:foreground "#808080"))
-      (mail-ticked '(:foreground "#ED4337"))
+      (mail-ticked '(:foreground "#E92415"))
       (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
-      (mail-unread '(:foreground "#1082D8"))
-      (mail-unread-high '(:foreground "#0B5B97"))
+      (mail-unread '(:foreground "#1B7BB8"))
+      (mail-unread-high '(:foreground "#135985"))
       (marked-line '(:foreground "red" :background "pink"))
       (match '(:weight bold :background "#FBE448")) ; occur patterns
       (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
