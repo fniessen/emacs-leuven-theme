@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150224.0924
+;; Version: 20150327.2328
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -67,7 +67,7 @@ more...")
       (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
       (mail-unread '(:foreground "#1B7BB8"))
       (mail-unread-high '(:foreground "#135985"))
-      (marked-line '(:foreground "red" :background "pink"))
+      (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
       (match '(:weight bold :background "#FBE448")) ; occur patterns
       (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
       (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
@@ -690,6 +690,7 @@ more...")
    `(vc-annotate-face-83FF3F ((,class (:foreground "#B0FF3F" :background "black"))))
    `(vc-annotate-face-B0FF3F ((,class (:foreground "#B0FF3F" :background "black"))))
    `(vc-annotate-face-DDFF3F ((,class (:foreground "#FFF33F" :background "black"))))
+   `(vc-annotate-face-F6FFCC ((,class (:foreground "black" :background "#FFFFC0"))))
    `(vc-annotate-face-FF3F3F ((,class (:foreground "#FF3F3F" :background "black"))))
    `(vc-annotate-face-FF6C3F ((,class (:foreground "#FF3F3F" :background "black"))))
    `(vc-annotate-face-FF993F ((,class (:foreground "#FF993F" :background "black"))))
