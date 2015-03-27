@@ -44,6 +44,9 @@ use another emacs-theme." \\
 "Leuven theme is awesome!" \\
 -- /Joost Diepenmaat/
 
+"I still am really enjoying using the theme -- wish I'd had it years back..." \\
+-- /V./
+
 * Screenshots
 
 ** Org buffer (with code)
