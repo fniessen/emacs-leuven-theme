@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150327.2328
+;; Version: 20150422.1545
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -599,7 +599,7 @@ more...")
    `(org-property-value ((,class (:foreground "#00A000"))))
    `(org-quote ((,class (:slant italic :foreground "dim gray" :background "#FFFFE0"))))
    `(org-scheduled ((,class (:foreground "#333333"))))
-   `(org-scheduled-previously ((,class (:foreground "#F22659"))))
+   `(org-scheduled-previously ((,class (:foreground "#565655"))))
    `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
@@ -609,7 +609,7 @@ more...")
    `(org-time-grid ((,class (:foreground "#CFCFCF"))))
    `(org-todo ((,class (:weight bold :box (:line-width 1 :color "#D8ABA7") :foreground "#D8ABA7" :background "#FFE6E4"))))
    `(org-upcoming-deadline ((,class (:foreground "#FF5555"))))
-   `(org-verbatim ((,class (:foreground "#0066CC"))))
+   `(org-verbatim ((,class (:foreground "#0066CC" :background "#F7FDFF"))))
    `(org-verse ((,class (:slant italic :foreground "dim gray" :background "#EEEEEE"))))
    `(org-warning ((,class (:weight bold :foreground "black" :background "#CCE7FF"))))
    `(outline-1 ((,class ,ol1)))
