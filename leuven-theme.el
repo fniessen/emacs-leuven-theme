@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150422.1545
+;; Version: 20150424.1511
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -56,7 +56,7 @@ more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:background "#FFFFD7")) ; #F5F5F5
+      (highlight-line '(:background "#F6FECD")) ; #E5E5E5 (gray) #FFFFD4 (yellow)
       (highlight-line-gnus '(:background "#DAEAFC")) ; defined in `gnus-leuven.el'
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
@@ -282,6 +282,12 @@ more...")
    `(ahs-face ((,class (:background "#84CFFF"))))
    `(ahs-definition-face ((,class (:weight bold :background "#84CFFF"))))
    `(ahs-plugin-defalt-face ((,class (:background "#FFB6C6"))))
+   ;; anzu-match-1
+   ;; anzu-match-2
+   ;; anzu-match-3
+   `(anzu-mode-line ((,class (:weight bold :foreground "#EDF0ED"))))
+   ;; anzu-replace-highlight
+   ;; anzu-replace-to
    `(auto-dim-other-buffers-face ((,class (:background "#F7F7F7"))))
    `(bbdb-company ((,class (:slant italic :foreground "steel blue"))))
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
@@ -310,7 +316,7 @@ more...")
    `(cfw:face-sunday ((,class (:foreground "#4E4E4E" :background "white" :weight bold))))
    `(cfw:face-title ((,class (:height 2.0 :foreground "#676767" :weight bold :inherit variable-pitch))))
    `(cfw:face-today ((,class (:foreground "#4F4A3D" :background "#FFFFCC"))))
-   `(cfw:face-today-title ((,class (:foreground "#4A95EB" :background "#FFFFCC"))))
+   `(cfw:face-today-title ((,class (:foreground "white" :background "#1766B1"))))
    `(cfw:face-toolbar ((,class (:background "white"))))
    `(cfw:face-toolbar-button-off ((,class (:foreground "#CFCFCF" :background "white"))))
    `(cfw:face-toolbar-button-on ((,class (:foreground "#5E5E5E" :background "#F6F6F6"))))
@@ -330,18 +336,18 @@ more...")
    ;; `(company-echo ((,class ())))
    ;; `(company-echo-common ((,class ())))
    ;; `(company-preview ((,class ())))
-   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#FFFFD7")))) ; same background as highlight-line
+   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#F6FECD")))) ; same background as `highlight-line'
    ;; `(company-preview-search ((,class ())))
    `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
    `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
    ;; `(company-template-field ((,class ())))
-   `(company-tooltip ((,class (:weight bold :foreground "black" :background "#F5F5F9"))))
-   `(company-tooltip-annotation ((,class (:weight normal :foreground "#999999" :background "#F5F5F9"))))
-   `(company-tooltip-common ((,class (:weight normal :inherit company-tooltip))))
+   `(company-tooltip ((,class (:weight bold :foreground "#171D28" :background "#E6E6E6"))))
+   `(company-tooltip-annotation ((,class (:weight normal :foreground "#378FC1" :background "#E6E6E6"))))
+   `(company-tooltip-common ((,class (:weight normal :foreground "#5B6367" :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
    ;; `(company-tooltip-mouse ((,class ())))
    ;; `(company-tooltip-search ((,class ())))
-   `(company-tooltip-selection ((,class (:weight bold :foreground "white" :background "#3C7FD4"))))
+   `(company-tooltip-selection ((,class (:weight bold :background "#93B0D8"))))
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
    ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
