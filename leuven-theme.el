@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150427.2101
+;; Version: 20150507.1427
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -725,6 +725,9 @@ more...")
    `(widget-field ((,class (:background "gray85"))))
    `(widget-inactive ((,class (:foreground "dim gray"))))
    `(widget-single-line-field ((,class (:background "gray85"))))
+   `(woman-bold ((,class (:weight bold :foreground "#F13D3D"))))
+   `(woman-italic ((,class (:weight bold :slant italic :foreground "#46BE1B"))))
+   `(woman-symbol ((,class (:weight bold :foreground "purple"))))
    `(yas/field-debug-face ((,class (:background "ivory2"))))
    `(yas/field-highlight-face ((,class (:background "DarkSeaGreen1"))))
    ))
