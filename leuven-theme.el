@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150507.1427
+;; Version: 20150509.2231
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -56,7 +56,7 @@ more...")
       (diff-none '(:foreground "gray33"))
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
-      (highlight-line '(:underline "#FFFF19" :background "#F6FECD")) ; #E5E5E5 (gray) #FFFFD4 (yellow)
+      (highlight-line '(:background "#F6FECD")) ; :underline "#FFFF19"
       (highlight-line-gnus '(:background "#DAEAFC")) ; defined in `gnus-leuven.el'
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
@@ -278,7 +278,7 @@ more...")
    `(Info-title-3-face ((,class ,ol3)))
    `(Info-title-4-face ((,class ,ol4)))
    `(ac-completion-face ((,class (:underline nil :foreground "#C0C0C0")))) ; like Google
-   `(ace-jump-face-foreground ((,class (:foreground "black" :background "#FBE448"))))
+   `(ace-jump-face-foreground ((,class (:weight bold :foreground "black" :background "#FEA500"))))
    `(ahs-face ((,class (:background "#84CFFF"))))
    `(ahs-definition-face ((,class (:weight bold :background "#84CFFF"))))
    `(ahs-plugin-defalt-face ((,class (:background "#FFB6C6"))))
@@ -289,6 +289,8 @@ more...")
    ;; anzu-replace-highlight
    ;; anzu-replace-to
    `(auto-dim-other-buffers-face ((,class (:background "#F7F7F7"))))
+   `(avy-background-face ((,class (:background "red"))))
+   `(avy-lead-face ((,class (:weight bold :foreground "black" :background "#FEA500"))))
    `(bbdb-company ((,class (:slant italic :foreground "steel blue"))))
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
    `(bbdb-field-value ((,class (:foreground "steel blue"))))
