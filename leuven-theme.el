@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150509.2231
+;; Version: 20150511.1220
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -299,7 +299,7 @@ more...")
    `(bmkp-light-fringe-autonamed ((,class (:background "#90AFD5"))))
    `(bmkp-light-fringe-non-autonamed ((,class (:background "#D5FFD5"))))
    `(bmkp-light-non-autonamed ((,class (:background "#C4FFC4"))))
-   `(browse-kill-ring-separator-face ((,class (:weight bold :foreground "slate gray"))))
+   `(browse-kill-ring-separator-face ((,class (:foreground "red"))))
    `(calendar-month-header ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(calendar-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(calendar-weekday-header ((,class (:weight bold :foreground "#1662AF"))))
@@ -476,6 +476,7 @@ more...")
    `(helm-moccur-buffer ((,class (:foreground "#0066CC"))))
    `(helm-selection ((,class ,volatile-highlight)))
    `(helm-selection-line ((,class ,volatile-highlight)))
+   `(helm-separator ((,class (:foreground "red"))))
    `(helm-lisp-show-completion ((,class ,volatile-highlight))) ; see `helm-dabbrev'
    `(helm-source-header ((,class (:family "Sans Serif" :height 1.3 :weight bold :foreground "white" :background "#2F69BF"))))
    `(helm-swoop-target-line-face ((,class ,volatile-highlight)))
