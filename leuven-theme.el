@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150512.1510
+;; Version: 20150513.1004
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -57,6 +57,7 @@ more...")
       (diff-removed '(:foreground "#A60000" :background "#FFDDDD"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
       (highlight-line '(:background "#F6FECD")) ; :underline "#FFFF19"
+      ;; (highlight-line '(:background "#E4E4E3"))
       (highlight-line-gnus '(:background "#DAEAFC")) ; defined in `gnus-leuven.el'
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
@@ -77,9 +78,10 @@ more...")
       (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC"))
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
-      (paren-matched '(:background "#99CCFF"))
-      (paren-unmatched '(:underline "red" :foreground nil :background "#FFDCDC"))
-      (region '(:background "#ABDFFA"))
+      ;; (paren-matched '(:background "#99CCFF"))
+      (paren-matched '(:foreground "black" :background "#E3C414"))
+      (paren-unmatched '(:weight bold :underline "red" :foreground "black" :background "#FFDCDC"))
+      (region '(:background "#B3D2F3"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#008000")) ; or #D0372D
       (subject '(:family "Sans Serif" :weight bold :foreground "black"))
