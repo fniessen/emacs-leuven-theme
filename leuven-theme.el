@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150520.0943
+;; Version: 20150520.1448
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -108,6 +108,7 @@ more...")
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
    `(trailing-whitespace ((,class (:background "#FFFF57"))))
+   `(query-replace ((,class (:inherit isearch))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2")))) ; see also `nobreak-space'
    `(whitespace-indentation ((,class ,tab)))
    `(whitespace-line ((,class (:foreground "#CC0000" :background "#FFFF88"))))
@@ -287,9 +288,9 @@ more...")
    `(anzu-match-1 ((,class (:foreground "black" :background "aquamarine"))))
    `(anzu-match-2 ((,class (:foreground "black" :background "springgreen"))))
    `(anzu-match-3 ((,class (:foreground "black" :background "yellow"))))
-   `(anzu-mode-line ((,class (:weight bold :foreground "#EDF0ED"))))
+   `(anzu-mode-line ((,class (:weight bold :foreground "white"))))
    `(anzu-replace-highlight ((,class (:inherit query-replace))))
-   `(anzu-replace-to ((,class (:foreground "red"))))
+   `(anzu-replace-to ((,class (:weight bold :foreground "#BD33FD" :background "#FDBD33"))))
    `(auto-dim-other-buffers-face ((,class (:background "#F7F7F7"))))
    `(avy-background-face ((,class (:background "red"))))
    `(avy-lead-face ((,class (:weight bold :foreground "black" :background "#FEA500"))))
@@ -640,10 +641,10 @@ more...")
    `(paren-face-mismatch ((,class ,paren-unmatched)))
    `(paren-face-no-match ((,class ,paren-unmatched)))
    `(persp-selected-face ((,class (:weight bold :foreground "#EEF5FE"))))
-   `(powerline-active1 ((,class (:background "grey22" :inherit mode-line))))
-   `(powerline-active2 ((,class (:background "#4070B6" :inherit mode-line))))
-   `(powerline-inactive1 ((,class (:background "#686868" :inherit mode-line-inactive))))
-   `(powerline-inactive2 ((,class (:background "#A9A9A9" :inherit mode-line-inactive))))
+   `(powerline-active1 ((,class (:foreground "#85CEEB" :background "#383838" :inherit mode-line))))
+   `(powerline-active2 ((,class (:foreground "#85CEEB" :background "#4070B6" :inherit mode-line))))
+   `(powerline-inactive1 ((,class (:foreground "#F0F0EF" :background "#686868" :inherit mode-line-inactive))))
+   `(powerline-inactive2 ((,class (:foreground "#F0F0EF" :background "#A9A9A9" :inherit mode-line-inactive))))
    `(rainbow-delimiters-depth-1-face ((,class (:foreground "#707183"))))
    `(rainbow-delimiters-depth-2-face ((,class (:foreground "#7388D6"))))
    `(rainbow-delimiters-depth-3-face ((,class (:foreground "#909183"))))
