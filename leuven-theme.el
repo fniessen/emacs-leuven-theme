@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150520.1649
+;; Version: 20150520.2150
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -81,11 +81,11 @@ more...")
       ;; (paren-matched '(:background "#99CCFF"))
       (paren-matched '(:background "#E3C414"))
       (paren-unmatched '(:weight bold :underline "red" :foreground "black" :background "#FFDCDC"))
-      (region '(:background "#B3D2F3"))
+      (region '(:background "#8ED3FF"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#008000")) ; or #D0372D
       (subject '(:family "Sans Serif" :weight bold :foreground "black"))
-      (symlink '(:foreground "deep sky blue"))
+      (symlink '(:foreground "#1F8DD6"))
       (tab '(:foreground "#D0D0D0" :background "white"))
       (volatile-highlight '(:underline nil :background "#FFF876"))
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA")))
@@ -298,10 +298,10 @@ more...")
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
    `(bbdb-field-value ((,class (:foreground "steel blue"))))
    `(bbdb-name ((,class (:underline t :foreground "#FF6633"))))
-   `(bmkp-light-autonamed ((,class (:background "#C2DDFD"))))
-   `(bmkp-light-fringe-autonamed ((,class (:background "#90AFD5"))))
-   `(bmkp-light-fringe-non-autonamed ((,class (:background "#D5FFD5"))))
-   `(bmkp-light-non-autonamed ((,class (:background "#C4FFC4"))))
+   `(bmkp-light-autonamed ((,class (:foreground "#C2DDFD"))))
+   `(bmkp-light-fringe-autonamed ((,class (:foreground "#242527" :background "#01FFFB")))) ; default
+   `(bmkp-light-fringe-non-autonamed ((,class (:foreground "#D5FFD5"))))
+   `(bmkp-light-non-autonamed ((,class (:foreground "#C4FFC4"))))
    `(browse-kill-ring-separator-face ((,class (:foreground "red"))))
    `(calendar-month-header ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(calendar-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
