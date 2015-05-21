@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150520.2150
+;; Version: 20150521.0919
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -300,7 +300,7 @@ more...")
    `(bbdb-name ((,class (:underline t :foreground "#FF6633"))))
    `(bmkp-light-autonamed ((,class (:foreground "#C2DDFD"))))
    `(bmkp-light-fringe-autonamed ((,class (:foreground "#242527" :background "#01FFFB")))) ; default
-   `(bmkp-light-fringe-non-autonamed ((,class (:foreground "#D5FFD5"))))
+   `(bmkp-light-fringe-non-autonamed ((,class (:foreground "#FCEDFD" :background "#C595EE"))))
    `(bmkp-light-non-autonamed ((,class (:foreground "#C4FFC4"))))
    `(browse-kill-ring-separator-face ((,class (:foreground "red"))))
    `(calendar-month-header ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
