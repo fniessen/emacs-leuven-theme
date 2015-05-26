@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150521.0919
+;; Version: 20150526.1016
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -100,7 +100,7 @@ more...")
    `(cursor ((,class (:background "#21BDFF"))))
 
    ;; Highlighting faces.
-   `(fringe ((,class (:foreground "#9B9B9B" :background "#EDEDED"))))
+   `(fringe ((,class (:foreground "#9B9B9B" :background "white"))))
    `(highlight ((,class ,volatile-highlight)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
@@ -201,15 +201,15 @@ more...")
    `(gnus-signature ((,class (:slant italic :foreground "#8B8D8E"))))
    `(gnus-splash ((,class (:foreground "#FF8C00"))))
    `(gnus-summary-cancelled ((,class ,cancel)))
-   `(gnus-summary-high-ancient ((,class ,mail-read-high)))
+   `(gnus-summary-high-ancient ((,class ,mail-unread-high)))
    `(gnus-summary-high-read ((,class ,mail-read-high)))
    `(gnus-summary-high-ticked ((,class ,mail-ticked)))
    `(gnus-summary-high-unread ((,class ,mail-unread-high)))
-   `(gnus-summary-low-ancient ((,class (:slant italic :foreground "gray55"))))
+   `(gnus-summary-low-ancient ((,class (:slant italic :foreground "black"))))
    `(gnus-summary-low-read ((,class (:slant italic :foreground "#999999" :background "#E0E0E0"))))
    `(gnus-summary-low-ticked ((,class ,mail-ticked)))
    `(gnus-summary-low-unread ((,class (:slant italic :foreground "black"))))
-   `(gnus-summary-normal-ancient ((,class ,mail-read)))
+   `(gnus-summary-normal-ancient ((,class ,mail-unread)))
    `(gnus-summary-normal-read ((,class ,mail-read)))
    `(gnus-summary-normal-ticked ((,class ,mail-ticked)))
    `(gnus-summary-normal-unread ((,class ,mail-unread)))
@@ -298,7 +298,7 @@ more...")
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
    `(bbdb-field-value ((,class (:foreground "steel blue"))))
    `(bbdb-name ((,class (:underline t :foreground "#FF6633"))))
-   `(bmkp-light-autonamed ((,class (:foreground "#C2DDFD"))))
+   `(bmkp-light-autonamed ((,class (:background "#BFFFFE"))))
    `(bmkp-light-fringe-autonamed ((,class (:foreground "#242527" :background "#01FFFB")))) ; default
    `(bmkp-light-fringe-non-autonamed ((,class (:foreground "#FCEDFD" :background "#C595EE"))))
    `(bmkp-light-non-autonamed ((,class (:foreground "#C4FFC4"))))
