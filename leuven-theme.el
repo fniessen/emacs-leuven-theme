@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150526.1016
+;; Version: 20150612.1412
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -280,7 +280,6 @@ more...")
    `(Info-title-2-face ((,class ,ol2)))
    `(Info-title-3-face ((,class ,ol3)))
    `(Info-title-4-face ((,class ,ol4)))
-   `(ac-completion-face ((,class (:underline nil :foreground "#C0C0C0")))) ; like Google
    `(ace-jump-face-foreground ((,class (:weight bold :foreground "black" :background "#FEA500"))))
    `(ahs-face ((,class (:background "#84CFFF"))))
    `(ahs-definition-face ((,class (:weight bold :background "#84CFFF"))))
@@ -338,21 +337,21 @@ more...")
    `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
-   ;; `(company-echo ((,class ())))
-   ;; `(company-echo-common ((,class ())))
-   ;; `(company-preview ((,class ())))
+
+   `(ac-candidate-face ((,class (:foreground "#5B6367" :background "lightgray")))) ; popup-face
+   `(ac-candidate-mouse-face ((,class (:foreground "white" :background "blue")))) ; popup-menu-mouse-face
+   `(ac-completion-face ((,class (:underline nil :foreground "#C0C0C0" :background "#FBFFAD")))) ; like Google
+   `(ac-selection-face ((,class (:foreground "white" :background "steelblue")))) ; popup-menu-selection-face
+
    `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#F6FECD")))) ; same background as `highlight-line'
-   ;; `(company-preview-search ((,class ())))
    `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
    `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
-   ;; `(company-template-field ((,class ())))
    `(company-tooltip ((,class (:weight bold :foreground "#171D28" :background "#E6E6E6"))))
    `(company-tooltip-annotation ((,class (:weight normal :foreground "#378FC1" :background "#E6E6E6"))))
    `(company-tooltip-common ((,class (:weight normal :foreground "#5B6367" :inherit company-tooltip))))
    `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
-   ;; `(company-tooltip-mouse ((,class ())))
-   ;; `(company-tooltip-search ((,class ())))
    `(company-tooltip-selection ((,class (:weight bold :background "#93B0D8"))))
+
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
    ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
