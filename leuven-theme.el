@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150616.2157
+;; Version: 20150619.1342
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -535,6 +535,34 @@ more...")
    `(magit-section-title ((,class (:family "Sans Serif" :height 1.8 :weight bold :foreground "cornflower blue" :inherit nil))))
    `(makefile-space-face ((,class (:background "hot pink"))))
    `(makefile-targets ((,class (:weight bold :foreground "blue"))))
+   ;; `(markdown-blockquote-face ((,class ())))
+   ;; `(markdown-bold-face ((,class (:weight bold :foreground "black"))))
+   ;; `(markdown-comment-face ((,class ())))
+   ;; `(markdown-footnote-face ((,class ())))
+   ;; `(markdown-header-delimiter-face ((,class ())))
+   ;; `(markdown-header-face ((,class ())))
+   `(markdown-header-face-1 ((,class ,ol1)))
+   `(markdown-header-face-2 ((,class ,ol2)))
+   `(markdown-header-face-3 ((,class ,ol3)))
+   `(markdown-header-face-4 ((,class ,ol4)))
+   `(markdown-header-face-5 ((,class ,ol5)))
+   `(markdown-header-face-6 ((,class ,ol6)))
+   ;; `(markdown-header-rule-face ((,class ())))
+   `(markdown-inline-code-face ((,class ,code-inline)))
+   ;; `(markdown-italic-face ((,class ())))
+   ;; `(markdown-language-keyword-face ((,class ())))
+   ;; `(markdown-line-break-face ((,class ())))
+   ;; `(markdown-link-face ((,class ())))
+   ;; `(markdown-link-title-face ((,class ())))
+   ;; `(markdown-list-face ((,class ())))
+   ;; `(markdown-math-face ((,class ())))
+   ;; `(markdown-metadata-key-face ((,class ())))
+   ;; `(markdown-metadata-value-face ((,class ())))
+   ;; `(markdown-missing-link-face ((,class ())))
+   ;; `(markdown-pre-face ((,class ())))
+   ;; `(markdown-reference-face ((,class ())))
+   ;; `(markdown-strike-through-face ((,class ())))
+   ;; `(markdown-url-face ((,class ())))
    `(match ((,class ,match)))           ; Used for grep matches.
    `(mm-uu-extract ((,class ,code-block)))
    `(moccur-current-line-face ((,class (:foreground "black" :background "#FFFFCC"))))
