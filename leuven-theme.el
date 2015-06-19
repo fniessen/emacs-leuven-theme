@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150619.1342
+;; Version: 20150619.1452
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -273,7 +273,8 @@ more...")
    ;; `(semantic-decoration-on-protected-members-face ((,class (:background ,alum-2))))
    ;; `(semantic-decoration-on-unknown-includes ((,class (:background ,choc-3))))
    ;; `(semantic-decoration-on-unparsed-includes ((,class (:underline ,orange-3))))
-   ;; `(semantic-tag-boundary-face ((,class (:overline ,blue-1))))
+   `(semantic-highlight-func-current-tag-face ((,class (:background "#EEF3F6"))))
+   `(semantic-tag-boundary-face ((,class (:overline "#F0F0F0"))))
    ;; `(semantic-unmatched-syntax-face ((,class (:underline ,red-1))))
 
    `(Info-title-1-face ((,class ,ol1)))
