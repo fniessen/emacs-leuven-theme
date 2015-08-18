@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150630.1219
+;; Version: 20150818.1454
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -477,19 +477,28 @@ more...")
    `(helm-ff-symlink ((,class ,symlink)))
    `(helm-file-name ((,class (:foreground "blue"))))
    `(helm-gentoo-match-face ((,class (:foreground "red"))))
+   `(helm-grep-lineno ((,class ,shadow)))
    `(helm-grep-match ((,class ,match)))
    `(helm-grep-running ((,class (:weight bold :foreground "white"))))
-   `(helm-grep-lineno ((,class ,shadow)))
    `(helm-isearch-match ((,class (:background "#CCFFCC"))))
+   `(helm-lisp-show-completion ((,class ,volatile-highlight))) ; see `helm-dabbrev'
+   ;; `(helm-ls-git-added-copied-face ((,class (:foreground ""))))
+   ;; `(helm-ls-git-added-modified-face ((,class (:foreground ""))))
+   ;; `(helm-ls-git-conflict-face ((,class (:foreground ""))))
+   ;; `(helm-ls-git-deleted-and-staged-face ((,class (:foreground ""))))
+   ;; `(helm-ls-git-deleted-not-staged-face ((,class (:foreground ""))))
+   ;; `(helm-ls-git-modified-and-staged-face ((,class (:foreground ""))))
+   `(helm-ls-git-modified-not-staged-face ((,class (:foreground "#BA36A5"))))
+   ;; `(helm-ls-git-renamed-modified-face ((,class (:foreground ""))))
+   ;; `(helm-ls-git-untracked-face ((,class (:foreground ""))))
    `(helm-match ((,class ,match)))
    `(helm-moccur-buffer ((,class (:foreground "#0066CC"))))
    `(helm-selection ((,class ,volatile-highlight)))
    `(helm-selection-line ((,class ,volatile-highlight)))
    `(helm-separator ((,class (:foreground "red"))))
-   `(helm-lisp-show-completion ((,class ,volatile-highlight))) ; see `helm-dabbrev'
    `(helm-source-header ((,class (:family "Sans Serif" :height 1.3 :weight bold :foreground "white" :background "#2F69BF"))))
-   `(helm-swoop-target-line-face ((,class ,volatile-highlight)))
    `(helm-swoop-target-line-block-face ((,class (:background "#CCCC00" :foreground "#222222"))))
+   `(helm-swoop-target-line-face ((,class ,volatile-highlight)))
    `(helm-swoop-target-word-face ((,class (:weight bold :foreground nil :background "#FDBD33"))))
    `(helm-visible-mark ((,class ,marked-line)))
    `(helm-w3m-bookmarks-face ((,class (:underline t :foreground "cyan1"))))
