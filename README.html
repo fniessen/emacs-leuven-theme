@@ -1,379 +1,437 @@
-<!-- <xml version="1.0" encoding="utf-8"> -->
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <meta name="generator" content=
-  "HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org" />
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leuven-theme</title>
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Fabrice Niessen" />
+<meta  name="description" content="Emacs custom color theme for light background"
+ />
+<meta  name="keywords" content="emacs, leuven, custom theme, color theme, faces, melpa" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
 
-  <title>Leuven-theme</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="generator" content="Org-mode" />
-  <meta name="author" content="Fabrice Niessen" />
-  <meta name="description" content=
-  "Emacs custom color theme for light background" />
-  <meta name="keywords" content=
-  "emacs, leuven, custom theme, color theme, faces, melpa" />
-  <link rel="stylesheet" type="text/css" href=
-  "http://www.pirilampo.org/styles/bigblow/css/htmlize.css" />
-  <link rel="stylesheet" type="text/css" href=
-  "http://www.pirilampo.org/styles/bigblow/css/bigblow.css" />
-  <link rel="stylesheet" type="text/css" href=
-  "http://www.pirilampo.org/styles/bigblow/css/hideshow.css" />
-<script type="text/javascript" src=
-"http://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js">
-</script>
-<script type="text/javascript" src=
-"http://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js">
-</script>
-<script type="text/javascript" src=
-"http://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js">
-</script>
-<script type="text/javascript" src=
-"http://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js">
-</script>
-<script type="text/javascript" src=
-"http://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js">
-</script>
-<script type="text/javascript" src=
-"http://www.pirilampo.org/styles/bigblow/js/bigblow.js">
-</script>
-<script type="text/javascript" src=
-"http://www.pirilampo.org/styles/bigblow/js/hideshow.js">
-</script>
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/bigblow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/hideshow.js"></script>
 </head>
-
 <body>
-  <div id="content">
-    <h1 class="title">Leuven-theme</h1>
+<div id="content">
+<h1 class="title">Leuven-theme</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline1">1. Quotations</a></li>
+<li><a href="#orgheadline4">2. Screenshots</a>
+<ul>
+<li><a href="#orgheadline2">2.1. Org buffer (with code)</a></li>
+<li><a href="#orgheadline3">2.2. Agenda</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline8">3. Install it</a>
+<ul>
+<li><a href="#orgheadline5">3.1. Install the ELPA package</a></li>
+<li><a href="#orgheadline6">3.2. Install the Git version</a></li>
+<li><a href="#orgheadline7">3.3. Customize it</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline12">4. Contributing</a>
+<ul>
+<li><a href="#orgheadline9">4.1. Issues</a></li>
+<li><a href="#orgheadline10">4.2. Patches</a></li>
+<li><a href="#orgheadline11">4.3. Donations</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline13">5. License</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://opensource.org/licenses/GPL-3.0"><object type="image/svg+xml" data="http://img.shields.io/:license-gpl-blue.svg" >
+Sorry, your browser does not support SVG.</object></a>
+<a href="http://melpa.org/#/leuven-theme"><object type="image/svg+xml" data="http://melpa.org/packages/leuven-theme-badge.svg" >
+Sorry, your browser does not support SVG.</object></a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs-leuven-theme&amp;currency_code=EUR&amp;bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="btn_donate_LG.gif" /></a>
+</p>
 
-    <div id="table-of-contents">
-      <h2>Table of Contents</h2>
+<p>
+Looking for an awesome Emacs color theme?  Here&rsquo;s the place to find one!
+</p>
 
-      <div id="text-table-of-contents">
-        <ul>
-          <li><a href="#sec-1">1. Quotations</a></li>
+<p>
+Welcome to the custom Leuven theme, an elegant color theme for light
+backgrounds, with built-in style for many components such as Org mode, Gnus,
+Dired+ and EDiff. Make it yours!
+</p>
 
-          <li>
-            <a href="#sec-2">2. Screenshots</a>
+<script src="http://platform.twitter.com/widgets.js"></script>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="f_niessen">Tweet</a>
 
-            <ul>
-              <li><a href="#sec-2-1">2.1. Org buffer (with code)</a></li>
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"><span class="section-number-2">1</span> Quotations</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+&ldquo;Your Org-enhancing color-theme &rdquo;leuven&ldquo; ROCKS! &#x2026; and not just for Org.&rdquo; <br  />
+&#x2013; <i>Johan S.</i>
+</p>
 
-              <li><a href="#sec-2-2">2.2. Agenda</a></li>
-            </ul>
-          </li>
+<p>
+&ldquo;Amazing theme. I&rsquo;ve been switching themes like socks the past 3 years and
+finally found a theme that fits me exactly.&rdquo; <br  />
+&#x2013; <i>zeltak</i>
+</p>
 
-          <li>
-            <a href="#sec-3">3. Install it</a>
+<p>
+&ldquo;The Leuven theme has quickly become my favorite &#x2013; the colors are great and the
+visual details for Org mode are just wonderful.&rdquo; <br  />
+&#x2013; <i>Steve B.</i>
+</p>
 
-            <ul>
-              <li><a href="#sec-3-1">3.1. Install the ELPA package</a></li>
+<p>
+&ldquo;I&rsquo;m using leuven theme, which is a great theme for Org-mode. [&#x2026;]  I cannot
+use another emacs-theme.&rdquo; <br  />
+&#x2013; <i>Joseph Vidal-Rosset</i>
+</p>
 
-              <li><a href="#sec-3-2">3.2. Install the Git version</a></li>
+<p>
+&ldquo;Leuven theme is awesome!&rdquo; <br  />
+&#x2013; <i>Joost Diepenmaat</i>
+</p>
 
-              <li><a href="#sec-3-3">3.3. Customize it</a></li>
-            </ul>
-          </li>
+<p>
+&ldquo;I still am really enjoying using the theme &#x2013; wish I&rsquo;d had it years back&#x2026;&rdquo; <br  />
+&#x2013; <i>V.</i>
+</p>
+</div>
+</div>
 
-          <li>
-            <a href="#sec-4">4. Contributing</a>
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4"><span class="section-number-2">2</span> Screenshots</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-orgheadline2" class="outline-3">
+<h3 id="orgheadline2"><span class="section-number-3">2.1</span> Org buffer (with code)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Fontified source code blocks:
+</p>
 
-            <ul>
-              <li><a href="#sec-4-1">4.1. Issues</a></li>
 
-              <li><a href="#sec-4-2">4.2. Patches</a></li>
+<div class="figure">
+<p><img src="./images/fontified-src-code-blocks.png" alt="fontified-src-code-blocks.png" width="640" />
+</p>
+</div>
 
-              <li><a href="#sec-4-3">4.3. Donations</a></li>
-            </ul>
-          </li>
+<p>
+Note that, to get the whole heading lines fontified, you need to add the
+following line into your <code>.emacs</code> file:
+</p>
 
-          <li><a href="#sec-5">5. License</a></li>
-        </ul>
-      </div>
-    </div>
+<div class="org-src-container">
 
-    <p><a href="http://opensource.org/licenses/GPL-3.0"><object type=
-    "image/svg+xml" data="http://img.shields.io/:license-gpl-blue.svg">
-      Sorry, your browser does not support SVG.
-    </object></a> <a href="http://melpa.org/#/leuven-theme"><object type=
-    "image/svg+xml" data="http://melpa.org/packages/leuven-theme-badge.svg">
-      Sorry, your browser does not support SVG.
-    </object></a> <a href=
-    "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs-leuven-theme&amp;currency_code=EUR&amp;bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted">
-    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt=
-    "btn_donate_LG.gif" /></a></p>
-
-    <p>Looking for an awesome Emacs color theme? Here’s the place to find
-    one!</p>
-
-    <p>Welcome to the custom Leuven theme, an elegant color theme for light
-    backgrounds, with built-in style for many components such as Org mode,
-    Gnus, Dired+ and EDiff. Make it yours!</p><script src=
-    "http://platform.twitter.com/widgets.js" type="text/javascript">
-</script> <a href="https://twitter.com/share" class="twitter-share-button"
-data-via="f_niessen">Tweet</a>
-
-    <div id="outline-container-sec-1" class="outline-2">
-      <h2 id="sec-1"><span class="section-number-2">1</span> Quotations</h2>
-
-      <div class="outline-text-2" id="text-1">
-        <p>“Your Org-enhancing color-theme “leuven” ROCKS! … and not just for
-        Org.”<br />
-        – <i>Johan S.</i></p>
-
-        <p>“Amazing theme. I’ve been switching themes like socks the past 3
-        years and finally found a theme that fits me exactly.”<br />
-        – <i>zeltak</i></p>
-
-        <p>“The Leuven theme has quickly become my favorite – the colors are
-        great and the visual details for Org mode are just wonderful.”<br />
-        – <i>Steve B.</i></p>
-
-        <p>“I’m using leuven theme, which is a great theme for Org-mode. […] I
-        cannot use another emacs-theme.”<br />
-        – <i>Joseph Vidal-Rosset</i></p>
-
-        <p>“Leuven theme is awesome!”<br />
-        – <i>Joost Diepenmaat</i></p>
-      </div>
-    </div>
-
-    <div id="outline-container-sec-2" class="outline-2">
-      <h2 id="sec-2"><span class="section-number-2">2</span> Screenshots</h2>
-
-      <div class="outline-text-2" id="text-2"></div>
-
-      <div id="outline-container-sec-2-1" class="outline-3">
-        <h3 id="sec-2-1"><span class="section-number-3">2.1</span> Org buffer
-        (with code)</h3>
-
-        <div class="outline-text-3" id="text-2-1">
-          <p>Fontified source code blocks:</p>
-
-          <div class="figure">
-            <p><img src="./images/fontified-src-code-blocks.png" alt=
-            "fontified-src-code-blocks.png" width="640" /></p>
-          </div>
-
-          <p>Note that, to get the whole heading lines fontified, you need to
-          add the following line into your <code>.emacs</code> file:</p>
-
-          <div class="org-src-container">
-            <pre class="src src-emacs-lisp">
-<span class="org-comment-delimiter">;; </span><span class=
-"org-comment">Fontify the whole line for headings (with a background color).</span>
-(setq org-fontify-whole-heading-line t)
+<pre class="src src-emacs-lisp"><span class="org-comment-delimiter">;; </span><span class="org-comment">Fontify the whole line for headings (with a background color).</span>
+(<span class="org-keyword">setq</span> org-fontify-whole-heading-line t)
 </pre>
-          </div>
-        </div>
-      </div>
+</div>
+</div>
+</div>
 
-      <div id="outline-container-sec-2-2" class="outline-3">
-        <h3 id="sec-2-2"><span class="section-number-3">2.2</span> Agenda</h3>
+<div id="outline-container-orgheadline3" class="outline-3">
+<h3 id="orgheadline3"><span class="section-number-3">2.2</span> Agenda</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Agenda with task list:
+</p>
 
-        <div class="outline-text-3" id="text-2-2">
-          <p>Agenda with task list:</p>
 
-          <div class="figure">
-            <p><img src="./images/agenda-and-task-list.png" alt=
-            "agenda-and-task-list.png" width="640" /></p>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="figure">
+<p><img src="./images/agenda-and-task-list.png" alt="agenda-and-task-list.png" width="640" />
+</p>
+</div>
+</div>
+</div>
+</div>
 
-    <div id="outline-container-sec-3" class="outline-2">
-      <h2 id="sec-3"><span class="section-number-2">3</span> Install it</h2>
+<div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8"><span class="section-number-2">3</span> Install it</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Though Leuven-theme has been added in <b>Emacs 24.4</b> (October 2014), you can get
+a fresh version of it, at any time, from <a href="http://melpa.milkbox.net/">MELPA</a> or from <a href="https://github.com/fniessen/emacs-leuven-theme/">GitHub</a>.
+</p>
+</div>
 
-      <div class="outline-text-2" id="text-3">
-        <p>Though Leuven-theme has been added in <b>Emacs 24.4</b> (October
-        2014), you can get a fresh version of it, at any time, from <a href=
-        "http://melpa.milkbox.net/">MELPA</a> or from <a href=
-        "https://github.com/fniessen/emacs-leuven-theme/">GitHub</a>.</p>
-      </div>
+<div id="outline-container-orgheadline5" class="outline-3">
+<h3 id="orgheadline5"><span class="section-number-3">3.1</span> Install the ELPA package</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+In Emacs 24.x, <code>M-x list-packages</code> is the <i>recommended way</i> to list and install
+packages.
+</p>
 
-      <div id="outline-container-sec-3-1" class="outline-3">
-        <h3 id="sec-3-1"><span class="section-number-3">3.1</span> Install the
-        ELPA package</h3>
+<p>
+MELPA keeps stable releases of Leuven theme.
+</p>
 
-        <div class="outline-text-3" id="text-3-1">
-          <p>In Emacs 24.x, <code>M-x list-packages</code> is the
-          <i>recommended way</i> to list and install packages.</p>
+<p>
+See <a href="http://melpa.milkbox.net/#installing">http://melpa.milkbox.net/#installing</a> for more information on how to install
+<code>leuven-theme</code>:
+</p>
 
-          <p>MELPA keeps stable releases of Leuven theme.</p>
+<ol class="org-ol">
+<li><p>
+Just add MELPA to <code>package-archives</code>,
+</p>
 
-          <p>See <a href=
-          "http://melpa.milkbox.net/#installing">http://melpa.milkbox.net/#installing</a>
-          for more information on how to install <code>leuven-theme</code>:</p>
+<div class="org-src-container">
 
-          <ol class="org-ol">
-            <li>
-              <p>Just add MELPA to <code>package-archives</code>,</p>
-
-              <div class="org-src-container">
-                <pre class="src src-emacs-lisp">
-<span class="org-comment-delimiter">;; </span><span class=
-"org-comment">Archives from which to fetch.</span>
-(setq package-archives
-      (append '((<span class="org-string">"melpa"</span> . <span class=
-"org-string">"http://melpa.milkbox.net/packages/"</span>))
-              package-archives))
+<pre class="src src-emacs-lisp"><span class="org-comment-delimiter">;; </span><span class="org-comment">Archives from which to fetch.</span>
+(<span class="org-keyword">setq</span> package-archives
+      (append '((<span class="org-string">"melpa"</span> . <span class="org-string">"http://melpa.milkbox.net/packages/"</span>))
+              package-archives))
 </pre>
-              </div>
-            </li>
+</div></li>
 
-            <li>Call <code>list-packages</code>,</li>
+<li>Call <code>list-packages</code>,</li>
 
-            <li>Search for <code>leuven-theme</code>,</li>
+<li>Search for <code>leuven-theme</code>,</li>
 
-            <li>Mark it for installation with <code>i</code>, and</li>
+<li>Mark it for installation with <code>i</code>, and</li>
 
-            <li>Execute the install action with <code>x</code>.</li>
-          </ol>
-        </div>
-      </div>
+<li>Execute the install action with <code>x</code>.</li>
+</ol>
+</div>
+</div>
 
-      <div id="outline-container-sec-3-2" class="outline-3">
-        <h3 id="sec-3-2"><span class="section-number-3">3.2</span> Install the
-        Git version</h3>
+<div id="outline-container-orgheadline6" class="outline-3">
+<h3 id="orgheadline6"><span class="section-number-3">3.2</span> Install the Git version</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Get the full Git repository at <a href="https://github.com/fniessen/emacs-leuven-theme">https://github.com/fniessen/emacs-leuven-theme</a>
+using the following command:
+</p>
 
-        <div class="outline-text-3" id="text-3-2">
-          <p>Get the full Git repository at <a href=
-          "https://github.com/fniessen/emacs-leuven-theme">https://github.com/fniessen/emacs-leuven-theme</a>
-          using the following command:</p>
+<div class="org-src-container">
 
-          <div class="org-src-container">
-            <pre class="src src-shell">
-git clone git://github.com/fniessen/emacs-leuven-theme.git
+<pre class="src src-shell">git clone git://github.com/fniessen/emacs-leuven-theme.git
 </pre>
-          </div>
+</div>
 
-          <p>Add the following in your <code>.emacs</code> file:</p>
+<p>
+Add the following in your <code>.emacs</code> file:
+</p>
 
-          <div class="org-src-container">
-            <pre class="src src-emacs-lisp">
-(add-to-list 'custom-theme-load-path <span class=
-"org-string">"/path/to/emacs-leuven-theme"</span>)
-(load-theme 'leuven t)                  <span class=
-"org-comment-delimiter">; </span><span class=
-"org-comment">For Emacs 24+.</span>
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(add-to-list 'custom-theme-load-path <span class="org-string">"/path/to/emacs-leuven-theme"</span>)
+(load-theme 'leuven t)                  <span class="org-comment-delimiter">; </span><span class="org-comment">For Emacs 24+.</span>
 </pre>
-          </div>
+</div>
 
-          <p>Restart Emacs.</p>
-        </div>
-      </div>
+<p>
+Restart Emacs.
+</p>
+</div>
+</div>
 
-      <div id="outline-container-sec-3-3" class="outline-3">
-        <h3 id="sec-3-3"><span class="section-number-3">3.3</span> Customize
-        it</h3>
+<div id="outline-container-orgheadline7" class="outline-3">
+<h3 id="orgheadline7"><span class="section-number-3">3.3</span> Customize it</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+You don&rsquo;t like my large Org level-1 headings (though I made them larger on
+purpose!)?
+</p>
 
-        <div class="outline-text-3" id="text-3-3">
-          <p>You don’t like my large Org level-1 headings (though I made them
-          larger on purpose!)?</p>
+<p>
+You should be able to get my theme and a smaller face by using something such
+as:
+</p>
 
-          <p>You should be able to get my theme and a smaller face by using
-          something such as:</p>
+<div class="org-src-container">
 
-          <div class="org-src-container">
-            <pre class="src src-emacs-lisp">
-(set-face-attribute 'org-level-1 nil <span class=
-"org-builtin">:height</span> 90) <span class=
-"org-comment-delimiter">; </span><span class="org-comment">9 pt font.</span>
+<pre class="src src-emacs-lisp">(set-face-attribute 'org-level-1 nil <span class="org-builtin">:height</span> 90) <span class="org-comment-delimiter">; </span><span class="org-comment">9 pt font.</span>
 </pre>
-          </div>
+</div>
 
-          <p>That should change the font size without changing the colors.</p>
-        </div>
-      </div>
-    </div>
+<p>
+That should change the font size without changing the colors.
+</p>
+</div>
+</div>
+</div>
 
-    <div id="outline-container-sec-4" class="outline-2">
-      <h2 id="sec-4"><span class="section-number-2">4</span> Contributing</h2>
+<div id="outline-container-orgheadline12" class="outline-2">
+<h2 id="orgheadline12"><span class="section-number-2">4</span> Contributing</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-orgheadline9" class="outline-3">
+<h3 id="orgheadline9"><span class="section-number-3">4.1</span> Issues</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Report issues and suggest features and improvements on the <a href="https://github.com/fniessen/emacs-leuven-theme/issues/new">GitHub issue tracker</a>.
+</p>
+</div>
+</div>
 
-      <div class="outline-text-2" id="text-4"></div>
+<div id="outline-container-orgheadline10" class="outline-3">
+<h3 id="orgheadline10"><span class="section-number-3">4.2</span> Patches</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+I love contributions!  Patches under any form are always welcome!
+</p>
+</div>
+</div>
 
-      <div id="outline-container-sec-4-1" class="outline-3">
-        <h3 id="sec-4-1"><span class="section-number-3">4.1</span> Issues</h3>
+<div id="outline-container-orgheadline11" class="outline-3">
+<h3 id="orgheadline11"><span class="section-number-3">4.3</span> Donations</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+If you like the emacs-leuven-theme project, you can show your appreciation and
+help support future development by making a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs-leuven-theme&amp;currency_code=EUR&amp;bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted">donation</a> through PayPal.
+</p>
 
-        <div class="outline-text-3" id="text-4-1">
-          <p>Report issues and suggest features and improvements on the
-          <a href="https://github.com/fniessen/emacs-leuven-theme/issues/new">GitHub
-          issue tracker</a>.</p>
-        </div>
-      </div>
+<p>
+Regardless of the donations, emacs-leuven-theme will always be free both as in
+beer and as in speech.
+</p>
+</div>
+</div>
+</div>
 
-      <div id="outline-container-sec-4-2" class="outline-3">
-        <h3 id="sec-4-2"><span class="section-number-3">4.2</span> Patches</h3>
+<div id="outline-container-orgheadline13" class="outline-2">
+<h2 id="orgheadline13"><span class="section-number-2">5</span> License</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Copyright (C) 2003-2015 Free Software Foundation, Inc.
+</p>
 
-        <div class="outline-text-3" id="text-4-2">
-          <p>I love contributions! Patches under any form are always
-          welcome!</p>
-        </div>
-      </div>
+<p>
+Author: Fabrice Niessen <br  />
+Keywords: emacs color theme
+</p>
 
-      <div id="outline-container-sec-4-3" class="outline-3">
-        <h3 id="sec-4-3"><span class="section-number-3">4.3</span>
-        Donations</h3>
+<p>
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+</p>
 
-        <div class="outline-text-3" id="text-4-3">
-          <p>If you like the emacs-leuven-theme project, you can show your
-          appreciation and support future development by making a <a href=
-          "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs-leuven-theme&amp;currency_code=EUR&amp;bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted">
-          donation</a> through PayPal.</p>
+<p>
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+</p>
 
-          <p>Regardless of the donations, emacs-leuven-theme will always be
-          free both as in beer and as in speech.</p>
-        </div>
-      </div>
-    </div>
+<p>
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.
+</p>
 
-    <div id="outline-container-sec-5" class="outline-2">
-      <h2 id="sec-5"><span class="section-number-2">5</span> License</h2>
-
-      <div class="outline-text-2" id="text-5">
-        <p>Copyright (C) 2003-2015 Free Software Foundation, Inc.</p>
-
-        <p>Author: Fabrice Niessen<br />
-        Keywords: emacs color theme</p>
-
-        <p>This program is free software; you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-        the Free Software Foundation, either version 3 of the License, or (at
-        your option) any later version.</p>
-
-        <p>This program is distributed in the hope that it will be useful, but
-        WITHOUT ANY WARRANTY; without even the implied warranty of
-        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-        General Public License for more details.</p>
-
-        <p>You should have received a copy of the GNU General Public License
-        along with this program. If not, see <a href=
-        "http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
-
-        <p><a href="http://opensource.org/licenses/GPL-3.0"><object type=
-        "image/svg+xml" data="http://img.shields.io/:license-gpl-blue.svg">
-          Sorry, your browser does not support SVG.
-        </object></a> <a href="http://melpa.org/#/leuven-theme"><object type=
-        "image/svg+xml" data=
-        "http://melpa.org/packages/leuven-theme-badge.svg">
-          Sorry, your browser does not support SVG.
-        </object></a> <a href=
-        "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs-leuven-theme&amp;currency_code=EUR&amp;bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted">
-        <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-        alt="btn_donate_LG.gif" /></a></p>
-      </div>
-    </div>
-  </div>
-
-  <div id="postamble" class="status">
-    <div id="footer">
-      <div id="copyright">
-        Copyright © Fabrice Niessen
-      </div>
-    </div>
-  </div>
+<p>
+<a href="http://opensource.org/licenses/GPL-3.0"><object type="image/svg+xml" data="http://img.shields.io/:license-gpl-blue.svg" >
+Sorry, your browser does not support SVG.</object></a>
+<a href="http://melpa.org/#/leuven-theme"><object type="image/svg+xml" data="http://melpa.org/packages/leuven-theme-badge.svg" >
+Sorry, your browser does not support SVG.</object></a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs-leuven-theme&amp;currency_code=EUR&amp;bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="btn_donate_LG.gif" /></a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Fabrice Niessen</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
 </body>
 </html>
