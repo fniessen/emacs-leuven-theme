@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20151017.0040
+;; Version: 20151019.1051
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -529,6 +529,13 @@ more...")
    `(info-title-1 ((,class ,ol1)))
    `(info-xref ((,class (:underline t :foreground "#006DAF")))) ; unvisited cross-references
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
+
+   ;; Org non-standard faces.
+   `(leuven-org-deadline-overdue ((,class (:foreground "#F22659"))))
+   `(leuven-org-deadline-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
+   `(leuven-org-deadline-tomorrow ((,class (:foreground "#40A80B"))))
+   `(leuven-org-deadline-future ((,class (:foreground "#40A80B"))))
+
    `(light-symbol-face ((,class (:background "#FFFFA0"))))
    `(linum ((,class (:foreground "#9A9A9A" :background "#EDEDED"))))
    `(log-view-file ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
