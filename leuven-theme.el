@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20151019.1051
+;; Version: 20151105.1652
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -156,16 +156,16 @@ more...")
    ;; Gnus faces.
    `(gnus-button ((,class (:weight normal))))
    `(gnus-cite-attribution-face ((,class (:foreground "#5050B0"))))
-   `(gnus-cite-face-1 ((,class (:foreground "#5050B0"))))
-   `(gnus-cite-face-10 ((,class (:foreground "#990000"))))
-   `(gnus-cite-face-2 ((,class (:foreground "#660066"))))
-   `(gnus-cite-face-3 ((,class (:foreground "#007777"))))
-   `(gnus-cite-face-4 ((,class (:foreground "#990000"))))
-   `(gnus-cite-face-5 ((,class (:foreground "#000099"))))
-   `(gnus-cite-face-6 ((,class (:foreground "#BB6600"))))
-   `(gnus-cite-face-7 ((,class (:foreground "#5050B0"))))
-   `(gnus-cite-face-8 ((,class (:foreground "#660066"))))
-   `(gnus-cite-face-9 ((,class (:foreground "#007777"))))
+   `(gnus-cite-face-1 ((,class (:foreground "#5050B0" :background "#F6F6F6"))))
+   `(gnus-cite-face-2 ((,class (:foreground "#660066" :background "#F6F6F6"))))
+   `(gnus-cite-face-3 ((,class (:foreground "#007777" :background "#F6F6F6"))))
+   `(gnus-cite-face-4 ((,class (:foreground "#990000" :background "#F6F6F6"))))
+   `(gnus-cite-face-5 ((,class (:foreground "#000099" :background "#F6F6F6"))))
+   `(gnus-cite-face-6 ((,class (:foreground "#BB6600" :background "#F6F6F6"))))
+   `(gnus-cite-face-7 ((,class (:foreground "#5050B0" :background "#F6F6F6"))))
+   `(gnus-cite-face-8 ((,class (:foreground "#660066" :background "#F6F6F6"))))
+   `(gnus-cite-face-9 ((,class (:foreground "#007777" :background "#F6F6F6"))))
+   `(gnus-cite-face-10 ((,class (:foreground "#990000" :background "#F6F6F6"))))
    `(gnus-emphasis-bold ((,class (:weight bold))))
    `(gnus-emphasis-highlight-words ((,class (:foreground "yellow" :background "black"))))
    `(gnus-group-mail-1 ((,class (:weight bold :foreground "#FF50B0"))))
@@ -222,7 +222,7 @@ more...")
    `(message-header-other ((,class ,mail-header-other)))
    `(message-header-subject ((,class ,subject)))
    `(message-header-to ((,class ,mail-to)))
-   `(message-cited-text ((,class (:foreground "#5050B0"))))
+   `(message-cited-text ((,class (:foreground "#5050B0" :background "#F6F6F6"))))
    `(message-separator ((,class (:family "Sans Serif" :weight normal :foreground "#BDC2C6"))))
    `(message-header-newsgroups ((,class (:family "Sans Serif" :foreground "#3399CC"))))
    `(message-header-xheader ((,class ,mail-header-other)))
