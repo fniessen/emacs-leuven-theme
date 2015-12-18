@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20151105.1652
+;; Version: 20151214.1253
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -597,7 +597,7 @@ more...")
    `(nxml-attribute-value-face ((,class (:foreground "green4"))))
    `(nxml-comment-content-face ((,class (:slant italic :foreground "red"))))
    `(nxml-comment-delimiter-face ((,class (:foreground "red"))))
-   `(nxml-element-local-name ((,class (:box (:line-width 1 :color "#999999") :foreground "#000088" :background "#DEDEDE"))))
+   `(nxml-element-local-name ((,class (:foreground "#000088" :background "#DEDEDE"))))
    `(nxml-element-local-name-face ((,class (:foreground "blue"))))
    `(nxml-processing-instruction-target-face ((,class (:foreground "purple1"))))
    `(nxml-tag-delimiter-face ((,class (:foreground "blue"))))
@@ -663,7 +663,7 @@ more...")
    `(org-property-value ((,class (:foreground "#00A000"))))
    `(org-quote ((,class (:slant italic :foreground "dim gray" :background "#FFFFE0"))))
    `(org-scheduled ((,class (:foreground "#333333"))))
-   `(org-scheduled-previously ((,class (:foreground "#565655"))))
+   `(org-scheduled-previously ((,class (:foreground "#1466C6"))))
    `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
