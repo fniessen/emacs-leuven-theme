@@ -1,10 +1,10 @@
 ;;; leuven-theme.el --- Awesome Emacs color theme on white background
 
-;; Copyright (C) 2003-2015 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2016 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20151231.0037
+;; Version: 20160115.1641
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -438,6 +438,7 @@ more...")
    `(diredp-ignored-file-name ((,class ,shadow)))
    `(diredp-read-priv ((,class (:background "#0A99FF"))))
    `(diredp-write-priv ((,class (:foreground "white" :background "#FF4040"))))
+   `(elfeed-search-filter-face ((,class (:foreground "gray"))))
    ;; `(eww-form-checkbox ((,class ())))
    ;; `(eww-form-select ((,class ())))
    ;; `(eww-form-submit ((,class ())))
