@@ -135,6 +135,8 @@ as:
 
 That should change the font size without changing the colors.
 
+That recipe can of course be applied to other faces, such as ~org-agenda-date~.
+
 * Contributing
 
 ** Issues
