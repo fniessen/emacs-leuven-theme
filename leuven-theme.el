@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20160115.1641
+;; Version: 20160207.1943
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -32,6 +32,9 @@
 ;;   (load-theme 'leuven t)
 ;;
 ;; Requirements: Emacs 24.
+;;
+;; NOTE -- Would you like implement a version of this for dark backgrounds,
+;; please do so!  I'm willing to integrate it...
 
 ;;; Code:
 
