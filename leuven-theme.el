@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20160207.1943
+;; Version: 20160319.1618
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -798,11 +798,16 @@ more...")
    ))
 
 (custom-theme-set-variables 'leuven
- '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
- '(ansi-color-names-vector
-   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
-                                        ; colors used in Shell mode
+
+  ;; highlight-sexp-mode
+  '(hl-sexp-background-color "#efebe9")
+
+  '(ansi-color-faces-vector
+    [default default default italic underline success warning error])
+
+  ;; Colors used in Shell mode.
+  '(ansi-color-names-vector
+    ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
  )
 
 ;;;###autoload
