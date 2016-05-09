@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20160319.1618
+;; Version: 20160509.0837
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -37,6 +37,20 @@
 ;; please do so!  I'm willing to integrate it...
 
 ;;; Code:
+
+;;; Options
+
+(defgroup leuven nil
+  "Leuven theme options.
+The theme has to be reloaded after changing anything in this group."
+  :group 'faces)
+
+(defcustom leuven-scale-outline-headlines t
+  "Scale `outline' (and `org') level-1 headlines."
+  :type 'boolean
+  :group 'leuven)
+
+;;; Theme Faces
 
 (deftheme leuven
   "Face colors with a light background.
@@ -73,7 +87,7 @@ more...")
       (mail-unread-high '(:foreground "#135985"))
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
       (match '(:weight bold :background "#FBE448")) ; occur patterns
-      (ol1 '(:height 1.3 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
+      (ol1 `(,@(when leuven-scale-outline-headlines (list :height 1.3)) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
       (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
       (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF"))
       (ol4 '(:height 1.0 :weight bold :slant normal :foreground "#EA6300"))
