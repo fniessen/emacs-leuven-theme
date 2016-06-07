@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20160604.2300
+;; Version: 20160607.0915
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -856,7 +856,7 @@ more...")
    ;; `(web-mode-keyword-face ((,class ())))
    ;; `(web-mode-param-name-face ((,class ())))
    ;; `(web-mode-part-comment-face ((,class ())))
-   `(web-mode-part-face ((,class (:background "red"))))
+   `(web-mode-part-face ((,class (:background "#F7F7F7"))))
    ;; `(web-mode-part-string-face ((,class ())))
    ;; `(web-mode-preprocessor-face ((,class ())))
    `(web-mode-script-face ((,class (:background "#FFFFE0"))))
