@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20160607.0915
+;; Version: 20160607.2257
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -106,9 +106,10 @@ more...")
       (tab '(:foreground "#E8E8E8" :background "white"))
       (volatile-highlight '(:underline nil :background "#FFF876")) ; flash-region
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA"))
-      (xml-attribute '(:foreground "magenta"))
-      (xml-tag '(:foreground "#000088" :background "#DEDEDE"))
-      )
+      (xml-attribute '(:foreground "#F36335"))
+      (xml-tag '(:foreground "#33658A" :background "#CEE0ED"))
+      (highlight-current-tag '(:background "#EEF3F6")) ; #FFEB26
+  )
 
   (custom-theme-set-faces
    'leuven
@@ -293,7 +294,7 @@ more...")
    ;; `(semantic-decoration-on-protected-members-face ((,class (:background ,alum-2))))
    ;; `(semantic-decoration-on-unknown-includes ((,class (:background ,choc-3))))
    ;; `(semantic-decoration-on-unparsed-includes ((,class (:underline ,orange-3))))
-   `(semantic-highlight-func-current-tag-face ((,class (:background "#EEF3F6"))))
+   `(semantic-highlight-func-current-tag-face ((,class ,highlight-current-tag)))
    `(semantic-tag-boundary-face ((,class (:overline "#F0F0F0"))))
    ;; `(semantic-unmatched-syntax-face ((,class (:underline ,red-1))))
 
@@ -529,7 +530,7 @@ more...")
    `(helm-w3m-bookmarks-face ((,class (:underline t :foreground "cyan1"))))
    `(highlight-symbol-face ((,class (:background "#FFFFA0"))))
    `(hl-line ((,class ,highlight-line)))
-   `(hl-tags-face ((,class (:background "#FEFCAE"))))
+   `(hl-tags-face  ((,class ,highlight-current-tag)))
    `(holiday-face ((,class (:foreground "#777777" :background "#E4EBFE"))))
    `(html-helper-bold-face ((,class (:weight bold :foreground "black"))))
    `(html-helper-italic-face ((,class (:slant italic :foreground "black"))))
@@ -553,6 +554,7 @@ more...")
    `(info-title-1 ((,class ,ol1)))
    `(info-xref ((,class (:underline t :foreground "#006DAF")))) ; unvisited cross-references
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
+   ;; js2-highlight-vars-face (~ auto-highlight-symbol)
 
    ;; Org non-standard faces.
    `(leuven-org-deadline-overdue ((,class (:foreground "#F22659"))))
@@ -856,7 +858,7 @@ more...")
    ;; `(web-mode-keyword-face ((,class ())))
    ;; `(web-mode-param-name-face ((,class ())))
    ;; `(web-mode-part-comment-face ((,class ())))
-   `(web-mode-part-face ((,class (:background "#F7F7F7"))))
+   `(web-mode-part-face ((,class (:background "#EFF0F1"))))
    ;; `(web-mode-part-string-face ((,class ())))
    ;; `(web-mode-preprocessor-face ((,class ())))
    `(web-mode-script-face ((,class (:background "#FFFFE0"))))
