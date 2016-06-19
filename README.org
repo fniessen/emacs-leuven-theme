@@ -2,7 +2,7 @@
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
 #+DESCRIPTION: Emacs custom color theme for light background
-#+KEYWORDS:  emacs, leuven, custom theme, color theme, faces, melpa
+#+KEYWORDS:  emacs, leuven, custom theme, color theme, light, popular, faces, melpa
 #+LANGUAGE:  en
 
 #+SETUPFILE: ~/src/org-style/setup/bigblow-pirilampo.setup
@@ -15,7 +15,7 @@
 
 Looking for an awesome Emacs color theme?  Here's the place to find one!
 
-Welcome to the custom Leuven theme, an elegant color theme for light
+Welcome to the custom Leuven theme, an elegant and popular color theme for light
 backgrounds, with built-in style for many components such as Org mode, Gnus,
 Dired+ and EDiff. Make it yours!
 
