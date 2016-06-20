@@ -13,7 +13,8 @@
 [[http://melpa.org/#/leuven-theme][http://melpa.org/packages/leuven-theme-badge.svg]]
 [[https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=VCVAS6KPDQ4JC&lc=BE&item_number=emacs%2dleuven%2dtheme&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted][https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif]]
 
-Looking for an awesome Emacs color theme?  Here's the place to find one!
+Looking for an awesome Emacs color theme?  Looking for one of the best light
+themes for Org mode, and for other modes too?  Here's the place to find one!
 
 Welcome to the custom Leuven theme, an elegant and popular color theme for light
 backgrounds, with built-in style for many components such as Org mode, Gnus,
