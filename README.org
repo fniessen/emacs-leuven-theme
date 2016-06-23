@@ -48,6 +48,15 @@ use another emacs-theme." \\
 "I still am really enjoying using the theme -- wish I'd had it years back..." \\
 -- /V./
 
+"I've been using leuven-theme, which is a fantastic theme for Org-mode files." \\
+-- /thnetos/
+
+"I love leuven for it's magit faces. E.g. the different sections of the magit
+status screen stand out much better with leuven than with any other theme I've
+tried.  It's a good looking theme but what makes it stand out is the attention
+the author has put into all of the different faces you find everywhere." \\
+-- /UnwashedMeme/
+
 * Screenshots
 
 ** Org buffer (with code)
