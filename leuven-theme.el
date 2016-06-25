@@ -38,7 +38,7 @@
 
 ;;; Code:
 
-;;; Options
+;;; Options.
 
 (defgroup leuven nil
   "Leuven theme options.
@@ -50,7 +50,7 @@ The theme has to be reloaded after changing anything in this group."
   :type 'boolean
   :group 'leuven)
 
-;;; Theme Faces
+;;; Theme Faces.
 
 (deftheme leuven
   "Face colors with a light background.
@@ -905,7 +905,7 @@ more...")
 
 (custom-theme-set-variables 'leuven
 
-  ;; highlight-sexp-mode
+  ;; highlight-sexp-mode.
   '(hl-sexp-background-color "#efebe9")
 
   '(ansi-color-faces-vector
@@ -919,7 +919,7 @@ more...")
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
            load-file-name)
-  ;; add theme folder to `custom-theme-load-path' when installing over MELPA
+  ;; Add theme folder to `custom-theme-load-path' when installing over MELPA.
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
