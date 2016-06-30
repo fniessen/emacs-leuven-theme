@@ -301,7 +301,7 @@ more...")
    ;; `(semantic-decoration-on-unknown-includes ((,class (:background ,choc-3))))
    ;; `(semantic-decoration-on-unparsed-includes ((,class (:underline ,orange-3))))
    `(semantic-highlight-func-current-tag-face ((,class ,highlight-current-tag)))
-   `(semantic-tag-boundary-face ((,class (:overline "#F0F0F0"))))
+   `(semantic-tag-boundary-face ((,class (:overline "#BF8DFF"))))
    ;; `(semantic-unmatched-syntax-face ((,class (:underline ,red-1))))
 
    `(Info-title-1-face ((,class ,ol1)))
