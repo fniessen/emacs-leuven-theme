@@ -112,7 +112,7 @@ more...")
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA"))
       (xml-attribute '(:foreground "#F36335"))
       (xml-tag '(:foreground "#33658A" :background "#CEE0ED"))
-      (highlight-current-tag '(:background "#EEF3F6")) ; #FFEB26
+      (highlight-current-tag '(:background "#E8E8FF")) ; #EEF3F6 or #FFEB26
   )
 
   (custom-theme-set-faces
