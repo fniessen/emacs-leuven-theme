@@ -354,7 +354,7 @@ more...")
    `(cfw:face-toolbar-button-on ((,class (:foreground "#5E5E5E" :background "#F6F6F6"))))
    `(change-log-date ((,class (:foreground "purple"))))
    `(change-log-file ((,class (:weight bold :foreground "#4183C4"))))
-   `(change-log-list ((,class (:foreground "cyan3"))))
+   `(change-log-list ((,class (:box (:line-width 1) :foreground "cyan3"))))
    `(change-log-name ((,class (:foreground "#008000"))))
    `(circe-highlight-all-nicks-face ((,class (:foreground "blue" :background "#F0F0F0")))) ; other nick names
    `(circe-highlight-nick-face ((,class (:foreground "#009300" :background "#F0F0F0")))) ; messages with my nick cited
