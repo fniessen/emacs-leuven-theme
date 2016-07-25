@@ -536,8 +536,8 @@ more...")
    `(helm-swoop-target-word-face ((,class (:weight bold :foreground nil :background "#FDBD33"))))
    `(helm-visible-mark ((,class ,marked-line)))
    `(helm-w3m-bookmarks-face ((,class (:underline t :foreground "cyan1"))))
-   `(highlight-changes ((,class (:foreground "#B5082E"))))
-   `(highlight-changes-delete ((,class (:strike-through t :foreground "#B5082E"))))
+   `(highlight-changes ((,class (:foreground nil)))) ;; blue "#2E08B5"
+   `(highlight-changes-delete ((,class (:strike-through nil :foreground nil)))) ;; red "#B5082E"
    `(highlight-symbol-face ((,class (:background "#FFFFA0"))))
    `(hl-line ((,class ,highlight-line)))
    `(hl-tags-face  ((,class ,highlight-current-tag)))
