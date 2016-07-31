@@ -845,7 +845,7 @@ more...")
    ;; `(web-mode-css-string-face ((,class ())))
    ;; `(web-mode-css-variable-face ((,class ())))
    ;; `(web-mode-current-column-highlight-face ((,class ())))
-   ;; `(web-mode-current-element-highlight-face ((,class ())))
+   `(web-mode-current-element-highlight-face ((,class (:background "#BF8DFF")))) ; #FFEE80
    ;; `(web-mode-doctype-face ((,class ())))
    ;; `(web-mode-error-face ((,class ())))
    ;; `(web-mode-filter-face ((,class ())))
