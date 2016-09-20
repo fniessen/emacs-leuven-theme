@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20160913.2328
+;; Version: 20160920.0911
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -76,9 +76,11 @@ more...")
       (diff-removed '(:background "#FEE8E9"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
       (file '(:foreground "black"))
-      ;; (highlight-line '(:background "#E4E4E3"))
-      ;; (highlight-line '(:underline "#FFFF19" :background "#F6FECD"))
-      (highlight-line '(:background "#D5F1CF"))
+      (highlight-blue '(:background "#E4F1F9"))
+      (highlight-gray '(:background "#E4E4E3"))
+      (highlight-green '(:background "#D5F1CF"))
+      (highlight-red '(:background "#FFC8C8"))
+      (highlight-yellow '(:underline "#FFFF19" :background "#F6FECD"))
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (link-no-underline '(:weight normal :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
@@ -125,10 +127,10 @@ more...")
    `(cursor ((,class (:background "#21BDFF"))))
 
    ;; Highlighting faces.
-   `(fringe ((,class (:foreground "#9B9B9B" :background "white"))))
-   `(highlight ((,class ,volatile-highlight)))
+   `(fringe ((,class (:foreground "#FFDD31" :background "white"))))
+   `(highlight ((,class ,highlight-blue)))
    `(region ((,class ,region)))
-   `(secondary-selection ((,class ,match))) ; used by Org-mode for highlighting matched entries and keywords
+   `(secondary-selection ((,class ,match))) ; Used by Org-mode for highlighting matched entries and keywords.
    `(isearch ((,class (:weight bold :underline "#FF9632" :foreground nil :background "#FDBD33"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
@@ -176,7 +178,7 @@ more...")
    `(link ((,class ,link)))
    `(link-visited ((,class (:underline t :foreground "#E5786D"))))
    `(button ((,class (:underline t :foreground "#006DAF"))))
-   `(header-line ((,class (:weight bold :underline "black" :overline "black" :foreground "black" :background "#FFFF88"))))
+   `(header-line ((,class (:weight bold :underline "#BF8DFF" :overline "#BF8DFF" :foreground "black" :background "#E8E8FF"))))
 
    ;; Gnus faces.
    `(gnus-button ((,class (:weight normal))))
@@ -371,14 +373,19 @@ more...")
    `(ac-completion-face ((,class (:underline nil :foreground "#C0C0C0" :background "#FBFFAD")))) ; like Google
    `(ac-selection-face ((,class (:foreground "white" :background "steelblue")))) ; popup-menu-selection-face
 
-   `(company-preview-common ((,class (:foreground "#C0C0C0" :background "#F6FECD")))) ; same background as `highlight-line'
-   `(company-scrollbar-bg ((,class (:background "#F0F0F0"))))
-   `(company-scrollbar-fg ((,class (:background "#C0C0C0"))))
-   `(company-tooltip ((,class (:weight bold :foreground "#171D28" :background "#E6E6E6"))))
-   `(company-tooltip-annotation ((,class (:weight normal :foreground "#378FC1" :background "#E6E6E6"))))
-   `(company-tooltip-common ((,class (:weight normal :foreground "#5B6367" :inherit company-tooltip))))
-   `(company-tooltip-common-selection ((,class (:weight normal :inherit company-tooltip-selection))))
-   `(company-tooltip-selection ((,class (:weight bold :background "#93B0D8"))))
+   `(company-tooltip-common-selection ((,class (:weight normal :foreground "#F9ECCC" :inherit company-tooltip-selection)))) ; Prefix in tooltip (for selection).
+   `(company-tooltip-common ((,class (:weight normal :foreground "#B000B0" :inherit company-tooltip)))) ; Prefix in tooltip.
+
+   `(company-tooltip-selection ((,class (:weight bold :foreground "white" :background "#0052A4")))) ; Suffix in tooltip (for selection).
+   `(company-tooltip ((,class (:weight bold :foreground "black" :background "#EBF4FE")))) ; Suffix in tooltip.
+
+   `(company-tooltip-annotation-selection ((,class (:weight normal :foreground "white")))) ; Annotation (for selection).
+   `(company-tooltip-annotation ((,class (:weight normal :foreground "#515253")))) ; Annotation.
+
+   `(company-preview-common ((,class (:foreground "#C0C0C0" :inherit hl-line)))) ; SAME as highlight line.
+
+   `(company-scrollbar-bg ((,class (:background "#EBF4FE"))))
+   `(company-scrollbar-fg ((,class (:background "#D1DAE4")))) ; Scrollbar (visible).
 
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
@@ -527,10 +534,10 @@ more...")
    ;; `(helm-ls-git-untracked-face ((,class (:foreground ""))))
    `(helm-match ((,class ,match)))
    `(helm-moccur-buffer ((,class (:foreground "#0066CC"))))
-   `(helm-selection ((,class ,volatile-highlight)))
-   `(helm-selection-line ((,class ,volatile-highlight)))
+   `(helm-selection ((,class ,highlight-blue)))
+   `(helm-selection-line ((,class ,highlight-gray)))
    `(helm-separator ((,class (:foreground "red"))))
-   `(helm-source-header ((,class (,@(when leuven-scale-outline-headlines (list :height 1.6)) :weight bold :overline "#1F8DD6" :foreground "#1F8DD6" :background "#F5FAFD"))))
+   `(helm-source-header ((,class ,ol1)))
    `(helm-swoop-target-line-block-face ((,class (:background "#CCCC00" :foreground "#222222"))))
    `(helm-swoop-target-line-face ((,class ,volatile-highlight)))
    `(helm-swoop-target-word-face ((,class (:weight bold :foreground nil :background "#FDBD33"))))
@@ -539,7 +546,7 @@ more...")
    `(highlight-changes ((,class (:foreground nil)))) ;; blue "#2E08B5"
    `(highlight-changes-delete ((,class (:strike-through nil :foreground nil)))) ;; red "#B5082E"
    `(highlight-symbol-face ((,class (:background "#FFFFA0"))))
-   `(hl-line ((,class ,highlight-line)))
+   `(hl-line ((,class ,highlight-green))) ; Highlight current line.
    `(hl-tags-face  ((,class ,highlight-current-tag)))
    `(holiday-face ((,class (:foreground "#777777" :background "#E4EBFE"))))
    `(html-helper-bold-face ((,class (:weight bold :foreground "black"))))
@@ -805,6 +812,7 @@ more...")
    `(vc-annotate-face-FF993F ((,class (:foreground "#FF993F" :background "black"))))
    `(vc-annotate-face-FFC63F ((,class (:foreground "#FF993F" :background "black"))))
    `(vc-annotate-face-FFF33F ((,class (:foreground "#FFF33F" :background "black"))))
+   `(vhl/default-face ((,class ,volatile-highlight))) ; `volatile-highlights.el'.
    `(w3m-anchor ((,class ,link)))
    `(w3m-arrived-anchor ((,class (:foreground "purple1"))))
    `(w3m-bitmap-image-face ((,class (:foreground "gray4" :background "green"))))
