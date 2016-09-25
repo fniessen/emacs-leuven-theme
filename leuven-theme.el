@@ -917,8 +917,8 @@ more...")
    `(woman-bold ((,class (:weight bold :foreground "#F13D3D"))))
    `(woman-italic ((,class (:weight bold :slant italic :foreground "#46BE1B"))))
    `(woman-symbol ((,class (:weight bold :foreground "purple"))))
-   `(yas/field-debug-face ((,class (:background "ivory2"))))
-   `(yas/field-highlight-face ((,class (:background "DarkSeaGreen1"))))
+   `(yas-field-debug-face ((,class (:background "red"))))
+   `(yas-field-highlight-face ((,class (:box (:line-width 1 :color "#838383") :foreground "black" :background "#D4DCD8"))))
    ))
 
 (custom-theme-set-variables 'leuven
