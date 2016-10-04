@@ -312,7 +312,7 @@ more...")
    `(Info-title-4-face ((,class ,ol4)))
    `(ace-jump-face-foreground ((,class (:weight bold :foreground "black" :background "#FEA500"))))
    `(ahs-face ((,class (:background "#E2E6D6")))) ; #84CFFF (blue).
-   `(ahs-definition-face ((,class (:weight bold :background "#FFE4FF"))))
+   `(ahs-definition-face ((,class (:background "#FFE4FF"))))
    `(ahs-plugin-defalt-face ((,class (:background "#E2E6D6")))) ; #FFB6C6 (rose) = current.
    `(anzu-match-1 ((,class (:foreground "black" :background "aquamarine"))))
    `(anzu-match-2 ((,class (:foreground "black" :background "springgreen"))))
@@ -572,7 +572,20 @@ more...")
    `(info-xref ((,class (:underline t :foreground "#006DAF")))) ; unvisited cross-references
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
    ;; js2-highlight-vars-face (~ auto-highlight-symbol)
-   `(js2-external-variable ((,class (:background "#FFD7FF"))))
+   '(js2-function-param ((t (:foreground "LightGoldenrod"))))
+   `(js2-error ((t (:foreground "red"))))
+   `(js2-external-variable ((,class (:foreground "#FF0000"))))
+   `(js2-function-param ((t (:foreground "SeaGreen"))))
+   `(js2-instance-member ((t (:foreground "DarkOrchid"))))
+   `(js2-jsdoc-html-tag-delimiter ((t (:foreground "green"))))
+   `(js2-jsdoc-html-tag-name ((t (:foreground "yellow"))))
+   `(js2-jsdoc-tag ((t (:foreground "SlateGray"))))
+   `(js2-jsdoc-type ((t (:foreground "SteelBlue"))))
+   `(js2-jsdoc-value ((t (:foreground "PeachPuff3"))))
+   `(js2-magic-paren ((t (:underline t))))
+   `(js2-private-function-call ((t (:foreground "goldenrod"))))
+   `(js2-private-member ((t (:foreground "PeachPuff3"))))
+   `(js2-warning ((t (:underline "orange"))))
 
    ;; Org non-standard faces.
    `(leuven-org-deadline-overdue ((,class (:foreground "#F22659"))))
