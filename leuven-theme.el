@@ -573,8 +573,8 @@ more...")
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
    ;; js2-highlight-vars-face (~ auto-highlight-symbol)
    '(js2-function-param ((t (:foreground "LightGoldenrod"))))
-   `(js2-error ((t (:foreground "red"))))
-   `(js2-external-variable ((,class (:foreground "#FF0000"))))
+   `(js2-error ((t (:box (:line-width 1 :color "#FF0000"))))) ; DONE.
+   `(js2-external-variable ((,class (:foreground "#FF0000")))) ; DONE.
    `(js2-function-param ((t (:foreground "SeaGreen"))))
    `(js2-instance-member ((t (:foreground "DarkOrchid"))))
    `(js2-jsdoc-html-tag-delimiter ((t (:foreground "green"))))
