@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20161005.1020
+;; Version: 20161009.1549
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -137,13 +137,13 @@ more...")
    `(isearch ((,class (:weight bold :underline "#FF9632" :foreground nil :background "#FDBD33"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
-   `(trailing-whitespace ((,class (:background "#FFFF57"))))
+   `(trailing-whitespace ((,class (:foreground "#B3B3B3" :background "#FFFFAB"))))
    `(query-replace ((,class (:inherit isearch))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2")))) ; see also `nobreak-space'
    `(whitespace-indentation ((,class ,tab)))
    `(whitespace-line ((,class (:foreground "#CC0000" :background "#FFFF88"))))
    `(whitespace-tab ((,class ,tab)))
-   `(whitespace-trailing ((,class (:foreground "#B3B3B3" :background "#FFFF57"))))
+   `(whitespace-trailing ((,class (:foreground "#B3B3B3" :background "#FFFFAB"))))
 
    ;; Mode line faces.
    `(mode-line ((,class (:box (:line-width 1 :color "#1A2F54") :foreground "#85CEEB" :background "#335EA8"))))
