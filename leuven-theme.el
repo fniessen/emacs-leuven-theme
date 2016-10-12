@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20161009.1549
+;; Version: 20161012.1016
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -320,7 +320,7 @@ more...")
    `(anzu-match-1 ((,class (:foreground "black" :background "aquamarine"))))
    `(anzu-match-2 ((,class (:foreground "black" :background "springgreen"))))
    `(anzu-match-3 ((,class (:foreground "black" :background "red"))))
-   `(anzu-mode-line ((,class (:weight bold :foreground "white" :background "#33A030"))))
+   `(anzu-mode-line ((,class (:foreground "black" :background "#80FF80"))))
    `(anzu-replace-highlight ((,class (:inherit query-replace))))
    `(anzu-replace-to ((,class (:weight bold :foreground "#BD33FD" :background "#FDBD33"))))
    `(auto-dim-other-buffers-face ((,class (:background "#F7F7F7"))))
