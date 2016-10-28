@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20161017.2338
+;; Version: 20161027.2101
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -104,8 +104,7 @@ more...")
       (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC"))
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
-      ;; (paren-matched '(:background "#99CCFF"))
-      (paren-matched '(:background "#E3C414"))
+      (paren-matched '(:background "#C0E8C3")) ; Or take that green for region?
       (paren-unmatched '(:weight bold :underline "red" :foreground "black" :background "#FFDCDC"))
       (region '(:background "#8ED3FF"))
       (shadow '(:foreground "#7F7F7F"))
@@ -116,13 +115,13 @@ more...")
       (volatile-highlight '(:underline nil :foreground "black" :background "#E6B064")) ; flash-region
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA"))
       (xml-attribute '(:foreground "#F36335"))
-      (xml-tag '(:foreground "#33658A" :background "#CEE0ED"))
+      (xml-tag '(:foreground "#AE1B9A"))
       (highlight-current-tag '(:background "#E8E8FF")) ; #EEF3F6 or #FFEB26
   )
 
   (custom-theme-set-faces
    'leuven
-   `(default ((,class (:foreground "#333333" :background "#FFFFFF"))))
+   `(default ((,class (:font "Calibri" :foreground "#333333" :background "#FFFFFF"))))
    `(bold ((,class (:weight bold :foreground "black"))))
    `(bold-italic ((,class (:weight bold :slant italic :foreground "black"))))
    `(italic ((,class (:slant italic :foreground "#1A1A1A"))))
@@ -501,12 +500,12 @@ more...")
    `(font-latex-verbatim-face ((,class (:foreground "#000088" :background "#FFFFE0" :inherit nil))))
    `(git-commit-summary-face ((,class (:foreground "#000000"))))
    `(git-commit-comment-face ((,class (:slant italic :foreground "#696969"))))
-   `(google-translate-text-face ((t (:foreground "#777777" :background "#F5F5F5"))))
-   `(google-translate-phonetic-face ((t (:inherit shadow))))
-   `(google-translate-translation-face ((t (:weight normal :foreground "#3079ED" :background "#E3EAF2"))))
-   `(google-translate-suggestion-label-face ((t (:foreground "red"))))
-   `(google-translate-suggestion-face ((t (:slant italic :underline t))))
-   `(google-translate-listen-button-face ((t (:height 0.8))))
+   `(google-translate-text-face ((,class (:foreground "#777777" :background "#F5F5F5"))))
+   `(google-translate-phonetic-face ((,class (:inherit shadow))))
+   `(google-translate-translation-face ((,class (:weight normal :foreground "#3079ED" :background "#E3EAF2"))))
+   `(google-translate-suggestion-label-face ((,class (:foreground "red"))))
+   `(google-translate-suggestion-face ((,class (:slant italic :underline t))))
+   `(google-translate-listen-button-face ((,class (:height 0.8))))
    `(helm-action ((,class (:foreground "black"))))
    `(helm-bookmark-file ((,class ,file)))
    `(helm-bookmarks-su-face ((,class (:foreground "red"))))
@@ -527,7 +526,7 @@ more...")
    `(helm-grep-match ((,class ,match)))
    `(helm-grep-running ((,class (:weight bold :foreground "white"))))
    `(helm-isearch-match ((,class (:background "#CCFFCC"))))
-   `(helm-lisp-show-completion ((,class ,volatile-highlight))) ; see `helm-dabbrev'
+   `(helm-lisp-show-completion ((,class ,volatile-highlight))) ; See `helm-dabbrev'.
    ;; `(helm-ls-git-added-copied-face ((,class (:foreground ""))))
    ;; `(helm-ls-git-added-modified-face ((,class (:foreground ""))))
    ;; `(helm-ls-git-conflict-face ((,class (:foreground ""))))
@@ -552,7 +551,7 @@ more...")
    `(highlight-changes-delete ((,class (:strike-through nil :foreground nil)))) ;; red "#B5082E"
    `(highlight-symbol-face ((,class (:background "#FFFFA0"))))
    `(hl-line ((,class ,highlight-green))) ; Highlight current line.
-   `(hl-tags-face  ((,class ,highlight-current-tag)))
+   `(hl-tags-face ((,class ,highlight-current-tag))) ; ~ Pair highlighting (matching tags).
    `(holiday-face ((,class (:foreground "#777777" :background "#E4EBFE"))))
    `(html-helper-bold-face ((,class (:weight bold :foreground "black"))))
    `(html-helper-italic-face ((,class (:slant italic :foreground "black"))))
@@ -577,26 +576,29 @@ more...")
    `(info-xref ((,class (:underline t :foreground "#006DAF")))) ; unvisited cross-references
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
    ;; js2-highlight-vars-face (~ auto-highlight-symbol)
-   '(js2-function-param ((t (:foreground "LightGoldenrod"))))
-   `(js2-error ((t (:box (:line-width 1 :color "#FF0000"))))) ; DONE.
+   `(js2-function-param ((,class (:foreground "LightGoldenrod"))))
+   `(js2-error ((,class (:box (:line-width 1 :color "#FF3737") :background "#FFE1E1")))) ; DONE.
    `(js2-external-variable ((,class (:foreground "#FF0000")))) ; DONE.
-   `(js2-function-param ((t (:foreground "SeaGreen"))))
-   `(js2-instance-member ((t (:foreground "DarkOrchid"))))
-   `(js2-jsdoc-html-tag-delimiter ((t (:foreground "green"))))
-   `(js2-jsdoc-html-tag-name ((t (:foreground "yellow"))))
-   `(js2-jsdoc-tag ((t (:foreground "SlateGray"))))
-   `(js2-jsdoc-type ((t (:foreground "SteelBlue"))))
-   `(js2-jsdoc-value ((t (:foreground "PeachPuff3"))))
-   `(js2-magic-paren ((t (:underline t))))
-   `(js2-private-function-call ((t (:foreground "goldenrod"))))
-   `(js2-private-member ((t (:foreground "PeachPuff3"))))
-   `(js2-warning ((t (:underline "orange"))))
+   `(js2-function-param ((,class (:foreground "SeaGreen"))))
+   `(js2-instance-member ((,class (:foreground "DarkOrchid"))))
+   `(js2-jsdoc-html-tag-delimiter ((,class (:foreground "green"))))
+   `(js2-jsdoc-html-tag-name ((,class (:foreground "yellow"))))
+   `(js2-jsdoc-tag ((,class (:foreground "SlateGray"))))
+   `(js2-jsdoc-type ((,class (:foreground "SteelBlue"))))
+   `(js2-jsdoc-value ((,class (:foreground "PeachPuff3"))))
+   `(js2-magic-paren ((,class (:underline t))))
+   `(js2-private-function-call ((,class (:foreground "goldenrod"))))
+   `(js2-private-member ((,class (:foreground "PeachPuff3"))))
+   `(js2-warning ((,class (:underline "orange"))))
 
    ;; Org non-standard faces.
    `(leuven-org-deadline-overdue ((,class (:foreground "#F22659"))))
    `(leuven-org-deadline-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(leuven-org-deadline-tomorrow ((,class (:foreground "#40A80B"))))
    `(leuven-org-deadline-future ((,class (:foreground "#40A80B"))))
+   `(leuven-gnus-unseen ((,class (:weight bold :foreground "#FC7202"))))
+   `(leuven-gnus-date ((,class (:foreground "#FF80BF"))))
+   `(leuven-gnus-size ((,class (:foreground "#8FBF60"))))
 
    `(light-symbol-face ((,class (:background "#FFFFA0"))))
    `(linum ((,class (:foreground "#9A9A9A" :background "#EDEDED"))))
@@ -792,6 +794,16 @@ more...")
    `(show-paren-mismatch ((,class ,paren-unmatched)))
    `(sml-modeline-end-face ((,class (:background "#6BADF6")))) ; #335EA8
    `(sml-modeline-vis-face ((,class (:background "#1979CA"))))
+
+   ;; `(sp-pair-overlay-face                        
+   ;; `(sp-show-pair-enclosing                      
+   ;; `(sp-show-pair-match-face                      ; ~ Pair highlighting (matching tags).
+   ;; `(sp-show-pair-mismatch-face                  
+   ;; `(sp-wrap-overlay-closing-pair                
+   ;; `(sp-wrap-overlay-face                        
+   ;; `(sp-wrap-overlay-opening-pair                
+   ;; `(sp-wrap-tag-overlay-face                    
+
    `(speedbar-button-face ((,class (:foreground "green4"))))
    `(speedbar-directory-face ((,class (:foreground "blue4"))))
    `(speedbar-file-face ((,class (:foreground "cyan4"))))
@@ -884,7 +896,7 @@ more...")
    `(web-mode-html-attr-name-face ((,class ,xml-attribute)))
    ;; `(web-mode-html-attr-value-face ((,class ())))
    ;; `(web-mode-html-entity-face ((,class ())))
-   ;; `(web-mode-html-tag-bracket-face ((,class ())))
+   `(web-mode-html-tag-bracket-face ((,class ,xml-tag)))
    ;; `(web-mode-html-tag-custom-face ((,class ())))
    `(web-mode-html-tag-face ((,class ,xml-tag)))
    ;; `(web-mode-html-tag-namespaced-face ((,class ())))
