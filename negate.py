@@ -2,7 +2,7 @@
 
 import colorsys, fileinput, re, sys
 
-from colormath.color_objects import LabColor, sRGBColor
+from colormath.color_objects import LabColor, AdobeRGBColor as RGBColor
 from colormath.color_conversions import convert_color
 
 emacs_colors = dict()
@@ -34,10 +34,13 @@ for line in fileinput.input():
             if hex.match(bit):
                 r, g, b = [int(bit[j:j+2], 16) for j in range(0, 6, 2)]
 
-                rgb = sRGBColor(r, g, b)
+                rgb = RGBColor(r, g, b)
                 lab = convert_color(rgb, LabColor)
-                lab.lab_l = 10000 - lab.lab_l
+                lab.lab_l = 6733.2299-lab.lab_l
+                r, g, b = [int(x) for x in convert_color(lab, RGBColor).get_value_tuple()]
                 
+
+
                 # h, s, v = colorsys.rgb_to_hsv(r, g, b)
                 
                 # Except when v=255, but h and s > 0: this is a color
@@ -48,7 +51,9 @@ for line in fileinput.input():
                 #                    
                 # r, g, b = [int(a) for a in colorsys.hsv_to_rgb(h, s, neg_v)]
 
-                repr = convert_color(lab, sRGBColor).get_rgb_hex()
+
+                repr = "{:02x}{:02x}{:02x}".format(r,g,b)
+
 
                 out += repr
                 skipTo = i+7
