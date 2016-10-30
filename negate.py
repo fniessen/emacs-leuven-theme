@@ -2,6 +2,9 @@
 
 import colorsys, fileinput, re, sys
 
+from colormath.color_objects import LabColor, sRGBColor
+from colormath.color_conversions import convert_color
+
 emacs_colors = dict()
 
 with open("emacs_colors.dat", 'r') as cdata:
@@ -30,18 +33,23 @@ for line in fileinput.input():
             bit = line[i+1:i+7]
             if hex.match(bit):
                 r, g, b = [int(bit[j:j+2], 16) for j in range(0, 6, 2)]
-                h, s, v = colorsys.rgb_to_hsv(r, g, b)
+
+                rgb = sRGBColor(r, g, b)
+                lab = convert_color(rgb, LabColor)
+                lab.lab_l = 10000 - lab.lab_l
                 
-                neg_v = 255-v
+                # h, s, v = colorsys.rgb_to_hsv(r, g, b)
+                
                 # Except when v=255, but h and s > 0: this is a color
                 # there and not pure white, so should not become pure
                 # black.
-                if True: #255 == v and h > 0:
-                    neg_v = int(255 - (0.21*r + 0.72*g + 0.07*b))
-                                    
-                r, g, b = [int(a) for a in colorsys.hsv_to_rgb(h, s, neg_v)]
-                
-                repr = "{:02x}{:02x}{:02x}".format(r,g,b)
+                # if True: #255 == v and h > 0:
+                #    neg_v = int(255 - (0.21*r + 0.72*g + 0.07*b))
+                #                    
+                # r, g, b = [int(a) for a in colorsys.hsv_to_rgb(h, s, neg_v)]
+
+                repr = convert_color(lab, sRGBColor).get_rgb_hex()
+
                 out += repr
                 skipTo = i+7
 
