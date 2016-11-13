@@ -134,11 +134,17 @@ Restart Emacs.
 ** Customize it
 
 You don't like my large Org level-1 headings (though I made them larger on
-purpose!)?
+purpose!)?  You find that Org-mode headlines are too big?
+
+Then, set the variable ~leuven-scale-outline-headlines~ to nil before the theme is
+loaded.
 
 #+begin_src emacs-lisp
 (setq leuven-scale-outline-headlines nil)
 #+end_src
+
+One way to do that is to it through ~M-x customize-variable~ and then restart
+Emacs.
 
 You don't like my large Org agenda-date heading either?
 
