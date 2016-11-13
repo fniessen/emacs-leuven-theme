@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20161030.2004
+;; Version: 20161113.2114
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -129,7 +129,7 @@ more...")
    `(cursor ((,class (:background "#21BDFF"))))
 
    ;; Highlighting faces.
-   `(fringe ((,class (:foreground "#FFDD31" :background "white"))))
+   `(fringe ((,class (:foreground "#4C9ED9" :background "white"))))
    `(highlight ((,class ,highlight-blue)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; Used by Org-mode for highlighting matched entries and keywords.
@@ -313,13 +313,14 @@ more...")
    `(Info-title-3-face ((,class ,ol3)))
    `(Info-title-4-face ((,class ,ol4)))
    `(ace-jump-face-foreground ((,class (:weight bold :foreground "black" :background "#FEA500"))))
-   `(ahs-face ((,class (:background "#E2E6D6")))) ; #84CFFF (blue).
+   `(ahs-face ((,class (:underline "#D6D6D6" :background "#E2E6D6")))) ; #84CFFF (blue).
    `(ahs-definition-face ((,class (:background "#FFE4FF"))))
-   `(ahs-plugin-defalt-face ((,class (:background "#E2E6D6")))) ; #FFB6C6 (rose) = current.
+   `(ahs-plugin-defalt-face ((,class (:underline "#D6D6D6" :background "#E2E6D6")))) ; #FFB6C6 (rose) = current.
    `(anzu-match-1 ((,class (:foreground "black" :background "aquamarine"))))
    `(anzu-match-2 ((,class (:foreground "black" :background "springgreen"))))
    `(anzu-match-3 ((,class (:foreground "black" :background "red"))))
    `(anzu-mode-line ((,class (:foreground "black" :background "#80FF80"))))
+   `(anzu-mode-line-no-match ((,class (:foreground "black" :background "#FF8080"))))
    `(anzu-replace-highlight ((,class (:inherit query-replace))))
    `(anzu-replace-to ((,class (:weight bold :foreground "#BD33FD" :background "#FDBD33"))))
    `(auto-dim-other-buffers-face ((,class (:background "#F7F7F7"))))
@@ -642,7 +643,7 @@ more...")
    ;; `(markdown-header-rule-face ((,class ())))
    `(markdown-inline-code-face ((,class ,code-inline)))
    `(markdown-italic-face ((,class (:inherit italic))))
-   ;; `(markdown-language-keyword-face ((,class ())))
+   `(markdown-language-keyword-face ((,class (:inherit org-block-begin-line))))
    ;; `(markdown-line-break-face ((,class ())))
    `(markdown-link-face ((,class ,link-no-underline)))
    ;; `(markdown-link-title-face ((,class ())))
