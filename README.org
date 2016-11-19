@@ -88,7 +88,7 @@ a fresh version of it, at any time, from [[http://melpa.milkbox.net/][MELPA]] or
 
 ** Install the ELPA package
 
-In Emacs 24.x, ~M-x list-packages~ is the /recommended way/ to list and install
+In Emacs 24+, ~M-x list-packages~ is the /recommended way/ to list and install
 packages.
 
 MELPA keeps stable releases of Leuven theme.
