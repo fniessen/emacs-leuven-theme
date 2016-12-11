@@ -1,10 +1,10 @@
-;;; leuven-theme.el --- Awesome Emacs color theme on white background
+;;; leuven-theme.el --- Awesome Emacs color theme on dark background
 
 ;; Copyright (C) 2003-2016 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20161030.2004
+;; Version: 20161211.1954
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
