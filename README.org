@@ -81,6 +81,17 @@ Agenda with task list:
 #+ATTR_HTML: :width 640
 [[./images/agenda-and-task-list.png]]
 
+** NEW!  Dark version
+
+There is now a dark version of Leuven-theme, automagically built by Thibault
+Polge.
+
+#+ATTR_HTML: :width 640
+[[./images/leuven-theme-dark.png]]
+
+It surely will be improved over time, but this is a major first step into the
+right direction.  A big thanks to him!
+
 * Install it
 
 Though Leuven-theme has been added in *Emacs 24.4* (October 2014), you can get
@@ -179,7 +190,7 @@ beer and as in speech.
 
 * License
 
-Copyright (C) 2003-2016 Free Software Foundation, Inc.
+Copyright (C) 2003-2017 Free Software Foundation, Inc.
 
 Author: Fabrice Niessen \\
 Keywords: emacs color theme
