@@ -1,10 +1,10 @@
 ;;; leuven-theme.el --- Awesome Emacs color theme on white background
 
-;; Copyright (C) 2003-2016 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2017 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20161119.2213
+;; Version: 20170101.1105
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -484,6 +484,13 @@ more...")
    `(eww-form-text ((,class (:weight bold :foreground "#40586F" :background "#A7CDF1"))))
    ;; `(eww-form-textarea ((,class ())))
    `(file-name-shadow ((,class ,shadow)))
+   `(flycheck-error ((,class (:color "#FE251E" :style wave) :weight bold)))
+   `(flycheck-info ((,class (:color "#158A15" :style wave) :weight bold)))
+   `(flycheck-warning ((,class (:color "#F4A939" :style wave) :weight bold)))
+   `(flycheck-fringe-error ((,class (:foreground "#FE251E"))))
+   `(flycheck-fringe-info ((,class (:foreground "158A15"))))
+   `(flycheck-fringe-warning ((,class (:foreground "#F4A939"))))
+   `(flycheck-error-list-line-number ((,class (:foreground "#A535AE"))))
    `(font-latex-bold-face ((,class (:weight bold :foreground "black"))))
    `(fancy-narrow-blocked-face ((,class (:foreground "#9998A4"))))
    `(flycheck-color-mode-line-error-face ((, class (:background "#FF3F3F"))))
