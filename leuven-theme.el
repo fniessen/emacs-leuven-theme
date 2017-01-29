@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170101.1105
+;; Version: 20170129.1822
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -477,6 +477,7 @@ more...")
    `(diredp-ignored-file-name ((,class ,shadow)))
    `(diredp-read-priv ((,class (:background "#0A99FF"))))
    `(diredp-write-priv ((,class (:foreground "white" :background "#FF4040"))))
+   `(eldoc-highlight-function-argument ((,class (:weight bold :foreground "red" :background "#FFE4FF"))))
    `(elfeed-search-filter-face ((,class (:foreground "gray"))))
    ;; `(eww-form-checkbox ((,class ())))
    ;; `(eww-form-select ((,class ())))
@@ -484,9 +485,9 @@ more...")
    `(eww-form-text ((,class (:weight bold :foreground "#40586F" :background "#A7CDF1"))))
    ;; `(eww-form-textarea ((,class ())))
    `(file-name-shadow ((,class ,shadow)))
-   `(flycheck-error ((,class (:underline (:color "#FE251E" :style wave) :weight bold))))
+   `(flycheck-error ((,class (:underline (:color "#FE251E" :style wave) :weight bold :background "#FFE1E1"))))
    `(flycheck-info ((,class (:underline (:color "#158A15" :style wave) :weight bold))))
-   `(flycheck-warning ((,class (:underline (:color "#F4A939" :style wave) :weight bold))))
+   `(flycheck-warning ((,class (:underline (:color "#F4A939" :style wave) :weight bold :background "#FFFFBE"))))
    `(flycheck-fringe-error ((,class (:foreground "#FE251E"))))
    `(flycheck-fringe-info ((,class (:foreground "158A15"))))
    `(flycheck-fringe-warning ((,class (:foreground "#F4A939"))))
