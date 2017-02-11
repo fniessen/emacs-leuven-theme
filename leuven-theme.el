@@ -806,6 +806,7 @@ more...")
    `(show-paren-mismatch ((,class ,paren-unmatched)))
    `(sml-modeline-end-face ((,class (:background "#6BADF6")))) ; #335EA8
    `(sml-modeline-vis-face ((,class (:background "#1979CA"))))
+   `(term ((,class (:foreground "#333333" :background "#FFFFFF"))))
 
    ;; `(sp-pair-overlay-face                        
    ;; `(sp-show-pair-enclosing                      
