@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170129.2029
+;; Version: 20170214.1350
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -79,7 +79,8 @@ more...")
       (diff-removed '(:background "#FEE8E9"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
       (file '(:foreground "black"))
-      (highlight-blue '(:background "#E4F1F9"))
+      (highlight-blue '(:background "#E6ECFF"))
+      (highlight-blue2 '(:background "#E4F1F9"))
       (highlight-gray '(:background "#E4E4E3"))
       (highlight-green '(:background "#D5F1CF"))
       (highlight-red '(:background "#FFC8C8"))
@@ -112,7 +113,9 @@ more...")
       (subject '(:family "Sans Serif" :weight bold :foreground "black"))
       (symlink '(:foreground "#1F8DD6"))
       (tab '(:foreground "#E8E8E8" :background "white"))
-      (volatile-highlight '(:underline nil :foreground "black" :background "#E6B064")) ; flash-region
+      (trailing '(:foreground "#E8E8E8" :background "#FFFFAB"))
+      (volatile-highlight '(:underline nil :foreground "white" :background "#9E3699"))
+      (volatile-highlight-supersize '(:height 1.1 :underline nil :foreground "white" :background "#9E3699")) ; flash-region
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA"))
       (xml-attribute '(:foreground "#F36335"))
       (xml-tag '(:foreground "#AE1B9A"))
@@ -139,13 +142,13 @@ more...")
    `(isearch ((,class (:weight bold :underline "#FF9632" :foreground nil :background "#FDBD33"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
    `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
-   `(trailing-whitespace ((,class (:foreground "#B3B3B3" :background "#FFFFAB"))))
+   `(trailing-whitespace ((,class ,trailing)))
    `(query-replace ((,class (:inherit isearch))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2")))) ; see also `nobreak-space'
    `(whitespace-indentation ((,class ,tab)))
    `(whitespace-line ((,class (:foreground "#CC0000" :background "#FFFF88"))))
    `(whitespace-tab ((,class ,tab)))
-   `(whitespace-trailing ((,class (:foreground "#B3B3B3" :background "#FFFFAB"))))
+   `(whitespace-trailing ((,class ,trailing)))
 
    ;; Mode line faces.
    `(mode-line ((,class (:box (:line-width 1 :color "#1A2F54") :foreground "#85CEEB" :background "#335EA8"))))
