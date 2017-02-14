@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170214.1350
+;; Version: 20170214.2212
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -308,7 +308,7 @@ more...")
    ;; `(semantic-decoration-on-includes ((,class (:underline ,cham-4))))
    ;; `(semantic-decoration-on-private-members-face ((,class (:background ,alum-2))))
    ;; `(semantic-decoration-on-protected-members-face ((,class (:background ,alum-2))))
-   ;; `(semantic-decoration-on-unknown-includes ((,class (:background ,choc-3))))
+   `(semantic-decoration-on-unknown-includes ((,class (:background "#FFF8F8"))))
    ;; `(semantic-decoration-on-unparsed-includes ((,class (:underline ,orange-3))))
    `(semantic-highlight-func-current-tag-face ((,class ,highlight-current-tag)))
    `(semantic-tag-boundary-face ((,class (:overline "#BF8DFF"))))
@@ -591,16 +591,16 @@ more...")
    `(info-xref ((,class (:underline t :foreground "#006DAF")))) ; unvisited cross-references
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
    ;; js2-highlight-vars-face (~ auto-highlight-symbol)
-   `(js2-function-param ((,class (:foreground "LightGoldenrod"))))
+   `(js2-function-param ((,class (:foreground "LightGoldenrod")))) ; XXXXXXXXXXXXXXXXXXXXXXXXXXX
    `(js2-error ((,class (:box (:line-width 1 :color "#FF3737") :background "#FFE1E1")))) ; DONE.
-   `(js2-external-variable ((,class (:foreground "#FF0000")))) ; DONE.
+   `(js2-external-variable ((,class (:foreground "#FF0000" :background "#FFF8F8")))) ; DONE.
    `(js2-function-param ((,class (:foreground "SeaGreen"))))
    `(js2-instance-member ((,class (:foreground "DarkOrchid"))))
-   `(js2-jsdoc-html-tag-delimiter ((,class (:foreground "green"))))
-   `(js2-jsdoc-html-tag-name ((,class (:foreground "yellow"))))
-   `(js2-jsdoc-tag ((,class (:foreground "SlateGray"))))
+   `(js2-jsdoc-html-tag-delimiter ((,class (:foreground "#D0372D"))))
+   `(js2-jsdoc-html-tag-name ((,class (:foreground "#D0372D"))))
+   `(js2-jsdoc-tag ((,class (:weight normal :foreground "#6434A3"))))
    `(js2-jsdoc-type ((,class (:foreground "SteelBlue"))))
-   `(js2-jsdoc-value ((,class (:foreground "PeachPuff3"))))
+   `(js2-jsdoc-value ((,class (:weight normal :foreground "#BA36A5")))) ; #800080
    `(js2-magic-paren ((,class (:underline t))))
    `(js2-private-function-call ((,class (:foreground "goldenrod"))))
    `(js2-private-member ((,class (:foreground "PeachPuff3"))))
@@ -666,18 +666,18 @@ more...")
    ;; `(markdown-metadata-key-face ((,class ())))
    ;; `(markdown-metadata-value-face ((,class ())))
    ;; `(markdown-missing-link-face ((,class ())))
-   ;; `(markdown-pre-face ((,class ())))
+   `(markdown-pre-face ((,class (:inherit org-block-background))))
    ;; `(markdown-reference-face ((,class ())))
    ;; `(markdown-strike-through-face ((,class ())))
    `(markdown-url-face ((,class ,link)))
    `(match ((,class ,match)))           ; Used for grep matches.
-   `(mc/cursor-bar-face ((,class (:height 1.0 :foreground "white" :background "#1664C4"))))
+   `(mc/cursor-bar-face ((,class (:height 1.0 :foreground "#1664C4" :background "#1664C4"))))
    `(mc/cursor-face ((,class (:inverse-video t))))
    `(mc/region-face ((,class (:inherit region))))
    `(mm-uu-extract ((,class ,code-block)))
    `(moccur-current-line-face ((,class (:foreground "black" :background "#FFFFCC"))))
    `(moccur-face ((,class (:foreground "black" :background "#FFFF99"))))
-   `(next-error ((,class ,volatile-highlight)))
+   `(next-error ((,class ,volatile-highlight-supersize)))
    `(nobreak-space ((,class (:background "#CCE8F6"))))
    `(nxml-attribute-local-name-face ((,class ,xml-attribute)))
    `(nxml-attribute-value-delimiter-face ((,class (:foreground "green4"))))
@@ -837,7 +837,6 @@ more...")
    `(tex-verbatim ((,class (:foreground "blue"))))
    `(tool-bar ((,class (:box (:line-width 1 :style released-button) :foreground "black" :background "gray75"))))
    `(tooltip ((,class (:foreground "black" :background "light yellow"))))
-   `(trailing-whitespace ((,class (:background "#F6EBFE"))))
    `(traverse-match-face ((,class (:weight bold :foreground "blue violet"))))
    `(vc-annotate-face-3F3FFF ((,class (:foreground "#3F3FFF" :background "black"))))
    `(vc-annotate-face-3F6CFF ((,class (:foreground "#3F3FFF" :background "black"))))
