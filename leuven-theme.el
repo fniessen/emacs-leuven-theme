@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170214.2212
+;; Version: 20170214.2233
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -614,6 +614,7 @@ more...")
    `(leuven-gnus-unseen ((,class (:weight bold :foreground "#FC7202"))))
    `(leuven-gnus-date ((,class (:foreground "#FF80BF"))))
    `(leuven-gnus-size ((,class (:foreground "#8FBF60"))))
+   `(leuven-todo-items-face ((,class (:weight bold :foreground "#FF3125" :background "#FFFF88"))))
 
    `(light-symbol-face ((,class (:background "#FFFFA0"))))
    `(linum ((,class (:foreground "#9A9A9A" :background "#EDEDED"))))
@@ -721,7 +722,7 @@ more...")
    `(org-dim ((,class (:foreground "#AAAAAA"))))
    `(org-document-info ((,class (:foreground "#484848"))))
    `(org-document-info-keyword ((,class (:foreground "#008ED1" :background "#EAEAFF"))))
-   `(org-document-title ((,class (:family "Sans Serif" :height 1.8 :weight bold :foreground "black"))))
+   `(org-document-title ((,class (:height 1.8 :weight bold :foreground "black"))))
    `(org-done ((,class (:weight bold :box (:line-width 1 :color "#BBBBBB") :foreground "#BBBBBB" :background "#F0F0F0"))))
    `(org-drawer ((,class (:foreground "light sky blue"))))
    `(org-ellipsis ((,class (:underline nil :box (:line-width 1 :color "#999999") :foreground "#999999" :background "#FFF8C0")))) ; #FFEE62
@@ -811,14 +812,14 @@ more...")
    `(sml-modeline-vis-face ((,class (:background "#1979CA"))))
    `(term ((,class (:foreground "#333333" :background "#FFFFFF"))))
 
-   ;; `(sp-pair-overlay-face                        
-   ;; `(sp-show-pair-enclosing                      
-   ;; `(sp-show-pair-match-face                      ; ~ Pair highlighting (matching tags).
-   ;; `(sp-show-pair-mismatch-face                  
-   ;; `(sp-wrap-overlay-closing-pair                
-   ;; `(sp-wrap-overlay-face                        
-   ;; `(sp-wrap-overlay-opening-pair                
-   ;; `(sp-wrap-tag-overlay-face                    
+   ;; `(sp-pair-overlay-face ((,class ())))
+   ;; `(sp-show-pair-enclosing ((,class ())))
+   ;; `(sp-show-pair-match-face ((,class ()))) ; ~ Pair highlighting (matching tags).
+   ;; `(sp-show-pair-mismatch-face ((,class ())))
+   ;; `(sp-wrap-overlay-closing-pair ((,class ())))
+   ;; `(sp-wrap-overlay-face ((,class ())))
+   ;; `(sp-wrap-overlay-opening-pair ((,class ())))
+   ;; `(sp-wrap-tag-overlay-face ((,class ())))
 
    `(speedbar-button-face ((,class (:foreground "green4"))))
    `(speedbar-directory-face ((,class (:foreground "blue4"))))
@@ -857,7 +858,18 @@ more...")
    `(vc-annotate-face-FF993F ((,class (:foreground "#FF993F" :background "black"))))
    `(vc-annotate-face-FFC63F ((,class (:foreground "#FF993F" :background "black"))))
    `(vc-annotate-face-FFF33F ((,class (:foreground "#FFF33F" :background "black"))))
-   `(vhl/default-face ((,class ,volatile-highlight))) ; `volatile-highlights.el'.
+
+   ;; ;; vc
+   ;; (vc-up-to-date-state    ((,c :foreground ,(gc 'green-1))))
+   ;; (vc-edited-state        ((,c :foreground ,(gc 'yellow+1))))
+   ;; (vc-missing-state       ((,c :foreground ,(gc 'red))))
+   ;; (vc-conflict-state      ((,c :foreground ,(gc 'red+2) :weight bold)))
+   ;; (vc-locked-state        ((,c :foreground ,(gc 'cyan-1))))
+   ;; (vc-locally-added-state ((,c :foreground ,(gc 'blue))))
+   ;; (vc-needs-update-state  ((,c :foreground ,(gc 'magenta))))
+   ;; (vc-removed-state       ((,c :foreground ,(gc 'red-1))))
+
+   `(vhl/default-face ((,class ,volatile-highlight))) ; `volatile-highlights.el' (for undo, yank).
    `(w3m-anchor ((,class ,link)))
    `(w3m-arrived-anchor ((,class (:foreground "purple1"))))
    `(w3m-bitmap-image-face ((,class (:foreground "gray4" :background "green"))))
@@ -964,6 +976,19 @@ more...")
    `(woman-symbol ((,class (:weight bold :foreground "purple"))))
    `(yas-field-debug-face ((,class (:background "red"))))
    `(yas-field-highlight-face ((,class (:box (:line-width 1 :color "#838383") :foreground "black" :background "#D4DCD8"))))
+
+   ;; `(ztreep-arrow-face ((,class ())))
+   ;; `(ztreep-diff-header-face ((,class ())))
+   ;; `(ztreep-diff-header-small-face ((,class ())))
+   `(ztreep-diff-model-add-face ((,class (:weight bold :foreground "#008800"))))
+   `(ztreep-diff-model-diff-face ((,class (:weight bold :foreground "#0044DD"))))
+   `(ztreep-diff-model-ignored-face ((,class (:strike-through t :foreground "#9E9E9E"))))
+   `(ztreep-diff-model-normal-face ((,class (:foreground "#000000"))))
+   ;; `(ztreep-expand-sign-face ((,class ())))
+   ;; `(ztreep-header-face ((,class ())))
+   ;; `(ztreep-leaf-face ((,class ())))
+   ;; `(ztreep-node-face ((,class ())))
+
    ))
 
 (custom-theme-set-variables 'leuven
