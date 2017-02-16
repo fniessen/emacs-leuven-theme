@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170214.2233
+;; Version: 20170216.2006
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -515,6 +515,9 @@ more...")
    `(font-latex-verbatim-face ((,class (:foreground "#000088" :background "#FFFFE0" :inherit nil))))
    `(git-commit-summary-face ((,class (:foreground "#000000"))))
    `(git-commit-comment-face ((,class (:slant italic :foreground "#696969"))))
+   `(git-timemachine-commit ((,class ,diff-removed)))
+   `(git-timemachine-minibuffer-author-face ((,class ,diff-added)))
+   `(git-timemachine-minibuffer-detail-face ((,class ,diff-header)))
    `(google-translate-text-face ((,class (:foreground "#777777" :background "#F5F5F5"))))
    `(google-translate-phonetic-face ((,class (:inherit shadow))))
    `(google-translate-translation-face ((,class (:weight normal :foreground "#3079ED" :background "#E3EAF2"))))
@@ -914,7 +917,7 @@ more...")
    ;; `(web-mode-doctype-face ((,class ())))
    ;; `(web-mode-error-face ((,class ())))
    ;; `(web-mode-filter-face ((,class ())))
-   ;; `(web-mode-folded-face ((,class ())))
+   `(web-mode-folded-face ((,class (:box (:line-width 1 :color "#777777") :foreground "#9A9A6A" :background "#F3F349"))))
    ;; `(web-mode-function-call-face ((,class ())))
    ;; `(web-mode-function-name-face ((,class ())))
    ;; `(web-mode-html-attr-custom-face ((,class ())))
