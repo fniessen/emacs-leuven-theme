@@ -311,7 +311,7 @@ more...")
    `(semantic-decoration-on-unknown-includes ((,class (:background "#FFF8F8"))))
    ;; `(semantic-decoration-on-unparsed-includes ((,class (:underline ,orange-3))))
    `(semantic-highlight-func-current-tag-face ((,class ,highlight-current-tag)))
-   `(semantic-tag-boundary-face ((,class (:overline "#BF8DFF"))))
+   `(semantic-tag-boundary-face ((,class (:overline "#BF8DFF" :background "#F0F0F0"))))
    ;; `(semantic-unmatched-syntax-face ((,class (:underline ,red-1))))
 
    `(Info-title-1-face ((,class ,ol1)))
@@ -544,7 +544,7 @@ more...")
    `(helm-grep-match ((,class ,match)))
    `(helm-grep-running ((,class (:weight bold :foreground "white"))))
    `(helm-isearch-match ((,class (:background "#CCFFCC"))))
-   `(helm-lisp-show-completion ((,class ,volatile-highlight))) ; See `helm-dabbrev'.
+   `(helm-lisp-show-completion ((,class ,volatile-highlight-supersize))) ; See `helm-dabbrev'.
    ;; `(helm-ls-git-added-copied-face ((,class (:foreground ""))))
    ;; `(helm-ls-git-added-modified-face ((,class (:foreground ""))))
    ;; `(helm-ls-git-conflict-face ((,class (:foreground ""))))
@@ -595,7 +595,7 @@ more...")
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
    ;; js2-highlight-vars-face (~ auto-highlight-symbol)
    `(js2-function-param ((,class (:foreground "LightGoldenrod")))) ; XXXXXXXXXXXXXXXXXXXXXXXXXXX
-   `(js2-error ((,class (:box (:line-width 1 :color "#FF3737") :background "#FFE1E1")))) ; DONE.
+   `(js2-error ((,class (:box (:line-width 1 :color "#FF3737") :background "#FFC8C8")))) ; DONE.
    `(js2-external-variable ((,class (:foreground "#FF0000" :background "#FFF8F8")))) ; DONE.
    `(js2-function-param ((,class (:foreground "SeaGreen"))))
    `(js2-instance-member ((,class (:foreground "DarkOrchid"))))
@@ -959,7 +959,7 @@ more...")
    ;; `(web-mode-warning-face ((,class ())))
    ;; `(web-mode-whitespace-face ((,class ())))
 
-   `(which-func ((,class (:weight bold :foreground "white"))))
+   `(which-func ((,class (:weight bold :slant italic :foreground "white"))))
    ;; `(which-key-command-description-face)
    ;; `(which-key-group-description-face)
    ;; `(which-key-highlighted-command-face)
