@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170218.1256
+;; Version: 20170309.2237
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -46,9 +46,30 @@ The theme has to be reloaded after changing anything in this group."
   :group 'faces)
 
 (defcustom leuven-scale-outline-headlines t
-  "Scale `outline' (and `org') level-1 headlines."
-  :type 'boolean
+  "Scale `outline' (and `org') level-1 headlines.
+This can be nil for unscaled, t for using the theme default, or a scaling number."
+  :type '(choice
+          (const :tag "Unscaled" nil)
+          (const :tag "Default provided by theme" t)
+          (number :tag "Set scaling"))
   :group 'leuven)
+
+(defcustom leuven-scale-org-agenda-structure t
+  "Scale Org agenda strcuture lines, like dates.
+This can be nil for unscaled, t for using the theme default, or a scaling number."
+  :type '(choice
+          (const :tag "Unscaled" nil)
+          (const :tag "Default provided by theme" t)
+          (number :tag "Set scaling"))
+  :group 'leuven)
+
+(defun leuven-scale-font (control default-height)
+  "Function for splicing optional font heights into face descriptions.
+CONTROL can be a number, nil, or t.  When t, use DEFAULT-HEIGHT."
+  (cond
+   ((numberp control) (list :height control))
+   ((eq t control) (list :height default-height))
+   (t nil)))
 
 ;;; Theme Faces.
 
@@ -97,7 +118,7 @@ more...")
       (mail-unread-high '(:foreground "#135985"))
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
       (match '(:weight bold :background "#FBE448")) ; occur patterns
-      (ol1 `(,@(when leuven-scale-outline-headlines (list :height 1.3)) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
+      (ol1 `(,@(leuven-scale-font leuven-scale-outline-headlines 1.3) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
       (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
       (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF"))
       (ol4 '(:height 1.0 :weight bold :slant normal :foreground "#EA6300"))
@@ -699,23 +720,23 @@ more...")
    `(org-agenda-clocking ((,class (:foreground "black" :background "#EEC900"))))
    `(org-agenda-column-dateline ((,class ,column)))
    `(org-agenda-current-time ((,class (:underline t :foreground "#1662AF"))))
-   `(org-agenda-date ((,class (:height 1.6 :weight bold :foreground "#1662AF"))))
-   `(org-agenda-date-today ((,class (:height 1.6 :weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
-   `(org-agenda-date-weekend ((,class (:height 1.6 :weight bold :foreground "#4E4E4E"))))
+   `(org-agenda-date ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#1662AF"))))
+   `(org-agenda-date-today ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
+   `(org-agenda-date-weekend ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#4E4E4E"))))
    `(org-agenda-diary ((,class (:weight bold :foreground "green4" :background "light blue"))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground "gold2"))))
    `(org-agenda-done ((,class (:foreground "#555555"))))
    `(org-agenda-filter-category ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-filter-tags ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-restriction-lock ((,class (:background "#E77D63"))))
-   `(org-agenda-structure ((,class (:height 1.6 :weight bold :foreground "#1F8DD6"))))
+   `(org-agenda-structure ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#1F8DD6"))))
    `(org-archived ((,class (:foreground "gray70"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
    `(org-block-background ((,class (:background "#FFFFE0")))) ;; :inherit fixed-pitch))))
    `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
    `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
-   `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#434343" :background "#A3A3A3"))))
+   `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#123555" :background "#A3A3A3"))))
    `(org-clock-overlay ((,class (:foreground "white" :background "SkyBlue4"))))
    `(org-code ((,class ,code-inline)))
    `(org-column ((,class ,column)))
