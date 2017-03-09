@@ -144,31 +144,24 @@ Restart Emacs.
 
 ** Customize it
 
-You don't like my large Org level-1 headings (though I made them larger on
-purpose!)?  You find that Org-mode headlines are too big?
+You don't like my large Org level-1 headings or my large Org agenda-date heading
+(though I made them larger on purpose!)?
 
 Then, set the variable ~leuven-scale-outline-headlines~ to nil before the theme is
 loaded.
 
 #+begin_src emacs-lisp
 (setq leuven-scale-outline-headlines nil)
+(setq leuven-scale-org-agenda-structure nil)
 #+end_src
+
+The value can be:
+- ~nil~ for unscaled,
+- ~t~ for using the theme default, or
+- a scaling number (that you choose to your liking!).
 
 One way to do that is to it through ~M-x customize-variable~ and then restart
 Emacs.
-
-You don't like my large Org agenda-date heading either?
-
-You should be able to get my theme and a smaller face by using something such
-as:
-
-#+begin_src emacs-lisp
-(set-face-attribute 'org-agenda-date nil :height 90) ; 9 pt font.
-#+end_src
-
-That should change the font size without changing the colors.
-
-That recipe can of course be applied to other faces.
 
 * Contributing
 
