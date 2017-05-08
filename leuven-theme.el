@@ -55,7 +55,7 @@ This can be nil for unscaled, t for using the theme default, or a scaling number
   :group 'leuven)
 
 (defcustom leuven-scale-org-agenda-structure t
-  "Scale Org agenda strcuture lines, like dates.
+  "Scale Org agenda structure lines, like dates.
 This can be nil for unscaled, t for using the theme default, or a scaling number."
   :type '(choice
           (const :tag "Unscaled" nil)
