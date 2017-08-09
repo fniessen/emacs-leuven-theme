@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170309.2237
+;; Version: 20170809.1802
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -100,6 +100,8 @@ more...")
       (diff-removed '(:background "#FEE8E9"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
       (file '(:foreground "black"))
+      (grep-file-name '(:weight bold :foreground "#2A489E")) ; Used for grep hits.
+      (grep-line-number '(:weight bold :foreground "#A535AE"))
       (highlight-blue '(:background "#E6ECFF"))
       (highlight-blue2 '(:background "#E4F1F9"))
       (highlight-gray '(:background "#E4E4E3"))
@@ -304,6 +306,10 @@ more...")
    `(diff-removed ((,class ,diff-removed)))
 
    ;; SMerge.
+   `(smerge-mine ((,class ,diff-changed)))
+   `(smerge-other ((,class ,diff-added)))
+   `(smerge-base ((,class ,diff-removed)))
+   `(smerge-markers ((,class (:background "#FFE5CC"))))
    `(smerge-refined-change ((,class (:background "#AAAAFF"))))
 
    ;; Ediff.
@@ -423,8 +429,8 @@ more...")
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
    ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
    `(compilation-error ((,class (:weight bold :foreground "red")))) ; Used for grep error messages.
-   `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; Used for grep hits.
-   `(compilation-line-number ((,class (:weight bold :foreground "#A535AE"))))
+   `(compilation-info ((,class ,grep-file-name)))
+   `(compilation-line-number ((,class ,grep-line-number)))
    `(compilation-warning ((,class (:weight bold :foreground "orange"))))
    `(compilation-mode-line-exit ((,class (:weight bold :foreground "green")))) ; :exit[matched]
    `(compilation-mode-line-fail ((,class (:weight bold :foreground "violet")))) ; :exit[no match]
@@ -561,7 +567,8 @@ more...")
    `(helm-ff-symlink ((,class ,symlink)))
    `(helm-file-name ((,class (:foreground "blue"))))
    `(helm-gentoo-match-face ((,class (:foreground "red"))))
-   `(helm-grep-lineno ((,class ,shadow)))
+   `(helm-grep-file ((,class ,grep-file-name)))
+   `(helm-grep-lineno ((,class ,grep-line-number)))
    `(helm-grep-match ((,class ,match)))
    `(helm-grep-running ((,class (:weight bold :foreground "white"))))
    `(helm-isearch-match ((,class (:background "#CCFFCC"))))
