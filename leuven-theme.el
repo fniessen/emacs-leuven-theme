@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170809.1802
+;; Version: 20170818.1148
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -325,11 +325,11 @@ more...")
 
    ;; Flyspell.
    (if (version< emacs-version "24.4")
-       `(flyspell-duplicate ((,class (:underline "#008000" :inherit nil))))
-     `(flyspell-duplicate ((,class (:underline (:style wave :color "#008000") :inherit nil)))))
+       `(flyspell-duplicate ((,class (:underline "#F4EB80" :inherit nil))))
+     `(flyspell-duplicate ((,class (:underline (:style wave :color "#F4EB80") :background "#FAF7CC" :inherit nil)))))
    (if (version< emacs-version "24.4")
-       `(flyspell-incorrect ((,class (:underline "red" :inherit nil))))
-     `(flyspell-incorrect ((,class (:underline (:style wave :color "red") :inherit nil)))))
+       `(flyspell-incorrect ((,class (:underline "#FAA7A5" :inherit nil))))
+     `(flyspell-incorrect ((,class (:underline (:style wave :color "#FAA7A5") :background "#F4D7DA":inherit nil)))))
 
    ;; ;; Semantic faces.
    ;; `(semantic-decoration-on-includes ((,class (:underline ,cham-4))))
