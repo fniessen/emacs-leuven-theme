@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170818.1148
+;; Version: 20170907.1311
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -100,6 +100,7 @@ more...")
       (diff-removed '(:background "#FEE8E9"))
       (directory '(:weight bold :foreground "blue" :background "#FFFFD2"))
       (file '(:foreground "black"))
+      (function-param '(:foreground "#247284"))
       (grep-file-name '(:weight bold :foreground "#2A489E")) ; Used for grep hits.
       (grep-line-number '(:weight bold :foreground "#A535AE"))
       (highlight-blue '(:background "#E6ECFF"))
@@ -622,10 +623,9 @@ more...")
    `(info-xref ((,class (:underline t :foreground "#006DAF")))) ; unvisited cross-references
    `(info-xref-visited ((,class (:underline t :foreground "magenta4")))) ; previously visited cross-references
    ;; js2-highlight-vars-face (~ auto-highlight-symbol)
-   `(js2-function-param ((,class (:foreground "LightGoldenrod")))) ; XXXXXXXXXXXXXXXXXXXXXXXXXXX
    `(js2-error ((,class (:box (:line-width 1 :color "#FF3737") :background "#FFC8C8")))) ; DONE.
    `(js2-external-variable ((,class (:foreground "#FF0000" :background "#FFF8F8")))) ; DONE.
-   `(js2-function-param ((,class (:foreground "SeaGreen"))))
+   `(js2-function-param ((,class ,function-param)))
    `(js2-instance-member ((,class (:foreground "DarkOrchid"))))
    `(js2-jsdoc-html-tag-delimiter ((,class (:foreground "#D0372D"))))
    `(js2-jsdoc-html-tag-name ((,class (:foreground "#D0372D"))))
