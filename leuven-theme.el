@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170907.1311
+;; Version: 20170919.1149
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -528,8 +528,8 @@ more...")
    `(flycheck-error-list-line-number ((,class (:foreground "#A535AE"))))
    `(font-latex-bold-face ((,class (:weight bold :foreground "black"))))
    `(fancy-narrow-blocked-face ((,class (:foreground "#9998A4"))))
-   `(flycheck-color-mode-line-error-face ((, class (:background "#FF3F3F"))))
-   `(flycheck-color-mode-line-warning-face ((, class (:background "orange"))))
+   `(flycheck-color-mode-line-error-face ((, class (:background "#CF5B56"))))
+   `(flycheck-color-mode-line-warning-face ((, class (:background "#EBC700"))))
    `(flycheck-color-mode-line-info-face ((, class (:background "yellow"))))
    `(font-latex-italic-face ((,class (:slant italic :foreground "#1A1A1A"))))
    `(font-latex-math-face ((,class (:foreground "blue"))))
@@ -597,7 +597,7 @@ more...")
    `(highlight-changes ((,class (:foreground nil)))) ;; blue "#2E08B5"
    `(highlight-changes-delete ((,class (:strike-through nil :foreground nil)))) ;; red "#B5082E"
    `(highlight-symbol-face ((,class (:background "#FFFFA0"))))
-   `(hl-line ((,class ,highlight-green))) ; Highlight current line.
+   `(hl-line ((,class ,highlight-yellow))) ; Highlight current line.
    `(hl-tags-face ((,class ,highlight-current-tag))) ; ~ Pair highlighting (matching tags).
    `(holiday-face ((,class (:foreground "#777777" :background "#E4EBFE"))))
    `(html-helper-bold-face ((,class (:weight bold :foreground "black"))))
