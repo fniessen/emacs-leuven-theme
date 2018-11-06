@@ -964,14 +964,14 @@ more...")
     ["#fffefe" "#9d0000" "#006a00" "#0e1b00" "#6845138" "#840086" "#003567" "#494949"])
  )
 
-;;;######autoload
+;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
            load-file-name)
   ;; Add theme folder to `custom-theme-load-path' when installing over MELPA.
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-;;;######autoload
+;;;###autoload
 (when (string-match "/etc/themes/$"
                     (file-name-directory (or load-file-name (buffer-file-name))))
   (message "To stay up-to-date, you should better install and use leuven-theme from MELPA.")
