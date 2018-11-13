@@ -1,10 +1,10 @@
 ;;; leuven-theme.el --- Awesome Emacs color theme on white background
 
-;; Copyright (C) 2003-2017 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2018 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170919.1149
+;; Version: 20181113.1600
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -163,9 +163,9 @@ more...")
    `(highlight ((,class ,highlight-blue)))
    `(region ((,class ,region)))
    `(secondary-selection ((,class ,match))) ; Used by Org-mode for highlighting matched entries and keywords.
-   `(isearch ((,class (:weight bold :underline "#FF9632" :foreground nil :background "#FDBD33"))))
-   `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FF9999"))))
-   `(lazy-highlight ((,class (:underline "#FF9632" :background "#FFFF00")))) ; isearch others
+   `(isearch ((,class (:underline "black" :foreground "white" :background "#5974AB"))))
+   `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FFCCCC"))))
+   `(lazy-highlight ((,class (:foreground "black" :background "#FFFF00")))) ; Isearch others
    `(trailing-whitespace ((,class ,trailing)))
    `(query-replace ((,class (:inherit isearch))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2")))) ; see also `nobreak-space'
@@ -347,9 +347,9 @@ more...")
    `(Info-title-3-face ((,class ,ol3)))
    `(Info-title-4-face ((,class ,ol4)))
    `(ace-jump-face-foreground ((,class (:weight bold :foreground "black" :background "#FEA500"))))
-   `(ahs-face ((,class (:underline "#D6D6D6" :background "#E2E6D6")))) ; #84CFFF (blue).
-   `(ahs-definition-face ((,class (:background "#FFE4FF"))))
-   `(ahs-plugin-defalt-face ((,class (:underline "#D6D6D6" :background "#E2E6D6")))) ; #FFB6C6 (rose) = current.
+   `(ahs-face ((,class (:background "#E4E4FF"))))
+   `(ahs-definition-face ((,class (:background "#FFB6C6"))))
+   `(ahs-plugin-defalt-face ((,class (:background "#FFE4FF")))) ; Current.
    `(anzu-match-1 ((,class (:foreground "black" :background "aquamarine"))))
    `(anzu-match-2 ((,class (:foreground "black" :background "springgreen"))))
    `(anzu-match-3 ((,class (:foreground "black" :background "red"))))
