@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20181113.1600
+;; Version: 20181119.1526
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -87,14 +87,14 @@ more...")
       (code-block '(:foreground "#000088" :background "#FFFFE0"))
       (code-inline '(:foreground "#006400" :background "#FDFFF7"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
-      (completion-selected-candidate '(:weight bold :foreground "white" :background "#0052A4"))
-      (completion-other-candidates '(:weight bold :foreground "black" :background "#EBF4FE"))
       (completion-inline '(:weight normal :foreground "#C0C0C0" :inherit hl-line)) ; Like Google.
+      (completion-other-candidates '(:weight bold :foreground "black" :background "#EBF4FE"))
+      (completion-selected-candidate '(:weight bold :foreground "white" :background "#0052A4"))
       (diff-added '(:background "#DDFFDD"))
       (diff-changed '(:foreground "#0000FF" :background "#DDDDFF"))
-      (diff-header '(:foreground "#800000" :background "#FFFFAF"))
+      (diff-header '(:weight bold :foreground "#800000" :background "#FFFFAF"))
       (diff-hunk-header '(:foreground "#990099" :background "#FFEEFF"))
-      (diff-none '(:foreground "gray33"))
+      (diff-none '(:foreground "#888888"))
       (diff-refine-added '(:background "#97F295"))
       (diff-refine-removed '(:background "#FFB6BA"))
       (diff-removed '(:background "#FEE8E9"))
