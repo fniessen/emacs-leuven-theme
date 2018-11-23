@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20181119.1526
+;; Version: 20181123.1608
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -120,7 +120,7 @@ more...")
       (mail-unread '(:foreground "#0067BE"))
       (mail-unread-high '(:foreground "#135985"))
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
-      (match '(:weight bold :background "#FBE448")) ; occur patterns
+      (match '(:weight bold :background "#FFFF00")) ; occur patterns + match in ; helm for files + match in Org files.
       (ol1 `(,@(leuven-scale-font leuven-scale-outline-headlines 1.3) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
       (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
       (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF"))
@@ -165,7 +165,7 @@ more...")
    `(secondary-selection ((,class ,match))) ; Used by Org-mode for highlighting matched entries and keywords.
    `(isearch ((,class (:underline "black" :foreground "white" :background "#5974AB"))))
    `(isearch-fail ((,class (:weight bold :foreground "black" :background "#FFCCCC"))))
-   `(lazy-highlight ((,class (:foreground "black" :background "#FFFF00")))) ; Isearch others
+   `(lazy-highlight ((,class (:foreground "black" :background "#FFFF00")))) ; Isearch others (see `match').
    `(trailing-whitespace ((,class ,trailing)))
    `(query-replace ((,class (:inherit isearch))))
    `(whitespace-hspace ((,class (:foreground "#D2D2D2")))) ; see also `nobreak-space'
@@ -339,7 +339,7 @@ more...")
    `(semantic-decoration-on-unknown-includes ((,class (:background "#FFF8F8"))))
    ;; `(semantic-decoration-on-unparsed-includes ((,class (:underline ,orange-3))))
    `(semantic-highlight-func-current-tag-face ((,class ,highlight-current-tag)))
-   `(semantic-tag-boundary-face ((,class (:overline "#BF8DFF" :background "#F0F0F0"))))
+   `(semantic-tag-boundary-face ((,class (:overline "#777777")))) ; Method separator.
    ;; `(semantic-unmatched-syntax-face ((,class (:underline ,red-1))))
 
    `(Info-title-1-face ((,class ,ol1)))
@@ -393,7 +393,7 @@ more...")
    `(cfw:face-toolbar-button-on ((,class (:foreground "#5E5E5E" :background "#F6F6F6"))))
    `(change-log-date ((,class (:foreground "purple"))))
    `(change-log-file ((,class (:weight bold :foreground "#4183C4"))))
-   `(change-log-list ((,class (:box (:line-width 1) :foreground "cyan3"))))
+   `(change-log-list ((,class (:foreground "black" :background "#75EEC7"))))
    `(change-log-name ((,class (:foreground "#008000"))))
    `(circe-highlight-all-nicks-face ((,class (:foreground "blue" :background "#F0F0F0")))) ; other nick names
    `(circe-highlight-nick-face ((,class (:foreground "#009300" :background "#F0F0F0")))) ; messages with my nick cited
@@ -650,7 +650,7 @@ more...")
    `(light-symbol-face ((,class (:background "#FFFFA0"))))
    `(linum ((,class (:foreground "#9A9A9A" :background "#EDEDED"))))
    `(log-view-file ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
-   `(log-view-message ((,class (:foreground "yellow3"))))
+   `(log-view-message ((,class (:foreground "black" :background "#EDEA74"))))
    `(lui-button-face ((,class ,link)))
    `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ; my nickname
    `(lui-time-stamp-face ((,class (:foreground "purple"))))
