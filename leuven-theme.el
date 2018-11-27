@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20181123.1608
+;; Version: 20181127.1257
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -120,7 +120,7 @@ more...")
       (mail-unread '(:foreground "#0067BE"))
       (mail-unread-high '(:foreground "#135985"))
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
-      (match '(:weight bold :background "#FFFF00")) ; occur patterns + match in ; helm for files + match in Org files.
+      (match '(:weight bold :background "#FFFF00")) ; occur patterns + match in helm for files + match in Org files.
       (ol1 `(,@(leuven-scale-font leuven-scale-outline-headlines 1.3) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
       (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
       (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF"))
@@ -585,12 +585,12 @@ more...")
    ;; `(helm-ls-git-untracked-face ((,class (:foreground ""))))
    `(helm-match ((,class ,match)))
    `(helm-moccur-buffer ((,class (:foreground "#0066CC"))))
-   `(helm-selection ((,class ,highlight-blue)))
+   `(helm-selection ((,class (:background "#3875D6" :foreground "white"))))
    `(helm-selection-line ((,class ,highlight-gray)))
    `(helm-separator ((,class (:foreground "red"))))
-   `(helm-source-header ((,class ,ol1)))
+   `(helm-source-header ((,class (:weight bold :box (:line-width 1 :color "#C7C7C7") :background "#DEDEDE" :foreground "black"))))
    `(helm-swoop-target-line-block-face ((,class (:background "#CCCC00" :foreground "#222222"))))
-   `(helm-swoop-target-line-face ((,class ,volatile-highlight)))
+   `(helm-swoop-target-line-face ((,class (:background "#CCCCFF"))))
    `(helm-swoop-target-word-face ((,class (:weight bold :foreground nil :background "#FDBD33"))))
    `(helm-visible-mark ((,class ,marked-line)))
    `(helm-w3m-bookmarks-face ((,class (:underline t :foreground "cyan1"))))
@@ -941,7 +941,7 @@ more...")
    ;; `(web-mode-css-string-face ((,class ())))
    ;; `(web-mode-css-variable-face ((,class ())))
    ;; `(web-mode-current-column-highlight-face ((,class ())))
-   `(web-mode-current-element-highlight-face ((,class (:background "#BF8DFF")))) ; #FFEE80
+   `(web-mode-current-element-highlight-face ((,class (:background "#99CCFF")))) ; #FFEE80
    ;; `(web-mode-doctype-face ((,class ())))
    ;; `(web-mode-error-face ((,class ())))
    ;; `(web-mode-filter-face ((,class ())))
