@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20181127.1257
+;; Version: 20181127.1258
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -210,21 +210,21 @@ more...")
    `(link ((,class ,link)))
    `(link-visited ((,class (:underline t :foreground "#E5786D"))))
    `(button ((,class (:underline t :foreground "#006DAF"))))
-   `(header-line ((,class (:weight bold :underline "#BF8DFF" :overline "#BF8DFF" :foreground "black" :background "#E8E8FF"))))
+   `(header-line ((,class (:box (:line-width 1 :color "black") :foreground "black" :background "#F0F0F0"))))
 
    ;; Gnus faces.
    `(gnus-button ((,class (:weight normal))))
    `(gnus-cite-attribution-face ((,class (:foreground "#5050B0"))))
-   `(gnus-cite-face-1 ((,class (:foreground "#5050B0" :background "#F6F6F6"))))
-   `(gnus-cite-face-2 ((,class (:foreground "#660066" :background "#F6F6F6"))))
-   `(gnus-cite-face-3 ((,class (:foreground "#007777" :background "#F6F6F6"))))
-   `(gnus-cite-face-4 ((,class (:foreground "#990000" :background "#F6F6F6"))))
-   `(gnus-cite-face-5 ((,class (:foreground "#000099" :background "#F6F6F6"))))
-   `(gnus-cite-face-6 ((,class (:foreground "#BB6600" :background "#F6F6F6"))))
-   `(gnus-cite-face-7 ((,class (:foreground "#5050B0" :background "#F6F6F6"))))
-   `(gnus-cite-face-8 ((,class (:foreground "#660066" :background "#F6F6F6"))))
-   `(gnus-cite-face-9 ((,class (:foreground "#007777" :background "#F6F6F6"))))
-   `(gnus-cite-face-10 ((,class (:foreground "#990000" :background "#F6F6F6"))))
+   `(gnus-cite-1 ((,class (:foreground "#5050B0" :background "#F6F6F6"))))
+   `(gnus-cite-2 ((,class (:foreground "#660066" :background "#F6F6F6"))))
+   `(gnus-cite-3 ((,class (:foreground "#007777" :background "#F6F6F6"))))
+   `(gnus-cite-4 ((,class (:foreground "#990000" :background "#F6F6F6"))))
+   `(gnus-cite-5 ((,class (:foreground "#000099" :background "#F6F6F6"))))
+   `(gnus-cite-6 ((,class (:foreground "#BB6600" :background "#F6F6F6"))))
+   `(gnus-cite-7 ((,class (:foreground "#5050B0" :background "#F6F6F6"))))
+   `(gnus-cite-8 ((,class (:foreground "#660066" :background "#F6F6F6"))))
+   `(gnus-cite-9 ((,class (:foreground "#007777" :background "#F6F6F6"))))
+   `(gnus-cite-10 ((,class (:foreground "#990000" :background "#F6F6F6"))))
    `(gnus-emphasis-bold ((,class (:weight bold))))
    `(gnus-emphasis-highlight-words ((,class (:foreground "yellow" :background "black"))))
    `(gnus-group-mail-1 ((,class (:weight bold :foreground "#FF50B0"))))
