@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20181127.1258
+;; Version: 20181129.2245
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -294,13 +294,13 @@ more...")
    `(diff-file-header ((,class ,diff-header)))
    `(diff-file1-hunk-header ((,class (:foreground "dark magenta" :background "#EAF2F5"))))
    `(diff-file2-hunk-header ((,class (:foreground "#2B7E2A" :background "#EAF2F5"))))
-   `(diff-function ((,class (:foreground "darkgray"))))
+   `(diff-function ((,class (:foreground "#CC99CC"))))
    `(diff-header ((,class ,diff-header)))
    `(diff-hunk-header ((,class ,diff-hunk-header)))
    `(diff-index ((,class ,diff-header)))
-   `(diff-indicator-added ((,class (:foreground "#3A993A" :background "#DBFFDB"))))
-   `(diff-indicator-changed ((,class (:background "#8080FF"))))
-   `(diff-indicator-removed ((,class (:foreground "#CC3333" :background "#FFDDDD"))))
+   `(diff-indicator-added ((,class (:foreground "#3A993A" :background "#CDFFD8"))))
+   `(diff-indicator-changed ((,class (:background "#DBEDFF"))))
+   `(diff-indicator-removed ((,class (:foreground "#CC3333" :background "#FFDCE0"))))
    `(diff-refine-added ((,class ,diff-refine-added)))
    `(diff-refine-change ((,class (:background "#DDDDFF"))))
    `(diff-refine-removed ((,class ,diff-refine-removed)))
@@ -461,14 +461,14 @@ more...")
    `(custom-variable-button ((,class (:weight bold :underline t))))
    `(custom-variable-tag ((,class (:family "Sans Serif" :height 1.2 :weight bold :foreground "blue1"))))
    `(custom-visibility ((,class ,link)))
-   `(diff-hl-change ((,class (:foreground "blue3" :inherit diff-changed))))
-   `(diff-hl-delete ((,class (:foreground "red3" :inherit diff-removed))))
+   `(diff-hl-change ((,class (:foreground "blue3" :background "#DBEDFF"))))
+   `(diff-hl-delete ((,class (:foreground "red3" :background "#FFDCE0"))))
    `(diff-hl-dired-change ((,class (:weight bold :foreground "black" :background "#FFA335"))))
    `(diff-hl-dired-delete ((,class (:weight bold :foreground "#D73915"))))
    `(diff-hl-dired-ignored ((,class (:weight bold :foreground "white" :background "#C0BBAB"))))
    `(diff-hl-dired-insert ((,class (:weight bold :foreground "#B9B9BA"))))
    `(diff-hl-dired-unknown ((,class (:foreground "white" :background "#3F3BB4"))))
-   `(diff-hl-insert ((,class (:foreground "green4" :inherit diff-added))))
+   `(diff-hl-insert ((,class (:foreground "green4" :background "#CDFFD8"))))
    `(diff-hl-unknown ((,class (:foreground "white" :background "#3F3BB4"))))
    `(diary-face ((,class (:foreground "#87C9FC"))))
    `(dircolors-face-asm ((,class (:foreground "black"))))
@@ -586,7 +586,7 @@ more...")
    `(helm-match ((,class ,match)))
    `(helm-moccur-buffer ((,class (:foreground "#0066CC"))))
    `(helm-selection ((,class (:background "#3875D6" :foreground "white"))))
-   `(helm-selection-line ((,class ,highlight-gray)))
+   `(helm-selection-line ((,class ,highlight-gray))) ; ???
    `(helm-separator ((,class (:foreground "red"))))
    `(helm-source-header ((,class (:weight bold :box (:line-width 1 :color "#C7C7C7") :background "#DEDEDE" :foreground "black"))))
    `(helm-swoop-target-line-block-face ((,class (:background "#CCCC00" :foreground "#222222"))))
