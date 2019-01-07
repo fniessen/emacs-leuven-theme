@@ -1,10 +1,10 @@
 ;;; leuven-theme.el --- Awesome Emacs color theme on white background
 
-;; Copyright (C) 2003-2018 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2019 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20181129.2245
+;; Version: 20190107.1135
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -130,7 +130,7 @@ more...")
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
       (paren-matched '(:background "#C0E8C3")) ; Or take that green for region?
-      (paren-unmatched '(:weight bold :underline "red" :foreground "black" :background "#FFDCDC"))
+      (paren-unmatched '(:weight bold :underline "red" :foreground "black" :background "#FFA5A5"))
       (region '(:background "#8ED3FF"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#008000")) ; or #D0372D
