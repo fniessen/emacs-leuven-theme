@@ -184,7 +184,7 @@ beer and as in speech.
 
 * License
 
-Copyright (C) 2003-2017 Free Software Foundation, Inc.
+Copyright (C) 2003-2019 Free Software Foundation, Inc.
 
 Author: Fabrice Niessen \\
 Keywords: emacs color theme
