@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20190107.1135
+;; Version: 20190214.1102
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -556,6 +556,7 @@ more...")
    `(helm-bookmark-file ((,class ,file)))
    `(helm-bookmarks-su-face ((,class (:foreground "red"))))
    `(helm-buffer-directory ((,class ,directory)))
+   `(helm-buffer-modified ((,class (:slant italic :foreground "#BA36A5"))))
    `(helm-buffer-process ((,class (:foreground "#008200"))))
    `(helm-candidate-number ((,class (:foreground "black" :background "#FFFF66"))))
    `(helm-dir-heading ((,class (:foreground "blue" :background "pink"))))
