@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20190214.1102
+;; Version: 20190227.1247
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -520,12 +520,12 @@ more...")
    ;; `(eww-form-textarea ((,class ())))
    `(file-name-shadow ((,class ,shadow)))
    `(flycheck-error ((,class (:underline (:color "#FE251E" :style wave) :weight bold :background "#FFE1E1"))))
-   `(flycheck-info ((,class (:underline (:color "#158A15" :style wave) :weight bold))))
-   `(flycheck-warning ((,class (:underline (:color "#F4A939" :style wave) :weight bold :background "#FFFFBE"))))
+   `(flycheck-error-list-line-number ((,class (:foreground "#A535AE"))))
    `(flycheck-fringe-error ((,class (:foreground "#FE251E"))))
    `(flycheck-fringe-info ((,class (:foreground "158A15"))))
    `(flycheck-fringe-warning ((,class (:foreground "#F4A939"))))
-   `(flycheck-error-list-line-number ((,class (:foreground "#A535AE"))))
+   `(flycheck-info ((,class (:underline (:color "#158A15" :style wave) :weight bold))))
+   `(flycheck-warning ((,class (:underline (:color "#F4A939" :style wave) :weight bold :background "#FFFFBE"))))
    `(font-latex-bold-face ((,class (:weight bold :foreground "black"))))
    `(fancy-narrow-blocked-face ((,class (:foreground "#9998A4"))))
    `(flycheck-color-mode-line-error-face ((, class (:background "#CF5B56"))))
