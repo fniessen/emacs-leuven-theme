@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20190227.1250
+;; Version: 20190308.1633
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -108,17 +108,17 @@ more...")
       (highlight-gray '(:background "#E4E4E3"))
       (highlight-green '(:background "#D5F1CF"))
       (highlight-red '(:background "#FFC8C8"))
-      (highlight-yellow '(:underline "#FFFF19" :background "#F6FECD"))
+      (highlight-yellow '(:background "#F6FECD"))
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (link-no-underline '(:weight normal :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
       (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
-      (mail-read '(:foreground "#A9A9A9"))
+      (mail-read '(:foreground "#8C8C8C"))
       (mail-read-high '(:foreground "#808080"))
-      (mail-ticked '(:foreground "#E92415"))
+      (mail-ticked '(:foreground "#FF3300"))
       (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
-      (mail-unread '(:foreground "#0067BE"))
-      (mail-unread-high '(:foreground "#135985"))
+      (mail-unread '(:weight bold :foreground "#000000"))
+      (mail-unread-high '(:weight bold :foreground "#135985"))
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
       (match '(:weight bold :background "#FFFF00")) ; occur patterns + match in helm for files + match in Org files.
       (ol1 `(,@(leuven-scale-font leuven-scale-outline-headlines 1.3) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
