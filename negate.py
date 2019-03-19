@@ -47,6 +47,10 @@ def color_transform(r,g,b):
     b2 += int(log(max(1,255 - b2)))
     r2 += int(log(max(1,255 - r2)))
         
+    r2 = min(r2, 255)
+    g2 = min(g2, 255)
+    b2 = min(b2, 255)
+
     return (r2, g2, b2)
 
 
