@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20190308.1633
+;; Version: 20190829.1120
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -556,6 +556,8 @@ more...")
    `(helm-bookmark-file ((,class ,file)))
    `(helm-bookmarks-su-face ((,class (:foreground "red"))))
    `(helm-buffer-directory ((,class ,directory)))
+   ;; `(helm-non-file-buffer ((,class (:slant italic :foreground "blue"))))
+   ;; `(helm-buffer-file ((,class (:foreground "#333333"))))
    `(helm-buffer-modified ((,class (:slant italic :foreground "#BA36A5"))))
    `(helm-buffer-process ((,class (:foreground "#008200"))))
    `(helm-candidate-number ((,class (:foreground "black" :background "#FFFF66"))))
@@ -735,6 +737,8 @@ more...")
    `(org-agenda-dimmed-todo-face ((,class (:foreground "gold2"))))
    `(org-agenda-done ((,class (:foreground "#555555"))))
    `(org-agenda-filter-category ((,class (:weight bold :foreground "orange"))))
+   `(org-agenda-filter-effort ((,class (:weight bold :foreground "orange"))))
+   `(org-agenda-filter-regexp ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-filter-tags ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-restriction-lock ((,class (:background "#E77D63"))))
    `(org-agenda-structure ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#1F8DD6"))))
