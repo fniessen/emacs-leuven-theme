@@ -1,10 +1,10 @@
 ;;; leuven-theme.el --- Awesome Emacs color theme on white background
 
-;; Copyright (C) 2003-2019 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2020 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20191211.1707
+;; Version: 20200102.2036
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -84,8 +84,8 @@ more...")
       ;; Leuven generic colors.
       (cancel '(:slant italic :strike-through t :foreground "#A9A9A9"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
-      (code-block '(:foreground "#000088" :background "#FFFFE0"))
-      (code-inline '(:foreground "#006400" :background "#FDFFF7"))
+      (code-block '(:foreground "#000088" :background "#FFFFE0" :extend t))
+      (code-inline '(:foreground "#006400" :background "#FDFFF7" :extend t))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (completion-inline '(:weight normal :foreground "#C0C0C0" :inherit hl-line)) ; Like Google.
       (completion-other-candidates '(:weight bold :foreground "black" :background "#EBF4FE"))
@@ -103,12 +103,12 @@ more...")
       (function-param '(:foreground "#247284"))
       (grep-file-name '(:weight bold :foreground "#2A489E")) ; Used for grep hits.
       (grep-line-number '(:weight bold :foreground "#A535AE"))
-      (highlight-blue '(:background "#E6ECFF"))
-      (highlight-blue2 '(:background "#E4F1F9"))
-      (highlight-gray '(:background "#E4E4E3"))
-      (highlight-green '(:background "#D5F1CF"))
-      (highlight-red '(:background "#FFC8C8"))
-      (highlight-yellow '(:background "#F6FECD"))
+      (highlight-blue '(:background "#E6ECFF" :extend t))
+      (highlight-blue2 '(:background "#E4F1F9" :extend t))
+      (highlight-gray '(:background "#E4E4E3" :extend t))
+      (highlight-green '(:background "#D5F1CF" :extend t))
+      (highlight-red '(:background "#FFC8C8" :extend t))
+      (highlight-yellow '(:background "#F6FECD" :extend t))
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (link-no-underline '(:weight normal :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
@@ -121,17 +121,17 @@ more...")
       (mail-unread-high '(:weight bold :foreground "#135985"))
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
       (match '(:weight bold :background "#FFFF00")) ; occur patterns + match in helm for files + match in Org files.
-      (ol1 `(,@(leuven-scale-font leuven-scale-outline-headlines 1.3) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
-      (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
-      (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF"))
-      (ol4 '(:height 1.0 :weight bold :slant normal :foreground "#EA6300"))
-      (ol5 '(:height 1.0 :weight bold :slant normal :foreground "#E3258D"))
-      (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC"))
-      (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
-      (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
+      (ol1 `(,@(leuven-scale-font leuven-scale-outline-headlines 1.3) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0" :extend t))
+      (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB" :extend t))
+      (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF" :extend t))
+      (ol4 '(:height 1.0 :weight bold :slant normal :foreground "#EA6300" :extend t))
+      (ol5 '(:height 1.0 :weight bold :slant normal :foreground "#E3258D" :extend t))
+      (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC" :extend t))
+      (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C" :extend t))
+      (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008" :extend t))
       (paren-matched '(:background "#C0E8C3")) ; Or take that green for region?
       (paren-unmatched '(:weight bold :underline "red" :foreground "black" :background "#FFA5A5"))
-      (region '(:background "#8ED3FF"))
+      (region '(:background "#8ED3FF" :extend t))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#008000")) ; or #D0372D
       (subject '(:family "Sans Serif" :weight bold :foreground "black"))
