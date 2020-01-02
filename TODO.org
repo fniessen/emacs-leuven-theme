@@ -1,0 +1,21 @@
+#+TITLE:     Leuven-theme Tasks
+#+AUTHOR:    Fabrice Niessen
+#+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
+#+DESCRIPTION: Emacs custom color theme for light background
+#+KEYWORDS:  emacs, leuven, custom theme, color theme, light, popular, faces, melpa
+#+LANGUAGE:  en
+
+#+SETUPFILE: ~/src/org-style/setup/theme-bigblow-pirilampo.setup
+
+* Tasks
+
+** TODO Improve colors for diff and Ediff
+
+https://git.framasoft.org/distopico/distopico-dotemacs/commit/7a459d2d3980241e646daf3da66f1b7f356940b4?view=inline&w=1
+
+** Line highlighting canceling out syntax highlighting
+
+Interesting (and short) read about inheriting only some properties of a face!
+
+http://emacs.stackexchange.com/questions/20620/line-highlighting-canceling-out-syntax-highlighting?rq=1
+
