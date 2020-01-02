@@ -70,6 +70,7 @@
   pre.src-fortran:before { content: 'Fortran'; }
   pre.src-gnuplot:before { content: 'gnuplot'; }
   pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
   pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
@@ -162,6 +163,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -189,29 +203,29 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org7c69084">1. Quotations</a></li>
-<li><a href="#org096dc83">2. Screenshots</a>
+<li><a href="#org9d42c30">1. Quotations</a></li>
+<li><a href="#org27b1298">2. Screenshots</a>
 <ul>
-<li><a href="#org8cee192">2.1. Org buffer (with code)</a></li>
-<li><a href="#org3305278">2.2. Agenda</a></li>
-<li><a href="#orgb7875de">2.3. <span class="todo NEW">NEW</span> !  Dark version</a></li>
+<li><a href="#org1e5d1ef">2.1. Org buffer (with code)</a></li>
+<li><a href="#org28ceb95">2.2. Agenda</a></li>
+<li><a href="#orgc644e96">2.3. NEW!  Dark version</a></li>
 </ul>
 </li>
-<li><a href="#orgeb4d588">3. Install it</a>
+<li><a href="#org7364e2f">3. Install it</a>
 <ul>
-<li><a href="#org781119a">3.1. Install the ELPA package</a></li>
-<li><a href="#orgf5682bd">3.2. Install the Git version</a></li>
-<li><a href="#orgd63275b">3.3. Customize it</a></li>
+<li><a href="#orgfb78672">3.1. Install the ELPA package</a></li>
+<li><a href="#orgfd43739">3.2. Install the Git version</a></li>
+<li><a href="#org9856648">3.3. Customize it</a></li>
 </ul>
 </li>
-<li><a href="#org81c8af8">4. Contributing</a>
+<li><a href="#org5431968">4. Contributing</a>
 <ul>
-<li><a href="#orgca886f2">4.1. Issues</a></li>
-<li><a href="#org11a90e3">4.2. Patches</a></li>
-<li><a href="#orgc380f1a">4.3. Donations</a></li>
+<li><a href="#org069341c">4.1. Issues</a></li>
+<li><a href="#orgd721960">4.2. Patches</a></li>
+<li><a href="#orgb37d6b7">4.3. Donations</a></li>
 </ul>
 </li>
-<li><a href="#orgaf63798">5. License</a></li>
+<li><a href="#orgaa58332">5. License</a></li>
 </ul>
 </div>
 </div>
@@ -220,7 +234,7 @@
 Sorry, your browser does not support SVG.</object></a>
 <a href="http://melpa.org/#/leuven-theme"><object type="image/svg+xml" data="http://melpa.org/packages/leuven-theme-badge.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object></a>
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs-leuven-theme&amp;currency_code=EUR&amp;bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="btn_donate_LG.gif" /></a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs%2dleuven%2dtheme&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="btn_donate_LG.gif" /></a>
 </p>
 
 <p>
@@ -242,8 +256,8 @@ Dired+ and EDiff. Make it yours!
 
 </div>
 
-<div id="outline-container-org7c69084" class="outline-2">
-<h2 id="org7c69084"><span class="section-number-2">1</span> Quotations</h2>
+<div id="outline-container-org9d42c30" class="outline-2">
+<h2 id="org9d42c30"><span class="section-number-2">1</span> Quotations</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 &ldquo;Your Org-enhancing color-theme &rdquo;leuven&ldquo; ROCKS! &#x2026; and not just for Org.&rdquo; <br />
@@ -293,11 +307,12 @@ the author has put into all of the different faces you find everywhere.&rdquo; <
 </div>
 </div>
 
-<div id="outline-container-org096dc83" class="outline-2">
-<h2 id="org096dc83"><span class="section-number-2">2</span> Screenshots</h2>
+<div id="outline-container-org27b1298" class="outline-2">
+<h2 id="org27b1298"><span class="section-number-2">2</span> Screenshots</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-org8cee192" class="outline-3">
-<h3 id="org8cee192"><span class="section-number-3">2.1</span> Org buffer (with code)</h3>
+</div>
+<div id="outline-container-org1e5d1ef" class="outline-3">
+<h3 id="org1e5d1ef"><span class="section-number-3">2.1</span> Org buffer (with code)</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Fontified source code blocks:
@@ -322,8 +337,8 @@ following line into your <code>.emacs</code> file:
 </div>
 </div>
 
-<div id="outline-container-org3305278" class="outline-3">
-<h3 id="org3305278"><span class="section-number-3">2.2</span> Agenda</h3>
+<div id="outline-container-org28ceb95" class="outline-3">
+<h3 id="org28ceb95"><span class="section-number-3">2.2</span> Agenda</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Agenda with task list:
@@ -337,8 +352,8 @@ Agenda with task list:
 </div>
 </div>
 
-<div id="outline-container-orgb7875de" class="outline-3">
-<h3 id="orgb7875de"><span class="section-number-3">2.3</span> <span class="todo NEW">NEW</span> !  Dark version</h3>
+<div id="outline-container-orgc644e96" class="outline-3">
+<h3 id="orgc644e96"><span class="section-number-3">2.3</span> NEW!  Dark version</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 There is now a dark version of Leuven-theme, automagically built by Thibault
@@ -359,8 +374,8 @@ right direction.  A big thanks to him!
 </div>
 </div>
 
-<div id="outline-container-orgeb4d588" class="outline-2">
-<h2 id="orgeb4d588"><span class="section-number-2">3</span> Install it</h2>
+<div id="outline-container-org7364e2f" class="outline-2">
+<h2 id="org7364e2f"><span class="section-number-2">3</span> Install it</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Though Leuven-theme has been added in <b>Emacs 24.4</b> (October 2014), you can get
@@ -368,8 +383,8 @@ a fresh version of it, at any time, from <a href="http://melpa.milkbox.net/">MEL
 </p>
 </div>
 
-<div id="outline-container-org781119a" class="outline-3">
-<h3 id="org781119a"><span class="section-number-3">3.1</span> Install the ELPA package</h3>
+<div id="outline-container-orgfb78672" class="outline-3">
+<h3 id="orgfb78672"><span class="section-number-3">3.1</span> Install the ELPA package</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 In Emacs 24+, <code>M-x list-packages</code> is the <i>recommended way</i> to list and install
@@ -409,8 +424,8 @@ Just add MELPA to <code>package-archives</code>,
 </div>
 </div>
 
-<div id="outline-container-orgf5682bd" class="outline-3">
-<h3 id="orgf5682bd"><span class="section-number-3">3.2</span> Install the Git version</h3>
+<div id="outline-container-orgfd43739" class="outline-3">
+<h3 id="orgfd43739"><span class="section-number-3">3.2</span> Install the Git version</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Get the full Git repository at <a href="https://github.com/fniessen/emacs-leuven-theme">https://github.com/fniessen/emacs-leuven-theme</a>
@@ -438,8 +453,8 @@ Restart Emacs.
 </div>
 </div>
 
-<div id="outline-container-orgd63275b" class="outline-3">
-<h3 id="orgd63275b"><span class="section-number-3">3.3</span> Customize it</h3>
+<div id="outline-container-org9856648" class="outline-3">
+<h3 id="org9856648"><span class="section-number-3">3.3</span> Customize it</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 You don&rsquo;t like my large Org level-1 headings or my large Org agenda-date heading
@@ -474,11 +489,12 @@ Emacs.
 </div>
 </div>
 
-<div id="outline-container-org81c8af8" class="outline-2">
-<h2 id="org81c8af8"><span class="section-number-2">4</span> Contributing</h2>
+<div id="outline-container-org5431968" class="outline-2">
+<h2 id="org5431968"><span class="section-number-2">4</span> Contributing</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-orgca886f2" class="outline-3">
-<h3 id="orgca886f2"><span class="section-number-3">4.1</span> Issues</h3>
+</div>
+<div id="outline-container-org069341c" class="outline-3">
+<h3 id="org069341c"><span class="section-number-3">4.1</span> Issues</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Report issues and suggest features and improvements on the <a href="https://github.com/fniessen/emacs-leuven-theme/issues/new">GitHub issue tracker</a>.
@@ -486,8 +502,8 @@ Report issues and suggest features and improvements on the <a href="https://gith
 </div>
 </div>
 
-<div id="outline-container-org11a90e3" class="outline-3">
-<h3 id="org11a90e3"><span class="section-number-3">4.2</span> Patches</h3>
+<div id="outline-container-orgd721960" class="outline-3">
+<h3 id="orgd721960"><span class="section-number-3">4.2</span> Patches</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 I love contributions!  Patches under any form are always welcome!
@@ -495,13 +511,13 @@ I love contributions!  Patches under any form are always welcome!
 </div>
 </div>
 
-<div id="outline-container-orgc380f1a" class="outline-3">
-<h3 id="orgc380f1a"><span class="section-number-3">4.3</span> Donations</h3>
+<div id="outline-container-orgb37d6b7" class="outline-3">
+<h3 id="orgb37d6b7"><span class="section-number-3">4.3</span> Donations</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 If you use the emacs-leuven-theme project and feel it is making your life better
 and easier, you can show your appreciation and help support future development
-by making a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs-leuven-theme&amp;currency_code=EUR&amp;bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted">donation</a> through PayPal.  Thank you!
+by making a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs%2dleuven%2dtheme&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">donation</a> through PayPal.  Thank you!
 </p>
 
 <p>
@@ -512,20 +528,16 @@ beer and as in speech.
 </div>
 </div>
 
-<div id="outline-container-orgaf63798" class="outline-2">
-<h2 id="orgaf63798"><span class="section-number-2">5</span> License</h2>
+<div id="outline-container-orgaa58332" class="outline-2">
+<h2 id="orgaa58332"><span class="section-number-2">5</span> License</h2>
 <div class="outline-text-2" id="text-5">
 <p>
-Copyright (C) 2003-2017 Free Software Foundation, Inc.
+Emacs-Leuven-Theme <br />
+Copyright (C) 2003-2020  Fabrice Niessen
 </p>
 
 <p>
-Author: Fabrice Niessen <br />
-Keywords: emacs color theme
-</p>
-
-<p>
-This program is free software; you can redistribute it and/or modify it under
+This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, either version 3 of the License, or (at your option) any later
 version.
@@ -534,12 +546,12 @@ version.
 <p>
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
 WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
-A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 </p>
 
 <p>
 You should have received a copy of the GNU General Public License along with
-this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.
+this program.  If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.
 </p>
 
 <p>
@@ -547,7 +559,7 @@ this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.
 Sorry, your browser does not support SVG.</object></a>
 <a href="http://melpa.org/#/leuven-theme"><object type="image/svg+xml" data="http://melpa.org/packages/leuven-theme-badge.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object></a>
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs-leuven-theme&amp;currency_code=EUR&amp;bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="btn_donate_LG.gif" /></a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=VCVAS6KPDQ4JC&amp;lc=BE&amp;item_number=emacs%2dleuven%2dtheme&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="btn_donate_LG.gif" /></a>
 </p>
 </div>
 </div>
