@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200102.2036
+;; Version: 20200102.2050
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -314,15 +314,15 @@ more...")
    `(smerge-refined-change ((,class (:background "#AAAAFF"))))
 
    ;; Ediff.
-   `(ediff-current-diff-A ((,class (:background "#FFDDDD"))))
-   `(ediff-current-diff-B ((,class (:background "#DDFFDD"))))
-   `(ediff-current-diff-C ((,class (:background "cyan"))))
-   `(ediff-even-diff-A ((,class (:background "light grey"))))
-   `(ediff-even-diff-B ((,class (:background "light grey"))))
-   `(ediff-fine-diff-A ((,class (:background "#FFAAAA"))))
-   `(ediff-fine-diff-B ((,class (:background "#55FF55"))))
-   `(ediff-odd-diff-A ((,class (:background "light grey"))))
-   `(ediff-odd-diff-B ((,class (:background "light grey"))))
+   `(ediff-current-diff-A ((,class (:background "#FFDDDD" :extend t))))
+   `(ediff-current-diff-B ((,class (:background "#DDFFDD" :extend t))))
+   `(ediff-current-diff-C ((,class (:background "cyan" :extend t))))
+   `(ediff-even-diff-A ((,class (:background "light grey" :extend t))))
+   `(ediff-even-diff-B ((,class (:background "light grey" :extend t))))
+   `(ediff-fine-diff-A ((,class (:background "#FFAAAA" :extend t))))
+   `(ediff-fine-diff-B ((,class (:background "#55FF55" :extend t))))
+   `(ediff-odd-diff-A ((,class (:background "light grey" :extend t))))
+   `(ediff-odd-diff-B ((,class (:background "light grey" :extend t))))
 
    ;; Flyspell.
    (if (version< emacs-version "24.4")
@@ -746,9 +746,9 @@ more...")
    `(org-archived ((,class (:foreground "gray70"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
-   `(org-block-background ((,class (:background "#FFFFE0")))) ;; :inherit fixed-pitch))))
-   `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
-   `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
+   `(org-block-background ((,class (:background "#FFFFE0" :extend t)))) ;; :inherit fixed-pitch))))
+   `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#E2E1D5" :extend t))))
+   `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5" :extend t))))
    `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#123555" :background "#A3A3A3"))))
    `(org-clock-overlay ((,class (:foreground "white" :background "SkyBlue4"))))
    `(org-code ((,class ,code-inline)))
