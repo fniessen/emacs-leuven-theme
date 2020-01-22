@@ -1,10 +1,10 @@
 ;;; leuven-dark-theme.el --- Awesome Emacs color theme on dark background
 
-;; Copyright (C) 2003-2019 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2020 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
-;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20190308.1633
+;; URL: https://github.com/fniessen/emacs-leuven-dark-theme
+;; Version: 20200102.2050
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -24,12 +24,12 @@
 
 ;;; Commentary:
 
-;; This elegant Org-enhancing color theme "leuven" ROCKS!
+;; This elegant Org-enhancing color theme "leuven-dark" ROCKS!
 ;; ... and not just for Org mode.
 ;;
 ;; To use it, put the following in your Emacs configuration file:
 ;;
-;;   (load-theme 'leuven t)
+;;   (load-theme 'leuven-dark t)
 ;;
 ;; Requirements: Emacs 24+.
 ;;
@@ -40,30 +40,30 @@
 
 ;;; Options.
 
-(defgroup leuven nil
+(defgroup leuven-dark nil
   "Leuven theme options.
 The theme has to be reloaded after changing anything in this group."
   :group 'faces)
 
-(defcustom leuven-scale-outline-headlines t
+(defcustom leuven-dark-scale-outline-headlines t
   "Scale `outline' (and `org') level-1 headlines.
 This can be nil for unscaled, t for using the theme default, or a scaling number."
   :type '(choice
           (const :tag "Unscaled" nil)
           (const :tag "Default provided by theme" t)
           (number :tag "Set scaling"))
-  :group 'leuven)
+  :group 'leuven-dark)
 
-(defcustom leuven-scale-org-agenda-structure t
+(defcustom leuven-dark-scale-org-agenda-structure t
   "Scale Org agenda structure lines, like dates.
 This can be nil for unscaled, t for using the theme default, or a scaling number."
   :type '(choice
           (const :tag "Unscaled" nil)
           (const :tag "Default provided by theme" t)
           (number :tag "Set scaling"))
-  :group 'leuven)
+  :group 'leuven-dark)
 
-(defun leuven-scale-font (control default-height)
+(defun leuven-dark-scale-font (control default-height)
   "Function for splicing optional font heights into face descriptions.
 CONTROL can be a number, nil, or t.  When t, use DEFAULT-HEIGHT."
   (cond
@@ -73,7 +73,7 @@ CONTROL can be a number, nil, or t.  When t, use DEFAULT-HEIGHT."
 
 ;;; Theme Faces.
 
-(deftheme leuven
+(deftheme leuven-dark
   "Face colors with a light background.
 Basic, Font Lock, Isearch, Gnus, Message, Org mode, Diff, Ediff,
 Flyspell, Semantic, and Ansi-Color faces are included -- and much
@@ -84,8 +84,8 @@ more...")
       ;; Leuven generic colors.
       (cancel '(:slant italic :strike-through t :foreground "#5b5660"))
       (clock-line '(:box (:line-width 1 :color "#cfa161") :foreground "#ffffff" :background "#1636ff"))
-      (code-block '(:foreground "#ffff7f" :background "#252046"))
-      (code-inline '(:foreground "#ff9bff" :background "#262031"))
+      (code-block '(:foreground "#ffff7f" :background "#252046" :extend t))
+      (code-inline '(:foreground "#ff9bff" :background "#262031" :extend t))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#1e52b8" :background "#252c48"))
       (completion-inline '(:weight normal :foreground "#443f49" :inherit hl-line)) ; Like Google.
       (completion-other-candidates '(:weight bold :foreground "#ffffff" :background "#372a2a"))
@@ -103,12 +103,12 @@ more...")
       (function-param '(:foreground "#de8d83"))
       (grep-file-name '(:weight bold :foreground "#d8b76b")) ; Used for grep hits.
       (grep-line-number '(:weight bold :foreground "#5fca5b"))
-      (highlight-blue '(:background "#3c312a"))
-      (highlight-blue2 '(:background "#3e2d2f"))
-      (highlight-gray '(:background "#3e3944"))
-      (highlight-green '(:background "#2f0e3a"))
-      (highlight-red '(:background "#063741"))
-      (highlight-yellow '(:background "#2d2058"))
+      (highlight-blue '(:background "#3c312a" :extend t))
+      (highlight-blue2 '(:background "#3e2d2f" :extend t))
+      (highlight-gray '(:background "#3e3944" :extend t))
+      (highlight-green '(:background "#2f0e3a" :extend t))
+      (highlight-red '(:background "#063741" :extend t))
+      (highlight-yellow '(:background "#2d2058" :extend t))
       (link '(:weight normal :underline t :foreground "#ff925a"))
       (link-no-underline '(:weight normal :foreground "#ff925a"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#615c67"))
@@ -121,17 +121,17 @@ more...")
       (mail-unread-high '(:weight bold :foreground "#eea682"))
       (marked-line '(:foreground "#5affff" :background "#06555f"))
       (match '(:weight bold :background "#0601ff")) ; occur patterns + match in helm for files + match in Org files.
-      (ol1 `(,@(leuven-scale-font leuven-scale-outline-headlines 1.3) :weight bold :overline "#5d5862" :foreground "#c7c3cb" :background "#322d37"))
-      (ol2 '(:height 1.0 :weight bold :overline "#efcab2" :foreground "#efcab2" :background "#3d2a2d"))
-      (ol3 '(:height 1.0 :weight bold :foreground "#ffaae3" :background "#332038"))
-      (ol4 '(:height 1.0 :weight bold :slant normal :foreground "#1a9cff"))
-      (ol5 '(:height 1.0 :weight bold :slant normal :foreground "#21da7a"))
-      (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#ff883d"))
-      (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#d451d9"))
-      (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#077ffa"))
+      (ol1 `(,@(leuven-dark-scale-font leuven-dark-scale-outline-headlines 1.3) :weight bold :overline "#5d5862" :foreground "#c7c3cb" :background "#322d37" :extend t))
+      (ol2 '(:height 1.0 :weight bold :overline "#efcab2" :foreground "#efcab2" :background "#3d2a2d" :extend t))
+      (ol3 '(:height 1.0 :weight bold :foreground "#ffaae3" :background "#332038" :extend t))
+      (ol4 '(:height 1.0 :weight bold :slant normal :foreground "#1a9cff" :extend t))
+      (ol5 '(:height 1.0 :weight bold :slant normal :foreground "#21da7a" :extend t))
+      (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#ff883d" :extend t))
+      (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#d451d9" :extend t))
+      (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#077ffa" :extend t))
       (paren-matched '(:background "#441746")) ; Or take that green for region?
       (paren-unmatched '(:weight bold :underline "#06ffff" :foreground "#ffffff" :background "#065a64"))
-      (region '(:background "#752c0b"))
+      (region '(:background "#752c0b" :extend t))
       (shadow '(:foreground "#848088"))
       (string '(:foreground "#ff7fff")) ; or #34c8d8
       (subject '(:family "Sans Serif" :weight bold :foreground "#ffffff"))
@@ -147,7 +147,7 @@ more...")
   )
 
   (custom-theme-set-faces
-   'leuven
+   'leuven-dark
    `(default ((,class (:foreground "#cfccd2" :background "#25202a"))))
    `(bold ((,class (:weight bold :foreground "#ffffff"))))
    `(bold-italic ((,class (:weight bold :slant italic :foreground "#ffffff"))))
@@ -268,7 +268,7 @@ more...")
    `(gnus-summary-low-read ((,class (:slant italic :foreground "#6b666f" :background "#413c46"))))
    `(gnus-summary-low-ticked ((,class ,mail-ticked)))
    `(gnus-summary-low-unread ((,class (:slant italic :foreground "#ffffff"))))
-   `(gnus-summary-normal-ancient ((,class (:slant italic :foreground "#ff8d43"))))
+   `(gnus-summary-normal-ancient ((,class ,mail-read)))
    `(gnus-summary-normal-read ((,class ,mail-read)))
    `(gnus-summary-normal-ticked ((,class ,mail-ticked)))
    `(gnus-summary-normal-unread ((,class ,mail-unread)))
@@ -314,15 +314,15 @@ more...")
    `(smerge-refined-change ((,class (:background "#5a550b"))))
 
    ;; Ediff.
-   `(ediff-current-diff-A ((,class (:background "#253f49"))))
-   `(ediff-current-diff-B ((,class (:background "#442049"))))
-   `(ediff-current-diff-C ((,class (:background "#ff010b"))))
-   `(ediff-even-diff-A ((,class (:background "#312c36"))))
-   `(ediff-even-diff-B ((,class (:background "#312c36"))))
-   `(ediff-fine-diff-A ((,class (:background "#06555f"))))
-   `(ediff-fine-diff-B ((,class (:background "#ae01b2"))))
-   `(ediff-odd-diff-A ((,class (:background "#312c36"))))
-   `(ediff-odd-diff-B ((,class (:background "#312c36"))))
+   `(ediff-current-diff-A ((,class (:background "#253f49" :extend t))))
+   `(ediff-current-diff-B ((,class (:background "#442049" :extend t))))
+   `(ediff-current-diff-C ((,class (:background "#ff010b" :extend t))))
+   `(ediff-even-diff-A ((,class (:background "#312c36" :extend t))))
+   `(ediff-even-diff-B ((,class (:background "#312c36" :extend t))))
+   `(ediff-fine-diff-A ((,class (:background "#06555f" :extend t))))
+   `(ediff-fine-diff-B ((,class (:background "#ae01b2" :extend t))))
+   `(ediff-odd-diff-A ((,class (:background "#312c36" :extend t))))
+   `(ediff-odd-diff-B ((,class (:background "#312c36" :extend t))))
 
    ;; Flyspell.
    (if (version< emacs-version "24.4")
@@ -364,10 +364,11 @@ more...")
    `(bbdb-field-name ((,class (:weight bold :foreground "#bd7d55"))))
    `(bbdb-field-value ((,class (:foreground "#bd7d55"))))
    `(bbdb-name ((,class (:underline t :foreground "#0699d2"))))
-   `(bmkp-light-fringe-autonamed ((,class (:foreground "#a9a5ad" :background "#302b35"))))
    `(bmkp-light-autonamed ((,class (:background "#322d37"))))
+   `(bmkp-light-fringe-autonamed ((,class (:foreground "#a9a5ad" :background "#302b35"))))
    `(bmkp-light-fringe-non-autonamed ((,class (:foreground "#252059" :background "#fe010e")))) ; default
    `(bmkp-light-non-autonamed ((,class (:background "#60202a"))))
+   `(bmkp-no-local ((,class (:background "#063f3e"))))
    `(browse-kill-ring-separator-face ((,class (:foreground "#06ffff"))))
    `(calendar-month-header ((,class (:weight bold :foreground "#b4b5ca" :background "#252059"))))
    `(calendar-today ((,class (:weight bold :foreground "#b4b5ca" :background "#252059"))))
@@ -556,6 +557,8 @@ more...")
    `(helm-bookmark-file ((,class ,file)))
    `(helm-bookmarks-su-face ((,class (:foreground "#06ffff"))))
    `(helm-buffer-directory ((,class ,directory)))
+   ;; `(helm-non-file-buffer ((,class (:slant italic :foreground "#ffff0b"))))
+   ;; `(helm-buffer-file ((,class (:foreground "#cfccd2"))))
    `(helm-buffer-modified ((,class (:slant italic :foreground "#4ac964"))))
    `(helm-buffer-process ((,class (:foreground "#ff7dff"))))
    `(helm-candidate-number ((,class (:foreground "#ffffff" :background "#0601a1"))))
@@ -639,14 +642,14 @@ more...")
    `(js2-warning ((,class (:underline "#065aff"))))
 
    ;; Org non-standard faces.
-   `(leuven-org-deadline-overdue ((,class (:foreground "#12d9ae"))))
-   `(leuven-org-deadline-today ((,class (:weight bold :foreground "#b4b5ca" :background "#252059"))))
-   `(leuven-org-deadline-tomorrow ((,class (:foreground "#c357f8"))))
-   `(leuven-org-deadline-future ((,class (:foreground "#c357f8"))))
-   `(leuven-gnus-unseen ((,class (:weight bold :foreground "#088dfd"))))
-   `(leuven-gnus-date ((,class (:foreground "#067f4a"))))
-   `(leuven-gnus-size ((,class (:foreground "#7440a7"))))
-   `(leuven-todo-items-face ((,class (:weight bold :foreground "#06cee0" :background "#06017f"))))
+   `(leuven-dark-org-deadline-overdue ((,class (:foreground "#12d9ae"))))
+   `(leuven-dark-org-deadline-today ((,class (:weight bold :foreground "#b4b5ca" :background "#252059"))))
+   `(leuven-dark-org-deadline-tomorrow ((,class (:foreground "#c357f8"))))
+   `(leuven-dark-org-deadline-future ((,class (:foreground "#c357f8"))))
+   `(leuven-dark-gnus-unseen ((,class (:weight bold :foreground "#088dfd"))))
+   `(leuven-dark-gnus-date ((,class (:foreground "#067f4a"))))
+   `(leuven-dark-gnus-size ((,class (:foreground "#7440a7"))))
+   `(leuven-dark-todo-items-face ((,class (:weight bold :foreground "#06cee0" :background "#06017f"))))
 
    `(light-symbol-face ((,class (:background "#252080"))))
    `(linum ((,class (:foreground "#6a656f" :background "#35303a"))))
@@ -728,22 +731,24 @@ more...")
    `(org-agenda-clocking ((,class (:foreground "#ffffff" :background "#1636ff"))))
    `(org-agenda-column-dateline ((,class ,column)))
    `(org-agenda-current-time ((,class (:underline t :foreground "#ec9d5a"))))
-   `(org-agenda-date ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#ec9d5a"))))
-   `(org-agenda-date-today ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#b4b5ca" :background "#252059"))))
-   `(org-agenda-date-weekend ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#b5b1b9"))))
+   `(org-agenda-date ((,class (,@(leuven-dark-scale-font leuven-dark-scale-org-agenda-structure 1.6) :weight bold :foreground "#ec9d5a"))))
+   `(org-agenda-date-today ((,class (,@(leuven-dark-scale-font leuven-dark-scale-org-agenda-structure 1.6) :weight bold :foreground "#b4b5ca" :background "#252059"))))
+   `(org-agenda-date-weekend ((,class (,@(leuven-dark-scale-font leuven-dark-scale-org-agenda-structure 1.6) :weight bold :foreground "#b5b1b9"))))
    `(org-agenda-diary ((,class (:weight bold :foreground "#ff74ff" :background "#572723"))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground "#1636ff"))))
    `(org-agenda-done ((,class (:foreground "#aeaab2"))))
    `(org-agenda-filter-category ((,class (:weight bold :foreground "#065aff"))))
+   `(org-agenda-filter-effort ((,class (:weight bold :foreground "#065aff"))))
+   `(org-agenda-filter-regexp ((,class (:weight bold :foreground "#065aff"))))
    `(org-agenda-filter-tags ((,class (:weight bold :foreground "#065aff"))))
    `(org-agenda-restriction-lock ((,class (:background "#1d82a4"))))
-   `(org-agenda-structure ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#e37233"))))
+   `(org-agenda-structure ((,class (,@(leuven-dark-scale-font leuven-dark-scale-org-agenda-structure 1.6) :weight bold :foreground "#e37233"))))
    `(org-archived ((,class (:foreground "#514c56"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#0a43ed") :foreground "#d6d3d9" :background "#252655"))))
    `(org-block ((,class ,code-block)))
-   `(org-block-background ((,class (:background "#252046")))) ;; :inherit fixed-pitch))))
-   `(org-block-begin-line ((,class (:underline "#5d595f" :foreground "#aeaab2" :background "#221e34"))))
-   `(org-block-end-line ((,class (:overline "#5d595f" :foreground "#aeaab2" :background "#221e34"))))
+   `(org-block-background ((,class (:background "#252046" :extend t)))) ;; :inherit fixed-pitch))))
+   `(org-block-begin-line ((,class (:underline "#5d595f" :foreground "#aeaab2" :background "#221e34" :extend t))))
+   `(org-block-end-line ((,class (:overline "#5d595f" :foreground "#aeaab2" :background "#221e34" :extend t))))
    `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#efcab2" :background "#615c66"))))
    `(org-clock-overlay ((,class (:foreground "#25202a" :background "#b98f7c"))))
    `(org-code ((,class ,code-inline)))
@@ -804,7 +809,7 @@ more...")
    `(outline-6 ((,class ,ol6)))
    `(outline-7 ((,class ,ol7)))
    `(outline-8 ((,class ,ol8)))
-   `(pabbrev-debug-display-label-face ((,class (:background "#8401ff"))))
+   `(pabbrev-debug-display-label-face ((,class (:foreground "#25202a" :background "#5edeb3"))))
    `(pabbrev-suggestions-face ((,class (:weight bold :foreground "#25202a" :background "#06ffff"))))
    `(pabbrev-suggestions-label-face ((,class (:weight bold :foreground "#25202a" :background "#64df19"))))
    `(paren-face-match ((,class ,paren-matched)))
@@ -1006,7 +1011,7 @@ more...")
    `(woman-bold ((,class (:weight bold :foreground "#13c2ca"))))
    `(woman-italic ((,class (:weight bold :slant italic :foreground "#bd41ea"))))
    `(woman-symbol ((,class (:weight bold :foreground "#64df19"))))
-   `(yas-field-debug-face ((,class (:background "#06ffff"))))
+   `(yas-field-debug-face ((,class (:foreground "#25202a" :background "#5edeb3"))))
    `(yas-field-highlight-face ((,class (:box (:line-width 1 :color "#807c84") :foreground "#ffffff" :background "#302331"))))
 
    ;; `(ztreep-arrow-face ((,class ())))
@@ -1023,7 +1028,7 @@ more...")
 
    ))
 
-(custom-theme-set-variables 'leuven
+(custom-theme-set-variables 'leuven-dark
 
   ;; highlight-sexp-mode.
   '(hl-sexp-background-color "#33323e")
@@ -1046,7 +1051,7 @@ more...")
 ;;;######autoload
 (when (string-match "/etc/themes/$"
                     (file-name-directory (or load-file-name (buffer-file-name))))
-  (message "To stay up-to-date, you should better install and use leuven-theme from MELPA.")
+  (message "To stay up-to-date, you should better install and use leuven-dark-theme from MELPA.")
   (sit-for 2))
 
 (provide-theme 'leuven-dark)
