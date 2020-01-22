@@ -142,6 +142,24 @@ Add the following in your =.emacs= file:
 
 Restart Emacs.
 
+** Dark-theme
+
+To load the dark theme, add the following to your =.emacs= file:
+
+#+begin_src emacs-lisp
+(load-theme 'leuven-dark t)
+#+end_src
+
+To use the dark theme with [[https://github.com/jwiegley/use-package][use-package]], use the following:
+
+#+begin_src emacs-lisp
+(use-package leuven-theme
+  :config
+  (load-theme 'leuven-dark t))
+#+end_src
+
+Restart Emacs.
+
 ** Customize it
 
 You don't like my large Org level-1 headings or my large Org agenda-date heading
