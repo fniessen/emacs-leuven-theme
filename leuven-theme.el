@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200406.1542
+;; Version: 20200422.0734
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -1047,12 +1047,6 @@ more...")
   ;; Add theme folder to `custom-theme-load-path' when installing over MELPA.
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
-
-;;;###autoload
-(when (string-match "/etc/themes/$"
-                    (file-name-directory (or load-file-name (buffer-file-name))))
-  (message "To stay up-to-date, you should better install and use leuven-theme from MELPA.")
-  (sit-for 2))
 
 (provide-theme 'leuven)
 
