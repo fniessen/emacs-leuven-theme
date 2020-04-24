@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200422.0734
+;; Version: 20200424.1403
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -20,7 +20,7 @@
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
+;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
@@ -47,7 +47,8 @@ The theme has to be reloaded after changing anything in this group."
 
 (defcustom leuven-scale-outline-headlines t
   "Scale `outline' (and `org') level-1 headlines.
-This can be nil for unscaled, t for using the theme default, or a scaling number."
+This can be nil for unscaled, t for using the theme default, or a scaling
+number."
   :type '(choice
           (const :tag "Unscaled" nil)
           (const :tag "Default provided by theme" t)
@@ -56,12 +57,12 @@ This can be nil for unscaled, t for using the theme default, or a scaling number
 
 (defcustom leuven-scale-org-agenda-structure t
   "Scale Org agenda structure lines, like dates.
-This can be nil for unscaled, t for using the theme default, or a scaling number."
+This can be nil for unscaled, t for using the theme default, or a scaling
+number."
   :type '(choice
           (const :tag "Unscaled" nil)
           (const :tag "Default provided by theme" t)
-          (number :tag "Set scaling"))
-  :group 'leuven)
+          (number :tag "Set scaling")))
 
 (defun leuven-scale-font (control default-height)
   "Function for splicing optional font heights into face descriptions.
