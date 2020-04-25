@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200424.1403
+;; Version: 20200425.0956
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -432,7 +432,7 @@ more...")
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
    ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
    `(compilation-error ((,class (:weight bold :foreground "red")))) ; Used for grep error messages.
-   `(compilation-info ((,class ,grep-file-name)))
+   `(compilation-info ((,class (:weight bold :foreground "#6784d7"))))
    `(compilation-line-number ((,class ,grep-line-number)))
    `(compilation-warning ((,class (:weight bold :foreground "orange"))))
    `(compilation-mode-line-exit ((,class (:weight bold :foreground "green")))) ; :exit[matched]
