@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200425.0956
+;; Version: 20200505.2010
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -656,6 +656,7 @@ more...")
    `(linum ((,class (:foreground "#9A9A9A" :background "#EDEDED"))))
    `(log-view-file ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
    `(log-view-message ((,class (:foreground "black" :background "#EDEA74"))))
+   `(lsp-ui-doc-background ((,class (:background "#F6FECD"))))
    `(lui-button-face ((,class ,link)))
    `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ; my nickname
    `(lui-time-stamp-face ((,class (:foreground "purple"))))
@@ -676,6 +677,7 @@ more...")
    `(magit-item-mark ((,class ,marked-line)))
    `(magit-log-head-label ((,class (:box (:line-width 1 :color "blue" :style nil)))))
    `(magit-log-tag-label ((,class (:box (:line-width 1 :color "#00CC00" :style nil)))))
+   `(magit-section-highlight ((,class (:background  "#F6FECD"))))
    `(magit-section-title ((,class (:family "Sans Serif" :height 1.8 :weight bold :foreground "cornflower blue" :inherit nil))))
    `(makefile-space-face ((,class (:background "hot pink"))))
    `(makefile-targets ((,class (:weight bold :foreground "blue"))))
