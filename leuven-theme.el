@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200505.2010
+;; Version: 20200513.1933
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -85,8 +85,8 @@ more...")
       ;; Leuven generic colors.
       (cancel '(:slant italic :strike-through t :foreground "#A9A9A9"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
-      (code-block '(:foreground "#000088" :background "#FFFFE0" :extend t))
-      (code-inline '(:foreground "#006400" :background "#FDFFF7" :extend t))
+      (code-block '(:foreground "#000088" :background "#FFFFE0"))
+      (code-inline '(:foreground "#006400" :background "#FDFFF7"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (completion-inline '(:weight normal :foreground "#C0C0C0" :inherit hl-line)) ; Like Google.
       (completion-other-candidates '(:weight bold :foreground "black" :background "#EBF4FE"))
@@ -104,12 +104,12 @@ more...")
       (function-param '(:foreground "#247284"))
       (grep-file-name '(:weight bold :foreground "#2A489E")) ; Used for grep hits.
       (grep-line-number '(:weight bold :foreground "#A535AE"))
-      (highlight-blue '(:background "#E6ECFF" :extend t))
-      (highlight-blue2 '(:background "#E4F1F9" :extend t))
-      (highlight-gray '(:background "#E4E4E3" :extend t))
-      (highlight-green '(:background "#D5F1CF" :extend t))
-      (highlight-red '(:background "#FFC8C8" :extend t))
-      (highlight-yellow '(:background "#F6FECD" :extend t))
+      (highlight-blue '(:background "#E6ECFF"))
+      (highlight-blue2 '(:background "#E4F1F9"))
+      (highlight-gray '(:background "#E4E4E3"))
+      (highlight-green '(:background "#D5F1CF"))
+      (highlight-red '(:background "#FFC8C8"))
+      (highlight-yellow '(:background "#F6FECD"))
       (link '(:weight normal :underline t :foreground "#006DAF"))
       (link-no-underline '(:weight normal :foreground "#006DAF"))
       (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
@@ -122,17 +122,17 @@ more...")
       (mail-unread-high '(:weight bold :foreground "#135985"))
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
       (match '(:weight bold :background "#FFFF00")) ; occur patterns + match in helm for files + match in Org files.
-      (ol1 `(,@(leuven-scale-font leuven-scale-outline-headlines 1.3) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0" :extend t))
-      (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB" :extend t))
-      (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF" :extend t))
-      (ol4 '(:height 1.0 :weight bold :slant normal :foreground "#EA6300" :extend t))
-      (ol5 '(:height 1.0 :weight bold :slant normal :foreground "#E3258D" :extend t))
-      (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC" :extend t))
-      (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C" :extend t))
-      (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008" :extend t))
+      (ol1 `(,@(leuven-scale-font leuven-scale-outline-headlines 1.3) :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
+      (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
+      (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF"))
+      (ol4 '(:height 1.0 :weight bold :slant normal :foreground "#EA6300"))
+      (ol5 '(:height 1.0 :weight bold :slant normal :foreground "#E3258D"))
+      (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#0077CC"))
+      (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#2EAE2C"))
+      (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#FD8008"))
       (paren-matched '(:background "#C0E8C3")) ; Or take that green for region?
       (paren-unmatched '(:weight bold :underline "red" :foreground "black" :background "#FFA5A5"))
-      (region '(:background "#8ED3FF" :extend t))
+      (region '(:background "#8ED3FF"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#008000")) ; or #D0372D
       (subject '(:family "Sans Serif" :weight bold :foreground "black"))
@@ -196,7 +196,6 @@ more...")
    `(font-lock-comment-face ((,class (:slant italic :foreground "#8D8D84")))) ; #696969
    `(font-lock-constant-face ((,class (:foreground "#D0372D"))))
    `(font-lock-doc-face ((,class (:foreground "#036A07"))))
-   ;; `(font-lock-doc-string-face ((,class (:foreground "#008000")))) ; XEmacs only, but is used for HTML exports from org2html (and not interactively)
    `(font-lock-function-name-face ((,class (:weight normal :foreground "#006699"))))
    `(font-lock-keyword-face ((,class (:bold nil :foreground "#0000FF")))) ; #3654DC
    `(font-lock-preprocessor-face ((,class (:foreground "#808080"))))
@@ -315,15 +314,15 @@ more...")
    `(smerge-refined-change ((,class (:background "#AAAAFF"))))
 
    ;; Ediff.
-   `(ediff-current-diff-A ((,class (:background "#FFDDDD" :extend t))))
-   `(ediff-current-diff-B ((,class (:background "#DDFFDD" :extend t))))
-   `(ediff-current-diff-C ((,class (:background "cyan" :extend t))))
-   `(ediff-even-diff-A ((,class (:background "light grey" :extend t))))
-   `(ediff-even-diff-B ((,class (:background "light grey" :extend t))))
-   `(ediff-fine-diff-A ((,class (:background "#FFAAAA" :extend t))))
-   `(ediff-fine-diff-B ((,class (:background "#55FF55" :extend t))))
-   `(ediff-odd-diff-A ((,class (:background "light grey" :extend t))))
-   `(ediff-odd-diff-B ((,class (:background "light grey" :extend t))))
+   `(ediff-current-diff-A ((,class (:background "#FFDDDD"))))
+   `(ediff-current-diff-B ((,class (:background "#DDFFDD"))))
+   `(ediff-current-diff-C ((,class (:background "cyan"))))
+   `(ediff-even-diff-A ((,class (:background "light grey"))))
+   `(ediff-even-diff-B ((,class (:background "light grey"))))
+   `(ediff-fine-diff-A ((,class (:background "#FFAAAA"))))
+   `(ediff-fine-diff-B ((,class (:background "#55FF55"))))
+   `(ediff-odd-diff-A ((,class (:background "light grey"))))
+   `(ediff-odd-diff-B ((,class (:background "light grey"))))
 
    ;; Flyspell.
    (if (version< emacs-version "24.4")
@@ -749,9 +748,9 @@ more...")
    `(org-archived ((,class (:foreground "gray70"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
-   `(org-block-background ((,class (:background "#FFFFE0" :extend t)))) ;; :inherit fixed-pitch))))
-   `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#E2E1D5" :extend t))))
-   `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5" :extend t))))
+   `(org-block-background ((,class (:background "#FFFFE0")))) ;; :inherit fixed-pitch))))
+   `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
+   `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
    `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#123555" :background "#A3A3A3"))))
    `(org-clock-overlay ((,class (:foreground "white" :background "SkyBlue4"))))
    `(org-code ((,class ,code-inline)))
@@ -1055,7 +1054,6 @@ more...")
 
 ;; This is for the sake of Emacs.
 ;; Local Variables:
-;; no-byte-compile: t
 ;; time-stamp-end: "$"
 ;; time-stamp-format: "%:y%02m%02d.%02H%02M"
 ;; time-stamp-start: "Version: "
