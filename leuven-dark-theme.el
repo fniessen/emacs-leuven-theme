@@ -766,6 +766,15 @@ more...")
    `(org-example ((,class (:foreground "#ffff0b" :background "#38203d"))))
    `(org-footnote ((,class (:underline t :foreground "#ff7138"))))
    `(org-formula ((,class (:foreground "#0680e1"))))
+   ;; org-habit colours are thanks to zenburn
+   `(org-habit-ready-face ((t :background "#7F9F7F"))) ; ,zenburn-green
+   `(org-habit-alert-face ((t :background "#E0CF9F" :foreground "#3F3F3F"))) ; ,zenburn-yellow-1 fg ,zenburn-bg
+   `(org-habit-clear-face ((t :background "#5C888B")))                       ; ,zenburn-blue-3
+   `(org-habit-overdue-face ((t :background "#9C6363")))                     ; ,zenburn-red-3
+   `(org-habit-clear-future-face ((t :background "#4C7073")))                ; ,zenburn-blue-4
+   `(org-habit-ready-future-face ((t :background "#5F7F5F")))                ; ,zenburn-green-2
+   `(org-habit-alert-future-face ((t :background "#D0BF8F" :foreground "#3F3F3F"))) ; ,zenburn-yellow-2 fg ,zenburn-bg
+   `(org-habit-overdue-future-face ((t :background "#8C5353"))) ; ,zenburn-red-4
    `(org-headline-done ((,class (:height 1.0 :weight normal :strike-through t :foreground "#57525c"))))
    `(org-hide ((,class (:foreground "#403b45"))))
    `(org-inlinetask ((,class (:box (:line-width 1 :color "#37323c") :foreground "#8c8890" :background "#252050"))))
