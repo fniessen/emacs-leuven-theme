@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-dark-theme
-;; Version: 20200919.1715
+;; Version: 20200926.1228
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -129,7 +129,7 @@ more...")
       (ol6 '(:height 1.0 :weight bold :slant italic :foreground "#ff883d" :extend t))
       (ol7 '(:height 1.0 :weight bold :slant italic :foreground "#d451d9" :extend t))
       (ol8 '(:height 1.0 :weight bold :slant italic :foreground "#077ffa" :extend t))
-      (paren-matched '(:background "#7B4B98")) ; Or take that green for region?
+      (paren-matched '(:background "#7B4B98")) ; XXX Edited by hqnd.
       (paren-unmatched '(:weight bold :underline "#06ffff" :foreground "#ffffff" :background "#065a64"))
       (region '(:background "#752c0b" :extend t))
       (shadow '(:foreground "#848088"))
