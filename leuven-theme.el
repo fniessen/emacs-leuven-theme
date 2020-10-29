@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200513.1933
+;; Version: 20201029.1759
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -499,6 +499,7 @@ more...")
    `(dired-mark ((,class ,marked-line)))
    `(dired-marked ((,class ,marked-line)))
    `(dired-symlink ((,class ,symlink)))
+   `(diredfl-compressed-file-suffix ((,class (:foreground "#000000" :background "#FFF68F"))))
    `(diredp-compressed-file-suffix ((,class (:foreground "red"))))
    `(diredp-date-time ((,class (:foreground "purple"))))
    `(diredp-dir-heading ((,class ,directory)))
@@ -512,6 +513,7 @@ more...")
    `(diredp-ignored-file-name ((,class ,shadow)))
    `(diredp-read-priv ((,class (:background "#0A99FF"))))
    `(diredp-write-priv ((,class (:foreground "white" :background "#FF4040"))))
+   `(doom-modeline-panel ((,class (:foreground "#000000" :background "#FFF68F"))))
    `(eldoc-highlight-function-argument ((,class (:weight bold :foreground "red" :background "#FFE4FF"))))
    `(elfeed-search-filter-face ((,class (:foreground "gray"))))
    ;; `(eww-form-checkbox ((,class ())))
@@ -655,7 +657,9 @@ more...")
    `(linum ((,class (:foreground "#9A9A9A" :background "#EDEDED"))))
    `(log-view-file ((,class (:foreground "#0000CC" :background "#EAF2F5"))))
    `(log-view-message ((,class (:foreground "black" :background "#EDEA74"))))
+   `(lsp-modeline-code-actions-preferred-face ((,class (:foreground "#000000" :background "#FFF68F"))))
    `(lsp-ui-doc-background ((,class (:background "#F6FECD"))))
+   `(lsp-ui-sideline-code-action ((,class (:foreground "#000000" :background "#FFF68F"))))
    `(lui-button-face ((,class ,link)))
    `(lui-highlight-face ((,class (:box '(:line-width 1 :color "#CC0000") :foreground "#CC0000" :background "#FFFF88")))) ; my nickname
    `(lui-time-stamp-face ((,class (:foreground "purple"))))
