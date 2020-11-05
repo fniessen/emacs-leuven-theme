@@ -414,16 +414,15 @@ more...")
    `(popup-scroll-bar-background-face ((,class (:background "#EBF4FE"))))
    `(popup-scroll-bar-foreground-face ((,class (:background "#D1DAE4")))) ; Scrollbar (visible).
 
-   `(company-tooltip-common-selection ((,class (:weight normal :foreground "#F9ECCC" :inherit company-tooltip-selection)))) ; Prefix + common part in tooltip (for selection).
-   `(company-tooltip-selection ((,class ,completion-selected-candidate))) ; Suffix in tooltip (for selection).
-   `(company-tooltip-annotation-selection ((,class (:weight normal :foreground "#F9ECCC")))) ; Annotation (for selection).
-
-   `(company-tooltip-common ((,class (:weight normal :foreground "#B000B0" :inherit company-tooltip)))) ; Prefix + common part in tooltip.
-   `(company-tooltip ((,class ,completion-other-candidates))) ; Suffix in tooltip.
-   `(company-tooltip-annotation ((,class (:weight normal :foreground "#2415FF")))) ; Annotation.
-
+   ;; Company.
+   `(company-tooltip ((,class (:weight normal :foreground "black" :background "#EBF4FE")))) ; Suffix in tooltip.
+   `(company-tooltip-common ((,class (:foreground "black")))) ; Prefix + common part in tooltip.
+   `(company-tooltip-annotation ((,class (:foreground "#2415FF")))) ; Annotation.
+   `(company-tooltip-selection ((,class (:weight bold :foreground "black" :background "#C2F1F9")))) ; Suffix in tooltip (for selection).
+   ;; `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection)))) ; Prefix + common part in tooltip (for selection).
+   `(company-tooltip-annotation-selection ((,class (:foreground "#2415FF")))) ; Annotation (for selection).
+   `(company-preview ((,class ,completion-inline)))
    `(company-preview-common ((,class ,completion-inline)))
-
    `(company-scrollbar-bg ((,class (:background "#EBF4FE"))))
    `(company-scrollbar-fg ((,class (:background "#D1DAE4")))) ; Scrollbar (visible).
 
