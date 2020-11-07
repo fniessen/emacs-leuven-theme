@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20201029.1759
+;; Version: 20201107.1849
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -89,8 +89,8 @@ more...")
       (code-inline '(:foreground "#006400" :background "#FDFFF7"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (completion-inline '(:weight normal :foreground "#C0C0C0" :inherit hl-line)) ; Like Google.
-      (completion-other-candidates '(:weight bold :foreground "black" :background "#EBF4FE"))
-      (completion-selected-candidate '(:weight bold :foreground "white" :background "#0052A4"))
+      (completion-other-candidates '(:foreground "black" :background "#F7F7F7"))
+      (completion-selected-candidate '(:weight bold :foreground "black" :background "#C1E0FD"))
       (diff-added '(:background "#DDFFDD"))
       (diff-changed '(:foreground "#0000FF" :background "#DDDDFF"))
       (diff-header '(:weight bold :foreground "#800000" :background "#FFFFAF"))
@@ -414,16 +414,15 @@ more...")
    `(popup-scroll-bar-background-face ((,class (:background "#EBF4FE"))))
    `(popup-scroll-bar-foreground-face ((,class (:background "#D1DAE4")))) ; Scrollbar (visible).
 
-   `(company-tooltip-common-selection ((,class (:weight normal :foreground "#F9ECCC" :inherit company-tooltip-selection)))) ; Prefix + common part in tooltip (for selection).
+   ;; Company.
+   `(company-tooltip-common-selection ((,class (:weight bold :foreground "#0474B6" :inherit company-tooltip-selection)))) ; Prefix + common part in tooltip (for selection).
    `(company-tooltip-selection ((,class ,completion-selected-candidate))) ; Suffix in tooltip (for selection).
-   `(company-tooltip-annotation-selection ((,class (:weight normal :foreground "#F9ECCC")))) ; Annotation (for selection).
-
-   `(company-tooltip-common ((,class (:weight normal :foreground "#B000B0" :inherit company-tooltip)))) ; Prefix + common part in tooltip.
+   `(company-tooltip-annotation-selection ((,class (:weight bold :foreground "#818181")))) ; Annotation (for selection).
+   `(company-tooltip-common ((,class (:weight normal :foreground "#0474B6" :inherit company-tooltip)))) ; Prefix + common part in tooltip.
    `(company-tooltip ((,class ,completion-other-candidates))) ; Suffix in tooltip.
-   `(company-tooltip-annotation ((,class (:weight normal :foreground "#2415FF")))) ; Annotation.
-
+   `(company-tooltip-annotation ((,class (:weight normal :foreground "#818181")))) ; Annotation.
+   `(company-preview ((,class ,completion-inline)))
    `(company-preview-common ((,class ,completion-inline)))
-
    `(company-scrollbar-bg ((,class (:background "#EBF4FE"))))
    `(company-scrollbar-fg ((,class (:background "#D1DAE4")))) ; Scrollbar (visible).
 
