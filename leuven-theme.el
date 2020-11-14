@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20201114.1427
+;; Version: 20201114.1642
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -57,6 +57,15 @@ number."
 
 (defcustom leuven-scale-org-agenda-structure t
   "Scale Org agenda structure lines, like dates.
+This can be nil for unscaled, t for using the theme default, or a scaling
+number."
+  :type '(choice
+          (const :tag "Unscaled" nil)
+          (const :tag "Default provided by theme" t)
+          (number :tag "Set scaling")))
+
+(defcustom leuven-scale-volatile-highlight t
+  "Increase size in the `next-error' face.
 This can be nil for unscaled, t for using the theme default, or a scaling
 number."
   :type '(choice
@@ -140,7 +149,7 @@ more...")
       (tab '(:foreground "#E8E8E8" :background "white"))
       (trailing '(:foreground "#E8E8E8" :background "#FFFFAB"))
       (volatile-highlight '(:underline nil :foreground "white" :background "#9E3699"))
-      (volatile-highlight-supersize '(:height 1.1 :underline nil :foreground "white" :background "#9E3699")) ; flash-region
+      (volatile-highlight-supersize '(,@(leuven-scale-font leuven-scale-volatile-highlight 1.1) :underline nil :foreground "white" :background "#9E3699")) ; flash-region
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA"))
       (xml-attribute '(:foreground "#F36335"))
       (xml-tag '(:foreground "#AE1B9A"))
