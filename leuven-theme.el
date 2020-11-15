@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20201115.0927
+;; Version: 20201115.0928
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -52,8 +52,7 @@ number."
   :type '(choice
           (const :tag "Unscaled" nil)
           (const :tag "Default provided by theme" t)
-          (number :tag "Set scaling"))
-  :group 'leuven)
+          (number :tag "Set scaling")))
 
 (defcustom leuven-scale-org-agenda-structure t
   "Scale Org agenda structure lines, like dates.
