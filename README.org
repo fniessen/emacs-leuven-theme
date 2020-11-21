@@ -25,7 +25,31 @@ Dired+ and EDiff. Make it yours!
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="f_niessen">Tweet</a>
 #+end_html
 
-* Quotations
+* Screenshots
+
+** Org buffer (with code)
+
+Fontified source code blocks:
+
+#+ATTR_HTML: :width 640
+[[./images/fontified-src-code-blocks.png]]
+
+Note that, to get the whole heading lines fontified, you need to add the
+following line into your =.emacs= file:
+
+#+begin_src emacs-lisp
+;; Fontify the whole line for headings (with a background color).
+(setq org-fontify-whole-heading-line t)
+#+end_src
+
+** Agenda
+
+Agenda with task list:
+
+#+ATTR_HTML: :width 640
+[[./images/agenda-and-task-list.png]]
+
+** Quotations
 
 "Your Org-enhancing color-theme "leuven" ROCKS! ... and not just for Org." \\
 -- /Johan S./
@@ -56,30 +80,6 @@ status screen stand out much better with leuven than with any other theme I've
 tried.  It's a good looking theme but what makes it stand out is the attention
 the author has put into all of the different faces you find everywhere." \\
 -- /UnwashedMeme/
-
-* Screenshots
-
-** Org buffer (with code)
-
-Fontified source code blocks:
-
-#+ATTR_HTML: :width 640
-[[./images/fontified-src-code-blocks.png]]
-
-Note that, to get the whole heading lines fontified, you need to add the
-following line into your =.emacs= file:
-
-#+begin_src emacs-lisp
-;; Fontify the whole line for headings (with a background color).
-(setq org-fontify-whole-heading-line t)
-#+end_src
-
-** Agenda
-
-Agenda with task list:
-
-#+ATTR_HTML: :width 640
-[[./images/agenda-and-task-list.png]]
 
 ** NEW!  Dark version
 
