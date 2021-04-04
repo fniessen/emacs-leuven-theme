@@ -5,7 +5,7 @@
 #+KEYWORDS:  emacs, leuven, custom theme, color theme, light, popular, faces, melpa
 #+LANGUAGE:  en
 
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+#+SETUPFILE: ~/org/theme-readtheorg.setup
 
 #+PROPERTY:  header-args :eval no
 
@@ -136,7 +136,7 @@ git clone git://github.com/fniessen/emacs-leuven-theme.git
 Add the following in your =.emacs= file:
 
 #+begin_src emacs-lisp
-(add-to-list 'custom-theme-load-path "/path/to/emacs-leuven-theme")
+(add-to-list 'custom-theme-load-path "/PATH/TO/EMACS-LEUVEN-THEME/lisp")
 (load-theme 'leuven t)                  ; For Emacs 24+.
 #+end_src
 
@@ -209,7 +209,7 @@ beer and as in speech.
 * License
 
 Emacs-Leuven-Theme \\
-Copyright (C) 2003-2020  Free Software Foundation, Inc.
+Copyright (C) 2003-2021  Free Software Foundation, Inc.
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
