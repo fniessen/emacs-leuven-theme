@@ -1,10 +1,10 @@
 ;;; leuven-theme.el --- Awesome Emacs color theme on white background
 
-;; Copyright (C) 2003-2020 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2021 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20201207.2203
+;; Version: 20210507.1750
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -44,6 +44,15 @@
   "Leuven theme options.
 The theme has to be reloaded after changing anything in this group."
   :group 'faces)
+
+(defcustom leuven-scale-org-document-title t
+  "Scale Org document title.
+This can be nil for unscaled, t for using the theme default, or a scaling
+number."
+  :type '(choice
+          (const :tag "Unscaled" nil)
+          (const :tag "Default provided by theme" t)
+          (number :tag "Set scaling")))
 
 (defcustom leuven-scale-outline-headlines t
   "Scale `outline' (and `org') level-1 headlines.
@@ -797,7 +806,7 @@ more...")
    `(org-dim ((,class (:foreground "#AAAAAA"))))
    `(org-document-info ((,class (:foreground "#484848"))))
    `(org-document-info-keyword ((,class (:foreground "#008ED1" :background "#EAEAFF"))))
-   `(org-document-title ((,class (:height 1.8 :weight bold :foreground "black"))))
+   `(org-document-title ((,class (,@(leuven-scale-font leuven-scale-org-document-title 1.8)  :weight bold :foreground "black"))))
    `(org-done ((,class (:weight bold :box (:line-width 1 :color "#BBBBBB") :foreground "#BBBBBB" :background "#F0F0F0"))))
    `(org-drawer ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
    `(org-ellipsis ((,class (:underline nil :foreground "#999999")))) ; #FFEE62
