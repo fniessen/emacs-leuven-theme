@@ -81,6 +81,7 @@ number."
           (const :tag "Default provided by theme" t)
           (number :tag "Set scaling")))
 
+;;;###autoload
 (defun leuven-scale-font (control default-height)
   "Function for splicing optional font heights into face descriptions.
 CONTROL can be a number, nil, or t.  When t, use DEFAULT-HEIGHT."
