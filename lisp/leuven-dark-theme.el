@@ -1,10 +1,11 @@
 ;;; leuven-dark-theme.el --- Awesome Emacs color theme on dark background
 
-;; Copyright (C) 2003-2021 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2022 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
+;; Contributor: Thibault Polge <(concat "thibault" at-sign "thb.lt")>
 ;; URL: https://github.com/fniessen/emacs-leuven-dark-theme
-;; Version: 20210507.1752
+;; Version: 20220124.1411
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -81,6 +82,7 @@ number."
           (const :tag "Default provided by theme" t)
           (number :tag "Set scaling")))
 
+;;;###autoload
 (defun leuven-dark-scale-font (control default-height)
   "Function for splicing optional font heights into face descriptions.
 CONTROL can be a number, nil, or t.  When t, use DEFAULT-HEIGHT."
