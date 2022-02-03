@@ -4,8 +4,8 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; Contributor: Thibault Polge <(concat "thibault" at-sign "thb.lt")>
-;; URL: https://github.com/fniessen/emacs-leuven-dark-theme
-;; Version: 20220202.1126
+;; URL: https://github.com/fniessen/emacs-leuven-theme
+;; Version: 20220203.1046
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
