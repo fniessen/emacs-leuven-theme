@@ -130,7 +130,7 @@ Get the full Git repository at https://github.com/fniessen/emacs-leuven-theme
 using the following command:
 
 #+begin_src shell
-git clone git://github.com/fniessen/emacs-leuven-theme.git
+git clone https://github.com/fniessen/emacs-leuven-theme
 #+end_src
 
 Add the following in your =.emacs= file:
