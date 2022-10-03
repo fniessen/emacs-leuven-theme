@@ -1,4 +1,4 @@
-;;; leuven-dark-theme.el --- Awesome Emacs color theme on dark background
+;;; leuven-dark-theme.el --- Awesome Emacs color theme on dark background  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2003-2022 Free Software Foundation, Inc.
 
@@ -164,7 +164,7 @@ more...")
       (xml-attribute '(:foreground "#119cd0"))
       (xml-tag '(:foreground "#56e46f"))
       (highlight-current-tag '(:background "#3a352a")) ; #342b32 or #0614df
-  )
+      )
 
   (custom-theme-set-faces
    'leuven-dark
@@ -792,7 +792,7 @@ more...")
    `(org-example ((,class (:foreground "#ffff0b" :background "#38203d"))))
    `(org-footnote ((,class (:underline t :foreground "#ff7138"))))
    `(org-formula ((,class (:foreground "#0680e1"))))
-   ;; org-habit colours are thanks to zenburn
+   ;; org-habit colors are thanks to zenburn
    `(org-habit-ready-face ((t :background "#7F9F7F"))) ; ,zenburn-green
    `(org-habit-alert-face ((t :background "#E0CF9F" :foreground "#3F3F3F"))) ; ,zenburn-yellow-1 fg ,zenburn-bg
    `(org-habit-clear-face ((t :background "#5C888B")))                       ; ,zenburn-blue-3
