@@ -6,6 +6,7 @@
 ;; Contributor: Thibault Polge <(concat "thibault" at-sign "thb.lt")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 1.0
+;; Last-Updated: 2022-10-04 01:15
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -1084,5 +1085,12 @@ more...")
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'leuven-dark)
+
+;; This is for the sake of Emacs.
+;; Local Variables:
+;; time-stamp-end: "$"
+;; time-stamp-format: "%Y-%02m-%02d %02H:%02M"
+;; time-stamp-start: "Last-Updated: "
+;; End:
 
 ;;; leuven-dark-theme.el ends here
