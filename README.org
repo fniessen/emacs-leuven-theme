@@ -1,8 +1,8 @@
 #+TITLE:     Leuven-theme
 #+AUTHOR:    Fabrice Niessen
 #+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
-#+DESCRIPTION: Emacs custom color theme for light background
-#+KEYWORDS:  emacs, leuven, custom theme, color theme, light, popular, faces, melpa
+#+DESCRIPTION: A modern light theme for Emacs, optimized for extended coding sessions
+#+KEYWORDS:  Emacs, color theme, syntax highlighting, coding
 #+LANGUAGE:  en
 
 #+SETUPFILE: ~/org/theme-readtheorg.setup
