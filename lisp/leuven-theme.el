@@ -1,11 +1,11 @@
-;;; leuven-theme.el --- Awesome Emacs color theme on white background  -*- lexical-binding:t -*-
+;;; leuven-theme.el --- Elegant Emacs color theme for a white background -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2003-2023 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 1.0
-;; Last-Updated: 2023-05-23 10:29
+;; Version: 1.1.5
+;; Last-Updated: 2023-05-23 10:40
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -21,21 +21,32 @@
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
+;; along with GNU Emacs. If not, see https://www.gnu.org/licenses/.
 
 ;;; Commentary:
 
-;; This elegant Org-enhancing color theme "leuven" ROCKS!
-;; ... and not just for Org mode.
-;;
-;; To use it, put the following in your Emacs configuration file:
-;;
+;; The "leuven" color theme is an elegant and visually appealing theme designed
+;; to enhance the appearance of Emacs, particularly in Org mode and other
+;; contexts.  It provides a carefully crafted color scheme optimized for a white
+;; background, creating a pleasant and readable environment for your Emacs
+;; sessions.
+
+;; To use the "leuven" theme, simply add the following line to your Emacs
+;; configuration file:
+
 ;;   (load-theme 'leuven t)
-;;
-;; Requirements: Emacs 24+.
-;;
-;; NOTE -- Would you like implement a version of this for dark backgrounds,
-;; please do so!  I'm willing to integrate it...
+
+;; This will load and activate the theme.
+
+;; Requirements:
+;; - Emacs 24 or later.
+
+;; If you are interested in creating a version of the "leuven" theme for dark
+;; backgrounds, please feel free to contribute.  I am open to integrating dark
+;; variants into the project to provide more customization options for users.
+
+;; For more information and updates, visit the theme's GitHub repository at:
+;;https://github.com/fniessen/emacs-leuven-theme
 
 ;;; Code:
 
