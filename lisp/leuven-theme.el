@@ -1,11 +1,11 @@
 ;;; leuven-theme.el --- Awesome Emacs color theme on white background  -*- lexical-binding:t -*-
 
-;; Copyright (C) 2003-2022 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2023 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 1.0
-;; Last-Updated: 2022-10-04 01:15
+;; Last-Updated: 2023-05-23 10:29
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -819,7 +819,7 @@ more...")
    `(org-block-background ((,class (:background "#FFFFE0")))) ;; :inherit fixed-pitch))))
    `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
    `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
-   `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#123555" :background "#A3A3A3"))))
+   `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#123555" :background "#D4D4D4"))))
    `(org-clock-overlay ((,class (:foreground "white" :background "SkyBlue4"))))
    `(org-code ((,class ,code-inline)))
    `(org-column ((,class ,column)))
