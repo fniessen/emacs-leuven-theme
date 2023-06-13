@@ -178,9 +178,11 @@ Other settings you might want to consider:
 
 #+begin_src emacs-lisp
 (setq leuven-scale-org-agenda-structure nil)
+(setq leuven-scale-org-document-title nil)
 (setq leuven-scale-volatile-highlight nil)
 ;; For dark theme:
 (setq leuven-dark-scale-org-agenda-structure nil)
+(setq leuven-dark-scale-org-document-title nil)
 (setq leuven-dark-scale-volatile-highlight nil)
 #+end_src
 
