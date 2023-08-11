@@ -4,8 +4,8 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 1.1.6
-;; Last-Updated: 2023-08-09 15:51
+;; Version: 1.1.7
+;; Last-Updated: 2023-08-11 13:23
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -397,7 +397,7 @@ more...")
    `(ace-jump-face-foreground ((,class (:weight bold :foreground "black" :background "#FEA500"))))
    `(ahs-face ((,class (:background "#E4E4FF"))))
    `(ahs-definition-face ((,class (:background "#FFB6C6"))))
-   `(ahs-plugin-defalt-face ((,class (:background "#FFE4FF")))) ; Current.
+   `(ahs-plugin-default-face ((,class (:background "#FFE4FF")))) ; Current.
    `(anzu-match-1 ((,class (:foreground "black" :background "aquamarine"))))
    `(anzu-match-2 ((,class (:foreground "black" :background "springgreen"))))
    `(anzu-match-3 ((,class (:foreground "black" :background "red"))))
