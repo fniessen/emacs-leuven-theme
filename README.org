@@ -58,7 +58,8 @@ Why choose my course?
 Don't miss this opportunity to take your Emacs skills to the next level! \\
 Seats are limited, so reserve yours today.
 
-Visit https://emacsboost.com/ for more information and to *reserve your seat*.
+Visit https://emacsboost.com/ for more information, other dates and other
+locations, and to *reserve your seat*.
 
 /See you in Paris!/  [[https://emacsboost.com/][#EmacsBoostParis]]
 
