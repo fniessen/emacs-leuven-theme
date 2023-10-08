@@ -25,6 +25,45 @@ Dired+ and EDiff. Make it yours!
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="f_niessen">Tweet</a>
 #+end_html
 
+* Advert: Elevate Your Emacs Skills in Paris!
+
+Unlock the power of Emacs in Paris!  Join my exclusive "Emacs Boost" course on
+November 9th and 10th!
+
+Are you ready to supercharge your productivity and become an Emacs ninja?  Look
+no further!
+
+What you'll learn:
+
+- Master Emacs from the basics to advanced tricks.
+- Boost your coding efficiency and streamline your workflow.
+- Customize Emacs to fit your unique needs.
+- Collaborate with fellow Emacs enthusiasts.
+- And much more!
+
+Details:
+
+- When: November 9th and 10th,
+- Where: Paris, France
+- Who Should Attend: Anyone interested in Emacs, from beginners to experts.
+
+Why choose my course?
+
+- Expert instructor with 24 years of Emacs experience.
+- Hands-on exercises to reinforce your learning.
+- Networking opportunities with like-minded Emacs enthusiasts.
+- Personalized attention.
+
+Don't miss this opportunity to take your Emacs skills to the next level!  Seats
+are limited, so reserve yours today.
+
+Ready to become an Emacs pro?  Visit https://emacsboost.com/ for more
+information and to secure your seat.
+
+Embrace the Emacs revolution in the heart of Paris. See you there!
+
+#EmacsBoostParis
+
 * Screenshots
 
 ** Org buffer (with code)
