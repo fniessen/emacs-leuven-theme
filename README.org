@@ -25,10 +25,10 @@ Dired+ and EDiff. Make it yours!
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="f_niessen">Tweet</a>
 #+end_html
 
-* Advert: Elevate Your Emacs Skills in Paris!
+* ADVERT: Elevate Your Emacs Skills in Paris, Rotterdam, Leuven or Valencia!
 
-Unlock the power of Emacs in Paris!  Join my exclusive "Emacs Boost" course on
-November 9th and 10th!
+Unlock the power of Emacs in Paris!  Join my next *exclusive "Emacs Boost" course*
+on November 9th and 10th, 2023!
 
 Are you ready to supercharge your productivity and become an Emacs ninja?  Look
 no further!
@@ -41,11 +41,12 @@ What you'll learn:
 - Collaborate with fellow Emacs enthusiasts.
 - And much more!
 
-Details:
-
-- When: November 9th and 10th,
+#+begin_quote
+- When: November 9th and 10th (Thu and Fri)
 - Where: Paris, France
-- Who Should Attend: Anyone interested in Emacs, from beginners to experts.
+- Who should attend: Anyone interested in Emacs, from beginners to advanced
+  users.
+#+end_quote
 
 Why choose my course?
 
@@ -54,15 +55,13 @@ Why choose my course?
 - Networking opportunities with like-minded Emacs enthusiasts.
 - Personalized attention.
 
-Don't miss this opportunity to take your Emacs skills to the next level!  Seats
-are limited, so reserve yours today.
+Don't miss this opportunity to take your Emacs skills to the next level! \\
+Seats are limited, so reserve yours today.
 
-Ready to become an Emacs pro?  Visit https://emacsboost.com/ for more
-information and to secure your seat.
+Ready to become an Emacs pro? \\
+Visit https://emacsboost.com/ for more information and to secure your seat.
 
-Embrace the Emacs revolution in the heart of Paris. See you there!
-
-#EmacsBoostParis
+See you in Paris!  #EmacsBoostParis
 
 * Screenshots
 
