@@ -30,13 +30,13 @@ Dired+ and EDiff. Make it yours!
 Unlock the power of Emacs in Paris!  Join my next *exclusive "Emacs Boost" course*
 on November 9th and 10th, 2023!
 
-Are you ready to supercharge your productivity and become an Emacs ninja?  Look
-no further!
+Are you ready to *supercharge your productivity* and become an Emacs ninja?  Ready
+to become an Emacs pro?  Look no further!
 
 What you'll learn:
 
 - Master Emacs from the basics to advanced tricks.
-- Boost your coding efficiency and streamline your workflow.
+- Boost your editing efficiency and streamline your workflow.
 - Customize Emacs to fit your unique needs.
 - Collaborate with fellow Emacs enthusiasts.
 - And much more!
@@ -56,12 +56,10 @@ Why choose my course?
 - Personalized attention.
 
 Don't miss this opportunity to take your Emacs skills to the next level! \\
-Seats are limited, so reserve yours today.
-
-Ready to become an Emacs pro? \\
+Seats are limited, so reserve yours today. \\
 Visit https://emacsboost.com/ for more information and to secure your seat.
 
-See you in Paris!  #EmacsBoostParis
+See you in Paris!  [[https://emacsboost.com/][#EmacsBoostParis]]
 
 * Screenshots
 
