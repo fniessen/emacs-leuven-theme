@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 1.1.7
-;; Last-Updated: 2023-08-11 13:23
+;; Last-Updated: 2023-11-08 12:06
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -407,7 +407,8 @@ more...")
    `(anzu-replace-to ((,class (:weight bold :foreground "#BD33FD" :background "#FDBD33"))))
    `(auto-dim-other-buffers-face ((,class (:background "#F7F7F7"))))
    `(avy-background-face ((,class (:background "#A9A9A9"))))
-   `(avy-lead-face ((,class (:weight bold :foreground "black" :background "#FEA500"))))
+   `(avy-lead-face ((,class (:weight bold :foreground "black" :background "#F6F707"))))
+   `(avy-lead-face-0 ((,class (:weight bold :foreground "white" :background "#4E8D12"))))
    `(bbdb-company ((,class (:slant italic :foreground "steel blue"))))
    `(bbdb-field-name ((,class (:weight bold :foreground "steel blue"))))
    `(bbdb-field-value ((,class (:foreground "steel blue"))))
