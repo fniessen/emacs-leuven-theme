@@ -28,7 +28,7 @@ Dired+ and EDiff. Make it yours!
 * ADVERT: Elevate your Emacs skills in Paris, Rotterdam, Leuven or Valencia!
 
 *Unlock the power of Emacs in Rotterdam!  Join my next exclusive "Emacs Boost"
-course on February 14th to 16th, 2024!*
+course on March 13th to 15th, 2024!*
 
 Ready to /supercharge your productivity/ and become an Emacs ninja?  Look no
 further!
@@ -40,7 +40,7 @@ further!
 - And much more!
 
 *Upcoming course details:*
-- *Date:* February 14th to 16th (Wed to Fri)
+- *Date:* March 13th to 15th (Wed to Fri)
 - *Location:* Rotterdam, The Netherlands
 - *Audience:* Open to anyone interested in Emacs, from beginners to advanced
   users.
