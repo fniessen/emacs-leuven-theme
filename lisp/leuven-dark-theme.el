@@ -1,11 +1,11 @@
 ;;; leuven-dark-theme.el --- Awesome Emacs color theme on dark background  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2003-2022 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2024 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; Contributor: Thibault Polge <(concat "thibault" at-sign "thb.lt")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 1.0
+;; Version: 1.2.0
 ;; Last-Updated: 2022-10-04 01:15
 ;; Keywords: color theme
 
@@ -34,9 +34,6 @@
 ;;   (load-theme 'leuven-dark t)
 ;;
 ;; Requirements: Emacs 24+.
-;;
-;; NOTE -- Would you like implement a version of this for dark backgrounds,
-;; please do so!  I'm willing to integrate it...
 
 ;;; Code:
 

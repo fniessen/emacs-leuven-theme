@@ -1,11 +1,11 @@
 ;;; leuven-theme.el --- Elegant Emacs color theme for a white background -*- lexical-binding: t -*-
 
-;; Copyright (C) 2003-2023 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2024 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 1.1.7
-;; Last-Updated: 2023-11-08 12:06
+;; Version: 1.2.0
+;; Last-Updated: 2024-03-04 10:45
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -41,12 +41,8 @@
 ;; Requirements:
 ;; - Emacs 24 or later.
 
-;; If you are interested in creating a version of the "leuven" theme for dark
-;; backgrounds, please feel free to contribute.  I am open to integrating dark
-;; variants into the project to provide more customization options for users.
-
 ;; For more information and updates, visit the theme's GitHub repository at:
-;;https://github.com/fniessen/emacs-leuven-theme
+;; https://github.com/fniessen/emacs-leuven-theme
 
 ;;; Code:
 
