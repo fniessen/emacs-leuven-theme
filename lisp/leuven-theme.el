@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 1.2.0
-;; Last-Updated: 2024-03-04 10:45
+;; Last-Updated: 2024-07-13 11:28
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -112,7 +112,7 @@ more...")
       (cancel '(:slant italic :strike-through t :foreground "#A9A9A9"))
       ;; (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
       (code-block '(:foreground "#000088" :background "#FFFFE0"))
-      (code-inline '(:foreground "#006400" :background "#FDFFF7"))
+      (code-inline '(:foreground "#006400" :background "#F4FFF4" :inherit fixed-pitch-serif))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through unspecified :foreground "#E6AD4F" :background "#FFF2DE"))
       (completion-inline '(:weight normal :foreground "#C0C0C0" :inherit hl-line)) ; Like Google.
       (completion-other-candidates '(:foreground "black" :background "#F7F7F7"))
@@ -177,7 +177,7 @@ more...")
    `(default ((,class (:foreground "#333333" :background "#FFFFFF"))))
    `(bold ((,class (:weight bold :foreground "black"))))
    `(bold-italic ((,class (:weight bold :slant italic :foreground "black"))))
-   `(italic ((,class (:slant italic :foreground "#1A1A1A"))))
+   `(italic ((,class (:slant italic :foreground "#999999"))))
    `(underline ((,class (:underline t))))
    `(cursor ((,class (:background "#21BDFF"))))
 
@@ -827,7 +827,7 @@ more...")
    `(org-block-background ((,class (:background "#FFFFE0")))) ;; :inherit fixed-pitch))))
    `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
    `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
-   `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#123555" :background "#D4D4D4"))))
+   `(org-checkbox ((,class (:weight bold :foreground "#5D1715" :background "#FFE2DD"))))
    `(org-clock-overlay ((,class (:foreground "white" :background "SkyBlue4"))))
    `(org-code ((,class ,code-inline)))
    `(org-column ((,class ,column)))
@@ -884,6 +884,9 @@ more...")
    `(org-target ((,class (:foreground "#FF6DAF"))))
    `(org-time-grid ((,class (:foreground "#B8B8B8"))))
    `(org-todo ((,class (:weight bold :box (:line-width 1 :color "#D8ABA7") :foreground "#D8ABA7" :background "#FFE6E4"))))
+   ;; `(org-modern-todo ((,class (:weight semibold :inherit (org-todo org-modern-label)))))
+   `(org-modern-todo ((,class (:foreground "#5D1715" :background "#FFE2DD"))))
+   `(org-modern-tag ((,class (:foreground "#312F2B" :background "#F1F0EF"))))
    `(org-upcoming-deadline ((,class (:foreground "#FF5555"))))
    `(org-verbatim ((,class (:foreground "#0066CC" :background "#F7FDFF"))))
    `(org-verse ((,class (:slant italic :foreground "dim gray" :background "#EEEEEE"))))
