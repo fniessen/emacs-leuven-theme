@@ -25,10 +25,9 @@ Dired+ and EDiff. Make it yours!
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="f_niessen">Tweet</a>
 #+end_html
 
-* ADVERT: Elevate your Emacs skills in Paris, Rotterdam, Leuven or Valencia!
+* ADVERT: Elevate your Emacs skills in Paris, Utrecht, Leuven or Valencia!
 
-*Unlock the power of Emacs in Valencia!  Join my next exclusive "Emacs Boost"
-course on April 11th to 12th, 2024!*
+*Unlock the power of Emacs!  Join my next exclusive "Emacs Boost" course!*
 
 Ready to /supercharge your productivity/ and become an Emacs ninja?  Look no
 further!
@@ -39,25 +38,19 @@ further!
 - Customize Emacs to fit your unique needs.
 - And much more!
 
-*Upcoming course details:*
-- *Date:* April 11th to 12th (Thu + Fri)
-- *Location:* Valencia, Spain
-- *Audience:* Open to anyone interested in Emacs, from beginners to advanced
-  users.
+*Audience:* Open to anyone interested in Emacs, from beginners to advanced
+users.
 
 *Why choose my course?*
-- Expert instructor with 24 years of Emacs experience.
+- Expert instructor with 25 years of Emacs experience.
 - /Hands-on exercises/ to reinforce your learning.
 - /Networking opportunities/ with like-minded Emacs enthusiasts.
 - Personalized attention.
 
 Don't miss this opportunity to take your Emacs skills to the next level! \\
-Seats are limited, so /reserve yours today/.
 
-Visit https://emacsboost.com/en/ for more information, other dates and other
-locations, and to /reserve your seat/.
-
-/See you in Valencia!/  [[https://emacsboost.com/en/][#EmacsBoostValencia]]
+Visit https://emacsboost.com/en/ for more information, dates and locations, and
+to /reserve your seat/.
 
 * Screenshots
 
