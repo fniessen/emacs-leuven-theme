@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 1.2.0
-;; Last-Updated: 2024-07-13 11:28
+;; Last-Updated: 2024-12-02 10:52
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -121,7 +121,7 @@ more...")
       (diff-changed '(:foreground "#0000FF" :background "#DDDDFF"))
       (diff-header '(:weight bold :foreground "#800000" :background "#FFFFAF"))
       (diff-hunk-header '(:foreground "#990099" :background "#FFEEFF"))
-      (diff-none '(:foreground "#888888"))
+      (diff-none '(:foreground "#A0A1A7"))
       (diff-refine-added '(:background "#97F295"))
       (diff-refine-removed '(:background "#FFB6BA"))
       (diff-removed '(:background "#FEE8E9"))
@@ -218,11 +218,11 @@ more...")
    ;; Font lock faces.
    `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
    `(font-lock-comment-delimiter-face ((,class (:foreground "#8D8D84")))) ; #696969
-   `(font-lock-comment-face ((,class (:slant italic :foreground "#8D8D84")))) ; #696969
+   `(font-lock-comment-face ((,class (:slant italic :foreground "#A0A1A7")))) ; #696969
    `(font-lock-constant-face ((,class (:foreground "#D0372D"))))
    `(font-lock-doc-face ((,class (:foreground "#036A07"))))
    `(font-lock-function-name-face ((,class (:weight normal :foreground "#006699"))))
-   `(font-lock-keyword-face ((,class (:bold unspecified :foreground "#0000FF")))) ; #3654DC
+   `(font-lock-keyword-face ((,class (:foreground "#0000FF")))) ; #3654DC
    `(font-lock-preprocessor-face ((,class (:foreground "#808080"))))
    `(font-lock-regexp-grouping-backslash ((,class (:weight bold :inherit unspecified))))
    `(font-lock-regexp-grouping-construct ((,class (:weight bold :inherit nil))))
