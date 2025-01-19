@@ -1,11 +1,11 @@
 ;;; leuven-theme.el --- Elegant Emacs color theme for a white background -*- lexical-binding: t -*-
 
-;; Copyright (C) 2003-2024 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2025 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 1.2.0
-;; Last-Updated: 2024-12-02 10:52
+;; Last-Updated: 2025-01-19 18:04
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -25,14 +25,13 @@
 
 ;;; Commentary:
 
-;; The "leuven" color theme is an elegant and visually appealing theme designed
-;; to enhance the appearance of Emacs, particularly in Org mode and other
-;; contexts.  It provides a carefully crafted color scheme optimized for a white
-;; background, creating a pleasant and readable environment for your Emacs
-;; sessions.
+;; The "leuven" color theme offers a clean, elegant, and visually appealing
+;; design for Emacs. While especially suited for Org mode, it enhances
+;; readability across various contexts. Designed for white backgrounds, it
+;; provides a pleasant and highly readable environment for extended use.
 
-;; To use the "leuven" theme, simply add the following line to your Emacs
-;; configuration file:
+;; To enable the "leuven" theme, add the following line to your Emacs
+;; configuration:
 
 ;;   (load-theme 'leuven t)
 
@@ -838,7 +837,7 @@ more...")
    `(org-document-info ((,class (:foreground "#484848"))))
    `(org-document-info-keyword ((,class (:foreground "#008ED1" :background "#EAEAFF"))))
    `(org-document-title ((,class (,@(leuven-scale-font leuven-scale-org-document-title 1.8)  :weight bold :foreground "black"))))
-   `(org-done ((,class (:weight bold :box (:line-width 1 :color "#BBBBBB") :foreground "#BBBBBB" :background "#F0F0F0"))))
+   `(org-done ((,class (:weight bold :box "#89C58F" :foreground "#89C58F" :background "#E2FEDE"))))
    `(org-drawer ((,class (:weight bold :foreground "#00BB00" :background "#EEFFEE"))))
    `(org-ellipsis ((,class (:underline nil :foreground "#999999")))) ; #FFEE62
    `(org-example ((,class (:foreground "blue" :background "#EEFFEE"))))
