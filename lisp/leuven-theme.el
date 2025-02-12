@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 1.2.0
-;; Last-Updated: 2025-01-19 18:04
+;; Last-Updated: 2025-02-12 20:48
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -803,7 +803,7 @@ more...")
    `(nxml-tag-delimiter-face ((,class (:foreground "blue"))))
    `(nxml-tag-slash-face ((,class (:foreground "blue"))))
    `(org-agenda-block-count ((,class (:weight bold :foreground "#A5A5A5"))))
-   `(org-agenda-calendar-event ((,class (:weight bold :foreground "#3774CC" :background "#E4EBFE"))))
+   `(org-agenda-calendar-event ((,class (:weight bold :foreground "#0078D4" :background "#C8E0F2"))))
    `(org-agenda-calendar-sexp ((,class (:foreground "#327ACD" :background "#F3F7FC"))))
    `(org-agenda-clocking ((,class (:foreground "black" :background "#EEC900"))))
    `(org-agenda-column-dateline ((,class ,column)))
