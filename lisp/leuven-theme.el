@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 1.2.0
-;; Last-Updated: 2025-02-12 20:48
+;; Last-Updated: 2025-03-01 17:32
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -808,7 +808,7 @@ more...")
    `(org-agenda-clocking ((,class (:foreground "black" :background "#EEC900"))))
    `(org-agenda-column-dateline ((,class ,column)))
    `(org-agenda-current-time ((,class (:underline t :foreground "#1662AF"))))
-   `(org-agenda-date ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#1662AF"))))
+   `(org-agenda-date ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#0078D4"))))
    `(org-agenda-date-today ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(org-agenda-date-weekend ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#4E4E4E"))))
    `(org-agenda-diary ((,class (:weight bold :foreground "green4" :background "light blue"))))
@@ -838,7 +838,7 @@ more...")
    `(org-document-info-keyword ((,class (:foreground "#008ED1" :background "#EAEAFF"))))
    `(org-document-title ((,class (,@(leuven-scale-font leuven-scale-org-document-title 1.8)  :weight bold :foreground "black"))))
    `(org-done ((,class (:weight bold :box "#89C58F" :foreground "#89C58F" :background "#E2FEDE"))))
-   `(org-drawer ((,class (:weight bold :foreground "#00BB00" :background "#EEFFEE"))))
+   `(org-drawer ((,class (:weight bold :foreground "#6B8E23" :background "#EEFFEE"))))
    `(org-ellipsis ((,class (:underline nil :foreground "#999999")))) ; #FFEE62
    `(org-example ((,class (:foreground "blue" :background "#EEFFEE"))))
    `(org-footnote ((,class (:underline t :foreground "#008ED1"))))
@@ -877,7 +877,7 @@ more...")
    `(org-scheduled-previously ((,class (:foreground "#1466C6"))))
    `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
-   `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EEFFEE"))))
+   `(org-special-keyword ((,class (:weight bold :foreground "#4682B4" :background "#EEFFEE"))))
    `(org-table ((,class (:foreground "dark green" :background "#EEFFEE")))) ;; :inherit fixed-pitch))))
    `(org-tag ((,class (:weight normal :slant italic :foreground "#9A9FA4" :background "white"))))
    `(org-target ((,class (:foreground "#FF6DAF"))))
@@ -984,6 +984,7 @@ more...")
    `(vc-annotate-face-FF993F ((,class (:foreground "#FF993F" :background "black"))))
    `(vc-annotate-face-FFC63F ((,class (:foreground "#FF993F" :background "black"))))
    `(vc-annotate-face-FFF33F ((,class (:foreground "#FFF33F" :background "black"))))
+   `(vc-git-log-edit-summary-max-warning ((,class (:weight bold :foreground "red"))))
 
    ;; ;; vc
    ;; (vc-up-to-date-state    ((,c :foreground ,(gc 'green-1))))
