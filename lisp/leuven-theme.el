@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 1.2.0
-;; Last-Updated: 2025-03-01 17:32
+;; Last-Updated: 2025-04-22 11:31
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -590,6 +590,7 @@ more...")
    ;; `(eww-form-submit ((,class ())))
    `(eww-form-text ((,class (:weight bold :foreground "#40586F" :background "#A7CDF1"))))
    ;; `(eww-form-textarea ((,class ())))
+   `(fill-column-indicator ((,class (:foreground "#E0E0E0" :background unspecified))))
    `(file-name-shadow ((,class ,shadow)))
    `(flycheck-error ((,class (:underline (:color "#FE251E" :style wave) :weight bold :background "#FFE1E1"))))
    `(flycheck-error-list-line-number ((,class (:foreground "#A535AE"))))

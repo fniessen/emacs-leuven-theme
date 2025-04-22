@@ -10,6 +10,19 @@
 
 * Tasks
 
+** TODO Add wgrep-face and wgrep-done-face
+
+** TODO Améliorer Leuven-theme pour Org mode
+
+Voir output of  C-h C-h     ;; help-for-help
+
+** TODO 005 - Modify color of org-priority cookies in Leuven theme (Not found!?)
+
+From Todoist:
+- p1: red = D7443C on FBECEB
+- p2: orange = F18712 on FEF3E6
+- p3: blue = 0075DF on E8F0FC
+
 ** TODO Improve colors for diff and Ediff
 
 https://git.framasoft.org/distopico/distopico-dotemacs/commit/7a459d2d3980241e646daf3da66f1b7f356940b4?view=inline&w=1
