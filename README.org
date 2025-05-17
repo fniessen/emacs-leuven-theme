@@ -226,6 +226,13 @@ The value can be:
 One way to do that is to it through ~M-x customize-variable~ and then restart
 Emacs.
 
+* Port of Leuven theme for VIM
+
+A Vim port of the Leuven theme has been created by Guilherme Zagatti and is
+available at https://github.com/gzagatti/vim-leuven-theme. His port strives to
+remain as faithful as possible to my original Emacs color scheme, while taking
+into account the limitations of the Vim environment.
+
 * Contributing
 
 ** Issues
