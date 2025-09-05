@@ -111,7 +111,7 @@ more...")
       (cancel '(:slant italic :strike-through t :foreground "#A9A9A9"))
       ;; (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
       (code-block '(:foreground "#000088" :background "#FFFFE0"))
-      (code-inline '(:foreground "#006400" :background "#F4FFF4" :inherit fixed-pitch-serif))
+      (code-inline '(:foreground "#006400" :background "#F4FFF4"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through unspecified :foreground "#E6AD4F" :background "#FFF2DE"))
       (completion-inline '(:weight normal :foreground "#C0C0C0" :inherit hl-line)) ; Like Google.
       (completion-other-candidates '(:foreground "black" :background "#F7F7F7"))
