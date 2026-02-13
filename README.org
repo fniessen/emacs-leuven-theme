@@ -5,7 +5,7 @@
 #+KEYWORDS:  Emacs, color theme, syntax highlighting, coding
 #+LANGUAGE:  en
 
-#+SETUPFILE: ~/org/theme-readtheorg.setup
+#+SETUPFILE: ~/org/html-theme-readtheorg.setup
 
 #+PROPERTY:  header-args :eval no
 

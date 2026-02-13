@@ -6,7 +6,7 @@
 #+KEYWORDS:  emacs, leuven, custom theme, color theme, light, popular, faces, melpa
 #+LANGUAGE:  en
 
-#+SETUPFILE: ~/org/theme-readtheorg.setup
+#+SETUPFILE: ~/org/html-theme-readtheorg.setup
 
 * Tasks
 
