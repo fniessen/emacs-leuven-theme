@@ -1,0 +1,10 @@
+python3 negate.py leuven-theme.el > leuven-dark-theme.el
+
+sed -i 's_leuven_leuven-dark_g' leuven-dark-theme.el # ensures emacs can detect and understand the file
+sed -i 's_leuven-dark-dark_leuven-dark_g' leuven-dark-theme.el # prevents any overcorrection
+sed -i 's_Awesome Emacs color theme on white background_Awesome Emacs color theme on dark background_' leuven-dark-theme.el
+sed -i "s_(provide-theme 'leuven)_(provide-theme 'leuven-dark)_" leuven-dark-theme.el
+
+echo "Colors inverted."
+echo "You probably still need to change the theme's name in"
+echo "the generated file.  This may be automated some day."
