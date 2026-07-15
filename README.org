@@ -5,7 +5,7 @@
 #+KEYWORDS:  Emacs, color theme, syntax highlighting, coding
 #+LANGUAGE:  en
 
-#+SETUPFILE: ~/org/html-theme-readtheorg.setup
+#+SETUPFILE: ~/org/setup/html-theme-readtheorg.setup
 
 #+PROPERTY:  header-args :eval no
 
@@ -20,10 +20,10 @@ Welcome to the custom Leuven theme -- an elegant and widely loved color theme
 designed for light backgrounds.  It features built-in styles for various
 components, including Org mode, Gnus, Dired+, and EDiff.  Make it yours!
 
-#+begin_html
+#+begin_export html
 <script src="http://platform.twitter.com/widgets.js"></script>
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="f_niessen">Tweet</a>
-#+end_html
+#+end_export
 
 #+begin_quote
 [!TIP]
@@ -259,7 +259,7 @@ beer and as in speech.
 * License
 
 Emacs-Leuven-Theme \\
-Copyright (C) 2003-2024 Free Software Foundation, Inc.
+Copyright (C) 2003-2026 Free Software Foundation, Inc.
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
