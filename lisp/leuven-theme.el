@@ -1,11 +1,11 @@
 ;;; leuven-theme.el --- Elegant Emacs color theme for a white background -*- lexical-binding: t -*-
 
-;; Copyright (C) 2003-2025 Free Software Foundation, Inc.
+;; Copyright (C) 2003-2026 Free Software Foundation, Inc.
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 1.2.0
-;; Last-Updated: 2025-12-23 17:47
+;; Version: 2.6.0213
+;; Last-Updated: 2026-08-12 10:47
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -157,8 +157,8 @@ more...")
       (paren-matched '(:background "#C0E8C3")) ; Or take that green for region?
       (paren-unmatched '(:weight bold :underline "red" :foreground "black" :background "#FFA5A5"))
       (region '(:background "#8ED3FF"))
-      (shadow '(:foreground "#7F7F7F"))
-      (string '(:foreground "#008000")) ; or #D0372D
+      (shadow '(:foreground "#566D96" :background "#F3F4F7"))
+      (string '(:foreground "#0E700E")) ; or #D0372D
       (subject '(:family "Sans Serif" :weight bold :foreground "black"))
       (symlink '(:foreground "#1F8DD6"))
       (tab '(:foreground "#E8E8E8" :background "white"))
@@ -218,7 +218,7 @@ more...")
    `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
    `(font-lock-comment-delimiter-face ((,class (:foreground "#8D8D84")))) ; #696969
    `(font-lock-comment-face ((,class (:slant italic :foreground "#A0A1A7")))) ; #696969
-   `(font-lock-constant-face ((,class (:foreground "#D0372D"))))
+   `(font-lock-constant-face ((,class (:foreground "#DA3B01"))))
    `(font-lock-doc-face ((,class (:foreground "#036A07"))))
    `(font-lock-function-name-face ((,class (:weight normal :foreground "#006699"))))
    `(font-lock-keyword-face ((,class (:foreground "#0000FF")))) ; #3654DC
