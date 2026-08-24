@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 2.6.0213
-;; Last-Updated: 2026-08-12 10:47
+;; Last-Updated: 2026-08-24 14:19
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -784,7 +784,7 @@ more...")
    ;; `(markdown-metadata-key-face ((,class ())))
    ;; `(markdown-metadata-value-face ((,class ())))
    ;; `(markdown-missing-link-face ((,class ())))
-   `(markdown-pre-face ((,class (:inherit org-block-background))))
+   `(markdown-pre-face ((,class (:inherit org-block))))
    ;; `(markdown-reference-face ((,class ())))
    ;; `(markdown-strike-through-face ((,class ())))
    `(markdown-url-face ((,class ,link)))
@@ -828,7 +828,6 @@ more...")
    `(org-archived ((,class (:foreground "gray70"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
-   `(org-block-background ((,class (:background "#FFFFE0")))) ;; :inherit fixed-pitch))))
    `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
    `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
    `(org-checkbox ((,class (:weight bold :foreground "#5D1715" :background "#FFE2DD"))))
@@ -1145,5 +1144,4 @@ more...")
 ;; time-stamp-format: "%Y-%02m-%02d %02H:%02M"
 ;; time-stamp-start: "Last-Updated: "
 ;; End:
-
 ;;; leuven-theme.el ends here
