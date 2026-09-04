@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 2.6.0213
-;; Last-Updated: 2026-08-26 10:54
+;; Last-Updated: 2026-09-04 19:20
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -450,6 +450,7 @@ more...")
    `(circe-originator-face ((,class (:foreground "blue"))))
    `(circe-prompt-face ((,class (:foreground "red"))))
    `(circe-server-face ((,class (:foreground "#99CAE5"))))
+   `(display-fill-column-indicator-warning-face ((,class (:foreground "orange3" :weight bold))))
 
    ;; `(ac-selection-face ((,class ,completion-selected-candidate)))
    `(ac-selection-face ((,class (:weight bold :foreground "white" :background "orange")))) ; TEMP For diff'ing AC from Comp.
