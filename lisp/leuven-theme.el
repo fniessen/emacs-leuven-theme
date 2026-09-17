@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 2.6.0213
-;; Last-Updated: 2026-09-04 19:20
+;; Last-Updated: 2026-09-17 21:42
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -459,6 +459,8 @@ more...")
    `(ac-candidate-mouse-face ((,class (:inherit highlight))))
    `(popup-scroll-bar-background-face ((,class (:background "#EBF4FE"))))
    `(popup-scroll-bar-foreground-face ((,class (:background "#D1DAE4")))) ; Scrollbar (visible).
+
+   `(ert-test-result-unexpected ((,class (:weight bold :foreground "#000000" :background "#FFB5B0"))))
 
    ;; Company.
    `(company-tooltip-common-selection ((,class (:weight bold :foreground "#0474B6" :inherit company-tooltip-selection)))) ; Prefix + common part in tooltip (for selection).
