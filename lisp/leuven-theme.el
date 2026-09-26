@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 2.6.0213
-;; Last-Updated: 2026-09-17 21:42
+;; Last-Updated: 2026-09-26 10:32
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -299,8 +299,8 @@ more...")
    `(gnus-summary-selected ((,class (:foreground "white" :background "#008CD7"))))
    `(gnus-x-face ((,class (:foreground "black" :background "white"))))
 
-   `(gptel-response-fringe-highlight ((,class (:foreground "#BF6896"))))
-   `(gptel-response-highlight ((,class (:background "#F3F3F3" :extend t))))
+   `(gptel-response-fringe-highlight ((,class (:background "#79B6DE"))))
+   `(gptel-response-highlight ((,class (:background "#DEEBF7" :extend t))))
    ;; `(gptel-rewrite-highlight-face ((,class (:background "#F7F7F7"))))
 
    ;; Message faces.
