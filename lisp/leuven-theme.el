@@ -5,7 +5,7 @@
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
 ;; Version: 2.6.0213
-;; Last-Updated: 2026-09-26 10:32
+;; Last-Updated: 2026-10-08 10:38
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -725,10 +725,11 @@ more...")
    `(js2-warning ((,class (:underline "orange"))))
 
    ;; Org non-standard faces.
-   `(leuven-org-deadline-overdue ((,class (:foreground "#F22659"))))
-   `(leuven-org-deadline-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
-   `(leuven-org-deadline-tomorrow ((,class (:foreground "#40A80B"))))
-   `(leuven-org-deadline-future ((,class (:foreground "#40A80B"))))
+   `(leuven-org-deadline-overdue ((,class (:weight bold :foreground "#8B1E1E" :background "#F9D6D5"))))
+   `(leuven-org-deadline-today ((,class (:weight bold :foreground "#4A3F00" :background "#FFE7A8"))))
+   `(leuven-org-deadline-tomorrow ((,class (:weight bold :foreground "#7A4E00" :background "#FFF59D"))))
+   `(leuven-org-deadline-future ((,class (:weight bold :foreground "#00695C" :background "#D7F5F0"))))
+
    `(leuven-gnus-unseen ((,class (:weight bold :foreground "#FC7202"))))
    `(leuven-gnus-date ((,class (:foreground "#FF80BF"))))
    `(leuven-gnus-size ((,class (:foreground "#8FBF60"))))
