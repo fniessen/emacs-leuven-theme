@@ -8,15 +8,20 @@
 
 (defconst leuven-screenshots--source
   (concat
-   "#+TITLE: Leuven Theme\n"
-   "#+AUTHOR: Fabrice Niessen\n"
-   "#+STARTUP: showall\n\n"
+   "#+TITLE:     Leuven Theme\n"
+   "#+AUTHOR:    Fabrice Niessen\n"
+   "#+STARTUP:   showall\n\n"
    "* A pleasant coding environment\n\n"
    "Leuven keeps your notes and code clear and comfortable to read.\n\n"
    "** Capture ideas and keep moving\n\n"
    "- [X] Organize today's priorities\n"
    "- [ ] Review the release checklist\n"
    "- [ ] Share the update with the team\n\n"
+   "| Task                     | Status      | Priority |\n"
+   "|--------------------------+-------------+----------|\n"
+   "| Organize priorities      | Complete    | High     |\n"
+   "| Review release checklist | In progress | Medium   |\n"
+   "| Share project update     | Next        | Low      |\n\n"
    "** Familiar Emacs Lisp, thoughtfully colored\n\n"
    "#+begin_src emacs-lisp\n"
    "(defun leuven-greet (name)\n"
