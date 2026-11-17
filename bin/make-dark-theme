@@ -1,10 +1,22 @@
-python3 negate.py leuven-theme.el > leuven-dark-theme.el
+#!/usr/bin/env sh
 
-sed -i 's_leuven_leuven-dark_g' leuven-dark-theme.el # ensures emacs can detect and understand the file
-sed -i 's_leuven-dark-dark_leuven-dark_g' leuven-dark-theme.el # prevents any overcorrection
-sed -i 's_Awesome Emacs color theme on white background_Awesome Emacs color theme on dark background_' leuven-dark-theme.el
-sed -i "s_(provide-theme 'leuven)_(provide-theme 'leuven-dark)_" leuven-dark-theme.el
+set -eu
 
-echo "Colors inverted."
-echo "You probably still need to change the theme's name in"
-echo "the generated file.  This may be automated some day."
+command -v python3 >/dev/null || { printf 'Python 3 is required.\n' >&2; exit 127; }
+
+repo_root=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+output=$(mktemp "$repo_root/lisp/.leuven-dark-theme.XXXXXX")
+trap 'rm -f -- "$output"' EXIT
+trap 'exit 1' HUP INT TERM
+
+cd "$repo_root/bin"
+python3 negate.py "$repo_root/lisp/leuven-theme.el" > "$output"
+sed -i \
+    -e 's/leuven/leuven-dark/g' \
+    -e 's/leuven-dark-dark/leuven-dark/g' \
+    -e 's/for a white background/for a dark background/g' \
+    -e 's/with a light background/with a dark background/g' \
+    "$output"
+
+cat "$output" > "$repo_root/lisp/leuven-dark-theme.el"
+printf 'Regenerated lisp/leuven-dark-theme.el from the light theme.\n'

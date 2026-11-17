@@ -2,11 +2,6 @@
 
 import colorsys, fileinput, re, sys
 
-from colormath.color_objects import LabColor, AdobeRGBColor as RGBColor
-from colormath.color_conversions import convert_color
-
-
-
 # r + g + b < MAGIC are not colorful
 MAGIC_NUMBER = 100
 
@@ -112,6 +107,5 @@ for line in fileinput.input():
         out+= line[i]
                 
     print(out[:-1])
-
 
 

@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help all test lint-shell screenshots
+.PHONY: help all test lint-shell dark-theme screenshots
 
 # Show available targets.
 help:
@@ -34,6 +34,10 @@ lint-shell:
 		\( -perm /111 -o -name '*.sh' -o -name '*.bash' \) -print0 \
 		| xargs -0 -r grep -IlZ -m1 -E '^#!.*(bash|/sh|/dash|/ksh)([[:space:]]|$$)' \
 		| xargs -0 -r shellcheck
+
+# Regenerate the dark theme from the light theme (overwrites local changes).
+dark-theme:
+	@bin/make-dark-theme
 
 # Regenerate the screenshots embedded in README.org.
 screenshots:
