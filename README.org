@@ -63,6 +63,9 @@ and to /secure your place today/.
 
 * Screenshots
 
+Run =make test= to run the theme's ERT tests. Use =make all= to run both
+the tests and the ShellCheck checks (requires Emacs and ShellCheck).
+
 Run =make screenshots= to regenerate these images with the current theme
 colors. This target requires Emacs, ImageMagick, and Xvfb; it is intentionally
 separate from =make all=.

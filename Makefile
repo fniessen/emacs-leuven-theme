@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help all lint-shell screenshots
+.PHONY: help all test lint-shell screenshots
 
 # Show available targets.
 help:
@@ -20,7 +20,12 @@ help:
 	{ description = "" }' [Mm]akefile
 
 # Run all available checks.
-all: lint-shell
+all: test lint-shell
+
+# Run the Emacs theme tests.
+test:
+	@command -v emacs >/dev/null || { printf 'Emacs is required.\n' >&2; exit 127; }
+	@emacs -Q --batch -l test/leuven-theme-test.el -f ert-run-tests-batch-and-exit
 
 # Run ShellCheck on shell scripts.
 lint-shell:
