@@ -67,6 +67,9 @@ Run =make screenshots= to regenerate these images with the current theme
 colors. This target requires Emacs, ImageMagick, and Xvfb; it is intentionally
 separate from =make all=.
 
+The =images/= directory contains the screenshots displayed below.
+Additional visual examples and references are kept in [[./examples/][examples/]].
+
 ** Org buffer (with code)
 
 Fontified source code blocks:
