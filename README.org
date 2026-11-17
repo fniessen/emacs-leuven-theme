@@ -72,7 +72,7 @@ separate from =make all=.
 Fontified source code blocks:
 
 #+ATTR_HTML: :width 640
-[[./images/fontified-src-code-blocks.png]]
+[[./images/org-code-light.png]]
 
 Note that, to get the whole heading lines fontified, you need to add the
 following line into your =.emacs= file:
@@ -87,7 +87,7 @@ following line into your =.emacs= file:
 Agenda with task list:
 
 #+ATTR_HTML: :width 640
-[[./images/agenda-and-task-list.png]]
+[[./images/org-agenda-light.png]]
 
 ** Quotations
 
@@ -127,7 +127,7 @@ There is now a dark version of Leuven-theme, automagically built by Thibault
 Polge.
 
 #+ATTR_HTML: :width 640
-[[./images/leuven-theme-dark.png]]
+[[./images/org-code-dark.png]]
 
 It surely will be improved over time, but this is a major first step into the
 right direction.  A big thanks to him!

@@ -116,12 +116,12 @@
   (let ((source-buffer (leuven-screenshots--source-buffer)))
     (leuven-screenshots--load-theme 'leuven)
     (leuven-screenshots--capture
-     source-buffer "fontified-src-code-blocks.png")
+     source-buffer "org-code-light.png")
     (leuven-screenshots--capture
-     (leuven-screenshots--agenda-buffer) "agenda-and-task-list.png")
+     (leuven-screenshots--agenda-buffer) "org-agenda-light.png")
     (leuven-screenshots--load-theme 'leuven-dark)
     (leuven-screenshots--capture
-     source-buffer "leuven-theme-dark.png")))
+     source-buffer "org-code-dark.png")))
 
 (leuven-screenshots--generate)
 (kill-emacs 0)
