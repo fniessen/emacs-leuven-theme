@@ -9,7 +9,7 @@ for tool in emacs import xvfb-run; do
     fi
 done
 
-repo_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+repo_root=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
 
 env GDK_BACKEND=x11 xvfb-run -a -s "-screen 0 1280x900x24 -dpi 96" \
     emacs -Q --load "$repo_root/bin/generate-screenshots.el"
