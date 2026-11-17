@@ -63,6 +63,10 @@ and to /secure your place today/.
 
 * Screenshots
 
+Run =make screenshots= to regenerate these images with the current theme
+colors. This target requires Emacs, ImageMagick, and Xvfb; it is intentionally
+separate from =make all=.
+
 ** Org buffer (with code)
 
 Fontified source code blocks:
@@ -117,7 +121,7 @@ tried.  It's a good looking theme but what makes it stand out is the attention
 the author has put into all of the different faces you find everywhere." \\
 -- /UnwashedMeme/
 
-** NEW!  Dark version
+** Dark version
 
 There is now a dark version of Leuven-theme, automagically built by Thibault
 Polge.
